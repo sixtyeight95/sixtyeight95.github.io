@@ -1,0 +1,27 @@
+POST CAPTION
+------------
+"Nobody can afford a house anymore." Is that true? 🏠
+
+We measured mortgages in HOURS OF WORK instead of dollars. A full-time month is about 173 hours. Here's how many of them the mortgage on a typical new home eats:
+
+📉 2021: 56 hours
+📈 2023: 87 hours
+🏠 Today: 71 hours
+😮 1990: 96 hours
+🔥 1981: 124 hours
+
+So the monthly payment isn't the worst it's ever been. The real wall is the down payment: 10% down now equals 7+ months of full pay, vs 5.6 months in 1985.
+
+And interest rates are the big lever. At 2021's rates, today's typical new home would cost about $740 less per month.
+
+Are you renting and saving, or did you lock in a low rate? 👇
+
+
+FIRST COMMENT
+-------------
+Every year since 1975, plus the down payment math: https://sixtyeight95.github.io/posts/2026-11-housing-hours-of-work/
+
+
+GROUP VERSION (no link, sounds like a person)
+-------------
+I wanted to know if houses are really less affordable than ever, so I measured mortgage payments in hours of work using government data. Surprise: the monthly payment on a typical new home takes about 71 hours of work a month now, less than in 1990 (96) and way less than 1981 (124). The real killer is the down payment, which takes more months of pay than it did in the '80s. Chart attached. Anyone else stuck on the down payment part?

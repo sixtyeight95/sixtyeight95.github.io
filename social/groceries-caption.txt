@@ -1,0 +1,26 @@
+POST CAPTION
+------------
+Groceries feel insanely expensive. But are they? 🛒
+
+We stopped asking "how much does it cost" and asked "how long do you have to WORK to buy it?"
+
+Since 2019, prices jumped. But paychecks are up 37% too. So in minutes of work:
+
+🥛 Milk, bread, chicken: about the same as 2019
+☕ Coffee: +67% more work
+🥩 Ground beef: +30%
+🥚 Eggs: +25%
+
+And the wild part: compared with 1985, 12 of 13 groceries take LESS work to buy today. The only exception is beef.
+
+What's the one grocery item that makes you wince at checkout? 👇
+
+
+FIRST COMMENT
+-------------
+Full breakdown with every item, charts and data sources: https://sixtyeight95.github.io/posts/2026-11-groceries-minutes-of-work/
+
+
+GROUP VERSION (no link, sounds like a person)
+-------------
+Got curious whether groceries are really less affordable than before, so I compared prices to average hourly pay using government data. Surprising result: measured in minutes of work, milk, bread and chicken cost about the same as 2019. Coffee, beef and eggs are the ones that really got worse. Chart attached. Which item hurts most for you?

@@ -1,0 +1,174 @@
+---
+title: "Your Groceries, Measured in Minutes of Work"
+subtitle: "Sticker shock is real. But paychecks grew too, and only a few items actually got harder to afford."
+author: "SixtyEight95"
+date: "2026-11-11"
+categories: [groceries, cost of living, wages]
+image: infographic.png
+---
+
+```{r setup}
+source("../../R/fred.R")
+source("../../R/groceries_data.R")
+library(plotly)
+library(knitr)
+
+pct <- function(x) paste0(ifelse(x > 0, "+", ""), round(x * 100), "%")
+plain_pct <- function(x) paste0(round(x * 100), "%")
+
+item_row <- function(name) grocery_summary %>% filter(item == name)
+coffee <- item_row("Coffee (lb)")
+beef   <- item_row("Ground beef (lb)")
+eggs   <- item_row("Eggs (dozen)")
+milk   <- item_row("Milk (gallon)")
+
+since_1985   <- grocery_summary %>% filter(!is.na(minutes_1985))
+cheaper_1985 <- sum(since_1985$minutes_change_1985 < 0)
+
+wage_growth <- wage_now / wage_2019 - 1
+months_label <- paste(format(last_12, "%B %Y"), "to", format(latest_month, "%B %Y"))
+```
+
+Everyone has a grocery receipt that made them wince. Eggs, beef, coffee: prices really did jump after
+2019. But there's a piece missing from most of those conversations: **paychecks went up too.**
+
+So instead of asking "how much does it cost?", we asked a different question: **how long do you have to
+work to buy it?**
+
+## The short answer
+
+::: {.callout-note appearance="simple"}
+Since 2019, average hourly pay is up **`r plain_pct(wage_growth)`**. That kept most groceries about as affordable as
+they were. The real exceptions are **coffee (`r pct(coffee$minutes_change_2019)`)**, **ground beef
+(`r pct(beef$minutes_change_2019)`)**, and **eggs (`r pct(eggs$minutes_change_2019)`)**, which genuinely take more of
+your work time than they did in 2019.
+:::
+
+## What "minutes of work" means
+
+We take the average price of an item and divide it by what the average worker earns per hour, before
+taxes. The answer is how many minutes of work it takes to pay for it.
+
+For example, a gallon of milk costs about **`r dollars(milk$price_now)`** today. The average worker earns about
+**`r dollars(wage_now)` an hour**, so that gallon takes about **`r round(milk$minutes_now, 1)` minutes** of work. In 2019 milk
+was cheaper, **`r dollars(milk$price_2019)`**, but pay was lower too (`r dollars(wage_2019)` an hour), so it took about
+**`r round(milk$minutes_2019, 1)` minutes**. Same as now.
+
+This works across any time period without needing to adjust for inflation, because prices and paychecks
+are measured in the same year's dollars.
+
+## 2019 vs. today
+
+```{r since 2019}
+#| fig-height: 5.5
+since_2019 <- grocery_summary %>%
+  mutate(item = fct_reorder(item, minutes_change_2019),
+         direction = case_when(minutes_change_2019 >  0.05 ~ "Takes more work",
+                               minutes_change_2019 < -0.05 ~ "Takes less work",
+                               TRUE                        ~ "About the same"))
+
+p <- ggplot(since_2019, aes(y = item)) +
+  geom_segment(aes(x = minutes_2019, xend = minutes_now, yend = item, color = direction,
+                   text = paste0(item,
+                                 "<br>2019: ", round(minutes_2019, 1), " min (", dollars(price_2019), ")",
+                                 "<br>Today: ", round(minutes_now, 1), " min (", dollars(price_now), ")",
+                                 "<br>Change in work time: ", pct(minutes_change_2019))),
+               linewidth = 1.2) +
+  geom_point(aes(x = minutes_2019), color = "grey50", size = 2) +
+  geom_point(aes(x = minutes_now, color = direction), size = 3) +
+  scale_color_manual(values = c("Takes more work" = "#C53030", "About the same" = "grey55",
+                                "Takes less work" = "#2A9D8F")) +
+  theme_minimal() +
+  labs(x = "Minutes of work", y = NULL, color = NULL)
+
+ggplotly(p, tooltip = "text") %>%
+  layout(legend = list(orientation = "h", y = 1.08)) %>%
+  config(displayModeBar = FALSE)
+```
+
+Grey dot = 2019. Colored dot = today (average of `r months_label`). Hover for prices.
+
+Prices on every item went up, by `r plain_pct(min(grocery_summary$price_change_2019))` to
+`r plain_pct(max(grocery_summary$price_change_2019))`. But for most of the list, pay kept pace or did better.
+
+## Why coffee, beef, and eggs broke away
+
+These three each had their own supply problem, unrelated to the general price increases since 2020:
+
+- **Coffee:** Bad harvests in Brazil and Vietnam, the two biggest growers, sent world coffee prices to
+  record highs in 2024 and 2025.
+- **Beef:** Years of drought shrank the U.S. cattle herd to its smallest size in decades. Fewer cattle
+  means pricier beef, and herds take years to rebuild.
+- **Eggs:** Bird flu outbreaks forced farms to cull millions of hens. Eggs hit their most expensive point
+  in this data in **`r format(eggs$peak_date, "%B %Y")`**, at **`r round(eggs$peak_minutes, 1)` minutes** of work for a dozen.
+
+## The long view: most groceries are cheaper than in 1985
+
+Here's the part that surprises people. Of the `r nrow(since_1985)` items we can track back to 1985,
+**`r cheaper_1985` take less work to buy today than they did then.**
+
+```{r long view}
+#| fig-height: 6
+long_items <- c("Ground beef (lb)", "Coffee (lb)", "Eggs (dozen)", "Bacon (lb)",
+                "Cheddar cheese (lb)", "White bread (lb)")
+
+long_view <- grocery_monthly %>%
+  filter(item %in% long_items, year(date) >= 1985) %>%
+  mutate(item = factor(item, levels = long_items))
+
+p2 <- ggplot(long_view, aes(date, minutes, group = item,
+                            text = paste0(item, "<br>", format(date, "%b %Y"), ": ",
+                                          round(minutes, 1), " min (", dollars(price), ")"))) +
+  geom_line(color = "#1F4E5A", linewidth = 0.5) +
+  facet_wrap(~item, ncol = 2, scales = "free_y") +
+  expand_limits(y = 0) +
+  theme_minimal() +
+  labs(x = NULL, y = "Minutes of work")
+
+ggplotly(p2, tooltip = "text") %>% config(displayModeBar = FALSE)
+```
+
+The exception is **ground beef**: `r round(beef$minutes_1985, 1)` minutes of work per pound in 1985,
+`r round(beef$minutes_now, 1)` minutes today, near its highest level since the government started tracking it in 1984.
+
+Farming, shipping, and stores all got more efficient over 40 years, and for most foods that kept
+prices rising slower than pay.
+
+## Every item we tracked
+
+```{r table}
+grocery_summary %>%
+  arrange(desc(minutes_change_2019)) %>%
+  transmute(Item = item,
+            `Price 2019` = dollars(price_2019),
+            `Price today` = dollars(price_now),
+            `Minutes 2019` = round(minutes_2019, 1),
+            `Minutes today` = round(minutes_now, 1),
+            `Change in work time` = pct(minutes_change_2019),
+            `Since 1985` = ifelse(is.na(minutes_change_1985), "–", pct(minutes_change_1985))) %>%
+  kable(align = "lrrrrrr",
+        caption = paste0("Today = average of ", months_label,
+                         ". Milk and potatoes data start after 1985."))
+```
+
+## The fine print
+
+- **This is the average worker, before taxes.** Your own minutes depend on your pay. If you earn less
+  than average, every item takes longer.
+- **These are national average prices.** Your store, your city, and brand choices will differ.
+- **Groceries aren't the whole budget.** Housing, childcare, and health care have their own stories.
+  We'll get to those.
+
+## The bottom line
+
+Grocery prices feel brutal because the dollar amounts jumped fast. Measured in time, most of the cart costs
+about what it did before the pandemic, and less than it did 40 years ago. The items that truly got harder
+to afford are coffee, beef, and eggs, each for its own reason.
+
+---
+
+**How we did this.** Prices are U.S. city-average retail prices from the
+[Bureau of Labor Statistics](https://www.bls.gov/cpi/factsheets/average-prices.htm), and pay is average
+hourly earnings of production and nonsupervisory employees (about 80% of private-sector workers), also
+from the BLS. Both were pulled from [FRED](https://fred.stlouisfed.org/). Minutes of work = price ÷ hourly
+pay × 60, calculated month by month. "Today" is the average of the last 12 months of data.

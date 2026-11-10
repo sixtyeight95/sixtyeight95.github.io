@@ -1,0 +1,149 @@
+---
+title: "Buying a Home, Measured in Hours of Work"
+subtitle: "The monthly payment takes fewer hours than it did in 1990. The hard part now is getting in the door."
+author: "SixtyEight95"
+date: "2026-11-12"
+categories: [housing, cost of living, wages]
+image: infographic.png
+---
+
+```{r setup}
+source("../../R/fred.R")
+source("../../R/housing_data.R")
+library(plotly)
+library(knitr)
+
+hrs   <- function(x) paste(round(x), "hours")
+money <- function(x) paste0("$", format(round(x), big.mark = ",", trim = TRUE))
+
+y1985 <- year_row(1985)
+y1990 <- year_row(1990)
+y2021 <- year_row(2021)
+y2023 <- year_row(2023)
+
+# today's house, but at 2021's interest rate
+payment_at_2021_rate <- monthly_payment(housing_now$price * (1 - down_payment_share), y2021$rate, loan_years)
+latest_label <- paste0(quarters(latest_quarter), " ", year(latest_quarter))
+```
+
+"Nobody can afford a house anymore" might be the most repeated money complaint in America. We wanted to
+know how true it is, so we measured the cost of a home the way it actually feels: **in hours of work.**
+
+## The short answer
+
+::: {.callout-note appearance="simple"}
+The mortgage on a typical new home takes about **`r hrs(housing_now$hours_per_month)` of work a month** today. That's a
+lot more than in 2021 (`r hrs(y2021$hours_per_month)`), but **less than in 1990** (`r hrs(y1990$hours_per_month)`).
+The monthly payment isn't the worst it's ever been. **The down payment is the bigger wall.**
+:::
+
+## What "hours of work" means
+
+We take the monthly mortgage payment on a median-priced new home and divide it by what the average worker
+earns per hour, before taxes. The answer is how many hours of work it takes to cover the payment each month.
+
+For scale: a full-time job is about **`r work_hours_month` hours a month.** So today's
+`r hrs(housing_now$hours_per_month)` is roughly `r round(housing_now$hours_per_month / work_hours_month * 100)`% of one
+person's pay before taxes. (Many households have two earners, which makes it easier, but we stick to one
+so the comparison is the same in every year.)
+
+## 50 years of mortgage payments, in hours
+
+```{r hours chart}
+#| fig-height: 4.5
+p <- ggplot(housing_quarterly, aes(quarter, hours_per_month, group = 1,
+            text = paste0(format(quarter, "%Y"), " ", quarters(quarter),
+                          "<br>", round(hours_per_month), " hours of work a month",
+                          "<br>Median new home: ", money(price),
+                          "<br>Mortgage rate: ", round(rate, 2), "%",
+                          "<br>Payment: ", money(payment), " / month",
+                          "<br>Average pay: ", dollars(wage), " / hour"))) +
+  geom_line(color = "#1F4E5A", linewidth = 0.7) +
+  expand_limits(y = 0) +
+  theme_minimal() +
+  labs(x = NULL, y = "Hours of work per month")
+
+ggplotly(p, tooltip = "text") %>% config(displayModeBar = FALSE)
+```
+
+Hover to see the price, the rate, and the payment behind each point.
+
+The worst moment was the end of **`r year(peak$quarter)`**, when mortgage rates were near
+**`r round(peak$rate)`%** and the payment took **`r hrs(peak$hours_per_month)`** a month. The best was
+**`r year(low$quarter)`**, at **`r hrs(low$hours_per_month)`**, with rates around `r round(low$rate)`%.
+
+## Interest rates are the big lever
+
+Notice what happened between 2021 and 2023. Home prices relative to pay barely moved, but the payment went
+from `r hrs(y2021$hours_per_month)` to `r hrs(y2023$hours_per_month)` of work a month. That jump was almost all
+interest rates, which went from about `r round(y2021$rate, 1)`% to `r round(y2023$rate, 1)`%.
+
+To see how much rates matter: today's median new home costs about **`r money(housing_now$price)`**. At today's
+rate (about `r round(housing_now$rate, 1)`%), the monthly payment is about **`r money(housing_now$payment)`**. At 2021's
+rate, the same house would cost **`r money(payment_at_2021_rate)`** a month. Same house,
+**`r money(housing_now$payment - payment_at_2021_rate)` a month** difference.
+
+## The catch: getting in the door
+
+The monthly payment is only half the story. Before you get a mortgage, you need a down payment, and that
+depends on the price of the house, not the interest rate.
+
+```{r down payment chart}
+#| fig-height: 4
+p2 <- ggplot(housing_quarterly, aes(quarter, months_to_save_down, group = 1,
+             text = paste0(format(quarter, "%Y"), " ", quarters(quarter),
+                           "<br>10% down: ", money(down_payment),
+                           "<br>= ", round(months_to_save_down, 1), " months of full pay"))) +
+  geom_line(color = "#C05621", linewidth = 0.7) +
+  expand_limits(y = 0) +
+  theme_minimal() +
+  labs(x = NULL, y = "Months of full pay")
+
+ggplotly(p2, tooltip = "text") %>% config(displayModeBar = FALSE)
+```
+
+A 10% down payment on a typical new home is about **`r money(housing_now$down_payment)`** today. That's
+**`r round(housing_now$months_to_save_down, 1)` months of the average worker's full pay**, before taxes and before spending a
+dime on anything else. In 1985 it was `r round(y1985$months_to_save_down, 1)` months.
+
+That's why buying feels so out of reach even though the monthly payment isn't at a record: the house itself
+costs more years of pay than it did in the 1980s, so the savings hurdle is higher.
+
+## Snapshot by year
+
+```{r table}
+housing_yearly %>%
+  filter(year %in% c(1975, 1981, 1985, 1990, 2000, 2006, 2012, 2019, 2021, 2023, year(latest_quarter))) %>%
+  transmute(Year = ifelse(year == year(latest_quarter), paste(year, "(so far)"), as.character(year)),
+            `Median new home` = money(price),
+            `Mortgage rate` = paste0(round(rate, 1), "%"),
+            `Monthly payment` = money(payment),
+            `Hours of work / month` = round(hours_per_month),
+            `10% down, in months of pay` = round(months_to_save_down, 1)) %>%
+  kable(align = "lrrrrr")
+```
+
+## The fine print
+
+- **Principal and interest only.** Property taxes and homeowners insurance aren't included, and insurance
+  in particular has gotten much more expensive in many states. Real monthly costs are higher than shown.
+- **Newly built homes.** The government's long-running median price series covers new homes. Existing homes
+  follow a similar trend, but prices differ.
+- **National medians.** A typical home in San Francisco and one in Toledo are very different stories.
+- **One average earner, before taxes.** Your own hours depend on your pay and your household.
+
+## The bottom line
+
+Monthly mortgage payments are high compared with the cheap-money years of 2010–2021, but not compared
+with the 1980s and early '90s. What's genuinely harder now is the price of entry: the down payment takes
+more of a paycheck than it did a generation ago. If rates come down, the monthly payment gets easier fast.
+The down payment problem only gets easier if pay grows faster than home prices.
+
+---
+
+**How we did this.** Home prices are the median sales price of new houses sold in the U.S. (Census Bureau
+and HUD). Mortgage rates are Freddie Mac's 30-year fixed average. Pay is average hourly earnings of
+production and nonsupervisory employees (about 80% of private-sector workers) from the Bureau of Labor
+Statistics. All series come from [FRED](https://fred.stlouisfed.org/). We assume 10% down and a 30-year
+fixed loan at that quarter's average rate. Hours of work = monthly payment ÷ hourly pay. "Today" is the
+average of the latest four quarters (through `r latest_label`).

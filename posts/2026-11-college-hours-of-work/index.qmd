@@ -1,0 +1,150 @@
+---
+title: "College, Measured in Hours of Work"
+subtitle: "Tuition grew three times faster than pay for 35 years. Then, quietly, it stopped."
+author: "SixtyEight95"
+date: "2026-11-13"
+categories: [education, cost of living, wages]
+image: infographic.png
+---
+
+```{r setup}
+source("../../R/fred.R")
+source("../../R/education_data.R")
+library(plotly)
+library(knitr)
+
+times <- function(x) paste0(formatC(x, format = "f", digits = 1), "×")
+since_1980 <- growth_since(1980)
+since_peak <- growth_since(hours_peak$year)
+twist_drop <- 1 - college_now$hours_index / hours_peak$hours_index
+months_label <- paste(format(latest_month %m-% months(11), "%B %Y"), "to", format(latest_month, "%B %Y"))
+```
+
+If there's one cost that defines "things were easier for our parents," it's college. We wanted to know how
+much harder it really got, and whether it's still getting worse. So we measured it the SixtyEight95 way:
+**in hours of work.**
+
+## The short answer
+
+::: {.callout-note appearance="simple"}
+Since 1980, college tuition has grown **`r times(since_1980$tuition)`**. Hourly pay grew `r times(since_1980$wages)`, and
+prices for everything else grew `r times(since_1980$prices)`. So a year of college takes **about
+`r round(college_now$hours_index / 100, 1)` times as many hours of work** as it did in 1980.
+
+But here's what almost nobody talks about: **college peaked in `r hours_peak$year`.** Since then, pay has grown
+faster than tuition, and a year of college now takes about **`r round(twist_drop * 100)`% fewer hours of work** than
+at the peak.
+:::
+
+## How we measure "hours of work" here
+
+For groceries and housing, we could use actual prices. For college, the government doesn't publish one
+national "price of college," because it varies so much: a community college and a private university are
+worlds apart. What it does publish is a **price index**, which tracks how much tuition and fees have changed over time
+for the same kinds of schools.
+
+So we set **1980 = 100 hours** and asked: if a year of college took 100 hours of work in 1980, how many
+hours would the same year of college take in every year since? It's a measure of *change*, not a price
+tag, and it works for any school.
+
+## 45 years of college, in hours of work
+
+```{r hours chart}
+#| fig-height: 4.5
+p <- ggplot(college_yearly, aes(year, hours_index, group = 1,
+            text = paste0(year, ": ", round(hours_index), " hours",
+                          "<br>(1980 = 100 hours)"))) +
+  geom_line(color = "#1F4E5A", linewidth = 0.8) +
+  geom_hline(yintercept = 100, linetype = "dashed", color = "grey60") +
+  expand_limits(y = 0) +
+  theme_minimal() +
+  labs(x = NULL, y = "Hours of work (1980 = 100)")
+
+ggplotly(p, tooltip = "text") %>% config(displayModeBar = FALSE)
+```
+
+From 1980 to `r hours_peak$year`, the line almost only goes up. At the peak, a year of college took
+**`r round(hours_peak$hours_index)` hours** for every 100 it took in 1980. Today it's **`r round(college_now$hours_index)`**.
+
+## Tuition vs. pay vs. everything else
+
+```{r growth chart}
+#| fig-height: 4.5
+growth <- college_monthly %>%
+  mutate(`College tuition` = tuition / mean(tuition[year(date) == 1980]),
+         `Hourly pay`      = wage    / mean(wage[year(date) == 1980]),
+         `Everything else` = cpi     / mean(cpi[year(date) == 1980])) %>%
+  select(date, `College tuition`, `Hourly pay`, `Everything else`) %>%
+  pivot_longer(-date, names_to = "series", values_to = "times")
+
+p2 <- ggplot(growth, aes(date, times, color = series, group = series,
+             text = paste0(series, ", ", format(date, "%b %Y"), ": ", times(times), " the 1980 level"))) +
+  geom_line(linewidth = 0.8) +
+  scale_color_manual(values = c("College tuition" = "#C05621", "Hourly pay" = "#1F4E5A",
+                                "Everything else" = "grey55")) +
+  theme_minimal() +
+  labs(x = NULL, y = "Times the 1980 level", color = NULL)
+
+ggplotly(p2, tooltip = "text") %>%
+  layout(legend = list(orientation = "h", y = 1.1)) %>%
+  config(displayModeBar = FALSE)
+```
+
+Hourly pay and general prices moved almost together for 45 years. College tuition went off on its own.
+
+Researchers point to several reasons for the long climb, including states cutting per-student funding for
+public colleges (especially after the 2008 recession, which shifted more of the cost onto students), rising
+demand for degrees, and colleges spending more on staff and facilities.
+
+## The twist: college has been getting easier to afford
+
+Since `r hours_peak$year`, tuition is up `r round((since_peak$tuition - 1) * 100)`% while pay is up `r round((since_peak$wages - 1) * 100)`%.
+That gap is why the hours-of-work line has been falling for almost a decade.
+
+Two things drove it:
+
+- **Tuition growth slowed down.** Many public universities froze or capped tuition, and enrollment has been
+  soft, which limits how much schools can raise prices.
+- **Pay sped up.** Wages for regular workers grew quickly from 2021 to 2023, faster than they had in years.
+
+College is still far more expensive in work time than it was in 1980. But the story of "it only ever gets
+worse" isn't true anymore.
+
+## Snapshot by year
+
+```{r table}
+college_yearly %>%
+  filter(year %in% c(1980, 1990, 2000, 2008, hours_peak$year, 2019, 2022, year(latest_month))) %>%
+  transmute(Year = ifelse(year == year(latest_month), paste(year, "(so far)"), as.character(year)),
+            `Tuition vs 1980` = times(tuition / college_yearly$tuition[college_yearly$year == 1980]),
+            `Pay vs 1980`     = times(wage / college_yearly$wage[college_yearly$year == 1980]),
+            `Prices vs 1980`  = times(cpi / college_yearly$cpi[college_yearly$year == 1980]),
+            `Hours of work (1980 = 100)` = round(hours_index)) %>%
+  kable(align = "lrrrr")
+```
+
+## The fine print
+
+- **This is a price index, not a bill.** It tracks how tuition and fees changed, not what any one school
+  charges.
+- **Grants and scholarships vary.** Many families pay less than the posted price, and how much less has
+  changed over time.
+- **Tuition isn't the whole cost.** Housing, food, and books are separate, and housing near campus has its own
+  story.
+- **Pay is the average worker's, before taxes.** It's the same pay measure we use in every SixtyEight95
+  "hours of work" story, so they're comparable.
+
+## The bottom line
+
+College went from expensive to very expensive between 1980 and `r hours_peak$year`, rising far faster than
+paychecks. Since then, the trend has quietly reversed. A year of college still takes nearly three times the
+work it did in 1980, but less than it did a decade ago.
+
+---
+
+**How we did this.** College costs are the Consumer Price Index for "college tuition and fees" (BLS series
+CUUR0000SEEB01) from the [Bureau of Labor Statistics](https://www.bls.gov/cpi/). "Everything else" is the CPI
+for all items, and pay is average hourly earnings of production and nonsupervisory employees (about 80% of
+private-sector workers), both via [FRED](https://fred.stlouisfed.org/). Hours of work = tuition index ÷
+hourly pay, scaled so 1980 = 100. "Today" is the average of `r months_label`. BLS did not collect
+October 2025 prices during the federal government shutdown, so that month is skipped.

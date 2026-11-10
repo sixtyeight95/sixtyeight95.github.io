@@ -1,0 +1,26 @@
+POST CAPTION
+------------
+College got WAY more expensive than everything else. But something changed in 2016 that almost nobody noticed. 🎓
+
+Since 1980:
+📈 College tuition: 13.8x
+💵 Hourly pay: 4.7x
+🛒 Everything else: 4.0x
+
+So a year of college takes nearly 3x as many hours of work as it did in 1980.
+
+The twist: it peaked in 2016. Since then, paychecks have grown faster than tuition, and a year of college takes about 19% FEWER hours of work than at the peak.
+
+Still way worse than 1980. But not "only ever getting worse" anymore.
+
+Did you (or your kids) go to college, skip it, or pay it off already? 👇
+
+
+FIRST COMMENT
+-------------
+Full breakdown and how we measured it: https://sixtyeight95.github.io/posts/2026-11-college-hours-of-work/
+
+
+GROUP VERSION (no link, sounds like a person)
+-------------
+Looked at government data on college tuition vs. paychecks since 1980. Tuition grew almost 14x while pay grew under 5x, so college takes about 3x the hours of work it used to. But surprisingly it peaked around 2016 and has been getting a bit easier to afford since, because pay has grown faster than tuition. Chart attached. Did anyone else expect it to still be getting worse?
