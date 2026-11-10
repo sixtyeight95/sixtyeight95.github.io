@@ -1,0 +1,17 @@
+---
+title: "About SixtyEight95"
+---
+
+SixtyEight95 looks at everyday costs (gas, housing, groceries) using real public data.
+Every post shows its sources, and every projection shows how sure it is.
+
+## Why the name?
+
+In statistics, the **68-95-99.7 rule** says that about 68% of outcomes fall close to the average,
+95% a bit further out, and 99.7% almost everywhere. It's a reminder that a good number always comes
+with a range. We try to bring that same honesty to the numbers that hit your wallet.
+
+## Data sources
+
+U.S. Energy Information Administration (EIA), Bureau of Labor Statistics via FRED, and other public
+datasets named in each post.

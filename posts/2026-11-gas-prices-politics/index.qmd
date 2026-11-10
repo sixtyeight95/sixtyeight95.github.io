@@ -1,0 +1,298 @@
+---
+title: "Does the President Set Gas Prices? 33 Years of Data Say No"
+subtitle: "Gas follows crude oil. Each party has had cheap years and expensive years, with no pattern by party."
+author: "SixtyEight95"
+date: "2026-11-09"
+categories: [gas, politics, cost of living]
+image: ../../images/cover.png
+---
+
+```{r setup}
+# --- data -------------------------------------------------------------------
+gas_dir <- "../../../gas_forecasting"   # the gas_forecasting project folder
+source(file.path(gas_dir, "R", "gas_data_prep.R"))
+library(plotly)
+library(scales)
+library(knitr)
+
+dollars <- function(x) paste0("$", formatC(x, format = "f", digits = 2))
+
+# inflation (CPI) from the Federal Reserve Bank of St. Louis
+cpi <- read.csv("https://fred.stlouisfed.org/graph/fredgraph.csv?id=CPIAUCSL")
+names(cpi) <- c("month", "cpi")
+cpi$month <- as.Date(cpi$month)
+latest_cpi_month <- max(cpi$month)
+latest_cpi <- cpi$cpi[cpi$month == latest_cpi_month]
+
+# weekly gas price in today's dollars
+gas_weekly <- gas_weekly %>%
+  mutate(month = floor_date(date, "month")) %>%
+  left_join(cpi, by = "month") %>%
+  fill(cpi) %>%                                  # newest weeks use the latest CPI
+  mutate(real_price = price * latest_cpi / cpi)
+
+# Brent crude oil, monthly average ($/barrel)
+con <- dbConnect(RSQLite::SQLite(), file.path(gas_dir, "database", "gas_data.db"))
+crude <- dbGetQuery(con, "select period, price from crude_prices")
+dbDisconnect(con)
+
+crude_monthly <- crude %>%
+  mutate(month = floor_date(as.Date(period), "month")) %>%
+  group_by(month) %>%
+  summarise(brent = mean(price), .groups = "drop")
+
+gas_vs_oil <- gas_monthly %>% inner_join(crude_monthly, by = "month")
+oil_fit    <- lm(price ~ brent, data = gas_vs_oil)
+oil_r2     <- summary(oil_fit)$r.squared
+cents_per_10_dollars <- coef(oil_fit)[["brent"]] * 10 * 100
+
+# --- key numbers --------------------------------------------------------------
+by_party <- gas_weekly %>%
+  group_by(pres_party) %>%
+  summarise(avg_real = mean(real_price), weeks = n(), .groups = "drop")
+
+dem_avg <- by_party$avg_real[by_party$pres_party == "D"]
+rep_avg <- by_party$avg_real[by_party$pres_party == "R"]
+
+by_control <- gas_weekly %>%
+  group_by(control) %>%
+  summarise(avg_real = mean(real_price), .groups = "drop")
+
+real_peak <- gas_weekly %>% slice_max(real_price, n = 1, with_ties = FALSE)
+real_low  <- gas_weekly %>% slice_min(real_price, n = 1, with_ties = FALSE)
+nominal_peak <- gas_weekly %>% slice_max(price, n = 1, with_ties = FALSE)
+latest    <- gas_weekly %>% slice_max(date, n = 1)
+
+real_label <- paste0(format(latest_cpi_month, "%B %Y"), " dollars")
+
+first_week <- gas_weekly %>% slice_min(date, n = 1)   # example for explaining inflation
+
+pres_avgs <- gas_weekly %>%                           # average per presidential term
+  mutate(term_id = consecutive_id(president)) %>%
+  group_by(term_id, president) %>%
+  summarise(avg = mean(real_price), .groups = "drop")
+```
+
+Every time gas prices jump, someone blames the White House. Bumper stickers, memes, campaign ads: the
+president gets the credit when prices fall and the blame when they rise.
+
+So we checked. We lined up **every week of U.S. gas prices since April 1993**
+(`r format(nrow(gas_weekly), big.mark = ",")` weeks, six presidential terms) against who held the
+White House, the Senate, and the House.
+
+## The short answer
+
+::: {.callout-note appearance="simple"}
+**Adjusted for inflation, the average gallon of gas cost `r dollars(dem_avg)` under Democratic presidents
+and `r dollars(rep_avg)` under Republican presidents.**
+:::
+
+That tie looks suspicious, so to be clear: it's a coincidence of averaging. Individual presidencies range from
+`r dollars(min(pres_avgs$avg))` a gallon (`r pres_avgs$president[which.min(pres_avgs$avg)]`) to
+`r dollars(max(pres_avgs$avg))` (`r pres_avgs$president[which.max(pres_avgs$avg)]`), and both of those are Democrats.
+Each party has had cheap years and expensive years. Leave out a single presidency and the party averages split
+apart. What the tie *does* tell you is that there's no pattern by party.
+
+**What "adjusted for inflation" means:** prices rise over time, so a dollar in 1993 bought more than a dollar
+does now. To compare fairly, we convert every old price into today's money. For example, the
+`r dollars(first_week$price)` a gallon drivers paid in `r year(first_week$date)` bought what
+`r dollars(first_week$real_price)` buys today, so we count it as `r dollars(first_week$real_price)`.
+
+What actually moves the price is crude oil, and crude oil answers to wars, OPEC, recessions, and
+hurricanes, not to elections.
+
+## 33 years of prices and who was in charge
+
+Shading shows the president's party (**blue = Democrat, red = Republican**). Gold dots are major world
+events. The strip underneath shows which party controlled the White House, Senate, and House.
+Hover for details.
+
+```{r timeline}
+#| fig-height: 6.5
+first_week <- min(gas_weekly$date)
+last_week  <- max(gas_weekly$date)
+top        <- max(gas_weekly$price) * 1.1
+
+pres_bands <- presidencies %>%
+  mutate(start = pmax(start, first_week), end = pmin(end, last_week),
+         middle = start + (end - start) / 2)
+
+events_on_chart <- key_events %>%
+  left_join(gas_weekly %>% select(week = date, price), by = join_by(closest(date <= week))) %>%
+  filter(!is.na(price))
+
+price_plot <- ggplot() +
+  geom_rect(data = pres_bands,
+            aes(xmin = start, xmax = end, ymin = 0, ymax = top, fill = pres_party, text = label),
+            alpha = 0.15) +
+  geom_text(data = pres_bands, aes(x = middle, y = top * 0.96, label = president), size = 3) +
+  geom_line(data = gas_weekly,
+            aes(x = date, y = price, group = 1,
+                text = paste0("Week of ", format(date, "%b %d, %Y"), "<br>", dollars(price),
+                              "<br>President: ", president,
+                              "<br>Senate: ", senate, " | House: ", house)),
+            color = "grey20", linewidth = 0.4) +
+  geom_point(data = events_on_chart,
+             aes(x = week, y = price, text = paste0(event, "<br>", format(date, "%b %d, %Y"))),
+             color = "#D69E2E", size = 2.5) +
+  scale_fill_manual(values = party_colors) +
+  scale_y_continuous(labels = dollar) +
+  theme_minimal() +
+  theme(legend.position = "none") +
+  labs(x = "", y = "Price per gallon")
+
+control_strip <- control_periods %>%
+  filter(end > first_week) %>%
+  mutate(start = pmax(start, first_week), end = pmin(end, last_week)) %>%
+  pivot_longer(c(pres_party, senate, house), names_to = "body", values_to = "party") %>%
+  mutate(body = recode(body, pres_party = "White House", senate = "Senate", house = "House"),
+         row  = match(body, c("House", "Senate", "White House")))
+
+strip_plot <- ggplot(control_strip) +
+  geom_rect(aes(xmin = start, xmax = end, ymin = row - 0.45, ymax = row + 0.45, fill = party,
+                text = paste0(body, ": ", party, "<br>", format(start, "%b %Y"), " to ", format(end, "%b %Y"))),
+            color = "white", linewidth = 0.2) +
+  scale_fill_manual(values = party_colors) +
+  scale_y_continuous(breaks = 1:3, labels = c("House", "Senate", "White House")) +
+  scale_x_date(date_breaks = "4 years", date_labels = "%Y") +
+  theme_minimal() +
+  theme(legend.position = "none", panel.grid = element_blank()) +
+  labs(x = "", y = "")
+
+subplot(ggplotly(price_plot, tooltip = "text"),
+        ggplotly(strip_plot, tooltip = "text"),
+        nrows = 2, heights = c(0.78, 0.22), shareX = TRUE, titleY = TRUE) %>%
+  config(displayModeBar = FALSE)
+```
+
+The chart above is in the dollars of each week, which makes recent years look worse than they were.
+A dollar in 1993 bought a lot more than a dollar today, so for fair comparisons the rest of this post
+uses **`r real_label`**.
+
+## Finding 1: No pattern by party
+
+```{r party chart}
+#| fig-height: 3.5
+party_compare <- bind_rows(
+  by_party %>% transmute(group = ifelse(pres_party == "D", "Democratic president", "Republican president"),
+                         avg_real, type = "White House"),
+  by_control %>% transmute(group = case_when(control == "Unified D" ~ "Democrats control all three",
+                                             control == "Unified R" ~ "Republicans control all three",
+                                             TRUE ~ "Split control"),
+                           avg_real, type = "All of Washington")
+) %>%
+  mutate(group = factor(group, levels = rev(group)))
+
+party_plot <- ggplot(party_compare,
+                     aes(x = avg_real, y = group,
+                         text = paste0(group, ": ", dollars(avg_real), " per gallon"))) +
+  geom_col(fill = "#2A9D8F", width = 0.6) +
+  geom_text(aes(label = dollars(avg_real)), hjust = -0.15, size = 3.5) +
+  scale_x_continuous(labels = dollar, limits = c(0, 4.3)) +
+  theme_minimal() +
+  labs(title = paste0("Average price per gallon, in ", real_label), x = "", y = "")
+
+ggplotly(party_plot, tooltip = "text") %>% config(displayModeBar = FALSE)
+```
+
+We see the same thing when we look at all of Washington. Republicans in full control, Democrats in full
+control, or split government: the inflation-adjusted averages land within a few cents of each other. Same
+caution as above: each group mixes cheap years with expensive ones, so the close numbers don't mean either
+party lowers prices. They mean neither one has a track record of it.
+
+## Finding 2: Crude oil is the steering wheel
+
+Gasoline is made from crude oil, and crude oil is priced on a world market. Here's what gas prices would
+have been if you predicted them **using nothing but the price of oil**, against what they actually were.
+
+```{r oil chart}
+#| fig-height: 4.5
+gas_vs_oil <- gas_vs_oil %>% mutate(oil_only = predict(oil_fit))
+
+oil_plot <- ggplot(gas_vs_oil, aes(x = month)) +
+  geom_line(aes(y = price, color = "Actual gas price", group = 1,
+                text = paste0(format(month, "%b %Y"), "<br>Actual: ", dollars(price))), linewidth = 0.6) +
+  geom_line(aes(y = oil_only, color = "Predicted from oil price alone", group = 1,
+                text = paste0(format(month, "%b %Y"), "<br>Oil-only prediction: ", dollars(oil_only),
+                              "<br>Brent crude: $", round(brent), "/barrel")),
+            linewidth = 0.6, linetype = "dashed") +
+  scale_color_manual(values = c("Actual gas price" = "grey20", "Predicted from oil price alone" = "#C05621")) +
+  scale_y_continuous(labels = dollar) +
+  theme_minimal() +
+  theme(legend.position = "top") +
+  labs(x = "", y = "Price per gallon", color = "")
+
+ggplotly(oil_plot, tooltip = "text") %>%
+  layout(legend = list(orientation = "h", y = 1.1)) %>%
+  config(displayModeBar = FALSE)
+```
+
+The two lines barely separate. **The price of crude oil alone explains `r percent(oil_r2, accuracy = 1)` of the
+ups and downs in monthly gas prices over 33 years.** As a rule of thumb, every \$10 change in a barrel of oil moves a
+gallon of gas by about **`r round(cents_per_10_dollars)` cents**.
+
+## Finding 3: Presidents can move oil, but they don't control it
+
+Fair question: if oil drives gas prices, can't a president drive oil prices? **Sometimes, yes.** The
+levers a president actually has:
+
+- **Military action.** In 2026 the U.S. and Israel struck Iran, shipping through the Strait of Hormuz was
+  disrupted, and March 2026 saw the biggest one-month jump in gas prices in this data. That one traces
+  straight back to a decision made in the White House.
+- **Sanctions.** Limiting oil sales from countries like Iran, Venezuela, or Russia takes supply off the
+  world market, which tends to push prices up.
+- **The emergency oil reserve.** In 2022, the White House released 180 million barrels from the Strategic
+  Petroleum Reserve, the largest release ever, to bring prices down.
+- **Drilling and permits.** These matter, but new wells take years to come online, so the effect usually
+  lands on a later president's watch.
+
+But the biggest swings in this data came from things no president controlled:
+
+- **2005:** Hurricane Katrina knocked out Gulf Coast refineries.
+- **2008:** Oil hit nearly \$147 a barrel, then the financial crisis crushed demand. In today's dollars,
+  the most expensive gas in this data was **`r format(real_peak$date, "%B %Y")`, at `r dollars(real_peak$real_price)` a gallon.**
+- **2014–2015:** OPEC kept pumping into a glut and prices collapsed.
+- **2020:** COVID lockdowns emptied the roads.
+- **2022:** Russia invaded Ukraine, and the national average hit its all-time high of
+  `r dollars(nominal_peak$price)` (`r format(nominal_peak$date, "%B %Y")`).
+
+So a president's choices can push gas prices up or down, sometimes a lot. But presidents of both parties
+have pulled these levers, and both have been on the receiving end of world events. Over 33 years it
+evens out, with no party coming out ahead.
+
+## Every presidency, side by side
+
+```{r president table}
+gas_weekly %>%
+  mutate(term_id = consecutive_id(president)) %>%
+  group_by(term_id, president, pres_party) %>%
+  summarise(from = min(date), to = max(date),
+            avg_real = mean(real_price),
+            start_real = first(real_price), end_real = last(real_price),
+            .groups = "drop") %>%
+  transmute(President = paste0(president, " (", pres_party, ")"),
+            Years = paste0(year(from), "–", ifelse(to == max(to), "now", year(to))),
+            `Average` = dollars(avg_real),
+            `At start` = dollars(start_real),
+            `At end`   = dollars(end_real),
+            `Change`   = paste0(ifelse(end_real >= start_real, "+", "–"), dollars(abs(end_real - start_real)))) %>%
+  kable(align = "llrrrr",
+        caption = paste0("Average price per gallon, in ", real_label, ". Clinton's term starts in April 1993, when the weekly data begins."))
+```
+
+## The bottom line
+
+Gas prices are a great way to feel the economy and a terrible way to grade a president. If you want to
+know where prices are headed, watch the price of oil and the news from the Middle East, not the polls.
+
+Right now the national average is **`r dollars(latest$price)`** (week of `r format(latest$date, "%B %d, %Y")`).
+For where it's likely headed next, see our monthly gas price tracker.
+
+---
+
+**How we did this.** Weekly U.S. retail gasoline prices (all grades) and weekly Brent crude prices come
+from the [U.S. Energy Information Administration](https://www.eia.gov/petroleum/gasdiesel/). Inflation
+adjustments use the Consumer Price Index ([FRED, CPIAUCSL](https://fred.stlouisfed.org/series/CPIAUCSL)),
+converted to `r real_label`. Each week is assigned to whoever held the White House, Senate, and House
+majority that day. The "oil only" line is a simple linear regression of the monthly gas price on the
+monthly Brent price.

@@ -1,0 +1,31 @@
+project:
+  type: website
+  output-dir: docs        # GitHub Pages serves the site from this folder
+
+website:
+  title: "SixtyEight95"
+  description: "Real data on what life costs. Sources shown, no spin."
+  site-url: https://sixtyeight95.github.io
+  favicon: images/logo.png
+  image: images/cover.png
+  open-graph: true
+  twitter-card: true
+  navbar:
+    logo: images/logo.png
+    right:
+      - text: "Posts"
+        href: index.qmd
+      - text: "About"
+        href: about.qmd
+
+format:
+  html:
+    theme:
+      light: [flatly, styles.scss]
+    toc: false
+
+execute:
+  freeze: auto            # a post keeps its results once published
+  echo: false
+  warning: false
+  message: false

@@ -1,0 +1,10 @@
+/*-- scss:defaults --*/
+$navbar-bg: #0F1B2D;
+$navbar-fg: #FFFFFF;
+$link-color: #2A9D8F;
+$primary: #2A9D8F;
+$font-family-sans-serif: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+
+/*-- scss:rules --*/
+.navbar-brand img { max-height: 36px; }
+.callout-note { border-left-color: #F4B942 !important; }
