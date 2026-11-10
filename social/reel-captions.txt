@@ -1,0 +1,59 @@
+REEL CAPTIONS
+=============
+Reels get shown to people who don't follow you yet, so these are short and
+lead with the hook. Links in Reel captions usually aren't clickable, so the
+caption names the site, and you can drop the full link in a comment after
+the Reel goes live.
+
+
+1 - GROCERIES REEL
+------------------
+Groceries feel insanely expensive. But are they? 🛒
+
+We measured them in minutes of work instead of dollars. Coffee, beef and eggs really did get worse. Most of the cart? Same or better than 2019.
+
+Full breakdown at sixtyeight95.github.io
+
+#groceries #costofliving #inflation #data
+
+
+2 - HOUSING REEL
+----------------
+"Nobody can afford a house anymore." Is that true? 🏠
+
+In hours of work, today's mortgage payment is lower than it was in 1990. The real wall is the down payment.
+
+Full breakdown at sixtyeight95.github.io
+
+#housing #mortgage #costofliving #data
+
+
+3 - COLLEGE REEL
+----------------
+College got way more expensive than everything else. But something changed in 2016 that almost nobody noticed. 🎓
+
+Tuition is up 13.8x since 1980, but since 2016 paychecks have been catching up.
+
+Full breakdown at sixtyeight95.github.io
+
+#college #studentdebt #costofliving #data
+
+
+COMMENT TO ADD AFTER EACH REEL GOES LIVE
+----------------------------------------
+Groceries: https://sixtyeight95.github.io/posts/2026-11-groceries-minutes-of-work/
+Housing:   https://sixtyeight95.github.io/posts/2026-11-housing-hours-of-work/
+College:   https://sixtyeight95.github.io/posts/2026-11-college-hours-of-work/
+
+
+4 - GAS PRICES REEL
+-------------------
+Does the president set gas prices? 33 years of data say: not directly. ⛽
+
+Crude oil explains 92% of the swings. Presidents can nudge oil with wars, sanctions and the emergency reserve, but the cheapest AND priciest presidencies were from the same party.
+
+Full breakdown at sixtyeight95.github.io
+
+#gasprices #politics #costofliving #data
+
+Comment link: https://sixtyeight95.github.io/posts/2026-11-gas-prices-politics/
