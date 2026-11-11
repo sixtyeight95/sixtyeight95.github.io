@@ -1,0 +1,37 @@
+POST CAPTION
+------------
+"EV batteries are so dirty to make that electric cars aren't really greener." True or false? 🔋🌎
+
+We ran the numbers with EPA, EIA and research data:
+🏭 Building an EV battery creates about 4.5 extra tons of CO2 before it drives a mile
+🛣️ But the EV pays that back after about 24,000 miles, under 2 years of normal driving
+📉 Over its life, a U.S. EV produces roughly half to two-thirds less CO2 than a gas car
+
+So on carbon: false. EVs win, clearly.
+
+But "zero emissions" hides something real. Lithium mining drains scarce desert water, some cobalt in Congo is mined with child labor, and recycling is still catching up. EVs shrink the damage. They also move it somewhere else.
+
+Did this change your mind either way? 👇
+
+
+FIRST COMMENT
+-------------
+Full breakdown, the math, and the grid-by-grid catch: https://sixtyeight95.github.io/posts/2026-11-ev-environment/
+
+
+GROUP VERSION (no link, sounds like a person)
+-------------
+I wanted to test the "EV batteries are worse for the environment" claim, so I built a simple model from EPA and government grid data. Making the battery adds about 4.5 tons of CO2 up front, but the EV catches up after roughly 24,000 miles and ends up around half the lifetime CO2 of a gas car. The real downside is the mining: water use for lithium and labor problems with cobalt. Chart attached. Curious what others think about the mining side.
+
+
+REEL CAPTION
+------------
+"EVs aren't really greener because of the batteries." We checked. 🔋
+
+The carbon answer is clear. The mining answer is more uncomfortable.
+
+Full breakdown at sixtyeight95.github.io
+
+#electricvehicles #climate #environment #EV #data
+
+Comment link: https://sixtyeight95.github.io/posts/2026-11-ev-environment/

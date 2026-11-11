@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="SixtyEight95">
+<meta name="dcterms.date" content="2026-11-16">
+
+<title>Does an Electric Car Actually Save You Money? – SixtyEight95</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/logo.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-fad9b177c07875ef04f3d87e300b1a75.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link href="../../site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+
+<script src="../../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
+<script src="../../site_libs/plotly-binding-4.10.4/plotly.js"></script>
+
+<script src="../../site_libs/typedarray-0.1/typedarray.min.js"></script>
+
+<script src="../../site_libs/jquery-3.5.1/jquery.min.js"></script>
+
+<link href="../../site_libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+
+<script src="../../site_libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+
+<link href="../../site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+
+<script src="../../site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+
+
+
+<meta property="og:title" content="Does an Electric Car Actually Save You Money? – SixtyEight95">
+<meta property="og:description" content="EVs are much cheaper to run. They’re not cheaper to own, at least not new. Here’s the math, per year.">
+<meta property="og:image" content="https://sixtyeight95.github.io/posts/2026-11-ev-cost/infographic.png">
+<meta property="og:site_name" content="SixtyEight95">
+<meta property="og:image:height" content="1350">
+<meta property="og:image:width" content="1080">
+<meta name="twitter:title" content="Does an Electric Car Actually Save You Money? – SixtyEight95">
+<meta name="twitter:description" content="EVs are much cheaper to run. They’re not cheaper to own, at least not new. Here’s the math, per year.">
+<meta name="twitter:image" content="https://sixtyeight95.github.io/posts/2026-11-ev-cost/infographic.png">
+<meta name="twitter:image-height" content="1350">
+<meta name="twitter:image-width" content="1080">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/logo.png" alt="" class="navbar-logo light-content">
+    <img src="../../images/logo.png" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">SixtyEight95</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Posts</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Does an Electric Car Actually Save You Money?</h1>
+<p class="subtitle lead">EVs are much cheaper to run. They’re not cheaper to own, at least not new. Here’s the math, per year.</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">cars</div>
+    <div class="quarto-category">cost of living</div>
+    <div class="quarto-category">energy</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>SixtyEight95 </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 16, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Electric car fans say you’ll save a fortune on gas. Skeptics say EVs cost more and lose value fast. They’re both partly right. To settle it, we compared the <strong>full cost of owning</strong> an EV, a gas car, and a hybrid of the <strong>same size and class</strong>, <strong>per year</strong>.</p>
+<section id="the-short-answer" class="level2">
+<h2 class="anchored" data-anchor-id="the-short-answer">The short answer</h2>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>An EV saves you about <strong>$1,728 a year</strong> on fuel and maintenance (for a medium sedan). But it loses value so much faster that a new EV costs <strong>$3,080 more per year</strong> to own than a comparable gas sedan. In SUVs, it’s roughly a tie. And in every class, a <strong>hybrid</strong> was cheapest.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="how-we-compared-them" class="level2">
+<h2 class="anchored" data-anchor-id="how-we-compared-them">How we compared them</h2>
+<p>We used AAA’s 2026 <em>Your Driving Costs</em> study, which averages the top-selling 2026 models in each class and adds up everything it costs to own one for five years at 15,000 miles a year:</p>
+<ul>
+<li><strong>Fuel or charging</strong></li>
+<li><strong>Maintenance and repairs</strong>, including tires</li>
+<li><strong>Depreciation</strong>: how much value the car loses</li>
+<li><strong>Insurance</strong> (full coverage)</li>
+<li><strong>License, registration, and taxes</strong>, including the extra EV fees most states now charge</li>
+<li><strong>Finance charges</strong>: interest on the car loan</li>
+</ul>
+<p>That puts every vehicle on the same footing: <strong>dollars per year.</strong></p>
+</section>
+<section id="the-results" class="level2">
+<h2 class="anchored" data-anchor-id="the-results">The results</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-08b3cb89a7fb1c544b4f" style="width:100%;height:417px;"></div>
+<script type="application/json" data-for="htmlwidget-08b3cb89a7fb1c544b4f">{"x":{"data":[{"orientation":"v","width":[13662,11888,14332,17414],"base":[4.1416666666666666,3.1416666666666666,2.1416666666666666,1.1416666666666666],"x":[6831,5944,7166,8707],"y":[0.25,0.25,0.25,0.25],"text":["Medium sedan (Electric): $13,662 per year","Compact SUV (Electric): $11,888 per year","Medium SUV (Electric): $14,332 per year","Pickup truck (Electric): $17,414 per year"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(42,157,143,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Electric","legendgroup":"Electric","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[10582,11656,14431,16626],"base":[3.875,2.875,1.875,0.875],"x":[5291,5828,7215.5,8313],"y":[0.25,0.25,0.25,0.25],"text":["Medium sedan (Gas): $10,582 per year","Compact SUV (Gas): $11,656 per year","Medium SUV (Gas): $14,431 per year","Pickup truck (Gas): $16,626 per year"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(197,48,48,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Gas","legendgroup":"Gas","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[10204,11201,13698,16117],"base":[3.6083333333333334,2.6083333333333334,1.6083333333333334,0.60833333333333328],"x":[5102,5600.5,6849,8058.5],"y":[0.25,0.25,0.25,0.25],"text":["Medium sedan (Hybrid): $10,204 per year","Compact SUV (Hybrid): $11,201 per year","Medium SUV (Hybrid): $13,698 per year","Pickup truck (Hybrid): $16,117 per year"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(214,158,46,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Hybrid","legendgroup":"Hybrid","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":27.364789446981227,"r":7.3059360730593621,"b":41.31912734652461,"l":81.09589041095893},"font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-870.70000000000005,18284.700000000001],"tickmode":"array","ticktext":["$0","$5,000","$10,000","$15,000"],"tickvals":[0,4999.9999999999991,10000,15000],"categoryorder":"array","categoryarray":["$0","$5,000","$10,000","$15,000"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"Total cost per year (15,000 miles)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,4.5999999999999996],"tickmode":"array","ticktext":["Pickup truck","Medium SUV","Compact SUV","Medium sedan"],"tickvals":[1,2,3,4],"categoryorder":"array","categoryarray":["Pickup truck","Medium SUV","Compact SUV","Medium sedan"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":true,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498},"title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"orientation":"h","y":1.0800000000000001},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"source":"A","attrs":{"4fdc695440fd":{"x":{},"y":{},"fill":{},"text":{},"type":"bar"}},"cur_data":"4fdc695440fd","visdat":{"4fdc695440fd":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Total cost per year, new 2026 models, 15,000 miles a year. Source: AAA.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Class</th>
+<th style="text-align: right;">Electric</th>
+<th style="text-align: right;">Gas</th>
+<th style="text-align: right;">Hybrid</th>
+<th style="text-align: left;">EV vs gas</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Medium sedan</td>
+<td style="text-align: right;">$13,662</td>
+<td style="text-align: right;">$10,582</td>
+<td style="text-align: right;">$10,204</td>
+<td style="text-align: left;">EV costs $3,080 more</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Compact SUV</td>
+<td style="text-align: right;">$11,888</td>
+<td style="text-align: right;">$11,656</td>
+<td style="text-align: right;">$11,201</td>
+<td style="text-align: left;">EV costs $232 more</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Medium SUV</td>
+<td style="text-align: right;">$14,332</td>
+<td style="text-align: right;">$14,431</td>
+<td style="text-align: right;">$13,698</td>
+<td style="text-align: left;">EV saves $99</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Pickup truck</td>
+<td style="text-align: right;">$17,414</td>
+<td style="text-align: right;">$16,626</td>
+<td style="text-align: right;">$16,117</td>
+<td style="text-align: left;">EV costs $788 more</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="where-evs-win-running-costs" class="level2">
+<h2 class="anchored" data-anchor-id="where-evs-win-running-costs">Where EVs win: running costs</h2>
+<p>The EV advantage is real. For a medium sedan, charging cost about <strong>$712 a year</strong> versus <strong>$2,215</strong> for gas, and maintenance was cheaper too (no oil changes, fewer moving parts, and brakes that last longer thanks to regenerative braking).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-b134bafeed9639a99dc3" style="width:100%;height:371px;"></div>
+<script type="application/json" data-for="htmlwidget-b134bafeed9639a99dc3">{"x":{"data":[{"orientation":"v","width":[712.5,2215,1436],"base":[0.55000000000000004,1.55,2.5499999999999998],"x":[1958.25,2934.5,2337],"y":[0.89999999999999991,0.90000000000000013,0.90000000000000036],"text":["Medium sedan, Electric - Fuel: $712","Medium sedan, Gas - Fuel: $2,215","Medium sedan, Hybrid - Fuel: $1,436"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(31,78,90,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Fuel","legendgroup":"Fuel","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[771,2382,1731],"base":[0.55000000000000004,1.55,2.5499999999999998],"x":[1787.5,3145,2371.5],"y":[0.89999999999999991,0.90000000000000013,0.90000000000000036],"text":["Compact SUV, Electric - Fuel: $771","Compact SUV, Gas - Fuel: $2,382","Compact SUV, Hybrid - Fuel: $1,731"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(31,78,90,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Fuel","legendgroup":"Fuel","showlegend":false,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[909,3066,2087],"base":[0.55000000000000004,1.55,2.5499999999999998],"x":[2238.5,3362,2945.5],"y":[0.89999999999999991,0.90000000000000013,0.90000000000000036],"text":["Medium SUV, Electric - Fuel: $909","Medium SUV, Gas - Fuel: $3,066","Medium SUV, Hybrid - Fuel: $2,087"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(31,78,90,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Fuel","legendgroup":"Fuel","showlegend":false,"xaxis":"x","yaxis":"y2","hoverinfo":"text","frame":null},{"orientation":"v","width":[1222,3598,3153],"base":[0.55000000000000004,1.55,2.5499999999999998],"x":[2229,3587,3115.5],"y":[0.89999999999999991,0.90000000000000013,0.90000000000000036],"text":["Pickup truck, Electric - Fuel: $1,222","Pickup truck, Gas - Fuel: $3,598","Pickup truck, Hybrid - Fuel: $3,153"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(31,78,90,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Fuel","legendgroup":"Fuel","showlegend":false,"xaxis":"x2","yaxis":"y2","hoverinfo":"text","frame":null},{"orientation":"v","width":[1602,1827,1619],"base":[0.55000000000000004,1.55,2.5499999999999998],"x":[801,913.5,809.5],"y":[0.89999999999999991,0.90000000000000013,0.90000000000000036],"text":["Medium sedan, Electric - Maintenance: $1,602","Medium sedan, Gas - Maintenance: $1,827","Medium sedan, Hybrid - Maintenance: $1,619"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(127,224,207,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Maintenance","legendgroup":"Maintenance","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[1402,1954,1506],"base":[0.55000000000000004,1.55,2.5499999999999998],"x":[701,977,753],"y":[0.89999999999999991,0.90000000000000013,0.90000000000000036],"text":["Compact SUV, Electric - Maintenance: $1,402","Compact SUV, Gas - Maintenance: $1,954","Compact SUV, Hybrid - Maintenance: $1,506"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(127,224,207,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Maintenance","legendgroup":"Maintenance","showlegend":false,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[1784,1829,1902],"base":[0.55000000000000004,1.55,2.5499999999999998],"x":[892,914.5,951],"y":[0.89999999999999991,0.90000000000000013,0.90000000000000036],"text":["Medium SUV, Electric - Maintenance: $1,784","Medium SUV, Gas - Maintenance: $1,829","Medium SUV, Hybrid - Maintenance: $1,902"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(127,224,207,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Maintenance","legendgroup":"Maintenance","showlegend":false,"xaxis":"x","yaxis":"y2","hoverinfo":"text","frame":null},{"orientation":"v","width":[1618,1788,1539],"base":[0.55000000000000004,1.55,2.5499999999999998],"x":[809,894,769.5],"y":[0.89999999999999991,0.90000000000000013,0.90000000000000036],"text":["Pickup truck, Electric - Maintenance: $1,618","Pickup truck, Gas - Maintenance: $1,788","Pickup truck, Hybrid - Maintenance: $1,539"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(127,224,207,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Maintenance","legendgroup":"Maintenance","showlegend":false,"xaxis":"x2","yaxis":"y2","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":40.474885844748869,"r":7.3059360730593621,"b":42.739726027397268,"l":57.716894977168963},"font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"xaxis":{"domain":[0,0.49592302674494454],"automargin":true,"type":"linear","autorange":false,"range":[-269.30000000000001,5655.3000000000002],"tickmode":"array","ticktext":["$0","$2,000","$4,000"],"tickvals":[0,2000.0000000000002,4000],"categoryorder":"array","categoryarray":["$0","$2,000","$4,000"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716894984},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y2","title":"","hoverformat":".2f"},"annotations":[{"text":"Fuel + maintenance per year","x":0.5,"y":0,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"center","yanchor":"top","annotationType":"axis","yshift":-21.917808219178088},{"text":"Medium sedan","x":0.24796151337247227,"y":1,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(26,26,26,1)","family":"","size":11.689497716894984},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"center","yanchor":"bottom"},{"text":"Compact SUV","x":0.7520384866275277,"y":1,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(26,26,26,1)","family":"","size":11.689497716894984},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"center","yanchor":"bottom"},{"text":"Medium SUV","x":0.24796151337247227,"y":0.48144977168949771,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(26,26,26,1)","family":"","size":11.689497716894984},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"center","yanchor":"bottom"},{"text":"Pickup truck","x":0.7520384866275277,"y":0.48144977168949771,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(26,26,26,1)","family":"","size":11.689497716894984},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"center","yanchor":"bottom"}],"yaxis":{"domain":[0.51855022831050224,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,3.6000000000000001],"tickmode":"array","ticktext":["Electric","Gas","Hybrid"],"tickvals":[1,2,3],"categoryorder":"array","categoryarray":["Electric","Gas","Hybrid"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":"","hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":0.49592302674494454,"y0":0.51855022831050224,"y1":1},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":0.49592302674494454,"y0":0,"y1":23.37899543378996,"yanchor":1,"ysizemode":"pixel"},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0.5040769732550554,"x1":1,"y0":0.51855022831050224,"y1":1},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0.5040769732550554,"x1":1,"y0":0,"y1":23.37899543378996,"yanchor":1,"ysizemode":"pixel"},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":0.49592302674494454,"y0":0,"y1":0.48144977168949771},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":0.49592302674494454,"y0":0,"y1":23.37899543378996,"yanchor":0.48144977168949771,"ysizemode":"pixel"},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0.5040769732550554,"x1":1,"y0":0,"y1":0.48144977168949771},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0.5040769732550554,"x1":1,"y0":0,"y1":23.37899543378996,"yanchor":0.48144977168949771,"ysizemode":"pixel"}],"xaxis2":{"type":"linear","autorange":false,"range":[-269.30000000000001,5655.3000000000002],"tickmode":"array","ticktext":["$0","$2,000","$4,000"],"tickvals":[0,2000.0000000000002,4000],"categoryorder":"array","categoryarray":["$0","$2,000","$4,000"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716894984},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"domain":[0.5040769732550554,1],"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y2","title":"","hoverformat":".2f"},"yaxis2":{"type":"linear","autorange":false,"range":[0.40000000000000002,3.6000000000000001],"tickmode":"array","ticktext":["Electric","Gas","Hybrid"],"tickvals":[1,2,3],"categoryorder":"array","categoryarray":["Electric","Gas","Hybrid"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"domain":[0,0.48144977168949771],"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":"","hoverformat":".2f"},"showlegend":true,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.689497716894984},"title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"orientation":"h","y":1.1200000000000001},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"source":"A","attrs":{"4fdc70321743":{"x":{},"y":{},"fill":{},"text":{},"type":"bar"}},"cur_data":"4fdc70321743","visdat":{"4fdc70321743":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p><strong>One big catch: where you charge.</strong> AAA’s EV fuel costs line up with home electricity prices, which average about <strong>$0.19 per kWh</strong> nationally. Public fast chargers typically cost around <strong>$0.45 per kWh</strong>, about <strong>2.3 times</strong> more. If you can’t charge at home and rely on fast chargers, a medium sedan’s charging bill rises to roughly <strong>$1,661 a year</strong>: still less than gas, but most of the savings are gone.</p>
+</section>
+<section id="where-evs-lose-owning-costs" class="level2">
+<h2 class="anchored" data-anchor-id="where-evs-lose-owning-costs">Where EVs lose: owning costs</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-8202adbaa4293f13376a" style="width:100%;height:417px;"></div>
+<script type="application/json" data-for="htmlwidget-8202adbaa4293f13376a">{"x":{"data":[{"orientation":"v","width":[6786,3330],"base":[0.55000000000000004,1.55],"x":[7955,4875],"y":[0.89999999999999991,0.90000000000000013],"text":["Medium sedan, Electric - Depreciation: $6,786","Medium sedan, Gas - Depreciation: $3,330"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(197,48,48,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Depreciation","legendgroup":"Depreciation","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[5298,3568],"base":[0.55000000000000004,1.55],"x":[7065,5536],"y":[0.89999999999999991,0.90000000000000013],"text":["Compact SUV, Electric - Depreciation: $5,298","Compact SUV, Gas - Depreciation: $3,568"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(197,48,48,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Depreciation","legendgroup":"Depreciation","showlegend":false,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[7077,5052],"base":[0.55000000000000004,1.55],"x":[8100.5,7011],"y":[0.89999999999999991,0.90000000000000013],"text":["Medium SUV, Electric - Depreciation: $7,077","Medium SUV, Gas - Depreciation: $5,052"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(197,48,48,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Depreciation","legendgroup":"Depreciation","showlegend":false,"xaxis":"x","yaxis":"y2","hoverinfo":"text","frame":null},{"orientation":"v","width":[8624,6446],"base":[0.55000000000000004,1.55],"x":[10262,8017],"y":[0.89999999999999991,0.90000000000000013],"text":["Pickup truck, Electric - Depreciation: $8,624","Pickup truck, Gas - Depreciation: $6,446"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(197,48,48,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Depreciation","legendgroup":"Depreciation","showlegend":false,"xaxis":"x2","yaxis":"y2","hoverinfo":"text","frame":null},{"orientation":"v","width":[2070,1704],"base":[0.55000000000000004,1.55],"x":[3527,2358],"y":[0.89999999999999991,0.90000000000000013],"text":["Medium sedan, Electric - Insurance: $2,070","Medium sedan, Gas - Insurance: $1,704"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(214,158,46,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Insurance","legendgroup":"Insurance","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[2277,2188],"base":[0.55000000000000004,1.55],"x":[3277.5,2658],"y":[0.89999999999999991,0.90000000000000013],"text":["Compact SUV, Electric - Insurance: $2,277","Compact SUV, Gas - Insurance: $2,188"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(214,158,46,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Insurance","legendgroup":"Insurance","showlegend":false,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[2070,2423],"base":[0.55000000000000004,1.55],"x":[3527,3273.5],"y":[0.89999999999999991,0.90000000000000013],"text":["Medium SUV, Electric - Insurance: $2,070","Medium SUV, Gas - Insurance: $2,423"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(214,158,46,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Insurance","legendgroup":"Insurance","showlegend":false,"xaxis":"x","yaxis":"y2","hoverinfo":"text","frame":null},{"orientation":"v","width":[2294,2139],"base":[0.55000000000000004,1.55],"x":[4803,3724.5],"y":[0.89999999999999991,0.90000000000000013],"text":["Pickup truck, Electric - Insurance: $2,294","Pickup truck, Gas - Insurance: $2,139"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(214,158,46,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Insurance","legendgroup":"Insurance","showlegend":false,"xaxis":"x2","yaxis":"y2","hoverinfo":"text","frame":null},{"orientation":"v","width":[1051,609],"base":[0.55000000000000004,1.55],"x":[1966.5,1201.5],"y":[0.89999999999999991,0.90000000000000013],"text":["Medium sedan, Electric - Registration & taxes: $1,051","Medium sedan, Gas - Registration & taxes: $609"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(108,139,168,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Registration & taxes","legendgroup":"Registration & taxes","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[931,631],"base":[0.55000000000000004,1.55],"x":[1673.5,1248.5],"y":[0.89999999999999991,0.90000000000000013],"text":["Compact SUV, Electric - Registration & taxes: $931","Compact SUV, Gas - Registration & taxes: $631"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(108,139,168,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Registration & taxes","legendgroup":"Registration & taxes","showlegend":false,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[1052,827],"base":[0.55000000000000004,1.55],"x":[1966,1648.5],"y":[0.89999999999999991,0.90000000000000013],"text":["Medium SUV, Electric - Registration & taxes: $1,052","Medium SUV, Gas - Registration & taxes: $827"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(108,139,168,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Registration & taxes","legendgroup":"Registration & taxes","showlegend":false,"xaxis":"x","yaxis":"y2","hoverinfo":"text","frame":null},{"orientation":"v","width":[1507,1054],"base":[0.55000000000000004,1.55],"x":[2902.5,2128],"y":[0.89999999999999991,0.90000000000000013],"text":["Pickup truck, Electric - Registration & taxes: $1,507","Pickup truck, Gas - Registration & taxes: $1,054"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(108,139,168,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Registration & taxes","legendgroup":"Registration & taxes","showlegend":false,"xaxis":"x2","yaxis":"y2","hoverinfo":"text","frame":null},{"orientation":"v","width":[1441,897],"base":[0.55000000000000004,1.55],"x":[720.5,448.5],"y":[0.89999999999999991,0.90000000000000013],"text":["Medium sedan, Electric - Loan interest: $1,441","Medium sedan, Gas - Loan interest: $897"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(153,153,153,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Loan interest","legendgroup":"Loan interest","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[1208,933],"base":[0.55000000000000004,1.55],"x":[604,466.5],"y":[0.89999999999999991,0.90000000000000013],"text":["Compact SUV, Electric - Loan interest: $1,208","Compact SUV, Gas - Loan interest: $933"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(153,153,153,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Loan interest","legendgroup":"Loan interest","showlegend":false,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[1440,1235],"base":[0.55000000000000004,1.55],"x":[720,617.5],"y":[0.89999999999999991,0.90000000000000013],"text":["Medium SUV, Electric - Loan interest: $1,440","Medium SUV, Gas - Loan interest: $1,235"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(153,153,153,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Loan interest","legendgroup":"Loan interest","showlegend":false,"xaxis":"x","yaxis":"y2","hoverinfo":"text","frame":null},{"orientation":"v","width":[2149,1601],"base":[0.55000000000000004,1.55],"x":[1074.5,800.5],"y":[0.89999999999999991,0.90000000000000013],"text":["Pickup truck, Electric - Loan interest: $2,149","Pickup truck, Gas - Loan interest: $1,601"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(153,153,153,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Loan interest","legendgroup":"Loan interest","showlegend":false,"xaxis":"x2","yaxis":"y2","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":39.054287163876211,"r":7.3059360730593621,"b":41.31912734652461,"l":57.716894977168963},"font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"xaxis":{"domain":[0,0.49592302674494454],"automargin":true,"type":"linear","autorange":false,"range":[-728.70000000000005,15302.700000000001],"tickmode":"array","ticktext":["$0","$5,000","$10,000","$15,000"],"tickvals":[0,5000,10000,15000],"categoryorder":"array","categoryarray":["$0","$5,000","$10,000","$15,000"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y2","title":"","hoverformat":".2f"},"annotations":[{"text":"Ownership costs per year","x":0.5,"y":0,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"center","yanchor":"top","annotationType":"axis","yshift":-21.917808219178088},{"text":"Medium sedan","x":0.24796151337247227,"y":1,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(26,26,26,1)","family":"","size":11.68949771689498},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"center","yanchor":"bottom"},{"text":"Compact SUV","x":0.7520384866275277,"y":1,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(26,26,26,1)","family":"","size":11.68949771689498},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"center","yanchor":"bottom"},{"text":"Medium SUV","x":0.24796151337247227,"y":0.48351090816844239,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(26,26,26,1)","family":"","size":11.68949771689498},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"center","yanchor":"bottom"},{"text":"Pickup truck","x":0.7520384866275277,"y":0.48351090816844239,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(26,26,26,1)","family":"","size":11.68949771689498},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"center","yanchor":"bottom"}],"yaxis":{"domain":[0.51648909183155756,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,2.6000000000000001],"tickmode":"array","ticktext":["Electric","Gas"],"tickvals":[1,2],"categoryorder":"array","categoryarray":["Electric","Gas"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":"","hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":0.49592302674494454,"y0":0.51648909183155756,"y1":1},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":0.49592302674494454,"y0":0,"y1":23.37899543378996,"yanchor":1,"ysizemode":"pixel"},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0.5040769732550554,"x1":1,"y0":0.51648909183155756,"y1":1},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0.5040769732550554,"x1":1,"y0":0,"y1":23.37899543378996,"yanchor":1,"ysizemode":"pixel"},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":0.49592302674494454,"y0":0,"y1":0.48351090816844239},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":0.49592302674494454,"y0":0,"y1":23.37899543378996,"yanchor":0.48351090816844239,"ysizemode":"pixel"},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0.5040769732550554,"x1":1,"y0":0,"y1":0.48351090816844239},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0.5040769732550554,"x1":1,"y0":0,"y1":23.37899543378996,"yanchor":0.48351090816844239,"ysizemode":"pixel"}],"xaxis2":{"type":"linear","autorange":false,"range":[-728.70000000000005,15302.700000000001],"tickmode":"array","ticktext":["$0","$5,000","$10,000","$15,000"],"tickvals":[0,5000,10000,15000],"categoryorder":"array","categoryarray":["$0","$5,000","$10,000","$15,000"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"domain":[0.5040769732550554,1],"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y2","title":"","hoverformat":".2f"},"yaxis2":{"type":"linear","autorange":false,"range":[0.40000000000000002,2.6000000000000001],"tickmode":"array","ticktext":["Electric","Gas"],"tickvals":[1,2],"categoryorder":"array","categoryarray":["Electric","Gas"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"domain":[0,0.48351090816844239],"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":"","hoverformat":".2f"},"showlegend":true,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498},"title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"orientation":"h","y":1.1200000000000001},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"source":"A","attrs":{"4fdc169d4e54":{"x":{},"y":{},"fill":{},"text":{},"type":"bar"}},"cur_data":"4fdc169d4e54","visdat":{"4fdc169d4e54":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p>The biggest single cost of owning <em>any</em> new car is <strong>depreciation</strong>, the value it loses while you own it. For EVs, it’s brutal. AAA puts a new electric medium sedan’s depreciation at <strong>$6,786 a year</strong>, versus <strong>$3,330</strong> for gas. Fast-improving battery technology and price cuts on new EVs make used ones worth less.</p>
+<p>EVs also tend to cost more to <strong>insure</strong> (they’re pricier to repair), most states now charge an extra <strong>annual EV registration fee</strong> (often $100 to $250) to make up for lost gas-tax revenue, and a pricier car means more <strong>loan interest</strong>. And as of September 30, 2025, the <strong>$7,500 federal EV tax credit is gone</strong>.</p>
+</section>
+<section id="so-who-should-buy-an-ev" class="level2">
+<h2 class="anchored" data-anchor-id="so-who-should-buy-an-ev">So who should buy an EV?</h2>
+<p>The numbers point to a few clear cases where an EV makes financial sense:</p>
+<ul>
+<li><strong>You can charge at home.</strong> That’s where the fuel savings come from.</li>
+<li><strong>You drive a lot.</strong> More miles means more fuel savings to offset the extra ownership costs.</li>
+<li><strong>You keep cars a long time.</strong> Depreciation is heaviest in the first few years. Keep the car 10 years and the per-year cost of that early drop shrinks.</li>
+<li><strong>You buy used.</strong> The first owner already took the big depreciation hit. A used EV can capture the running-cost savings without paying for the steepest part of the value drop.</li>
+<li><strong>You’re shopping SUVs, not sedans.</strong> The gap is smallest there.</li>
+</ul>
+<p>If saving money is the top priority and none of those fit, the data say: <strong>buy a hybrid.</strong> It beat both EVs and gas cars in every class AAA measured.</p>
+</section>
+<section id="the-fine-print" class="level2">
+<h2 class="anchored" data-anchor-id="the-fine-print">The fine print</h2>
+<ul>
+<li><strong>These are averages</strong> across top-selling models. A specific EV with a big discount, or a gas guzzler, can change the answer.</li>
+<li><strong>Five-year ownership</strong> is AAA’s assumption. Longer ownership generally helps EVs.</li>
+<li><strong>Electricity and gas prices vary a lot by state.</strong> Cheap power and expensive gas favor EVs.</li>
+<li><strong>Public charging prices</strong> vary by network and membership; ours is a typical 2026 figure.</li>
+<li>This post is about money. <strong>Whether EVs are better for the environment</strong> is a separate question, and our follow-up post tackles it.</li>
+</ul>
+</section>
+<section id="the-bottom-line" class="level2">
+<h2 class="anchored" data-anchor-id="the-bottom-line">The bottom line</h2>
+<p>EVs really are cheaper to run. But “cheaper to run” isn’t “cheaper to own.” Buying new, without the old federal tax credit, an EV costs about the same as a gas SUV and more than a gas sedan, because it loses value so fast. If you can charge at home, drive a lot, keep cars for years, or buy used, the math tilts toward electric. Otherwise, a hybrid is the money winner.</p>
+<hr>
+<p><strong>How we did this.</strong> Annual costs are from AAA’s <em>Your Driving Costs</em> 2026 study (EV, gas, and hybrid comparison for medium sedans, compact SUVs, medium SUVs, and pickups; 15,000 miles a year, five-year ownership, full-coverage insurance). Home electricity is the BLS average U.S. price per kWh over the last 12 months, via <a href="https://fred.stlouisfed.org/series/APU000072610">FRED</a>. The public fast-charging price is a typical 2026 figure from industry price trackers. <a href="https://newsroom.aaa.com/wp-content/uploads/2026/09/8-YDC-Brochure_2026-1.pdf">AAA Your Driving Costs 2026</a></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/sixtyeight95\.github\.io");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

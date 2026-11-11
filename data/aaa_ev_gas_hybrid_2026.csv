@@ -1,0 +1,13 @@
+class,powertrain,fuel,maintenance,depreciation,insurance,registration_taxes,finance,total_per_year
+Medium sedan,Electric,712.50,1602,6786,2070,1051,1441,13662
+Medium sedan,Gas,2215,1827,3330,1704,609,897,10582
+Medium sedan,Hybrid,1436,1619,3739,1706,689,1016,10204
+Compact SUV,Electric,771,1402,5298,2277,931,1208,11888
+Compact SUV,Gas,2382,1954,3568,2188,631,933,11656
+Compact SUV,Hybrid,1731,1506,3845,2294,739,1087,11201
+Medium SUV,Electric,909,1784,7077,2070,1052,1440,14332
+Medium SUV,Gas,3066,1829,5052,2423,827,1235,14431
+Medium SUV,Hybrid,2087,1902,4822,2534,940,1412,13698
+Pickup truck,Electric,1222,1618,8624,2294,1507,2149,17414
+Pickup truck,Gas,3598,1788,6446,2139,1054,1601,16626
+Pickup truck,Hybrid,3153,1539,6370,2178,1148,1730,16117

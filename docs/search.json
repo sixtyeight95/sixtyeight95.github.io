@@ -168,11 +168,74 @@
     "text": "The bottom line\nGas prices are a great way to feel the economy and a terrible way to grade a president. If you want to know where prices are headed, watch the price of oil and the news from the Middle East, not the polls.\nRight now the national average is $4.29 (week of November 02, 2026). For where it’s likely headed next, see our monthly gas price tracker.\n\nHow we did this. Weekly U.S. retail gasoline prices (all grades) and weekly Brent crude prices come from the U.S. Energy Information Administration. Inflation adjustments use the Consumer Price Index (FRED, CPIAUCSL), converted to October 2026 dollars. Each week is assigned to whoever held the White House, Senate, and House majority that day. The “oil only” line is a simple linear regression of the monthly gas price on the monthly Brent price."
   },
   {
+    "objectID": "posts/2026-11-ev-cost/index.html",
+    "href": "posts/2026-11-ev-cost/index.html",
+    "title": "Does an Electric Car Actually Save You Money?",
+    "section": "",
+    "text": "Electric car fans say you’ll save a fortune on gas. Skeptics say EVs cost more and lose value fast. They’re both partly right. To settle it, we compared the full cost of owning an EV, a gas car, and a hybrid of the same size and class, per year."
+  },
+  {
+    "objectID": "posts/2026-11-ev-cost/index.html#the-short-answer",
+    "href": "posts/2026-11-ev-cost/index.html#the-short-answer",
+    "title": "Does an Electric Car Actually Save You Money?",
+    "section": "The short answer",
+    "text": "The short answer\n\n\n\n\n\n\nAn EV saves you about $1,728 a year on fuel and maintenance (for a medium sedan). But it loses value so much faster that a new EV costs $3,080 more per year to own than a comparable gas sedan. In SUVs, it’s roughly a tie. And in every class, a hybrid was cheapest."
+  },
+  {
+    "objectID": "posts/2026-11-ev-cost/index.html#how-we-compared-them",
+    "href": "posts/2026-11-ev-cost/index.html#how-we-compared-them",
+    "title": "Does an Electric Car Actually Save You Money?",
+    "section": "How we compared them",
+    "text": "How we compared them\nWe used AAA’s 2026 Your Driving Costs study, which averages the top-selling 2026 models in each class and adds up everything it costs to own one for five years at 15,000 miles a year:\n\nFuel or charging\nMaintenance and repairs, including tires\nDepreciation: how much value the car loses\nInsurance (full coverage)\nLicense, registration, and taxes, including the extra EV fees most states now charge\nFinance charges: interest on the car loan\n\nThat puts every vehicle on the same footing: dollars per year."
+  },
+  {
+    "objectID": "posts/2026-11-ev-cost/index.html#the-results",
+    "href": "posts/2026-11-ev-cost/index.html#the-results",
+    "title": "Does an Electric Car Actually Save You Money?",
+    "section": "The results",
+    "text": "The results\n\n\n\n\n\n\n\n\n\nTotal cost per year, new 2026 models, 15,000 miles a year. Source: AAA.\n\n\nClass\nElectric\nGas\nHybrid\nEV vs gas\n\n\n\n\nMedium sedan\n$13,662\n$10,582\n$10,204\nEV costs $3,080 more\n\n\nCompact SUV\n$11,888\n$11,656\n$11,201\nEV costs $232 more\n\n\nMedium SUV\n$14,332\n$14,431\n$13,698\nEV saves $99\n\n\nPickup truck\n$17,414\n$16,626\n$16,117\nEV costs $788 more"
+  },
+  {
+    "objectID": "posts/2026-11-ev-cost/index.html#where-evs-win-running-costs",
+    "href": "posts/2026-11-ev-cost/index.html#where-evs-win-running-costs",
+    "title": "Does an Electric Car Actually Save You Money?",
+    "section": "Where EVs win: running costs",
+    "text": "Where EVs win: running costs\nThe EV advantage is real. For a medium sedan, charging cost about $712 a year versus $2,215 for gas, and maintenance was cheaper too (no oil changes, fewer moving parts, and brakes that last longer thanks to regenerative braking).\n\n\n\n\n\n\nOne big catch: where you charge. AAA’s EV fuel costs line up with home electricity prices, which average about $0.19 per kWh nationally. Public fast chargers typically cost around $0.45 per kWh, about 2.3 times more. If you can’t charge at home and rely on fast chargers, a medium sedan’s charging bill rises to roughly $1,661 a year: still less than gas, but most of the savings are gone."
+  },
+  {
+    "objectID": "posts/2026-11-ev-cost/index.html#where-evs-lose-owning-costs",
+    "href": "posts/2026-11-ev-cost/index.html#where-evs-lose-owning-costs",
+    "title": "Does an Electric Car Actually Save You Money?",
+    "section": "Where EVs lose: owning costs",
+    "text": "Where EVs lose: owning costs\n\n\n\n\n\n\nThe biggest single cost of owning any new car is depreciation, the value it loses while you own it. For EVs, it’s brutal. AAA puts a new electric medium sedan’s depreciation at $6,786 a year, versus $3,330 for gas. Fast-improving battery technology and price cuts on new EVs make used ones worth less.\nEVs also tend to cost more to insure (they’re pricier to repair), most states now charge an extra annual EV registration fee (often $100 to $250) to make up for lost gas-tax revenue, and a pricier car means more loan interest. And as of September 30, 2025, the $7,500 federal EV tax credit is gone."
+  },
+  {
+    "objectID": "posts/2026-11-ev-cost/index.html#so-who-should-buy-an-ev",
+    "href": "posts/2026-11-ev-cost/index.html#so-who-should-buy-an-ev",
+    "title": "Does an Electric Car Actually Save You Money?",
+    "section": "So who should buy an EV?",
+    "text": "So who should buy an EV?\nThe numbers point to a few clear cases where an EV makes financial sense:\n\nYou can charge at home. That’s where the fuel savings come from.\nYou drive a lot. More miles means more fuel savings to offset the extra ownership costs.\nYou keep cars a long time. Depreciation is heaviest in the first few years. Keep the car 10 years and the per-year cost of that early drop shrinks.\nYou buy used. The first owner already took the big depreciation hit. A used EV can capture the running-cost savings without paying for the steepest part of the value drop.\nYou’re shopping SUVs, not sedans. The gap is smallest there.\n\nIf saving money is the top priority and none of those fit, the data say: buy a hybrid. It beat both EVs and gas cars in every class AAA measured."
+  },
+  {
+    "objectID": "posts/2026-11-ev-cost/index.html#the-fine-print",
+    "href": "posts/2026-11-ev-cost/index.html#the-fine-print",
+    "title": "Does an Electric Car Actually Save You Money?",
+    "section": "The fine print",
+    "text": "The fine print\n\nThese are averages across top-selling models. A specific EV with a big discount, or a gas guzzler, can change the answer.\nFive-year ownership is AAA’s assumption. Longer ownership generally helps EVs.\nElectricity and gas prices vary a lot by state. Cheap power and expensive gas favor EVs.\nPublic charging prices vary by network and membership; ours is a typical 2026 figure.\nThis post is about money. Whether EVs are better for the environment is a separate question, and our follow-up post tackles it."
+  },
+  {
+    "objectID": "posts/2026-11-ev-cost/index.html#the-bottom-line",
+    "href": "posts/2026-11-ev-cost/index.html#the-bottom-line",
+    "title": "Does an Electric Car Actually Save You Money?",
+    "section": "The bottom line",
+    "text": "The bottom line\nEVs really are cheaper to run. But “cheaper to run” isn’t “cheaper to own.” Buying new, without the old federal tax credit, an EV costs about the same as a gas SUV and more than a gas sedan, because it loses value so fast. If you can charge at home, drive a lot, keep cars for years, or buy used, the math tilts toward electric. Otherwise, a hybrid is the money winner.\n\nHow we did this. Annual costs are from AAA’s Your Driving Costs 2026 study (EV, gas, and hybrid comparison for medium sedans, compact SUVs, medium SUVs, and pickups; 15,000 miles a year, five-year ownership, full-coverage insurance). Home electricity is the BLS average U.S. price per kWh over the last 12 months, via FRED. The public fast-charging price is a typical 2026 figure from industry price trackers. AAA Your Driving Costs 2026"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "SixtyEight95",
     "section": "",
-    "text": "Why Are Hospital Bills So Insanely Expensive?\n\n\nThe same hip replacement costs $29,000 in the U.S. and $7,700 in Germany. Here’s where the money goes.\n\n\n\nhealth care\n\ncost of living\n\nhospitals\n\n\n\n\n\n\n\n\n\nNov 15, 2026\n\n\nSixtyEight95\n\n\n\n\n\n\n\n\n\n\n\n\nInsulin Costs About $5 a Vial to Make. Here’s What Countries Actually Pay.\n\n\nThe cheap-to-make claim is true. The famous U.S. sticker price was real for some people, but it was never the real price.\n\n\n\nhealth care\n\ncost of living\n\nprescription drugs\n\n\n\n\n\n\n\n\n\nNov 14, 2026\n\n\nSixtyEight95\n\n\n\n\n\n\n\n\n\n\n\n\nCollege, Measured in Hours of Work\n\n\nTuition grew three times faster than pay for 35 years. Then, quietly, it stopped.\n\n\n\neducation\n\ncost of living\n\nwages\n\n\n\n\n\n\n\n\n\nNov 13, 2026\n\n\nSixtyEight95\n\n\n\n\n\n\n\n\n\n\n\n\nBuying a Home, Measured in Hours of Work\n\n\nThe monthly payment takes fewer hours than it did in 1990. The hard part now is getting in the door.\n\n\n\nhousing\n\ncost of living\n\nwages\n\n\n\n\n\n\n\n\n\nNov 12, 2026\n\n\nSixtyEight95\n\n\n\n\n\n\n\n\n\n\n\n\nYour Groceries, Measured in Minutes of Work\n\n\nSticker shock is real. But paychecks grew too, and only a few items actually got harder to afford.\n\n\n\ngroceries\n\ncost of living\n\nwages\n\n\n\n\n\n\n\n\n\nNov 11, 2026\n\n\nSixtyEight95\n\n\n\n\n\n\n\n\n\n\n\n\nDoes the President Set Gas Prices? 33 Years of Data Say No\n\n\nGas follows crude oil. Each party has had cheap years and expensive years, with no pattern by party.\n\n\n\ngas\n\npolitics\n\ncost of living\n\n\n\n\n\n\n\n\n\nNov 9, 2026\n\n\nSixtyEight95\n\n\n\n\n\nNo matching items"
+    "text": "Are Electric Cars Really Better for the Environment?\n\n\nOn carbon, yes, after about two years of driving. But ‘zero emissions’ hides real damage that happens somewhere else.\n\n\n\ncars\n\nenvironment\n\nenergy\n\n\n\n\n\n\n\n\n\nNov 17, 2026\n\n\nSixtyEight95\n\n\n\n\n\n\n\n\n\n\n\n\nDoes an Electric Car Actually Save You Money?\n\n\nEVs are much cheaper to run. They’re not cheaper to own, at least not new. Here’s the math, per year.\n\n\n\ncars\n\ncost of living\n\nenergy\n\n\n\n\n\n\n\n\n\nNov 16, 2026\n\n\nSixtyEight95\n\n\n\n\n\n\n\n\n\n\n\n\nWhy Are Hospital Bills So Insanely Expensive?\n\n\nThe same hip replacement costs $29,000 in the U.S. and $7,700 in Germany. Here’s where the money goes.\n\n\n\nhealth care\n\ncost of living\n\nhospitals\n\n\n\n\n\n\n\n\n\nNov 15, 2026\n\n\nSixtyEight95\n\n\n\n\n\n\n\n\n\n\n\n\nInsulin Costs About $5 a Vial to Make. Here’s What Countries Actually Pay.\n\n\nThe cheap-to-make claim is true. The famous U.S. sticker price was real for some people, but it was never the real price.\n\n\n\nhealth care\n\ncost of living\n\nprescription drugs\n\n\n\n\n\n\n\n\n\nNov 14, 2026\n\n\nSixtyEight95\n\n\n\n\n\n\n\n\n\n\n\n\nCollege, Measured in Hours of Work\n\n\nTuition grew three times faster than pay for 35 years. Then, quietly, it stopped.\n\n\n\neducation\n\ncost of living\n\nwages\n\n\n\n\n\n\n\n\n\nNov 13, 2026\n\n\nSixtyEight95\n\n\n\n\n\n\n\n\n\n\n\n\nBuying a Home, Measured in Hours of Work\n\n\nThe monthly payment takes fewer hours than it did in 1990. The hard part now is getting in the door.\n\n\n\nhousing\n\ncost of living\n\nwages\n\n\n\n\n\n\n\n\n\nNov 12, 2026\n\n\nSixtyEight95\n\n\n\n\n\n\n\n\n\n\n\n\nYour Groceries, Measured in Minutes of Work\n\n\nSticker shock is real. But paychecks grew too, and only a few items actually got harder to afford.\n\n\n\ngroceries\n\ncost of living\n\nwages\n\n\n\n\n\n\n\n\n\nNov 11, 2026\n\n\nSixtyEight95\n\n\n\n\n\n\n\n\n\n\n\n\nDoes the President Set Gas Prices? 33 Years of Data Say No\n\n\nGas follows crude oil. Each party has had cheap years and expensive years, with no pattern by party.\n\n\n\ngas\n\npolitics\n\ncost of living\n\n\n\n\n\n\n\n\n\nNov 9, 2026\n\n\nSixtyEight95\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -257,6 +320,55 @@
     "title": "College, Measured in Hours of Work",
     "section": "The bottom line",
     "text": "The bottom line\nCollege went from expensive to very expensive between 1980 and 2016, rising far faster than paychecks. Since then, the trend has quietly reversed. A year of college still takes nearly three times the work it did in 1980, but less than it did a decade ago.\n\nHow we did this. College costs are the Consumer Price Index for “college tuition and fees” (BLS series CUUR0000SEEB01) from the Bureau of Labor Statistics. “Everything else” is the CPI for all items, and pay is average hourly earnings of production and nonsupervisory employees (about 80% of private-sector workers), both via FRED. Hours of work = tuition index ÷ hourly pay, scaled so 1980 = 100. “Today” is the average of November 2025 to October 2026. BLS did not collect October 2025 prices during the federal government shutdown, so that month is skipped."
+  },
+  {
+    "objectID": "posts/2026-11-ev-environment/index.html",
+    "href": "posts/2026-11-ev-environment/index.html",
+    "title": "Are Electric Cars Really Better for the Environment?",
+    "section": "",
+    "text": "In our last post, we found that a new EV usually isn’t cheaper to own than a gas car. So the other big argument for EVs is the environment. But you’ve probably heard the counterargument: making the batteries is so dirty that EVs aren’t really greener. Is that true?\nWe built a simple, transparent model from government and research data you can check, and compared it with the major lifecycle studies."
+  },
+  {
+    "objectID": "posts/2026-11-ev-environment/index.html#the-short-answer",
+    "href": "posts/2026-11-ev-environment/index.html#the-short-answer",
+    "title": "Are Electric Cars Really Better for the Environment?",
+    "section": "The short answer",
+    "text": "The short answer\n\n\n\n\n\n\nBuilding an EV’s battery creates about 4.5 tons of extra CO2 before it drives a single mile. But an EV emits so much less per mile that it pays that back after about 24,000 miles, under two years of typical driving. Over its life, a U.S. EV produces roughly half to two-thirds less CO2 than a comparable gas car.\nThe catch: the mining behind those batteries causes real harm, mostly far from where EVs are driven."
+  },
+  {
+    "objectID": "posts/2026-11-ev-environment/index.html#the-crossover",
+    "href": "posts/2026-11-ev-environment/index.html#the-crossover",
+    "title": "Are Electric Cars Really Better for the Environment?",
+    "section": "The crossover",
+    "text": "The crossover\nHere’s the whole story in one chart. The EV starts behind because of its battery. Then, every mile, the gas car burns gasoline while the EV draws power from the grid, which on average emits much less.\n\n\n\n\n\n\nThe dashed line is the break-even point: about 24,000 miles, or about 1.6 years at 15,000 miles a year. After that, every mile the EV drives puts it further ahead.\n\nThe numbers behind it\n\n\n\n\n\n\n\n\n\n\nInput\nValue\nSource\n\n\n\n\nCO2 from burning a gallon of gas\n8,887 grams\nEPA\n\n\nGas car fuel economy\n30 mpg (an efficient new car)\nOur assumption\n\n\nGas car CO2 per mile\n296 grams\nCalculated\n\n\nEV energy use\n0.3 kWh per mile, incl. charging losses\nTypical EPA label values\n\n\nU.S. grid CO2\n0.785 lb per kWh (2024)\nEIA\n\n\nEV CO2 per mile\n107 grams\nCalculated\n\n\nBattery size\n75 kWh\nOur assumption (typical long-range EV)\n\n\nBattery manufacturing\n60 kg CO2 per kWh\nICCT (U.S. estimate)\n\n\nExtra CO2 to build the EV\n4.5 tons\nCalculated\n\n\n\n\n\nWe kept this deliberately simple and, if anything, tilted toward the gas car: we count only gasoline burned in the engine, not the emissions from drilling, refining, and trucking it to the station. We also left out the rest of the car (frame, seats, glass), which takes roughly the same emissions to build either way.\n\n\nHow that compares with the big studies\n\nThe International Council on Clean Transportation (2021) found that a medium-size EV bought in the U.S. produces 60% to 68% less greenhouse gas over its lifetime than a comparable gas car.\nThe Union of Concerned Scientists (2022) found EVs produce about half the lifetime emissions, with an average break-even around 21,000 miles.\nBloombergNEF estimated a typical U.S. EV breaks even after about 25,000 miles, roughly two years.\n\nOur simple model lands right in that range: about 54% less CO2 over 150,000 miles."
+  },
+  {
+    "objectID": "posts/2026-11-ev-environment/index.html#it-depends-on-where-you-plug-in",
+    "href": "posts/2026-11-ev-environment/index.html#it-depends-on-where-you-plug-in",
+    "title": "Are Electric Cars Really Better for the Environment?",
+    "section": "It depends on where you plug in",
+    "text": "It depends on where you plug in\nAn EV is only as clean as the power plant charging it. On the average U.S. grid, an EV emits about 107 grams of CO2 per mile. Charged entirely from coal power, that jumps to about 313 grams, slightly worse than our 30-mpg gas car’s 296.\n\n\n\n\n\nPower source\nEV grams CO2 per mile\n\n\n\n\n100% coal (worst case)\n313\n\n\nAverage U.S. grid (2024)\n107\n\n\nGas car for comparison\n296\n\n\n\n\n\nNo U.S. state runs on 100% coal, and the grid has gotten cleaner almost every year as coal plants close. The Union of Concerned Scientists found that over 90% of Americans live where driving an average EV produces less global warming pollution than even the most efficient gas car."
+  },
+  {
+    "objectID": "posts/2026-11-ev-environment/index.html#the-part-zero-emissions-leaves-out",
+    "href": "posts/2026-11-ev-environment/index.html#the-part-zero-emissions-leaves-out",
+    "title": "Are Electric Cars Really Better for the Environment?",
+    "section": "The part “zero emissions” leaves out",
+    "text": "The part “zero emissions” leaves out\nCarbon isn’t the only kind of environmental damage. EV batteries depend on lithium, nickel, cobalt, and graphite, and getting them out of the ground has real costs:\n\nWater. In Chile’s Atacama Desert, one of the driest places on Earth, lithium mining accounts for up to 65% of the region’s water use, according to a United Nations University report, competing with farms and local communities.\nHuman rights. About 70% of the world’s cobalt comes from the Democratic Republic of Congo, where child labor in small-scale mines has been widely documented.\nPollution where it’s processed. Nickel mining in Indonesia has been linked to deforestation and water pollution, and refining battery minerals produces far more emissions than digging them up.\nRecycling is still catching up. Most of today’s EV batteries haven’t reached the end of their lives yet, and recovery of some materials, especially lithium, remains limited.\n\nTo be fair, gasoline has its own hidden costs, from oil spills to the pollution near refineries, and burning it fouls the air in the cities where people actually drive. But it’s honest to say that EVs don’t eliminate environmental damage. They shrink the climate damage a lot and move much of the remaining harm to mining regions far from the people who benefit."
+  },
+  {
+    "objectID": "posts/2026-11-ev-environment/index.html#the-fine-print",
+    "href": "posts/2026-11-ev-environment/index.html#the-fine-print",
+    "title": "Are Electric Cars Really Better for the Environment?",
+    "section": "The fine print",
+    "text": "The fine print\n\nThis is a simplified model. Real results depend on the specific car, battery size, where the battery was made, how you drive, and your local grid.\nBigger batteries take longer to pay back. A large electric truck or SUV with a huge battery starts further behind than a small EV.\nThe grid keeps changing. Our grid figure is from 2024. A cleaner grid makes every EV mile cleaner over the car’s life.\nLifecycle studies differ in their assumptions, which is why we show several."
+  },
+  {
+    "objectID": "posts/2026-11-ev-environment/index.html#the-bottom-line",
+    "href": "posts/2026-11-ev-environment/index.html#the-bottom-line",
+    "title": "Are Electric Cars Really Better for the Environment?",
+    "section": "The bottom line",
+    "text": "The bottom line\nOn climate, the evidence is clear: an EV starts in the hole, climbs out in under two years of driving, and ends up responsible for roughly half to two-thirds less carbon than a gas car. The battery argument is real but much smaller than critics suggest. What “zero emissions” really hides is not carbon but where the damage happens: in the water, mines, and refineries of the places that supply the batteries.\n\nHow we did this. Gas emissions use EPA’s 8,887 grams of CO2 per gallon. Grid emissions use EIA’s 2024 U.S. average of 0.785 lb CO2 per kWh and EIA’s figure for coal-fired power. Battery manufacturing uses the ICCT’s U.S. estimate of about 60 kg CO2 per kWh. Lifecycle comparisons are from the ICCT (2021), the Union of Concerned Scientists (2022), and BloombergNEF. Mining impacts are from the United Nations University and the ICCT (2026). ICCT lifecycle study · UCS “Driving Cleaner” · EPA · EIA · ICCT on battery materials (2026)"
   },
   {
     "objectID": "posts/2026-11-groceries-minutes-of-work/index.html",

@@ -1,0 +1,162 @@
+---
+title: "Are Electric Cars Really Better for the Environment?"
+subtitle: "On carbon, yes, after about two years of driving. But 'zero emissions' hides real damage that happens somewhere else."
+author: "SixtyEight95"
+date: "2026-11-17"
+categories: [cars, environment, energy]
+image: infographic.png
+---
+
+```{r setup}
+source("../../R/fred.R")
+source("../../R/ev_data.R")
+library(plotly)
+library(knitr)
+
+comma <- function(x) formatC(round(x), format = "d", big.mark = ",")
+tons  <- function(x) formatC(x, format = "f", digits = 1)
+years_to_break_even <- breakeven_miles / 15000
+```
+
+In our [last post](../2026-11-ev-cost/), we found that a new EV usually isn't cheaper to own than a gas car.
+So the other big argument for EVs is the environment. But you've probably heard the counterargument:
+**making the batteries is so dirty that EVs aren't really greener.** Is that true?
+
+We built a simple, transparent model from government and research data you can check, and compared it with
+the major lifecycle studies.
+
+## The short answer
+
+::: {.callout-note appearance="simple"}
+Building an EV's battery creates about **`r battery_t` tons of extra CO2** before it drives a single mile. But an EV
+emits so much less per mile that it **pays that back after about `r comma(round(breakeven_miles, -3))` miles**, under
+two years of typical driving. Over its life, a U.S. EV produces roughly **half to two-thirds less** CO2 than a
+comparable gas car.
+
+The catch: the mining behind those batteries causes real harm, mostly far from where EVs are driven.
+:::
+
+## The crossover
+
+Here's the whole story in one chart. The EV starts behind because of its battery. Then, every mile, the gas car
+burns gasoline while the EV draws power from the grid, which on average emits much less.
+
+```{r crossover chart}
+#| fig-height: 4.5
+long <- emissions %>%
+  pivot_longer(c(gas, ev), names_to = "car", values_to = "tons") %>%
+  mutate(car = ifelse(car == "gas", "Gas car", "Electric car"))
+
+p <- ggplot(long, aes(miles, tons, color = car, group = car,
+            text = paste0(car, " after ", comma(miles), " miles: ", tons(tons), " tons CO2"))) +
+  geom_line(linewidth = 1) +
+  geom_vline(xintercept = breakeven_miles, linetype = "dashed", color = "grey60") +
+  scale_color_manual(values = c("Gas car" = "#C53030", "Electric car" = "#2A9D8F")) +
+  scale_x_continuous(labels = scales::comma) +
+  theme_minimal() +
+  labs(x = "Miles driven", y = "Total CO2 (metric tons)", color = NULL)
+
+ggplotly(p, tooltip = "text") %>% layout(legend = list(orientation = "h", y = 1.08)) %>% config(displayModeBar = FALSE)
+```
+
+The dashed line is the break-even point: about **`r comma(round(breakeven_miles, -3))` miles**, or about
+**`r round(years_to_break_even, 1)` years** at 15,000 miles a year. After that, every mile the EV drives puts it further ahead.
+
+### The numbers behind it
+
+```{r inputs table}
+tribble(
+  ~Input, ~Value, ~Source,
+  "CO2 from burning a gallon of gas", "8,887 grams", "EPA",
+  "Gas car fuel economy", paste(gas_mpg, "mpg (an efficient new car)"), "Our assumption",
+  "Gas car CO2 per mile", paste(comma(gas_g_per_mile), "grams"), "Calculated",
+  "EV energy use", paste(ev_kwh_per_mile, "kWh per mile, incl. charging losses"), "Typical EPA label values",
+  "U.S. grid CO2", paste(grid_lb_per_kwh, "lb per kWh (2024)"), "EIA",
+  "EV CO2 per mile", paste(comma(ev_g_per_mile), "grams"), "Calculated",
+  "Battery size", paste(battery_kwh, "kWh"), "Our assumption (typical long-range EV)",
+  "Battery manufacturing", paste(battery_kg_per_kwh, "kg CO2 per kWh"), "ICCT (U.S. estimate)",
+  "Extra CO2 to build the EV", paste(battery_t, "tons"), "Calculated"
+) %>% kable(align = "lll")
+```
+
+We kept this deliberately simple and, if anything, **tilted toward the gas car**: we count only gasoline burned
+in the engine, not the emissions from drilling, refining, and trucking it to the station. We also left out the
+rest of the car (frame, seats, glass), which takes roughly the same emissions to build either way.
+
+### How that compares with the big studies
+
+- The **International Council on Clean Transportation** (2021) found that a medium-size EV bought in the U.S.
+  produces **60% to 68% less** greenhouse gas over its lifetime than a comparable gas car.
+- The **Union of Concerned Scientists** (2022) found EVs produce about **half** the lifetime emissions, with an
+  average break-even around **21,000 miles**.
+- **BloombergNEF** estimated a typical U.S. EV breaks even after about **25,000 miles**, roughly two years.
+
+Our simple model lands right in that range: about **`r round(lifetime_cut * 100)`% less** CO2 over `r comma(lifetime_miles)` miles.
+
+## It depends on where you plug in
+
+An EV is only as clean as the power plant charging it. On the average U.S. grid, an EV emits about
+**`r comma(ev_g_per_mile)` grams of CO2 per mile**. Charged entirely from **coal** power, that jumps to about
+**`r comma(coal_g_per_mile)` grams**, slightly worse than our `r gas_mpg`-mpg gas car's `r comma(gas_g_per_mile)`.
+
+```{r grid table}
+tribble(
+  ~`Power source`, ~`EV grams CO2 per mile`,
+  "100% coal (worst case)", comma(coal_g_per_mile),
+  "Average U.S. grid (2024)", comma(ev_g_per_mile),
+  "Gas car for comparison", comma(gas_g_per_mile)
+) %>% kable(align = "lr")
+```
+
+No U.S. state runs on 100% coal, and the grid has gotten cleaner almost every year as coal plants close. The
+Union of Concerned Scientists found that **over 90% of Americans** live where driving an average EV produces
+less global warming pollution than even the most efficient gas car.
+
+## The part "zero emissions" leaves out
+
+Carbon isn't the only kind of environmental damage. EV batteries depend on lithium, nickel, cobalt, and
+graphite, and getting them out of the ground has real costs:
+
+- **Water.** In Chile's Atacama Desert, one of the driest places on Earth, lithium mining accounts for up to
+  **65% of the region's water use**, according to a United Nations University report, competing with farms and
+  local communities.
+- **Human rights.** About **70% of the world's cobalt** comes from the Democratic Republic of Congo, where child
+  labor in small-scale mines has been widely documented.
+- **Pollution where it's processed.** Nickel mining in Indonesia has been linked to deforestation and water
+  pollution, and refining battery minerals produces far more emissions than digging them up.
+- **Recycling is still catching up.** Most of today's EV batteries haven't reached the end of their lives yet,
+  and recovery of some materials, especially lithium, remains limited.
+
+To be fair, gasoline has its own hidden costs, from oil spills to the pollution near refineries, and burning
+it fouls the air in the cities where people actually drive. But it's honest to say that EVs don't eliminate
+environmental damage. They **shrink** the climate damage a lot and **move** much of the remaining harm to mining
+regions far from the people who benefit.
+
+## The fine print
+
+- **This is a simplified model.** Real results depend on the specific car, battery size, where the battery was
+  made, how you drive, and your local grid.
+- **Bigger batteries take longer to pay back.** A large electric truck or SUV with a huge battery starts further
+  behind than a small EV.
+- **The grid keeps changing.** Our grid figure is from 2024. A cleaner grid makes every EV mile cleaner over the
+  car's life.
+- **Lifecycle studies differ** in their assumptions, which is why we show several.
+
+## The bottom line
+
+On climate, the evidence is clear: an EV starts in the hole, climbs out in under two years of driving, and ends
+up responsible for roughly half to two-thirds less carbon than a gas car. The battery argument is real but much
+smaller than critics suggest. What "zero emissions" really hides is not carbon but **where** the damage happens:
+in the water, mines, and refineries of the places that supply the batteries.
+
+---
+
+**How we did this.** Gas emissions use EPA's 8,887 grams of CO2 per gallon. Grid emissions use EIA's 2024 U.S.
+average of 0.785 lb CO2 per kWh and EIA's figure for coal-fired power. Battery manufacturing uses the ICCT's U.S.
+estimate of about 60 kg CO2 per kWh. Lifecycle comparisons are from the ICCT (2021), the Union of Concerned
+Scientists (2022), and BloombergNEF. Mining impacts are from the United Nations University and the ICCT (2026).
+[ICCT lifecycle study](https://theicct.org/publication/a-global-comparison-of-the-life-cycle-greenhouse-gas-emissions-of-combustion-engine-and-electric-passenger-cars/) ·
+[UCS "Driving Cleaner"](https://ucs.org/sites/default/files/2022-09/driving-cleaner-executive-summary.pdf) ·
+[EPA](https://www.epa.gov/greenvehicles/greenhouse-gas-emissions-typical-passenger-vehicle) ·
+[EIA](https://www.eia.gov/tools/faqs/faq.php?id=74) ·
+[ICCT on battery materials (2026)](https://theicct.org/wp-content/uploads/2026/02/ID-451-–-Sustainable-batteries-IZEVA-Report-fv.pdf)

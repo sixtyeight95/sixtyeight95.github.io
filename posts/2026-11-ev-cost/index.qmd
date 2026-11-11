@@ -1,0 +1,173 @@
+---
+title: "Does an Electric Car Actually Save You Money?"
+subtitle: "EVs are much cheaper to run. They're not cheaper to own, at least not new. Here's the math, per year."
+author: "SixtyEight95"
+date: "2026-11-16"
+categories: [cars, cost of living, energy]
+image: infographic.png
+---
+
+```{r setup}
+source("../../R/fred.R")
+source("../../R/ev_data.R")
+library(plotly)
+library(knitr)
+
+usd <- function(x) paste0("$", formatC(round(x), format = "d", big.mark = ","))
+s_ev <- cost_row("Medium sedan", "Electric"); s_gas <- cost_row("Medium sedan", "Gas"); s_hy <- cost_row("Medium sedan", "Hybrid")
+c_ev <- cost_row("Compact SUV", "Electric");  c_gas <- cost_row("Compact SUV", "Gas")
+```
+
+Electric car fans say you'll save a fortune on gas. Skeptics say EVs cost more and lose value fast. They're
+both partly right. To settle it, we compared the **full cost of owning** an EV, a gas car, and a hybrid of the
+**same size and class**, **per year**.
+
+## The short answer
+
+::: {.callout-note appearance="simple"}
+An EV saves you about **`r usd(s_gas$running - s_ev$running)` a year** on fuel and maintenance (for a medium sedan).
+But it loses value so much faster that a new EV costs **`r usd(s_ev$total_per_year - s_gas$total_per_year)` more per year**
+to own than a comparable gas sedan. In SUVs, it's roughly a tie. And in every class, a **hybrid** was cheapest.
+:::
+
+## How we compared them
+
+We used AAA's 2026 *Your Driving Costs* study, which averages the top-selling 2026 models in each class and
+adds up everything it costs to own one for five years at 15,000 miles a year:
+
+- **Fuel or charging**
+- **Maintenance and repairs**, including tires
+- **Depreciation**: how much value the car loses
+- **Insurance** (full coverage)
+- **License, registration, and taxes**, including the extra EV fees most states now charge
+- **Finance charges**: interest on the car loan
+
+That puts every vehicle on the same footing: **dollars per year.**
+
+## The results
+
+```{r total chart}
+#| fig-height: 4.5
+p <- ggplot(aaa, aes(total_per_year, fct_rev(class), fill = powertrain, group = fct_rev(powertrain),
+                     text = paste0(class, " (", powertrain, "): ", usd(total_per_year), " per year"))) +
+  geom_col(position = position_dodge(width = 0.8), width = 0.75) +
+  scale_fill_manual(values = c(Electric = "#2A9D8F", Gas = "#C53030", Hybrid = "#D69E2E")) +
+  scale_x_continuous(labels = scales::dollar) +
+  theme_minimal() +
+  labs(x = "Total cost per year (15,000 miles)", y = NULL, fill = NULL)
+
+ggplotly(p, tooltip = "text") %>% layout(legend = list(orientation = "h", y = 1.08)) %>% config(displayModeBar = FALSE)
+```
+
+```{r total table}
+aaa %>%
+  select(class, powertrain, total_per_year) %>%
+  pivot_wider(names_from = powertrain, values_from = total_per_year) %>%
+  mutate(`EV vs gas` = ifelse(Electric > Gas, paste0("EV costs ", usd(Electric - Gas), " more"),
+                              paste0("EV saves ", usd(Gas - Electric))),
+         across(c(Electric, Gas, Hybrid), usd)) %>%
+  rename(Class = class) %>%
+  kable(align = "lrrrl", caption = "Total cost per year, new 2026 models, 15,000 miles a year. Source: AAA.")
+```
+
+## Where EVs win: running costs
+
+The EV advantage is real. For a medium sedan, charging cost about **`r usd(s_ev$fuel)` a year** versus
+**`r usd(s_gas$fuel)`** for gas, and maintenance was cheaper too (no oil changes, fewer moving parts, and brakes
+that last longer thanks to regenerative braking).
+
+```{r running chart}
+#| fig-height: 4
+running <- aaa %>%
+  select(class, powertrain, Fuel = fuel, Maintenance = maintenance) %>%
+  pivot_longer(c(Fuel, Maintenance), names_to = "cost", values_to = "dollars")
+
+p2 <- ggplot(running, aes(dollars, powertrain, fill = cost, text = paste0(class, ", ", powertrain, " - ", cost, ": ", usd(dollars)))) +
+  geom_col() +
+  facet_wrap(~class, ncol = 2) +
+  scale_fill_manual(values = c(Fuel = "#1F4E5A", Maintenance = "#7FE0CF")) +
+  scale_x_continuous(labels = scales::dollar) +
+  theme_minimal() +
+  labs(x = "Fuel + maintenance per year", y = NULL, fill = NULL)
+
+ggplotly(p2, tooltip = "text") %>% layout(legend = list(orientation = "h", y = 1.12)) %>% config(displayModeBar = FALSE)
+```
+
+**One big catch: where you charge.** AAA's EV fuel costs line up with home electricity prices, which average
+about **$`r round(home_kwh_price, 2)` per kWh** nationally. Public fast chargers typically cost around
+**$`r public_kwh_price` per kWh**, about **`r round(public_multiplier, 1)` times** more. If you can't charge at home
+and rely on fast chargers, a medium sedan's charging bill rises to roughly
+**`r usd(s_ev$fuel * public_multiplier)` a year**: still less than gas, but most of the savings are gone.
+
+## Where EVs lose: owning costs
+
+```{r owning chart}
+#| fig-height: 4.5
+owning <- aaa %>%
+  filter(powertrain != "Hybrid") %>%
+  select(class, powertrain, Depreciation = depreciation, Insurance = insurance,
+         `Registration & taxes` = registration_taxes, `Loan interest` = finance) %>%
+  pivot_longer(-c(class, powertrain), names_to = "cost", values_to = "dollars") %>%
+  mutate(cost = factor(cost, levels = c("Depreciation", "Insurance", "Registration & taxes", "Loan interest")))
+
+p3 <- ggplot(owning, aes(dollars, powertrain, fill = cost, text = paste0(class, ", ", powertrain, " - ", cost, ": ", usd(dollars)))) +
+  geom_col() +
+  facet_wrap(~class, ncol = 2) +
+  scale_fill_manual(values = c("Depreciation" = "#C53030", "Insurance" = "#D69E2E",
+                               "Registration & taxes" = "#6C8BA8", "Loan interest" = "grey60")) +
+  scale_x_continuous(labels = scales::dollar) +
+  theme_minimal() +
+  labs(x = "Ownership costs per year", y = NULL, fill = NULL)
+
+ggplotly(p3, tooltip = "text") %>% layout(legend = list(orientation = "h", y = 1.12)) %>% config(displayModeBar = FALSE)
+```
+
+The biggest single cost of owning *any* new car is **depreciation**, the value it loses while you own it. For
+EVs, it's brutal. AAA puts a new electric medium sedan's depreciation at **`r usd(s_ev$depreciation)` a year**, versus
+**`r usd(s_gas$depreciation)`** for gas. Fast-improving battery technology and price cuts on new EVs make used
+ones worth less.
+
+EVs also tend to cost more to **insure** (they're pricier to repair), most states now charge an extra
+**annual EV registration fee** (often $100 to $250) to make up for lost gas-tax revenue, and a pricier car means
+more **loan interest**. And as of September 30, 2025, the **$7,500 federal EV tax credit is gone**.
+
+## So who should buy an EV?
+
+The numbers point to a few clear cases where an EV makes financial sense:
+
+- **You can charge at home.** That's where the fuel savings come from.
+- **You drive a lot.** More miles means more fuel savings to offset the extra ownership costs.
+- **You keep cars a long time.** Depreciation is heaviest in the first few years. Keep the car 10 years
+  and the per-year cost of that early drop shrinks.
+- **You buy used.** The first owner already took the big depreciation hit. A used EV can capture the
+  running-cost savings without paying for the steepest part of the value drop.
+- **You're shopping SUVs, not sedans.** The gap is smallest there.
+
+If saving money is the top priority and none of those fit, the data say: **buy a hybrid.** It beat both EVs
+and gas cars in every class AAA measured.
+
+## The fine print
+
+- **These are averages** across top-selling models. A specific EV with a big discount, or a gas guzzler, can
+  change the answer.
+- **Five-year ownership** is AAA's assumption. Longer ownership generally helps EVs.
+- **Electricity and gas prices vary a lot by state.** Cheap power and expensive gas favor EVs.
+- **Public charging prices** vary by network and membership; ours is a typical 2026 figure.
+- This post is about money. **Whether EVs are better for the environment** is a separate question, and our
+  follow-up post tackles it.
+
+## The bottom line
+
+EVs really are cheaper to run. But "cheaper to run" isn't "cheaper to own." Buying new, without the old
+federal tax credit, an EV costs about the same as a gas SUV and more than a gas sedan, because it loses value so
+fast. If you can charge at home, drive a lot, keep cars for years, or buy used, the math tilts toward electric.
+Otherwise, a hybrid is the money winner.
+
+---
+
+**How we did this.** Annual costs are from AAA's *Your Driving Costs* 2026 study (EV, gas, and hybrid
+comparison for medium sedans, compact SUVs, medium SUVs, and pickups; 15,000 miles a year, five-year ownership,
+full-coverage insurance). Home electricity is the BLS average U.S. price per kWh over the last 12 months, via
+[FRED](https://fred.stlouisfed.org/series/APU000072610). The public fast-charging price is a typical 2026 figure from
+industry price trackers.
+[AAA Your Driving Costs 2026](https://newsroom.aaa.com/wp-content/uploads/2026/09/8-YDC-Brochure_2026-1.pdf)
