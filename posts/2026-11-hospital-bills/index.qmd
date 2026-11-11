@@ -1,0 +1,170 @@
+---
+title: "Why Are Hospital Bills So Insanely Expensive?"
+subtitle: "The same hip replacement costs $29,000 in the U.S. and $7,700 in Germany. Here's where the money goes."
+author: "SixtyEight95"
+date: "2026-11-15"
+categories: [health care, cost of living, hospitals]
+image: infographic.png
+---
+
+```{r setup}
+source("../../R/fred.R")
+source("../../R/hospital_data.R")
+library(plotly)
+library(knitr)
+
+usd   <- function(x) paste0("$", formatC(x, format = "d", big.mark = ","))
+times <- function(x) paste0(formatC(x, format = "f", digits = 1), "×")
+price <- function(p, c) procedures$price_usd[procedures$procedure == p & procedures$country == c]
+```
+
+A night in the hospital can cost more than a used car. A routine birth can come with a bill in the
+thousands, even with insurance. Everyone knows American hospital care is expensive. We wanted to know
+**how** expensive, compared with what, and **why.**
+
+## The short answer
+
+::: {.callout-note appearance="simple"}
+Hospital prices have grown about **`r times(growth_1980$hospital)`** since 1980, while pay grew `r times(growth_1980$wages)`.
+A hip replacement that private insurers paid **`r usd(price("Hip replacement", "USA"))`** for in the U.S. cost
+**`r usd(price("Hip replacement", "Germany"))`** in Germany.
+
+The biggest reasons: private insurers pay hospitals about **`r facts$private_vs_medicare_pct`% of what Medicare pays**,
+hospitals have merged into local near-monopolies, about a quarter of hospital spending goes to administration,
+and hospital "list prices" are inflated far beyond cost.
+:::
+
+## 45 years of hospital prices, in hours of work
+
+Like our other cost-of-living stories, we measured hospital prices against what the average worker earns.
+If a hospital service took 100 hours of work to pay for in 1980, here's how many hours the same service has
+taken since.
+
+```{r hours chart}
+#| fig-height: 4.5
+p <- ggplot(hospital_yearly, aes(year, hours_index, group = 1,
+            text = paste0(year, ": ", round(hours_index), " hours (1980 = 100)"))) +
+  geom_line(color = "#C53030", linewidth = 0.8) +
+  geom_hline(yintercept = 100, linetype = "dashed", color = "grey60") +
+  expand_limits(y = 0) +
+  theme_minimal() +
+  labs(x = NULL, y = "Hours of work (1980 = 100)")
+
+ggplotly(p, tooltip = "text") %>% config(displayModeBar = FALSE)
+```
+
+Hospital care now takes about **`r round(hospital_now$hours_index / 100, 1)` times** as many hours of work as it did in 1980.
+Unlike college tuition, which has started getting easier to afford, hospital prices have stayed near their
+peak.
+
+## The same procedure, around the world
+
+The International Federation of Health Plans compared what private insurers paid for the same hospital
+procedures in nine countries in 2022. These are actual payments, not list prices.
+
+```{r country chart}
+#| fig-height: 6
+p2 <- procedures %>%
+  filter(procedure != "Heart bypass") %>%
+  mutate(group = ifelse(country == "USA", "United States", "Other countries"),
+         procedure = fct_reorder(procedure, price_usd, .fun = max)) %>%
+  ggplot(aes(price_usd, procedure, color = group,
+             text = paste0(procedure, " in ", country, ": ", usd(price_usd)))) +
+  geom_point(size = 3, alpha = 0.85) +
+  scale_color_manual(values = c("United States" = "#C53030", "Other countries" = "#1F4E5A")) +
+  scale_x_continuous(labels = scales::dollar) +
+  theme_minimal() +
+  labs(x = "Median price paid by private insurers, 2022 (US$)", y = NULL, color = NULL)
+
+ggplotly(p2, tooltip = "text") %>%
+  layout(legend = list(orientation = "h", y = 1.08)) %>%
+  config(displayModeBar = FALSE)
+```
+
+Hover over any dot to see the country. The U.S. is the most expensive for every procedure. The biggest gap of
+all is heart bypass surgery: **`r usd(price("Heart bypass", "USA"))`** in the U.S., versus
+**`r usd(price("Heart bypass", "Germany"))`** in Germany and **`r usd(price("Heart bypass", "Spain"))`** in Spain.
+
+```{r ratio table}
+procedures %>%
+  filter(country %in% c("USA", "UK", "Germany", "Australia", "Spain")) %>%
+  select(procedure, country, price_usd) %>%
+  pivot_wider(names_from = country, values_from = price_usd) %>%
+  arrange(desc(USA)) %>%
+  mutate(across(-procedure, usd)) %>%
+  rename(Procedure = procedure, U.S. = USA) %>%
+  kable(align = "lrrrrr", caption = "Median price paid by private insurers, 2022. Source: iFHP/HCCI 2024 report.")
+```
+
+## Why: the four big reasons
+
+### 1. Private insurance pays hospitals more than double what Medicare pays
+
+The same hospital, the same procedure, very different prices depending on who's paying. RAND studied
+claims from employer health plans across the country and found that in 2022, they paid hospitals **`r facts$private_vs_medicare_pct`%
+of what Medicare would have paid** for the same care. In some states it was over 300%.
+
+Medicare sets its prices. Private insurers have to negotiate them, and often they don't have much leverage,
+which leads to reason two.
+
+### 2. Hospitals have merged into local near-monopolies
+
+Over the past few decades, hospitals have bought each other up. KFF found that in **`r facts$metros_one_or_two_pct`%
+of U.S. metro areas**, the entire hospital market is controlled by just one or two health systems. When an
+insurer has to include a hospital system in its network because there's no alternative, that system can
+charge more. Research consistently finds that hospital mergers raise prices, without clear improvements in
+quality.
+
+### 3. A quarter of the budget goes to paperwork
+
+Billing in the U.S. is complicated: hundreds of insurers, each with its own rules, codes, and approval
+processes. One study found that administration took about **`r facts$admin_share_pct`%** of U.S. hospital budgets, about
+twice the share in Canada or Scotland. (The study's authors support a single-payer system, but the gap
+they measured is large under any interpretation.)
+
+### 4. The "list price" is mostly fiction
+
+Every hospital has a "chargemaster," a master list of prices. These list prices bear little resemblance to
+what care costs. A study of Medicare cost data found the average hospital listed **$`r facts$list_per_dollar_cost`** for every
+$1 of its actual costs, and up to about 28 times cost for CT scans.
+
+Medicare and insurers rarely pay list prices. The people who often get billed them are the **uninsured** and
+patients treated **out of network**, the ones with the least power to negotiate.
+
+## The human cost
+
+About **`r facts$debt_people_millions` million adults** owe significant medical debt (over $250), totaling at least
+**$`r facts$debt_total_billions` billion**, according to KFF. Hospital bills are a big part of that.
+
+## The fine print
+
+- **Different years.** Country prices and the Medicare comparison are from 2022, the administrative cost study
+  is from 2011 data, and the list price study from 2013. The patterns have held up in later research, but the
+  exact numbers have moved.
+- **Country prices are medians** of what private insurers paid, converted to U.S. dollars by the report's
+  authors. Public systems in some countries may pay less.
+- **"Hours of work"** uses the government's hospital services price index and the average worker's hourly pay
+  before taxes. It tracks how prices changed, not any one bill.
+- **What you personally pay** depends on your insurance, deductible, and whether the hospital is in network.
+
+## The bottom line
+
+Health economists have been saying it for decades: American health care is expensive mainly because the
+**prices** are higher, not because Americans get far more care. For hospitals, private insurers pay far more than Medicare, merged hospital systems
+have the leverage to keep it that way, billing complexity adds a heavy layer of cost, and inflated list prices
+land hardest on the people least able to pay.
+
+---
+
+**How we did this.** Procedure prices are from the International Federation of Health Plans and Health
+Care Cost Institute's *International Healthcare Cost Comparison Report 2024* (2022 data), read from the
+report's charts. The Medicare comparison is from RAND's hospital price transparency study (Round 5.1).
+Market concentration is from KFF. Administrative costs are from Himmelstein et al., *Health Affairs* (2014).
+List price markups are from Bai & Anderson, *Health Affairs* (2016). Medical debt is from KFF's analysis of
+Census survey data. The hours-of-work trend uses the CPI for hospital services (BLS series CUUR0000SEMD)
+and average hourly earnings of production and nonsupervisory employees, both via
+[FRED](https://fred.stlouisfed.org/).
+[iFHP/HCCI report](https://healthcostinstitute.org/all-hcci-reports/international-comparisons-of-health-care-prices-from-the-2024-ifhp-study/) ·
+[RAND](https://www.rand.org/pubs/research_reports/RRA1144-2-v2.html) ·
+[KFF on markets](https://www.fiercehealthcare.com/providers/nearly-half-us-hospital-markets-entirely-controlled-1-or-2-health-systems-kff) ·
+[KFF on medical debt](https://www.healthsystemtracker.org/brief/the-burden-of-medical-debt-in-the-united-states/)

@@ -1,0 +1,50 @@
+procedure,country,price_usd
+Appendectomy,USA,13560
+Appendectomy,UK,3950
+Appendectomy,Germany,3980
+Appendectomy,Australia,4268
+Appendectomy,Spain,2622
+Appendectomy,Austria,3881
+Appendectomy,Greece,7097
+Appendectomy,New Zealand,7595
+Appendectomy,South Africa,3553
+Knee replacement,USA,26340
+Knee replacement,UK,15216
+Knee replacement,Germany,8522
+Knee replacement,Australia,13609
+Knee replacement,Spain,6600
+Knee replacement,Austria,9006
+Knee replacement,Greece,12243
+Knee replacement,New Zealand,18230
+Knee replacement,South Africa,9563
+Hip replacement,USA,29006
+Hip replacement,UK,14849
+Hip replacement,Germany,7681
+Hip replacement,Australia,14986
+Hip replacement,Spain,6780
+Hip replacement,Austria,9105
+Hip replacement,Greece,10944
+Hip replacement,New Zealand,17263
+Hip replacement,South Africa,9641
+Heart bypass,USA,89094
+Heart bypass,UK,25804
+Heart bypass,Germany,16936
+Heart bypass,Australia,17741
+Heart bypass,Spain,15183
+Heart bypass,Austria,10734
+Heart bypass,New Zealand,36352
+Heart bypass,South Africa,24044
+C-section,USA,13601
+C-section,UK,8910
+C-section,Germany,2419
+C-section,Australia,7742
+C-section,Spain,2807
+C-section,Greece,5479
+C-section,South Africa,3161
+Vaginal birth,USA,8655
+Vaginal birth,UK,3002
+Vaginal birth,Germany,1361
+Vaginal birth,Australia,5318
+Vaginal birth,Spain,2175
+Vaginal birth,Greece,3775
+Vaginal birth,South Africa,1810
