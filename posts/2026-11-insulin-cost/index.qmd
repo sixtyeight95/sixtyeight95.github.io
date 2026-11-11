@@ -1,0 +1,167 @@
+---
+title: "Insulin Costs About $5 a Vial to Make. Here's What Countries Actually Pay."
+subtitle: "The cheap-to-make claim is true. The famous U.S. sticker price was real for some people, but it was never the real price."
+author: "SixtyEight95"
+date: "2026-11-14"
+categories: [health care, cost of living, prescription drugs]
+image: infographic.png
+---
+
+```{r setup}
+source("../../R/fred.R")
+source("../../R/insulin_data.R")
+library(plotly)
+library(knitr)
+
+vial <- function(x) paste0("$", formatC(x, format = "f", digits = 0, big.mark = ","))
+calrx_per_1000 <- 55 / 5 / 300 * 1000   # CalRx: $55 max for 5 pens of 300 units each
+```
+
+You've probably seen the claim: insulin costs a few dollars to make, but Americans pay hundreds.
+Insulin was discovered more than 100 years ago, and its inventors famously sold the patent to the University
+of Toronto for $1 each so it would stay affordable. So how did a vial end up costing more than a car payment?
+
+We dug into the research to see what insulin really costs to make, what other wealthy countries pay,
+and what the U.S. number actually means.
+
+## The short answer
+
+::: {.callout-note appearance="simple"}
+A vial of insulin (1,000 units) costs an estimated **`r vial(cost_low)` to `r vial(cost_high)` to make**,
+including a profit margin. In 2022, other wealthy countries paid an average of **`r vial(oecd_vial)`** per
+vial. The U.S. list price averaged **`r vial(us_list_vial)`**.
+
+But that list price is not what insurers actually paid. After secret discounts, the U.S. paid about
+**`r vial(us_net_vial)`**, still about **`r round(us_net_index_pct / 100, 1)` times** other countries. And a lot
+has changed since 2022.
+:::
+
+## What it costs to make
+
+In 2018, researchers published a detailed estimate in *BMJ Global Health* of what insulin would cost if many
+companies competed to make it, the way they do for generic pills. They added up the raw ingredients,
+filling and packaging the vials, building factories, getting regulatory approval, shipping, and a 20% margin
+for overhead and profit.
+
+```{r cost table}
+cost_to_make %>%
+  transmute(`Type of insulin` = insulin,
+            `Estimated price per vial` = paste0("$", formatC(low, format = "f", digits = 2), " – $",
+                                                formatC(high, format = "f", digits = 2))) %>%
+  kable(align = "lr",
+        caption = "One 10 mL vial = 1,000 units. Source: Gotham, Barber & Hill, BMJ Global Health (2018).")
+```
+
+So yes, the viral claim holds up: **insulin is cheap to make.** Even the newer, longer-lasting insulins come in
+under $10 a vial.
+
+What these estimates **don't** include: the original research that created each insulin, the pharmacy's
+markup, or insurance. They're an estimate of what a competitive market *could* charge, not what any company
+actually spends.
+
+## What wealthy countries pay
+
+The RAND Corporation compared insulin prices in the U.S. and 33 other wealthy countries using 2022 sales
+data. These are the prices drugmakers charge before discounts, averaged across all the insulin each country
+uses.
+
+```{r country chart}
+#| fig-height: 7
+country_all <- rand %>%
+  mutate(group = case_when(country == "U.S." ~ "United States",
+                           country == "Non-U.S. OECD" ~ "Average of 33 countries",
+                           TRUE ~ "Other country"),
+         country = ifelse(country == "Non-U.S. OECD", "33-country average", country),
+         country = fct_reorder(country, price_per_vial))
+
+p <- ggplot(country_all, aes(price_per_vial, country, fill = group,
+            text = paste0(country, ": ", vial(price_per_vial), " per vial (2022)"))) +
+  geom_col() +
+  scale_fill_manual(values = c("United States" = "#C53030", "Average of 33 countries" = "grey45",
+                               "Other country" = "#1F4E5A")) +
+  theme_minimal() +
+  labs(x = "Average price per 1,000-unit vial, before discounts (US$)", y = NULL, fill = NULL)
+
+ggplotly(p, tooltip = "text") %>%
+  layout(legend = list(orientation = "h", y = 1.05)) %>%
+  config(displayModeBar = FALSE)
+```
+
+The U.S. isn't just a little higher. At `r vial(us_list_vial)` per vial, it was about
+**`r round(us_gross_index_pct / 100, 1)` times** the average of the other 33 countries (RAND's careful
+like-for-like comparison). Canada, often the go-to comparison, was `r vial(rand$price_per_vial[rand$country == "Canada"])`.
+
+Notice something else, though: **every country pays well above the cost to make it.** The UK pays roughly
+`r round(rand$price_per_vial[rand$country == "UK"] / cost_high)` to
+`r round(rand$price_per_vial[rand$country == "UK"] / cost_low)` times the estimated production cost.
+Everyone pays a markup. The U.S. markup was just in a different league.
+
+## Why the U.S. sticker price was never the real price
+
+Here's the part that rarely makes the viral posts. In the U.S., drugmakers set a high **list price**, then pay
+big secret **rebates** to the companies that manage insurance drug plans (called pharmacy benefit managers, or
+PBMs) in exchange for being covered. RAND estimates those discounts knocked about
+**`r us_gross_to_net_discount * 100`%** off the U.S. list price.
+
+```{r net chart}
+#| fig-height: 3
+net <- tibble(label = factor(c("Cost to make (high end)", "33-country average", "U.S. after discounts", "U.S. list price"),
+                             levels = c("Cost to make (high end)", "33-country average", "U.S. after discounts", "U.S. list price")),
+              value = c(cost_high, oecd_vial, us_net_vial, us_list_vial))
+
+p2 <- ggplot(net, aes(value, label, text = paste0(label, ": ", vial(value)))) +
+  geom_col(fill = c("#2A9D8F", "grey45", "#D69E2E", "#C53030")) +
+  theme_minimal() +
+  labs(x = "Price per 1,000-unit vial (US$)", y = NULL)
+
+ggplotly(p2, tooltip = "text") %>% config(displayModeBar = FALSE)
+```
+
+So who paid the `r vial(us_list_vial)`? Often the people with the least bargaining power: the uninsured, and
+people in high-deductible plans, whose out-of-pocket costs are frequently based on the list price. That's how
+insulin became a symbol of American health care, even though insurers were paying far less.
+
+Researchers still argue over who's to blame for the system. Some point to drugmakers raising list prices;
+others point to middlemen who earn more when list prices and rebates are both high. Either way, even after
+the discounts, **the U.S. still paid about `r round(us_net_index_pct / 100, 1)` times what other wealthy countries
+paid.**
+
+## What's changed since 2022
+
+The RAND data is from 2022, and the U.S. insulin market has changed a lot since then:
+
+- **List price cuts.** In 2023, Eli Lilly cut list prices for its main insulins by about 70%. Novo Nordisk's
+  cuts of 65–75% and Sanofi's 78% cut to Lantus took effect in January 2024.
+- **$35 caps.** Since 2023, people on Medicare pay no more than $35 a month for insulin. Some states,
+  including California, cap it for many private plans too, and the big makers offer $35 programs.
+- **New low-cost insulin.** In January 2026, California's CalRx program and the nonprofit drugmaker Civica
+  launched a long-acting insulin at no more than $55 for five pens, about **$11 a pen**. That works out to
+  about **`r vial(calrx_per_1000)` per 1,000 units**, right in line with what Canada paid in 2022.
+
+These changes don't show up in the 2022 numbers, so today's U.S. list prices are lower than our chart shows.
+
+## The fine print
+
+- **Different years, different sources.** The cost estimate is from 2018; the country prices are from 2022.
+- **Country prices are averages** across all the insulin each country buys, so a country that uses more of the
+  newer insulins will look a bit pricier.
+- **U.S. discounts are estimated.** Rebates are confidential, so RAND applied an average discount.
+- **No country's price includes the pharmacy's markup or taxes.** What patients pay at the counter can differ.
+
+## The bottom line
+
+Insulin really is cheap to make, roughly $3 to $9 a vial. Other wealthy countries pay a few times that.
+The U.S. list price was about ten times higher than theirs, but it mostly functioned as a starting point for
+secret discounts, and the people who paid it were the ones least able to. After a wave of price cuts, caps,
+and new low-cost options since 2023, the gap is closing. But it hasn't closed.
+
+---
+
+**How we did this.** Country prices are from RAND's report *Comparing Insulin Prices in the United States to
+Other Countries: Updated Results Using 2022 Data* (Mulcahy & Schwam, 2024), which analyzed IQVIA sales data for
+the U.S. and 33 OECD countries (Table A.5, average gross price per 100 units, all insulins, multiplied by 10 for
+a 1,000-unit vial). The U.S. after-discount price applies RAND's 76% gross-to-net estimate. Production cost
+estimates are from Gotham, Barber & Hill, "Production costs and potential prices for biosimilars of human
+insulin and insulin analogues," *BMJ Global Health* (2018), Table 1.
+[RAND report](https://www.rand.org/pubs/research_reports/RRA788-2.html) ·
+[BMJ Global Health study](https://pmc.ncbi.nlm.nih.gov/articles/PMC6157569/)

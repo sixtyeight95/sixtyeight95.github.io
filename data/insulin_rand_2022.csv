@@ -1,0 +1,36 @@
+country,gross_price_per_100_units_usd,us_price_index_pct
+Australia,1.9,1327.0
+Austria,2.32,959.0
+Belgium,1.94,1107.0
+Canada,3.75,645.0
+Chile,5.42,456.0
+Colombia,1.66,1286.0
+Czechia,2.27,982.0
+Estonia,2.63,996.0
+Finland,2.16,1206.0
+France,2.24,1007.0
+Germany,3.11,695.0
+Greece,2.36,1075.0
+Hungary,1.58,1210.0
+Ireland,2.47,966.0
+Italy,2.74,871.0
+Japan,3.2,831.0
+"Korea, South",2.63,1042.0
+Latvia,2.2,1061.0
+Lithuania,1.99,1196.0
+Luxembourg,2.52,1125.0
+Mexico,2.79,454.0
+Netherlands,2.32,1038.0
+New Zealand,2.8,714.0
+Norway,2.2,1063.0
+Poland,1.43,1301.0
+Portugal,2.39,979.0
+Slovakia,1.91,1097.0
+Slovenia,1.88,1209.0
+Spain,2.51,948.0
+Sweden,2.04,1023.0
+Switzerland,3.85,657.0
+Turkey,0.65,3733.0
+UK,2.2,987.0
+Non-U.S. OECD,2.37,959.0
+U.S.,22.68,100.0

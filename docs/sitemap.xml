@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sixtyeight95.github.io/posts/2026-11-housing-hours-of-work/index.html</loc>
-    <lastmod>2026-11-10T20:05:27.212Z</lastmod>
+    <loc>https://sixtyeight95.github.io/posts/2026-11-insulin-cost/index.html</loc>
+    <lastmod>2026-11-11T13:59:08.949Z</lastmod>
   </url>
   <url>
-    <loc>https://sixtyeight95.github.io/posts/2026-11-gas-prices-politics/index.html</loc>
-    <lastmod>2026-11-10T14:57:34.024Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sixtyeight95.github.io/index.html</loc>
-    <lastmod>2026-11-09T17:15:33.797Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sixtyeight95.github.io/about.html</loc>
-    <lastmod>2026-11-09T17:15:33.840Z</lastmod>
+    <loc>https://sixtyeight95.github.io/posts/2026-11-groceries-minutes-of-work/index.html</loc>
+    <lastmod>2026-11-10T20:00:00.470Z</lastmod>
   </url>
   <url>
     <loc>https://sixtyeight95.github.io/posts/2026-11-college-hours-of-work/index.html</loc>
     <lastmod>2026-11-10T20:08:15.790Z</lastmod>
   </url>
   <url>
-    <loc>https://sixtyeight95.github.io/posts/2026-11-groceries-minutes-of-work/index.html</loc>
-    <lastmod>2026-11-10T20:00:00.470Z</lastmod>
+    <loc>https://sixtyeight95.github.io/about.html</loc>
+    <lastmod>2026-11-09T17:15:33.840Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sixtyeight95.github.io/index.html</loc>
+    <lastmod>2026-11-09T17:15:33.797Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sixtyeight95.github.io/posts/2026-11-gas-prices-politics/index.html</loc>
+    <lastmod>2026-11-10T14:57:34.024Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sixtyeight95.github.io/posts/2026-11-housing-hours-of-work/index.html</loc>
+    <lastmod>2026-11-10T20:05:27.212Z</lastmod>
   </url>
 </urlset>
