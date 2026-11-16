@@ -1,0 +1,111 @@
+---
+title: "Home Prices Are Dipping. Is Now a Good Time to Buy?"
+subtitle: "Prices are down a little. Mortgage rates are up a lot. Here's what that does to the monthly payment."
+author: "SixtyEight95"
+date: "2026-11-22"
+categories: [housing, cost of living, interest rates]
+image: infographic.png
+---
+
+```{r setup}
+source("../../R/fred.R")
+source("../../R/housing_market_data.R")
+library(plotly)
+library(knitr)
+usd <- function(x) paste0("$", formatC(round(x), format = "d", big.mark = ","))
+pct <- function(x) paste0(ifelse(x > 0, "+", ""), formatC(x, format = "f", digits = 1), "%")
+f2  <- function(x) formatC(x, format = "f", digits = 2)
+```
+
+You may have seen headlines that home prices are finally coming down. Some are. So is this the moment to buy?
+We pulled the latest market data to see what's actually changed for buyers, and what it does to the monthly payment.
+(This is general information, not financial advice; everyone's situation is different.)
+
+## The short answer
+
+::: {.callout-note appearance="simple"}
+The median listed home is **`r pct(m("MEDLISPRIUS")$change)`** cheaper than a year ago. But mortgage rates rose from about
+**`r f2(pay_yearago$rate)`%** to **`r f2(pay_latest$rate)`%**, so the monthly payment on that typical home is **`r usd(pay_now - pay_then)` higher**:
+about **`r usd(pay_now)` a month**, versus `r usd(pay_then)` a year ago.
+
+The real change is leverage: more homes for sale, fewer buyers, and more room to negotiate than in years.
+:::
+
+## The monthly payment
+
+```{r payment chart}
+#| fig-height: 4.5
+p <- ggplot(listing_hist %>% filter(date >= as.Date("2017-01-01")), aes(date, payment, group = 1,
+            text = paste0(format(date, "%b %Y"), "<br>Median list price: ", usd(price), "<br>Mortgage rate: ",
+                          f2(rate), "%<br>Monthly payment: ", usd(payment)))) +
+  geom_line(color = "#C05621", linewidth = 0.9) +
+  scale_y_continuous(labels = scales::dollar) + expand_limits(y = 0) +
+  theme_minimal() + labs(x = NULL, y = "Monthly principal + interest")
+ggplotly(p, tooltip = "text") %>% config(displayModeBar = FALSE)
+```
+
+This is the monthly principal and interest on the median listed home, with 10% down and a 30-year fixed mortgage at
+that month's average rate. It doubled from 2021 to 2023 as rates shot up, eased in 2025 as rates fell, and has climbed
+again this fall.
+
+## Are prices really falling?
+
+It depends on which measure you use:
+
+```{r prices table}
+tribble(
+  ~Measure, ~Latest, ~`Change from a year ago`,
+  "Median listing price (Realtor.com)", usd(m("MEDLISPRIUS")$now), pct(m("MEDLISPRIUS")$change),
+  "Median price of new homes sold (Census)", usd(m("MSPUS")$now), pct(m("MSPUS")$change),
+  "Case-Shiller home price index (repeat sales)", formatC(m("CSUSHPINSA")$now, format = "f", digits = 1), pct(m("CSUSHPINSA")$change)
+) %>% kable(align = "lrr")
+```
+
+**Asking prices** and **new-home prices** are down. But the **Case-Shiller index**, which tracks the same homes selling again
+over time and is often the best measure of true price changes, is still slightly **up** over the year, just off its summer
+peak. So "prices are dipping" is fair; "prices are falling fast" is not.
+
+## The buyer's market signals
+
+```{r market table}
+tribble(
+  ~Signal, ~Latest, ~`Change from a year ago`,
+  "Homes listed for sale", formatC(m("ACTLISCOUUS")$now, format = "d", big.mark = ","), pct(m("ACTLISCOUUS")$change),
+  "Existing homes sold (yearly pace)", formatC(m("EXHOSLUSM495S")$now, format = "d", big.mark = ","), pct(m("EXHOSLUSM495S")$change),
+  "Median days on market", round(m("MEDDAYONMARUS")$now), pct(m("MEDDAYONMARUS")$change),
+  "Rents (CPI)", "", pct(m("CUSR0000SEHA")$change)
+) %>% kable(align = "lrr")
+```
+
+More homes for sale and fewer sales means sellers are competing for buyers, not the other way around. That can mean
+room to negotiate on price, repairs, or seller-paid closing costs. Meanwhile rents are still rising, so waiting isn't free
+either.
+
+## Things to weigh
+
+The data can't tell you whether *you* should buy, but it does point to the questions that matter most:
+
+- **Can you afford the payment at today's rate?** Some people buy hoping to refinance later if rates drop. That can
+  work, but rates aren't guaranteed to fall, and refinancing has costs.
+- **How long will you stay?** Buying and selling costs thousands; it usually takes several years for owning to beat
+  renting.
+- **Use the leverage.** In a slower market, asking for a lower price or concessions is more realistic than it was in 2021–2022.
+
+## The fine print
+
+- **Payments shown are principal and interest only.** Property taxes, insurance, and HOA fees can add hundreds a month.
+- **National medians.** Local markets vary widely; some areas are seeing real price drops, others are still rising.
+- **The median listing price** reflects the mix of homes for sale, not just price changes.
+
+## The bottom line
+
+Home prices are softening, and buyers have more choices and leverage than they've had in years. But mortgage rates
+climbed even more than prices dipped, so the typical monthly payment is higher than a year ago. Whether that makes
+now a good time depends far more on your budget and timeline than on the headlines.
+
+---
+
+**How we did this.** Median listing price, active listings, and days on market are from Realtor.com; new-home prices
+from the Census Bureau; the Case-Shiller U.S. National Home Price Index from S&P; existing home sales from the National
+Association of Realtors; mortgage rates from Freddie Mac's weekly survey (averaged by month); and rents from the BLS CPI,
+all via [FRED](https://fred.stlouisfed.org/). Payments assume 10% down and a 30-year fixed loan.
