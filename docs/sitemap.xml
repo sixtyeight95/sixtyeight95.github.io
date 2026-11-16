@@ -1,20 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sixtyeight95.github.io/posts/2026-11-insulin-cost/index.html</loc>
-    <lastmod>2026-11-11T13:59:08.949Z</lastmod>
+    <loc>https://sixtyeight95.github.io/posts/2026-11-thanksgiving-dinner/index.html</loc>
+    <lastmod>2026-11-16T16:10:03.589Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sixtyeight95.github.io/posts/2026-11-job-search/index.html</loc>
+    <lastmod>2026-11-16T16:21:14.941Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sixtyeight95.github.io/posts/2026-11-inflation-back/index.html</loc>
+    <lastmod>2026-11-16T16:15:34.881Z</lastmod>
   </url>
   <url>
     <loc>https://sixtyeight95.github.io/posts/2026-11-hospital-bills/index.html</loc>
     <lastmod>2026-11-11T14:21:17.676Z</lastmod>
   </url>
   <url>
-    <loc>https://sixtyeight95.github.io/posts/2026-11-gas-prices-politics/index.html</loc>
-    <lastmod>2026-11-10T14:57:34.024Z</lastmod>
+    <loc>https://sixtyeight95.github.io/posts/2026-11-good-time-to-buy/index.html</loc>
+    <lastmod>2026-11-16T16:31:31.401Z</lastmod>
   </url>
   <url>
-    <loc>https://sixtyeight95.github.io/posts/2026-11-ev-cost/index.html</loc>
-    <lastmod>2026-11-11T15:01:56.889Z</lastmod>
+    <loc>https://sixtyeight95.github.io/posts/2026-11-ev-environment/index.html</loc>
+    <lastmod>2026-11-11T15:03:45.882Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sixtyeight95.github.io/posts/2026-11-electric-bills/index.html</loc>
+    <lastmod>2026-11-16T16:25:38.231Z</lastmod>
   </url>
   <url>
     <loc>https://sixtyeight95.github.io/index.html</loc>
@@ -29,8 +41,12 @@
     <lastmod>2026-11-10T20:08:15.790Z</lastmod>
   </url>
   <url>
-    <loc>https://sixtyeight95.github.io/posts/2026-11-ev-environment/index.html</loc>
-    <lastmod>2026-11-11T15:03:45.882Z</lastmod>
+    <loc>https://sixtyeight95.github.io/posts/2026-11-ev-cost/index.html</loc>
+    <lastmod>2026-11-11T15:01:56.889Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sixtyeight95.github.io/posts/2026-11-gas-prices-politics/index.html</loc>
+    <lastmod>2026-11-10T14:57:34.024Z</lastmod>
   </url>
   <url>
     <loc>https://sixtyeight95.github.io/posts/2026-11-groceries-minutes-of-work/index.html</loc>
@@ -41,24 +57,8 @@
     <lastmod>2026-11-10T20:05:27.212Z</lastmod>
   </url>
   <url>
-    <loc>https://sixtyeight95.github.io/posts/2026-11-thanksgiving-dinner/index.html</loc>
-    <lastmod>2026-11-16T16:10:03.589Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sixtyeight95.github.io/posts/2026-11-inflation-back/index.html</loc>
-    <lastmod>2026-11-16T16:15:34.881Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sixtyeight95.github.io/posts/2026-11-job-search/index.html</loc>
-    <lastmod>2026-11-16T16:21:14.941Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sixtyeight95.github.io/posts/2026-11-electric-bills/index.html</loc>
-    <lastmod>2026-11-16T16:25:38.231Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sixtyeight95.github.io/posts/2026-11-good-time-to-buy/index.html</loc>
-    <lastmod>2026-11-16T16:31:31.401Z</lastmod>
+    <loc>https://sixtyeight95.github.io/posts/2026-11-insulin-cost/index.html</loc>
+    <lastmod>2026-11-11T13:59:08.949Z</lastmod>
   </url>
   <url>
     <loc>https://sixtyeight95.github.io/posts/2026-11-snap-facts/index.html</loc>

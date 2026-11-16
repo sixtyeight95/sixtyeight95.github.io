@@ -1,59 +1,164 @@
 [
   {
-    "objectID": "posts/2026-11-insulin-cost/index.html",
-    "href": "posts/2026-11-insulin-cost/index.html",
-    "title": "Insulin Costs About $5 a Vial to Make. Here’s What Countries Actually Pay.",
+    "objectID": "posts/2026-11-thanksgiving-dinner/index.html",
+    "href": "posts/2026-11-thanksgiving-dinner/index.html",
+    "title": "Thanksgiving Dinner, Measured in Hours of Work",
     "section": "",
-    "text": "You’ve probably seen the claim: insulin costs a few dollars to make, but Americans pay hundreds. Insulin was discovered more than 100 years ago, and its inventors famously sold the patent to the University of Toronto for $1 each so it would stay affordable. So how did a vial end up costing more than a car payment?\nWe dug into the research to see what insulin really costs to make, what other wealthy countries pay, and what the U.S. number actually means."
+    "text": "Every November, the American Farm Bureau Federation shops for the same classic Thanksgiving dinner for 10: a 16-pound turkey, stuffing, sweet potatoes, rolls, peas, cranberries, a veggie tray, pumpkin pie with whipped cream, and milk and coffee. They’ve done it every year since 1986.\nThe dollar price has roughly doubled since then. But that’s only half the story. So, as usual, we asked: how long does the average worker have to work to buy it?"
   },
   {
-    "objectID": "posts/2026-11-insulin-cost/index.html#the-short-answer",
-    "href": "posts/2026-11-insulin-cost/index.html#the-short-answer",
-    "title": "Insulin Costs About $5 a Vial to Make. Here’s What Countries Actually Pay.",
+    "objectID": "posts/2026-11-thanksgiving-dinner/index.html#the-short-answer",
+    "href": "posts/2026-11-thanksgiving-dinner/index.html#the-short-answer",
+    "title": "Thanksgiving Dinner, Measured in Hours of Work",
     "section": "The short answer",
-    "text": "The short answer\n\n\n\n\n\n\nA vial of insulin (1,000 units) costs an estimated $3 to $9 to make, including a profit margin. In 2022, other wealthy countries paid an average of $24 per vial. The U.S. list price averaged $227.\nBut that list price is not what insurers actually paid. After secret discounts, the U.S. paid about $54, still about 2.3 times other countries. And a lot has changed since 2022."
+    "text": "The short answer\n\n\n\n\n\n\nIn 2025, the classic dinner for 10 cost $55.18. At the average worker’s pay, that’s 1.7 hours of work, or about 10 minutes per guest. That’s the least work it has taken in the survey’s history. In 1986, it took 3.2 hours."
   },
   {
-    "objectID": "posts/2026-11-insulin-cost/index.html#what-it-costs-to-make",
-    "href": "posts/2026-11-insulin-cost/index.html#what-it-costs-to-make",
-    "title": "Insulin Costs About $5 a Vial to Make. Here’s What Countries Actually Pay.",
-    "section": "What it costs to make",
-    "text": "What it costs to make\nIn 2018, researchers published a detailed estimate in BMJ Global Health of what insulin would cost if many companies competed to make it, the way they do for generic pills. They added up the raw ingredients, filling and packaging the vials, building factories, getting regulatory approval, shipping, and a 20% margin for overhead and profit.\n\n\n\nOne 10 mL vial = 1,000 units. Source: Gotham, Barber & Hill, BMJ Global Health (2018).\n\n\nType of insulin\nEstimated price per vial\n\n\n\n\nRegular human insulin\n$3.29 – $4.86\n\n\nNPH (human)\n$3.35 – $4.93\n\n\nGlargine (Lantus-type)\n$5.32 – $7.38\n\n\nLispro (Humalog-type)\n$6.51 – $8.87\n\n\nAspart (Novolog-type)\n$6.50 – $8.86\n\n\n\n\n\nSo yes, the viral claim holds up: insulin is cheap to make. Even the newer, longer-lasting insulins come in under $10 a vial.\nWhat these estimates don’t include: the original research that created each insulin, the pharmacy’s markup, or insurance. They’re an estimate of what a competitive market could charge, not what any company actually spends."
+    "objectID": "posts/2026-11-thanksgiving-dinner/index.html#years-of-thanksgiving-dinner",
+    "href": "posts/2026-11-thanksgiving-dinner/index.html#years-of-thanksgiving-dinner",
+    "title": "Thanksgiving Dinner, Measured in Hours of Work",
+    "section": "40 years of Thanksgiving dinner",
+    "text": "40 years of Thanksgiving dinner\n\n\n\n\n\n\nHover to see the price each year. The dollar cost peaked at $64.05 in 2022, when inflation and bird flu sent turkey prices soaring. That year dinner took 2.3 hours of work, a visible bump. Since then, the price has fallen three years in a row while pay kept rising, so dinner got easier to afford on both counts."
   },
   {
-    "objectID": "posts/2026-11-insulin-cost/index.html#what-wealthy-countries-pay",
-    "href": "posts/2026-11-insulin-cost/index.html#what-wealthy-countries-pay",
-    "title": "Insulin Costs About $5 a Vial to Make. Here’s What Countries Actually Pay.",
-    "section": "What wealthy countries pay",
-    "text": "What wealthy countries pay\nThe RAND Corporation compared insulin prices in the U.S. and 33 other wealthy countries using 2022 sales data. These are the prices drugmakers charge before discounts, averaged across all the insulin each country uses.\n\n\n\n\n\n\nThe U.S. isn’t just a little higher. At $227 per vial, it was about 9.7 times the average of the other 33 countries (RAND’s careful like-for-like comparison). Canada, often the go-to comparison, was $38.\nNotice something else, though: every country pays well above the cost to make it. The UK pays roughly 2 to 7 times the estimated production cost. Everyone pays a markup. The U.S. markup was just in a different league."
+    "objectID": "posts/2026-11-thanksgiving-dinner/index.html#dollars-vs.-work",
+    "href": "posts/2026-11-thanksgiving-dinner/index.html#dollars-vs.-work",
+    "title": "Thanksgiving Dinner, Measured in Hours of Work",
+    "section": "Dollars vs. work",
+    "text": "Dollars vs. work\n\n\n\n\n\n\n\n\n\n\n\n\nYear\nDinner for 10\nAverage hourly pay\nHours of work\nMinutes per guest\n\n\n\n\n1986\n$28.74\n$9.01\n3.2\n19\n\n\n1995\n$29.64\n$11.78\n2.5\n15\n\n\n2005\n$36.78\n$16.30\n2.3\n14\n\n\n2015\n$50.11\n$21.21\n2.4\n14\n\n\n2019\n$48.91\n$23.83\n2.1\n12\n\n\n2022\n$64.05\n$28.11\n2.3\n14\n\n\n2025\n$55.18\n$31.79\n1.7\n10\n\n\n\n\n\nIn dollars, Thanksgiving is about twice as expensive as in 1986. In work time, it’s about half the work."
   },
   {
-    "objectID": "posts/2026-11-insulin-cost/index.html#why-the-u.s.-sticker-price-was-never-the-real-price",
-    "href": "posts/2026-11-insulin-cost/index.html#why-the-u.s.-sticker-price-was-never-the-real-price",
-    "title": "Insulin Costs About $5 a Vial to Make. Here’s What Countries Actually Pay.",
-    "section": "Why the U.S. sticker price was never the real price",
-    "text": "Why the U.S. sticker price was never the real price\nHere’s the part that rarely makes the viral posts. In the U.S., drugmakers set a high list price, then pay big secret rebates to the companies that manage insurance drug plans (called pharmacy benefit managers, or PBMs) in exchange for being covered. RAND estimates those discounts knocked about 76% off the U.S. list price.\n\n\n\n\n\n\nSo who paid the $227? Often the people with the least bargaining power: the uninsured, and people in high-deductible plans, whose out-of-pocket costs are frequently based on the list price. That’s how insulin became a symbol of American health care, even though insurers were paying far less.\nResearchers still argue over who’s to blame for the system. Some point to drugmakers raising list prices; others point to middlemen who earn more when list prices and rebates are both high. Either way, even after the discounts, the U.S. still paid about 2.3 times what other wealthy countries paid."
+    "objectID": "posts/2026-11-thanksgiving-dinner/index.html#what-about-this-year",
+    "href": "posts/2026-11-thanksgiving-dinner/index.html#what-about-this-year",
+    "title": "Thanksgiving Dinner, Measured in Hours of Work",
+    "section": "What about this year?",
+    "text": "What about this year?\nThe Farm Bureau releases its 2026 survey the week before Thanksgiving. We’ll update this post when it comes out. With food prices rising again this fall, we’ll be watching to see whether the streak of cheaper dinners holds."
   },
   {
-    "objectID": "posts/2026-11-insulin-cost/index.html#whats-changed-since-2022",
-    "href": "posts/2026-11-insulin-cost/index.html#whats-changed-since-2022",
-    "title": "Insulin Costs About $5 a Vial to Make. Here’s What Countries Actually Pay.",
-    "section": "What’s changed since 2022",
-    "text": "What’s changed since 2022\nThe RAND data is from 2022, and the U.S. insulin market has changed a lot since then:\n\nList price cuts. In 2023, Eli Lilly cut list prices for its main insulins by about 70%. Novo Nordisk’s cuts of 65–75% and Sanofi’s 78% cut to Lantus took effect in January 2024.\n$35 caps. Since 2023, people on Medicare pay no more than $35 a month for insulin. Some states, including California, cap it for many private plans too, and the big makers offer $35 programs.\nNew low-cost insulin. In January 2026, California’s CalRx program and the nonprofit drugmaker Civica launched a long-acting insulin at no more than $55 for five pens, about $11 a pen. That works out to about $37 per 1,000 units, right in line with what Canada paid in 2022.\n\nThese changes don’t show up in the 2022 numbers, so today’s U.S. list prices are lower than our chart shows."
-  },
-  {
-    "objectID": "posts/2026-11-insulin-cost/index.html#the-fine-print",
-    "href": "posts/2026-11-insulin-cost/index.html#the-fine-print",
-    "title": "Insulin Costs About $5 a Vial to Make. Here’s What Countries Actually Pay.",
+    "objectID": "posts/2026-11-thanksgiving-dinner/index.html#the-fine-print",
+    "href": "posts/2026-11-thanksgiving-dinner/index.html#the-fine-print",
+    "title": "Thanksgiving Dinner, Measured in Hours of Work",
     "section": "The fine print",
-    "text": "The fine print\n\nDifferent years, different sources. The cost estimate is from 2018; the country prices are from 2022.\nCountry prices are averages across all the insulin each country buys, so a country that uses more of the newer insulins will look a bit pricier.\nU.S. discounts are estimated. Rebates are confidential, so RAND applied an average discount.\nNo country’s price includes the pharmacy’s markup or taxes. What patients pay at the counter can differ."
+    "text": "The fine print\n\nOne menu, national average. The survey prices the same classic menu every year; your actual dinner, store, and region will differ. Regional prices in the Northeast and West run well above the national average.\nA few early years are estimates. The year-by-year series we used fills a few early gaps using inflation data; the Farm Bureau’s own figures anchor the start and recent years.\nPay is the average worker’s hourly earnings in November, before taxes, for the roughly 80% of private-sector workers who aren’t managers."
   },
   {
-    "objectID": "posts/2026-11-insulin-cost/index.html#the-bottom-line",
-    "href": "posts/2026-11-insulin-cost/index.html#the-bottom-line",
-    "title": "Insulin Costs About $5 a Vial to Make. Here’s What Countries Actually Pay.",
+    "objectID": "posts/2026-11-thanksgiving-dinner/index.html#the-bottom-line",
+    "href": "posts/2026-11-thanksgiving-dinner/index.html#the-bottom-line",
+    "title": "Thanksgiving Dinner, Measured in Hours of Work",
     "section": "The bottom line",
-    "text": "The bottom line\nInsulin really is cheap to make, roughly $3 to $9 a vial. Other wealthy countries pay a few times that. The U.S. list price was about ten times higher than theirs, but it mostly functioned as a starting point for secret discounts, and the people who paid it were the ones least able to. After a wave of price cuts, caps, and new low-cost options since 2023, the gap is closing. But it hasn’t closed.\n\nHow we did this. Country prices are from RAND’s report Comparing Insulin Prices in the United States to Other Countries: Updated Results Using 2022 Data (Mulcahy & Schwam, 2024), which analyzed IQVIA sales data for the U.S. and 33 OECD countries (Table A.5, average gross price per 100 units, all insulins, multiplied by 10 for a 1,000-unit vial). The U.S. after-discount price applies RAND’s 76% gross-to-net estimate. Production cost estimates are from Gotham, Barber & Hill, “Production costs and potential prices for biosimilars of human insulin and insulin analogues,” BMJ Global Health (2018), Table 1. RAND report · BMJ Global Health study"
+    "text": "The bottom line\nThanksgiving dinner feels more expensive because the receipt is bigger. But measured in the time it takes to earn it, last year’s feast was the most affordable in four decades: about 10 minutes of work per guest.\n\nHow we did this. Dinner costs are the American Farm Bureau Federation’s annual Thanksgiving Dinner Cost Survey (classic menu for 10). Years 1987–2022 come from a compilation by 24/7 Wall St.; 1986 and 2023–2025 are from AFBF. Pay is average hourly earnings of production and nonsupervisory employees for November of each year, via FRED. AFBF survey"
+  },
+  {
+    "objectID": "posts/2026-11-job-search/index.html",
+    "href": "posts/2026-11-job-search/index.html",
+    "title": "How Long Does It Take to Find a Job Now?",
+    "section": "",
+    "text": "The unemployment rate looks fine. Layoff headlines are rare. And yet, if you’ve looked for a job recently, you may have felt like you were sending applications into a void. Both things are true. We dug into the government’s job data to explain why."
+  },
+  {
+    "objectID": "posts/2026-11-job-search/index.html#the-short-answer",
+    "href": "posts/2026-11-job-search/index.html#the-short-answer",
+    "title": "How Long Does It Take to Find a Job Now?",
+    "section": "The short answer",
+    "text": "The short answer\n\n\n\n\n\n\nUnemployment is just 4.1%, and layoffs are near record lows. But companies are hiring slowly, so people who do lose a job are stuck looking longer. The average job seeker has been searching for 27.1 weeks, up from about 22 weeks in 2019, and 28% have been out of work for six months or more."
+  },
+  {
+    "objectID": "posts/2026-11-job-search/index.html#how-long-job-searches-last",
+    "href": "posts/2026-11-job-search/index.html#how-long-job-searches-last",
+    "title": "How Long Does It Take to Find a Job Now?",
+    "section": "How long job searches last",
+    "text": "How long job searches last\n\n\n\n\n\n\nTwo measures: the average (pulled up by people who’ve been looking a very long time) and the median, the typical job seeker. Both have been climbing since 2023. The average is now 27.1 weeks; the median is 11.9 weeks.\n(The sharp dip in 2020 isn’t a good sign: tens of millions of people lost their jobs at once in the pandemic, so almost everyone unemployed had just started looking.)"
+  },
+  {
+    "objectID": "posts/2026-11-job-search/index.html#no-hire-no-fire",
+    "href": "posts/2026-11-job-search/index.html#no-hire-no-fire",
+    "title": "How Long Does It Take to Find a Job Now?",
+    "section": "No hire, no fire",
+    "text": "No hire, no fire\n\n\n\n\n\n\nEvery month, the government counts how many people were hired, laid off, or quit, as a share of all jobs:\n\n\n\nShare of all jobs per month. Latest: September 2026 (BLS JOLTS).\n\n\nMeasure\nNow\n2019 average\n\n\n\n\nHired\n3.4%\n3.9%\n\n\nLaid off or fired\n1.0%\n1.2%\n\n\nQuit\n2.1%\n2.3%\n\n\n\n\n\nFewer people are being let go than before the pandemic, but fewer are being hired too, and fewer are quitting (people tend to stay put when they’re not confident they’ll land something better). The job market has slowed down without breaking. That’s good news if you have a job, and hard news if you need one."
+  },
+  {
+    "objectID": "posts/2026-11-job-search/index.html#why-is-hiring-so-slow",
+    "href": "posts/2026-11-job-search/index.html#why-is-hiring-so-slow",
+    "title": "How Long Does It Take to Find a Job Now?",
+    "section": "Why is hiring so slow?",
+    "text": "Why is hiring so slow?\nEconomists point to a mix of reasons: uncertainty about the economy and interest rates making companies cautious about adding staff, businesses that hired heavily in 2021–2022 still having enough workers, and employers testing whether new technology like AI can handle some tasks before they hire. The data can show that hiring has slowed, but not exactly why, so take any single explanation with a grain of salt."
+  },
+  {
+    "objectID": "posts/2026-11-job-search/index.html#if-youre-job-hunting",
+    "href": "posts/2026-11-job-search/index.html#if-youre-job-hunting",
+    "title": "How Long Does It Take to Find a Job Now?",
+    "section": "If you’re job hunting",
+    "text": "If you’re job hunting\nThe numbers suggest planning for a longer search than you might expect:\n\nBudget for months, not weeks. The typical search is about 12 weeks, and many take much longer.\nDon’t quit before you’ve landed something if you can avoid it; quits are down for a reason.\nUnemployment insurance usually lasts up to 26 weeks in most states, close to the current average search, so it may run out before a long search ends."
+  },
+  {
+    "objectID": "posts/2026-11-job-search/index.html#the-fine-print",
+    "href": "posts/2026-11-job-search/index.html#the-fine-print",
+    "title": "How Long Does It Take to Find a Job Now?",
+    "section": "The fine print",
+    "text": "The fine print\n\nSearch length comes from the monthly household survey and counts only people actively looking; people who gave up looking aren’t included.\nHiring and layoff rates come from the separate JOLTS employer survey and lag by about a month.\nNational averages hide big differences by industry, location, and experience."
+  },
+  {
+    "objectID": "posts/2026-11-job-search/index.html#the-bottom-line",
+    "href": "posts/2026-11-job-search/index.html#the-bottom-line",
+    "title": "How Long Does It Take to Find a Job Now?",
+    "section": "The bottom line",
+    "text": "The bottom line\nToday’s job market isn’t a recession. Layoffs are near record lows and unemployment is low. But it’s a market that’s stopped moving: if you lose your job, expect the search to take noticeably longer than it would have a few years ago.\n\nHow we did this. All data are from the Bureau of Labor Statistics via FRED: average and median weeks unemployed (UEMPMEAN, UEMPMED), share of unemployed out 27 weeks or more (LNS13025703), the unemployment rate (UNRATE), and JOLTS hires, layoffs and discharges, and quits rates (JTSHIR, JTSLDR, JTSQUR)."
+  },
+  {
+    "objectID": "posts/2026-11-inflation-back/index.html",
+    "href": "posts/2026-11-inflation-back/index.html",
+    "title": "Is Inflation Back?",
+    "section": "",
+    "text": "After the 2021–2023 price surge finally cooled, a lot of people hoped inflation was behind us. This year, it started climbing again. We looked at the government’s own numbers to see how big the rebound is, what’s driving it, and what it means for your paycheck."
+  },
+  {
+    "objectID": "posts/2026-11-inflation-back/index.html#the-short-answer",
+    "href": "posts/2026-11-inflation-back/index.html#the-short-answer",
+    "title": "Is Inflation Back?",
+    "section": "The short answer",
+    "text": "The short answer\n\n\n\n\n\n\nPrices are up 4.1% from a year ago (October 2026), up from 2.7% in February 2026. Most of the jump is energy: gasoline is up 37.4%. Without food and energy, inflation is a calmer 2.9%.\nBut it’s enough to bite: pay is up only 3.3%, so the average paycheck now buys less than it did a year ago for the first time since early 2023."
+  },
+  {
+    "objectID": "posts/2026-11-inflation-back/index.html#the-rebound",
+    "href": "posts/2026-11-inflation-back/index.html#the-rebound",
+    "title": "Is Inflation Back?",
+    "section": "The rebound",
+    "text": "The rebound\n\n\n\n\n\n\nThe dashed line is the Federal Reserve’s 2% target. The dotted line marks the U.S. and Israeli strike on Iran in late February 2026, which disrupted oil shipping through the Strait of Hormuz. Notice that the red line (all prices) jumped right after, while the teal line (everything except food and energy) barely moved. That tells you this rebound is mostly about energy, not a broad-based surge like 2022."
+  },
+  {
+    "objectID": "posts/2026-11-inflation-back/index.html#whats-driving-it",
+    "href": "posts/2026-11-inflation-back/index.html#whats-driving-it",
+    "title": "Is Inflation Back?",
+    "section": "What’s driving it",
+    "text": "What’s driving it\n\n\n\nConsumer and producer price indexes, October 2026 vs. a year earlier. Source: BLS via FRED.\n\n\nCategory\nChange from a year ago\n\n\n\n\nGasoline\n37.4%\n\n\nAll energy (gas, electricity, heating)\n21.2%\n\n\nHousing costs (shelter)\n3.5%\n\n\nFood\n2.9%\n\n\nEverything except food & energy\n2.9%\n\n\nAll prices\n4.1%\n\n\nWholesale prices (producer prices)\n6.5%\n\n\n\n\n\nTwo things to watch:\n\nWholesale prices are up 6.5%. Producer prices measure what businesses pay. When those rise faster than consumer prices, some of it tends to show up on store shelves later.\nFood is starting to climb. Food prices rose 2.9% over the year, and higher fuel and shipping costs can push grocery prices up with a delay."
+  },
+  {
+    "objectID": "posts/2026-11-inflation-back/index.html#what-it-means-for-your-paycheck",
+    "href": "posts/2026-11-inflation-back/index.html#what-it-means-for-your-paycheck",
+    "title": "Is Inflation Back?",
+    "section": "What it means for your paycheck",
+    "text": "What it means for your paycheck\n\n\n\n\n\n\nThis line shows whether paychecks are beating prices. Above zero, the average worker’s pay is growing faster than prices; below zero, it’s falling behind. From mid-2023 through 2025, pay comfortably outran prices. In October 2026, it dipped below zero: -0.3%."
+  },
+  {
+    "objectID": "posts/2026-11-inflation-back/index.html#the-fed-is-raising-rates-again",
+    "href": "posts/2026-11-inflation-back/index.html#the-fed-is-raising-rates-again",
+    "title": "Is Inflation Back?",
+    "section": "The Fed is raising rates again",
+    "text": "The Fed is raising rates again\nTo fight inflation, the Federal Reserve raises interest rates, which makes borrowing more expensive and cools spending. After holding rates steady for most of 2026, the Fed has started nudging them up: the federal funds rate rose from 3.63% to 3.88% this fall, and many forecasters expect another increase in December. For households, that means higher rates on credit cards, car loans, and mortgages."
+  },
+  {
+    "objectID": "posts/2026-11-inflation-back/index.html#the-fine-print",
+    "href": "posts/2026-11-inflation-back/index.html#the-fine-print",
+    "title": "Is Inflation Back?",
+    "section": "The fine print",
+    "text": "The fine print\n\nInflation numbers are averages. If you drive a lot, energy inflation hits you much harder than someone who works from home.\n“Core” inflation leaves out food and energy because they swing wildly; it’s a better guide to the long-term trend, but you still pay for gas and groceries.\nPay is the average hourly earnings of production and nonsupervisory workers, before taxes.\nThis can change quickly. If oil prices fall (as they did briefly this month on hopes of calmer fighting with Iran), headline inflation could ease fast."
+  },
+  {
+    "objectID": "posts/2026-11-inflation-back/index.html#the-bottom-line",
+    "href": "posts/2026-11-inflation-back/index.html#the-bottom-line",
+    "title": "Is Inflation Back?",
+    "section": "The bottom line",
+    "text": "The bottom line\nInflation is back, but it’s a different animal than 2022: so far it’s mostly an energy shock, with everything else rising at a more normal pace. That’s the good news. The bad news is that it’s enough to put paychecks behind prices again, and the Fed’s response means borrowing is getting more expensive too.\n\nHow we did this. All figures are from the Bureau of Labor Statistics and the Federal Reserve via FRED: CPI for all urban consumers (CPIAUCSL), CPI less food and energy (CPILFESL), energy (CPIENGSL), food (CPIUFDSL), shelter (CUSR0000SAH1), gasoline (CUSR0000SETB01), producer prices for final demand (PPIFIS), average hourly earnings of production and nonsupervisory employees (AHETPI), and the effective federal funds rate (FEDFUNDS). Changes are compared with the same month a year earlier."
   },
   {
     "objectID": "posts/2026-11-hospital-bills/index.html",
@@ -112,123 +217,165 @@
     "text": "The bottom line\nHealth economists have been saying it for decades: American health care is expensive mainly because the prices are higher, not because Americans get far more care. For hospitals, private insurers pay far more than Medicare, merged hospital systems have the leverage to keep it that way, billing complexity adds a heavy layer of cost, and inflated list prices land hardest on the people least able to pay.\n\nHow we did this. Procedure prices are from the International Federation of Health Plans and Health Care Cost Institute’s International Healthcare Cost Comparison Report 2024 (2022 data), read from the report’s charts. The Medicare comparison is from RAND’s hospital price transparency study (Round 5.1). Market concentration is from KFF. Administrative costs are from Himmelstein et al., Health Affairs (2014). List price markups are from Bai & Anderson, Health Affairs (2016). Medical debt is from KFF’s analysis of Census survey data. The hours-of-work trend uses the CPI for hospital services (BLS series CUUR0000SEMD) and average hourly earnings of production and nonsupervisory employees, both via FRED. iFHP/HCCI report · RAND · KFF on markets · KFF on medical debt"
   },
   {
-    "objectID": "posts/2026-11-gas-prices-politics/index.html",
-    "href": "posts/2026-11-gas-prices-politics/index.html",
-    "title": "Does the President Set Gas Prices? 33 Years of Data Say No",
+    "objectID": "posts/2026-11-good-time-to-buy/index.html",
+    "href": "posts/2026-11-good-time-to-buy/index.html",
+    "title": "Home Prices Are Dipping. Is Now a Good Time to Buy?",
     "section": "",
-    "text": "Every time gas prices jump, someone blames the White House. Bumper stickers, memes, campaign ads: the president gets the credit when prices fall and the blame when they rise.\nSo we checked. We lined up every week of U.S. gas prices since April 1993 (1,753 weeks, six presidential terms) against who held the White House, the Senate, and the House."
+    "text": "You may have seen headlines that home prices are finally coming down. Some are. So is this the moment to buy? We pulled the latest market data to see what’s actually changed for buyers, and what it does to the monthly payment. (This is general information, not financial advice; everyone’s situation is different.)"
   },
   {
-    "objectID": "posts/2026-11-gas-prices-politics/index.html#the-short-answer",
-    "href": "posts/2026-11-gas-prices-politics/index.html#the-short-answer",
-    "title": "Does the President Set Gas Prices? 33 Years of Data Say No",
+    "objectID": "posts/2026-11-good-time-to-buy/index.html#the-short-answer",
+    "href": "posts/2026-11-good-time-to-buy/index.html#the-short-answer",
+    "title": "Home Prices Are Dipping. Is Now a Good Time to Buy?",
     "section": "The short answer",
-    "text": "The short answer\n\n\n\n\n\n\nAdjusted for inflation, the average gallon of gas cost $3.64 under Democratic presidents and $3.64 under Republican presidents.\n\n\n\nThat tie looks suspicious, so to be clear: it’s a coincidence of averaging. Individual presidencies range from $2.55 a gallon (Bill Clinton) to $4.48 (Barack Obama), and both of those are Democrats. Each party has had cheap years and expensive years. Leave out a single presidency and the party averages split apart. What the tie does tell you is that there’s no pattern by party.\nWhat “adjusted for inflation” means: prices rise over time, so a dollar in 1993 bought more than a dollar does now. To compare fairly, we convert every old price into today’s money. For example, the $1.07 a gallon drivers paid in 1993 bought what $2.51 buys today, so we count it as $2.51.\nWhat actually moves the price is crude oil, and crude oil answers to wars, OPEC, recessions, and hurricanes, not to elections."
+    "text": "The short answer\n\n\n\n\n\n\nThe median listed home is -2.2% cheaper than a year ago. But mortgage rates rose from about 6.25% to 7.33%, so the monthly payment on that typical home is $215 higher: about $2,568 a month, versus $2,353 a year ago.\nThe real change is leverage: more homes for sale, fewer buyers, and more room to negotiate than in years."
   },
   {
-    "objectID": "posts/2026-11-gas-prices-politics/index.html#years-of-prices-and-who-was-in-charge",
-    "href": "posts/2026-11-gas-prices-politics/index.html#years-of-prices-and-who-was-in-charge",
-    "title": "Does the President Set Gas Prices? 33 Years of Data Say No",
-    "section": "33 years of prices and who was in charge",
-    "text": "33 years of prices and who was in charge\nShading shows the president’s party (blue = Democrat, red = Republican). Gold dots are major world events. The strip underneath shows which party controlled the White House, Senate, and House. Hover for details.\n\n\n\n\n\n\nThe chart above is in the dollars of each week, which makes recent years look worse than they were. A dollar in 1993 bought a lot more than a dollar today, so for fair comparisons the rest of this post uses October 2026 dollars."
+    "objectID": "posts/2026-11-good-time-to-buy/index.html#the-monthly-payment",
+    "href": "posts/2026-11-good-time-to-buy/index.html#the-monthly-payment",
+    "title": "Home Prices Are Dipping. Is Now a Good Time to Buy?",
+    "section": "The monthly payment",
+    "text": "The monthly payment\n\n\n\n\n\n\nThis is the monthly principal and interest on the median listed home, with 10% down and a 30-year fixed mortgage at that month’s average rate. It doubled from 2021 to 2023 as rates shot up, eased in 2025 as rates fell, and has climbed again this fall."
   },
   {
-    "objectID": "posts/2026-11-gas-prices-politics/index.html#finding-1-no-pattern-by-party",
-    "href": "posts/2026-11-gas-prices-politics/index.html#finding-1-no-pattern-by-party",
-    "title": "Does the President Set Gas Prices? 33 Years of Data Say No",
-    "section": "Finding 1: No pattern by party",
-    "text": "Finding 1: No pattern by party\n\n\n\n\n\n\nWe see the same thing when we look at all of Washington. Republicans in full control, Democrats in full control, or split government: the inflation-adjusted averages land within a few cents of each other. Same caution as above: each group mixes cheap years with expensive ones, so the close numbers don’t mean either party lowers prices. They mean neither one has a track record of it."
+    "objectID": "posts/2026-11-good-time-to-buy/index.html#are-prices-really-falling",
+    "href": "posts/2026-11-good-time-to-buy/index.html#are-prices-really-falling",
+    "title": "Home Prices Are Dipping. Is Now a Good Time to Buy?",
+    "section": "Are prices really falling?",
+    "text": "Are prices really falling?\nIt depends on which measure you use:\n\n\n\n\n\n\n\n\n\n\nMeasure\nLatest\nChange from a year ago\n\n\n\n\nMedian listing price (Realtor.com)\n$415,000\n-2.2%\n\n\nMedian price of new homes sold (Census)\n$393,300\n-4.1%\n\n\nCase-Shiller home price index (repeat sales)\n336.7\n+2.1%\n\n\n\n\n\nAsking prices and new-home prices are down. But the Case-Shiller index, which tracks the same homes selling again over time and is often the best measure of true price changes, is still slightly up over the year, just off its summer peak. So “prices are dipping” is fair; “prices are falling fast” is not."
   },
   {
-    "objectID": "posts/2026-11-gas-prices-politics/index.html#finding-2-crude-oil-is-the-steering-wheel",
-    "href": "posts/2026-11-gas-prices-politics/index.html#finding-2-crude-oil-is-the-steering-wheel",
-    "title": "Does the President Set Gas Prices? 33 Years of Data Say No",
-    "section": "Finding 2: Crude oil is the steering wheel",
-    "text": "Finding 2: Crude oil is the steering wheel\nGasoline is made from crude oil, and crude oil is priced on a world market. Here’s what gas prices would have been if you predicted them using nothing but the price of oil, against what they actually were.\n\n\n\n\n\n\nThe two lines barely separate. The price of crude oil alone explains 92% of the ups and downs in monthly gas prices over 33 years. As a rule of thumb, every $10 change in a barrel of oil moves a gallon of gas by about 29 cents."
+    "objectID": "posts/2026-11-good-time-to-buy/index.html#the-buyers-market-signals",
+    "href": "posts/2026-11-good-time-to-buy/index.html#the-buyers-market-signals",
+    "title": "Home Prices Are Dipping. Is Now a Good Time to Buy?",
+    "section": "The buyer’s market signals",
+    "text": "The buyer’s market signals\n\n\n\n\n\nSignal\nLatest\nChange from a year ago\n\n\n\n\nHomes listed for sale\n1,183,520\n+7.4%\n\n\nExisting homes sold (yearly pace)\n3,750,000\n-8.8%\n\n\nMedian days on market\n63\n0.0%\n\n\nRents (CPI)\n\n+3.0%\n\n\n\n\n\nMore homes for sale and fewer sales means sellers are competing for buyers, not the other way around. That can mean room to negotiate on price, repairs, or seller-paid closing costs. Meanwhile rents are still rising, so waiting isn’t free either."
   },
   {
-    "objectID": "posts/2026-11-gas-prices-politics/index.html#finding-3-presidents-can-move-oil-but-they-dont-control-it",
-    "href": "posts/2026-11-gas-prices-politics/index.html#finding-3-presidents-can-move-oil-but-they-dont-control-it",
-    "title": "Does the President Set Gas Prices? 33 Years of Data Say No",
-    "section": "Finding 3: Presidents can move oil, but they don’t control it",
-    "text": "Finding 3: Presidents can move oil, but they don’t control it\nFair question: if oil drives gas prices, can’t a president drive oil prices? Sometimes, yes. The levers a president actually has:\n\nMilitary action. In 2026 the U.S. and Israel struck Iran, shipping through the Strait of Hormuz was disrupted, and March 2026 saw the biggest one-month jump in gas prices in this data. That one traces straight back to a decision made in the White House.\nSanctions. Limiting oil sales from countries like Iran, Venezuela, or Russia takes supply off the world market, which tends to push prices up.\nThe emergency oil reserve. In 2022, the White House released 180 million barrels from the Strategic Petroleum Reserve, the largest release ever, to bring prices down.\nDrilling and permits. These matter, but new wells take years to come online, so the effect usually lands on a later president’s watch.\n\nBut the biggest swings in this data came from things no president controlled:\n\n2005: Hurricane Katrina knocked out Gulf Coast refineries.\n2008: Oil hit nearly $147 a barrel, then the financial crisis crushed demand. In today’s dollars, the most expensive gas in this data was June 2008, at $6.43 a gallon.\n2014–2015: OPEC kept pumping into a glut and prices collapsed.\n2020: COVID lockdowns emptied the roads.\n2022: Russia invaded Ukraine, and the national average hit its all-time high of $5.11 (June 2022).\n\nSo a president’s choices can push gas prices up or down, sometimes a lot. But presidents of both parties have pulled these levers, and both have been on the receiving end of world events. Over 33 years it evens out, with no party coming out ahead."
+    "objectID": "posts/2026-11-good-time-to-buy/index.html#things-to-weigh",
+    "href": "posts/2026-11-good-time-to-buy/index.html#things-to-weigh",
+    "title": "Home Prices Are Dipping. Is Now a Good Time to Buy?",
+    "section": "Things to weigh",
+    "text": "Things to weigh\nThe data can’t tell you whether you should buy, but it does point to the questions that matter most:\n\nCan you afford the payment at today’s rate? Some people buy hoping to refinance later if rates drop. That can work, but rates aren’t guaranteed to fall, and refinancing has costs.\nHow long will you stay? Buying and selling costs thousands; it usually takes several years for owning to beat renting.\nUse the leverage. In a slower market, asking for a lower price or concessions is more realistic than it was in 2021–2022."
   },
   {
-    "objectID": "posts/2026-11-gas-prices-politics/index.html#every-presidency-side-by-side",
-    "href": "posts/2026-11-gas-prices-politics/index.html#every-presidency-side-by-side",
-    "title": "Does the President Set Gas Prices? 33 Years of Data Say No",
-    "section": "Every presidency, side by side",
-    "text": "Every presidency, side by side\n\n\n\nAverage price per gallon, in October 2026 dollars. Clinton’s term starts in April 1993, when the weekly data begins.\n\n\nPresident\nYears\nAverage\nAt start\nAt end\nChange\n\n\n\n\nBill Clinton (D)\n1993–2001\n$2.55\n$2.51\n$2.91\n+$0.40\n\n\nGeorge W. Bush (R)\n2001–2009\n$3.73\n$2.90\n$3.02\n+$0.12\n\n\nBarack Obama (D)\n2009–2017\n$4.48\n$3.01\n$3.42\n+$0.41\n\n\nDonald Trump (R)\n2017–2021\n$3.44\n$3.37\n$3.17\n–$0.21\n\n\nJoe Biden (D)\n2021–2025\n$4.07\n$3.18\n$3.35\n+$0.16\n\n\nDonald Trump (R)\n2025–now\n$3.70\n$3.42\n$4.29\n+$0.87"
-  },
-  {
-    "objectID": "posts/2026-11-gas-prices-politics/index.html#the-bottom-line",
-    "href": "posts/2026-11-gas-prices-politics/index.html#the-bottom-line",
-    "title": "Does the President Set Gas Prices? 33 Years of Data Say No",
-    "section": "The bottom line",
-    "text": "The bottom line\nGas prices are a great way to feel the economy and a terrible way to grade a president. If you want to know where prices are headed, watch the price of oil and the news from the Middle East, not the polls.\nRight now the national average is $4.29 (week of November 02, 2026). For where it’s likely headed next, see our monthly gas price tracker.\n\nHow we did this. Weekly U.S. retail gasoline prices (all grades) and weekly Brent crude prices come from the U.S. Energy Information Administration. Inflation adjustments use the Consumer Price Index (FRED, CPIAUCSL), converted to October 2026 dollars. Each week is assigned to whoever held the White House, Senate, and House majority that day. The “oil only” line is a simple linear regression of the monthly gas price on the monthly Brent price."
-  },
-  {
-    "objectID": "posts/2026-11-ev-cost/index.html",
-    "href": "posts/2026-11-ev-cost/index.html",
-    "title": "Does an Electric Car Actually Save You Money?",
-    "section": "",
-    "text": "Electric car fans say you’ll save a fortune on gas. Skeptics say EVs cost more and lose value fast. They’re both partly right. To settle it, we compared the full cost of owning an EV, a gas car, and a hybrid of the same size and class, per year."
-  },
-  {
-    "objectID": "posts/2026-11-ev-cost/index.html#the-short-answer",
-    "href": "posts/2026-11-ev-cost/index.html#the-short-answer",
-    "title": "Does an Electric Car Actually Save You Money?",
-    "section": "The short answer",
-    "text": "The short answer\n\n\n\n\n\n\nAn EV saves you about $1,728 a year on fuel and maintenance (for a medium sedan). But it loses value so much faster that a new EV costs $3,080 more per year to own than a comparable gas sedan. In SUVs, it’s roughly a tie. And in every class, a hybrid was cheapest."
-  },
-  {
-    "objectID": "posts/2026-11-ev-cost/index.html#how-we-compared-them",
-    "href": "posts/2026-11-ev-cost/index.html#how-we-compared-them",
-    "title": "Does an Electric Car Actually Save You Money?",
-    "section": "How we compared them",
-    "text": "How we compared them\nWe used AAA’s 2026 Your Driving Costs study, which averages the top-selling 2026 models in each class and adds up everything it costs to own one for five years at 15,000 miles a year:\n\nFuel or charging\nMaintenance and repairs, including tires\nDepreciation: how much value the car loses\nInsurance (full coverage)\nLicense, registration, and taxes, including the extra EV fees most states now charge\nFinance charges: interest on the car loan\n\nThat puts every vehicle on the same footing: dollars per year."
-  },
-  {
-    "objectID": "posts/2026-11-ev-cost/index.html#the-results",
-    "href": "posts/2026-11-ev-cost/index.html#the-results",
-    "title": "Does an Electric Car Actually Save You Money?",
-    "section": "The results",
-    "text": "The results\n\n\n\n\n\n\n\n\n\nTotal cost per year, new 2026 models, 15,000 miles a year. Source: AAA.\n\n\nClass\nElectric\nGas\nHybrid\nEV vs gas\n\n\n\n\nMedium sedan\n$13,662\n$10,582\n$10,204\nEV costs $3,080 more\n\n\nCompact SUV\n$11,888\n$11,656\n$11,201\nEV costs $232 more\n\n\nMedium SUV\n$14,332\n$14,431\n$13,698\nEV saves $99\n\n\nPickup truck\n$17,414\n$16,626\n$16,117\nEV costs $788 more"
-  },
-  {
-    "objectID": "posts/2026-11-ev-cost/index.html#where-evs-win-running-costs",
-    "href": "posts/2026-11-ev-cost/index.html#where-evs-win-running-costs",
-    "title": "Does an Electric Car Actually Save You Money?",
-    "section": "Where EVs win: running costs",
-    "text": "Where EVs win: running costs\nThe EV advantage is real. For a medium sedan, charging cost about $712 a year versus $2,215 for gas, and maintenance was cheaper too (no oil changes, fewer moving parts, and brakes that last longer thanks to regenerative braking).\n\n\n\n\n\n\nOne big catch: where you charge. AAA’s EV fuel costs line up with home electricity prices, which average about $0.19 per kWh nationally. Public fast chargers typically cost around $0.45 per kWh, about 2.3 times more. If you can’t charge at home and rely on fast chargers, a medium sedan’s charging bill rises to roughly $1,661 a year: still less than gas, but most of the savings are gone."
-  },
-  {
-    "objectID": "posts/2026-11-ev-cost/index.html#where-evs-lose-owning-costs",
-    "href": "posts/2026-11-ev-cost/index.html#where-evs-lose-owning-costs",
-    "title": "Does an Electric Car Actually Save You Money?",
-    "section": "Where EVs lose: owning costs",
-    "text": "Where EVs lose: owning costs\n\n\n\n\n\n\nThe biggest single cost of owning any new car is depreciation, the value it loses while you own it. For EVs, it’s brutal. AAA puts a new electric medium sedan’s depreciation at $6,786 a year, versus $3,330 for gas. Fast-improving battery technology and price cuts on new EVs make used ones worth less.\nEVs also tend to cost more to insure (they’re pricier to repair), most states now charge an extra annual EV registration fee (often $100 to $250) to make up for lost gas-tax revenue, and a pricier car means more loan interest. And as of September 30, 2025, the $7,500 federal EV tax credit is gone."
-  },
-  {
-    "objectID": "posts/2026-11-ev-cost/index.html#so-who-should-buy-an-ev",
-    "href": "posts/2026-11-ev-cost/index.html#so-who-should-buy-an-ev",
-    "title": "Does an Electric Car Actually Save You Money?",
-    "section": "So who should buy an EV?",
-    "text": "So who should buy an EV?\nThe numbers point to a few clear cases where an EV makes financial sense:\n\nYou can charge at home. That’s where the fuel savings come from.\nYou drive a lot. More miles means more fuel savings to offset the extra ownership costs.\nYou keep cars a long time. Depreciation is heaviest in the first few years. Keep the car 10 years and the per-year cost of that early drop shrinks.\nYou buy used. The first owner already took the big depreciation hit. A used EV can capture the running-cost savings without paying for the steepest part of the value drop.\nYou’re shopping SUVs, not sedans. The gap is smallest there.\n\nIf saving money is the top priority and none of those fit, the data say: buy a hybrid. It beat both EVs and gas cars in every class AAA measured."
-  },
-  {
-    "objectID": "posts/2026-11-ev-cost/index.html#the-fine-print",
-    "href": "posts/2026-11-ev-cost/index.html#the-fine-print",
-    "title": "Does an Electric Car Actually Save You Money?",
+    "objectID": "posts/2026-11-good-time-to-buy/index.html#the-fine-print",
+    "href": "posts/2026-11-good-time-to-buy/index.html#the-fine-print",
+    "title": "Home Prices Are Dipping. Is Now a Good Time to Buy?",
     "section": "The fine print",
-    "text": "The fine print\n\nThese are averages across top-selling models. A specific EV with a big discount, or a gas guzzler, can change the answer.\nFive-year ownership is AAA’s assumption. Longer ownership generally helps EVs.\nElectricity and gas prices vary a lot by state. Cheap power and expensive gas favor EVs.\nPublic charging prices vary by network and membership; ours is a typical 2026 figure.\nThis post is about money. Whether EVs are better for the environment is a separate question, and our follow-up post tackles it."
+    "text": "The fine print\n\nPayments shown are principal and interest only. Property taxes, insurance, and HOA fees can add hundreds a month.\nNational medians. Local markets vary widely; some areas are seeing real price drops, others are still rising.\nThe median listing price reflects the mix of homes for sale, not just price changes."
   },
   {
-    "objectID": "posts/2026-11-ev-cost/index.html#the-bottom-line",
-    "href": "posts/2026-11-ev-cost/index.html#the-bottom-line",
-    "title": "Does an Electric Car Actually Save You Money?",
+    "objectID": "posts/2026-11-good-time-to-buy/index.html#the-bottom-line",
+    "href": "posts/2026-11-good-time-to-buy/index.html#the-bottom-line",
+    "title": "Home Prices Are Dipping. Is Now a Good Time to Buy?",
     "section": "The bottom line",
-    "text": "The bottom line\nEVs really are cheaper to run. But “cheaper to run” isn’t “cheaper to own.” Buying new, without the old federal tax credit, an EV costs about the same as a gas SUV and more than a gas sedan, because it loses value so fast. If you can charge at home, drive a lot, keep cars for years, or buy used, the math tilts toward electric. Otherwise, a hybrid is the money winner.\n\nHow we did this. Annual costs are from AAA’s Your Driving Costs 2026 study (EV, gas, and hybrid comparison for medium sedans, compact SUVs, medium SUVs, and pickups; 15,000 miles a year, five-year ownership, full-coverage insurance). Home electricity is the BLS average U.S. price per kWh over the last 12 months, via FRED. The public fast-charging price is a typical 2026 figure from industry price trackers. AAA Your Driving Costs 2026"
+    "text": "The bottom line\nHome prices are softening, and buyers have more choices and leverage than they’ve had in years. But mortgage rates climbed even more than prices dipped, so the typical monthly payment is higher than a year ago. Whether that makes now a good time depends far more on your budget and timeline than on the headlines.\n\nHow we did this. Median listing price, active listings, and days on market are from Realtor.com; new-home prices from the Census Bureau; the Case-Shiller U.S. National Home Price Index from S&P; existing home sales from the National Association of Realtors; mortgage rates from Freddie Mac’s weekly survey (averaged by month); and rents from the BLS CPI, all via FRED. Payments assume 10% down and a 30-year fixed loan."
+  },
+  {
+    "objectID": "posts/2026-11-ev-environment/index.html",
+    "href": "posts/2026-11-ev-environment/index.html",
+    "title": "Are Electric Cars Really Better for the Environment?",
+    "section": "",
+    "text": "In our last post, we found that a new EV usually isn’t cheaper to own than a gas car. So the other big argument for EVs is the environment. But you’ve probably heard the counterargument: making the batteries is so dirty that EVs aren’t really greener. Is that true?\nWe built a simple, transparent model from government and research data you can check, and compared it with the major lifecycle studies."
+  },
+  {
+    "objectID": "posts/2026-11-ev-environment/index.html#the-short-answer",
+    "href": "posts/2026-11-ev-environment/index.html#the-short-answer",
+    "title": "Are Electric Cars Really Better for the Environment?",
+    "section": "The short answer",
+    "text": "The short answer\n\n\n\n\n\n\nBuilding an EV’s battery creates about 4.5 tons of extra CO2 before it drives a single mile. But an EV emits so much less per mile that it pays that back after about 24,000 miles, under two years of typical driving. Over its life, a U.S. EV produces roughly half to two-thirds less CO2 than a comparable gas car.\nThe catch: the mining behind those batteries causes real harm, mostly far from where EVs are driven."
+  },
+  {
+    "objectID": "posts/2026-11-ev-environment/index.html#the-crossover",
+    "href": "posts/2026-11-ev-environment/index.html#the-crossover",
+    "title": "Are Electric Cars Really Better for the Environment?",
+    "section": "The crossover",
+    "text": "The crossover\nHere’s the whole story in one chart. The EV starts behind because of its battery. Then, every mile, the gas car burns gasoline while the EV draws power from the grid, which on average emits much less.\n\n\n\n\n\n\nThe dashed line is the break-even point: about 24,000 miles, or about 1.6 years at 15,000 miles a year. After that, every mile the EV drives puts it further ahead.\n\nThe numbers behind it\n\n\n\n\n\n\n\n\n\n\nInput\nValue\nSource\n\n\n\n\nCO2 from burning a gallon of gas\n8,887 grams\nEPA\n\n\nGas car fuel economy\n30 mpg (an efficient new car)\nOur assumption\n\n\nGas car CO2 per mile\n296 grams\nCalculated\n\n\nEV energy use\n0.3 kWh per mile, incl. charging losses\nTypical EPA label values\n\n\nU.S. grid CO2\n0.785 lb per kWh (2024)\nEIA\n\n\nEV CO2 per mile\n107 grams\nCalculated\n\n\nBattery size\n75 kWh\nOur assumption (typical long-range EV)\n\n\nBattery manufacturing\n60 kg CO2 per kWh\nICCT (U.S. estimate)\n\n\nExtra CO2 to build the EV\n4.5 tons\nCalculated\n\n\n\n\n\nWe kept this deliberately simple and, if anything, tilted toward the gas car: we count only gasoline burned in the engine, not the emissions from drilling, refining, and trucking it to the station. We also left out the rest of the car (frame, seats, glass), which takes roughly the same emissions to build either way.\n\n\nHow that compares with the big studies\n\nThe International Council on Clean Transportation (2021) found that a medium-size EV bought in the U.S. produces 60% to 68% less greenhouse gas over its lifetime than a comparable gas car.\nThe Union of Concerned Scientists (2022) found EVs produce about half the lifetime emissions, with an average break-even around 21,000 miles.\nBloombergNEF estimated a typical U.S. EV breaks even after about 25,000 miles, roughly two years.\n\nOur simple model lands right in that range: about 54% less CO2 over 150,000 miles."
+  },
+  {
+    "objectID": "posts/2026-11-ev-environment/index.html#it-depends-on-where-you-plug-in",
+    "href": "posts/2026-11-ev-environment/index.html#it-depends-on-where-you-plug-in",
+    "title": "Are Electric Cars Really Better for the Environment?",
+    "section": "It depends on where you plug in",
+    "text": "It depends on where you plug in\nAn EV is only as clean as the power plant charging it. On the average U.S. grid, an EV emits about 107 grams of CO2 per mile. Charged entirely from coal power, that jumps to about 313 grams, slightly worse than our 30-mpg gas car’s 296.\n\n\n\n\n\nPower source\nEV grams CO2 per mile\n\n\n\n\n100% coal (worst case)\n313\n\n\nAverage U.S. grid (2024)\n107\n\n\nGas car for comparison\n296\n\n\n\n\n\nNo U.S. state runs on 100% coal, and the grid has gotten cleaner almost every year as coal plants close. The Union of Concerned Scientists found that over 90% of Americans live where driving an average EV produces less global warming pollution than even the most efficient gas car."
+  },
+  {
+    "objectID": "posts/2026-11-ev-environment/index.html#the-part-zero-emissions-leaves-out",
+    "href": "posts/2026-11-ev-environment/index.html#the-part-zero-emissions-leaves-out",
+    "title": "Are Electric Cars Really Better for the Environment?",
+    "section": "The part “zero emissions” leaves out",
+    "text": "The part “zero emissions” leaves out\nCarbon isn’t the only kind of environmental damage. EV batteries depend on lithium, nickel, cobalt, and graphite, and getting them out of the ground has real costs:\n\nWater. In Chile’s Atacama Desert, one of the driest places on Earth, lithium mining accounts for up to 65% of the region’s water use, according to a United Nations University report, competing with farms and local communities.\nHuman rights. About 70% of the world’s cobalt comes from the Democratic Republic of Congo, where child labor in small-scale mines has been widely documented.\nPollution where it’s processed. Nickel mining in Indonesia has been linked to deforestation and water pollution, and refining battery minerals produces far more emissions than digging them up.\nRecycling is still catching up. Most of today’s EV batteries haven’t reached the end of their lives yet, and recovery of some materials, especially lithium, remains limited.\n\nTo be fair, gasoline has its own hidden costs, from oil spills to the pollution near refineries, and burning it fouls the air in the cities where people actually drive. But it’s honest to say that EVs don’t eliminate environmental damage. They shrink the climate damage a lot and move much of the remaining harm to mining regions far from the people who benefit."
+  },
+  {
+    "objectID": "posts/2026-11-ev-environment/index.html#the-fine-print",
+    "href": "posts/2026-11-ev-environment/index.html#the-fine-print",
+    "title": "Are Electric Cars Really Better for the Environment?",
+    "section": "The fine print",
+    "text": "The fine print\n\nThis is a simplified model. Real results depend on the specific car, battery size, where the battery was made, how you drive, and your local grid.\nBigger batteries take longer to pay back. A large electric truck or SUV with a huge battery starts further behind than a small EV.\nThe grid keeps changing. Our grid figure is from 2024. A cleaner grid makes every EV mile cleaner over the car’s life.\nLifecycle studies differ in their assumptions, which is why we show several."
+  },
+  {
+    "objectID": "posts/2026-11-ev-environment/index.html#the-bottom-line",
+    "href": "posts/2026-11-ev-environment/index.html#the-bottom-line",
+    "title": "Are Electric Cars Really Better for the Environment?",
+    "section": "The bottom line",
+    "text": "The bottom line\nOn climate, the evidence is clear: an EV starts in the hole, climbs out in under two years of driving, and ends up responsible for roughly half to two-thirds less carbon than a gas car. The battery argument is real but much smaller than critics suggest. What “zero emissions” really hides is not carbon but where the damage happens: in the water, mines, and refineries of the places that supply the batteries.\n\nHow we did this. Gas emissions use EPA’s 8,887 grams of CO2 per gallon. Grid emissions use EIA’s 2024 U.S. average of 0.785 lb CO2 per kWh and EIA’s figure for coal-fired power. Battery manufacturing uses the ICCT’s U.S. estimate of about 60 kg CO2 per kWh. Lifecycle comparisons are from the ICCT (2021), the Union of Concerned Scientists (2022), and BloombergNEF. Mining impacts are from the United Nations University and the ICCT (2026). ICCT lifecycle study · UCS “Driving Cleaner” · EPA · EIA · ICCT on battery materials (2026)"
+  },
+  {
+    "objectID": "posts/2026-11-electric-bills/index.html",
+    "href": "posts/2026-11-electric-bills/index.html",
+    "title": "Why Does My Electric Bill Keep Going Up?",
+    "section": "",
+    "text": "If your electric bill seems higher every time you open it, you’re not imagining it. We looked at government price data to see how much electricity has really gone up, how that compares with paychecks, and what’s driving it."
+  },
+  {
+    "objectID": "posts/2026-11-electric-bills/index.html#the-short-answer",
+    "href": "posts/2026-11-electric-bills/index.html#the-short-answer",
+    "title": "Why Does My Electric Bill Keep Going Up?",
+    "section": "The short answer",
+    "text": "The short answer\n\n\n\n\n\n\nThe average price of electricity is 19.0¢ per kWh, up 42% since January 2020, and up 5.4% in the last year alone. For a typical home, that’s a monthly bill of about $171, versus $120 in early 2020.\nThe drivers: power-hungry AI data centers, expensive grid upgrades, and natural gas prices, with experts still arguing about how much each one matters."
+  },
+  {
+    "objectID": "posts/2026-11-electric-bills/index.html#the-typical-monthly-bill",
+    "href": "posts/2026-11-electric-bills/index.html#the-typical-monthly-bill",
+    "title": "Why Does My Electric Bill Keep Going Up?",
+    "section": "The typical monthly bill",
+    "text": "The typical monthly bill\n\n\n\n\n\n\nWe used the Energy Information Administration’s figure for average home use, about 899 kWh a month, and the government’s average price per kWh. For most of the 2010s, the typical bill barely moved. Since 2021, it has climbed steadily."
+  },
+  {
+    "objectID": "posts/2026-11-electric-bills/index.html#in-hours-of-work",
+    "href": "posts/2026-11-electric-bills/index.html#in-hours-of-work",
+    "title": "Why Does My Electric Bill Keep Going Up?",
+    "section": "In hours of work",
+    "text": "In hours of work\nAs in our other posts, we also measured the bill in hours of work for the average worker:\n\n\n\n\n\nYear\nPrice per kWh\nTypical monthly bill\nHours of work\n\n\n\n\n1980\n6.0¢\n$54\n7.9\n\n\n1990\n8.4¢\n$75\n7.4\n\n\n2000\n8.7¢\n$78\n5.6\n\n\n2010\n12.8¢\n$115\n6.0\n\n\n2019\n13.6¢\n$123\n5.2\n\n\n2021\n14.1¢\n$127\n4.9\n\n\n2026 (so far)\n19.4¢\n$174\n5.4\n\n\n\n\n\nThis puts the jump in perspective. The monthly bill takes about 5.4 hours of work today, up from 4.9 in 2021. That’s a real increase, but it’s still well below the 1980s, when a similar bill took 7 to 8 hours. Electricity got much cheaper relative to pay for decades; the last few years reversed some of that."
+  },
+  {
+    "objectID": "posts/2026-11-electric-bills/index.html#whats-driving-it",
+    "href": "posts/2026-11-electric-bills/index.html#whats-driving-it",
+    "title": "Why Does My Electric Bill Keep Going Up?",
+    "section": "What’s driving it",
+    "text": "What’s driving it\n1. Data centers. The AI boom runs on enormous data centers, and they use a lot of power. A Lawrence Berkeley National Laboratory report for the Department of Energy found data centers used 4.4% of all U.S. electricity in 2023, and projected 6.7% to 12% by 2028. More demand can push up prices, especially in regions where data centers are clustered, and utilities are building new capacity to serve them.\n2. The grid itself. Utilities are spending heavily to replace aging equipment, build new power lines, and harden the grid against storms and wildfires. Those costs are passed on to customers, and they rise even when the cost of generating power doesn’t.\n3. Natural gas. Natural gas is the biggest fuel for U.S. electricity, so its price swings flow through to power prices. The energy shock of 2022 and this year’s oil and gas disruptions both played a role.\nHow much is each one? Honestly, nobody has a clean answer. Government data counts data centers inside “commercial” electricity use, so their exact effect on household bills is hard to isolate, and researchers disagree on the split. Where you live matters a lot: bills have jumped most in regions with tight power supplies and fast data center growth."
+  },
+  {
+    "objectID": "posts/2026-11-electric-bills/index.html#ways-to-fight-back",
+    "href": "posts/2026-11-electric-bills/index.html#ways-to-fight-back",
+    "title": "Why Does My Electric Bill Keep Going Up?",
+    "section": "Ways to fight back",
+    "text": "Ways to fight back\n\nCheck for a cheaper plan or time-of-use rate. Some utilities charge much less at night.\nLook for state and utility rebates on efficient appliances, heat pumps, and insulation.\nAsk about budget billing to smooth out big seasonal swings."
+  },
+  {
+    "objectID": "posts/2026-11-electric-bills/index.html#the-fine-print",
+    "href": "posts/2026-11-electric-bills/index.html#the-fine-print",
+    "title": "Why Does My Electric Bill Keep Going Up?",
+    "section": "The fine print",
+    "text": "The fine print\n\nNational averages. Electricity prices vary enormously by state, from well under to well over double the national average.\nThe “typical bill” uses average usage and the average price per kWh; real bills include fixed monthly charges and taxes.\nPay is average hourly earnings before taxes."
+  },
+  {
+    "objectID": "posts/2026-11-electric-bills/index.html#the-bottom-line",
+    "href": "posts/2026-11-electric-bills/index.html#the-bottom-line",
+    "title": "Why Does My Electric Bill Keep Going Up?",
+    "section": "The bottom line",
+    "text": "The bottom line\nElectricity really has gotten more expensive, fast: about 40% since 2020. Data centers are a real and growing part of the story, alongside grid spending and fuel costs. In work time it’s not as bad as the 1980s, but the long trend of electricity getting cheaper has clearly reversed.\n\nHow we did this. Prices are the BLS average price of electricity per kWh, U.S. city average (APU000072610), and the CPI for electricity (CUSR0000SEHF01), via FRED. Typical home use is from EIA (about 10,791 kWh a year, or 899 kWh a month, in 2022). Data center figures are from Lawrence Berkeley National Laboratory’s 2024 report for the U.S. Department of Energy. Berkeley Lab report summary · DOE release"
   },
   {
     "objectID": "index.html",
@@ -322,53 +469,123 @@
     "text": "The bottom line\nCollege went from expensive to very expensive between 1980 and 2016, rising far faster than paychecks. Since then, the trend has quietly reversed. A year of college still takes nearly three times the work it did in 1980, but less than it did a decade ago.\n\nHow we did this. College costs are the Consumer Price Index for “college tuition and fees” (BLS series CUUR0000SEEB01) from the Bureau of Labor Statistics. “Everything else” is the CPI for all items, and pay is average hourly earnings of production and nonsupervisory employees (about 80% of private-sector workers), both via FRED. Hours of work = tuition index ÷ hourly pay, scaled so 1980 = 100. “Today” is the average of November 2025 to October 2026. BLS did not collect October 2025 prices during the federal government shutdown, so that month is skipped."
   },
   {
-    "objectID": "posts/2026-11-ev-environment/index.html",
-    "href": "posts/2026-11-ev-environment/index.html",
-    "title": "Are Electric Cars Really Better for the Environment?",
+    "objectID": "posts/2026-11-ev-cost/index.html",
+    "href": "posts/2026-11-ev-cost/index.html",
+    "title": "Does an Electric Car Actually Save You Money?",
     "section": "",
-    "text": "In our last post, we found that a new EV usually isn’t cheaper to own than a gas car. So the other big argument for EVs is the environment. But you’ve probably heard the counterargument: making the batteries is so dirty that EVs aren’t really greener. Is that true?\nWe built a simple, transparent model from government and research data you can check, and compared it with the major lifecycle studies."
+    "text": "Electric car fans say you’ll save a fortune on gas. Skeptics say EVs cost more and lose value fast. They’re both partly right. To settle it, we compared the full cost of owning an EV, a gas car, and a hybrid of the same size and class, per year."
   },
   {
-    "objectID": "posts/2026-11-ev-environment/index.html#the-short-answer",
-    "href": "posts/2026-11-ev-environment/index.html#the-short-answer",
-    "title": "Are Electric Cars Really Better for the Environment?",
+    "objectID": "posts/2026-11-ev-cost/index.html#the-short-answer",
+    "href": "posts/2026-11-ev-cost/index.html#the-short-answer",
+    "title": "Does an Electric Car Actually Save You Money?",
     "section": "The short answer",
-    "text": "The short answer\n\n\n\n\n\n\nBuilding an EV’s battery creates about 4.5 tons of extra CO2 before it drives a single mile. But an EV emits so much less per mile that it pays that back after about 24,000 miles, under two years of typical driving. Over its life, a U.S. EV produces roughly half to two-thirds less CO2 than a comparable gas car.\nThe catch: the mining behind those batteries causes real harm, mostly far from where EVs are driven."
+    "text": "The short answer\n\n\n\n\n\n\nAn EV saves you about $1,728 a year on fuel and maintenance (for a medium sedan). But it loses value so much faster that a new EV costs $3,080 more per year to own than a comparable gas sedan. In SUVs, it’s roughly a tie. And in every class, a hybrid was cheapest."
   },
   {
-    "objectID": "posts/2026-11-ev-environment/index.html#the-crossover",
-    "href": "posts/2026-11-ev-environment/index.html#the-crossover",
-    "title": "Are Electric Cars Really Better for the Environment?",
-    "section": "The crossover",
-    "text": "The crossover\nHere’s the whole story in one chart. The EV starts behind because of its battery. Then, every mile, the gas car burns gasoline while the EV draws power from the grid, which on average emits much less.\n\n\n\n\n\n\nThe dashed line is the break-even point: about 24,000 miles, or about 1.6 years at 15,000 miles a year. After that, every mile the EV drives puts it further ahead.\n\nThe numbers behind it\n\n\n\n\n\n\n\n\n\n\nInput\nValue\nSource\n\n\n\n\nCO2 from burning a gallon of gas\n8,887 grams\nEPA\n\n\nGas car fuel economy\n30 mpg (an efficient new car)\nOur assumption\n\n\nGas car CO2 per mile\n296 grams\nCalculated\n\n\nEV energy use\n0.3 kWh per mile, incl. charging losses\nTypical EPA label values\n\n\nU.S. grid CO2\n0.785 lb per kWh (2024)\nEIA\n\n\nEV CO2 per mile\n107 grams\nCalculated\n\n\nBattery size\n75 kWh\nOur assumption (typical long-range EV)\n\n\nBattery manufacturing\n60 kg CO2 per kWh\nICCT (U.S. estimate)\n\n\nExtra CO2 to build the EV\n4.5 tons\nCalculated\n\n\n\n\n\nWe kept this deliberately simple and, if anything, tilted toward the gas car: we count only gasoline burned in the engine, not the emissions from drilling, refining, and trucking it to the station. We also left out the rest of the car (frame, seats, glass), which takes roughly the same emissions to build either way.\n\n\nHow that compares with the big studies\n\nThe International Council on Clean Transportation (2021) found that a medium-size EV bought in the U.S. produces 60% to 68% less greenhouse gas over its lifetime than a comparable gas car.\nThe Union of Concerned Scientists (2022) found EVs produce about half the lifetime emissions, with an average break-even around 21,000 miles.\nBloombergNEF estimated a typical U.S. EV breaks even after about 25,000 miles, roughly two years.\n\nOur simple model lands right in that range: about 54% less CO2 over 150,000 miles."
+    "objectID": "posts/2026-11-ev-cost/index.html#how-we-compared-them",
+    "href": "posts/2026-11-ev-cost/index.html#how-we-compared-them",
+    "title": "Does an Electric Car Actually Save You Money?",
+    "section": "How we compared them",
+    "text": "How we compared them\nWe used AAA’s 2026 Your Driving Costs study, which averages the top-selling 2026 models in each class and adds up everything it costs to own one for five years at 15,000 miles a year:\n\nFuel or charging\nMaintenance and repairs, including tires\nDepreciation: how much value the car loses\nInsurance (full coverage)\nLicense, registration, and taxes, including the extra EV fees most states now charge\nFinance charges: interest on the car loan\n\nThat puts every vehicle on the same footing: dollars per year."
   },
   {
-    "objectID": "posts/2026-11-ev-environment/index.html#it-depends-on-where-you-plug-in",
-    "href": "posts/2026-11-ev-environment/index.html#it-depends-on-where-you-plug-in",
-    "title": "Are Electric Cars Really Better for the Environment?",
-    "section": "It depends on where you plug in",
-    "text": "It depends on where you plug in\nAn EV is only as clean as the power plant charging it. On the average U.S. grid, an EV emits about 107 grams of CO2 per mile. Charged entirely from coal power, that jumps to about 313 grams, slightly worse than our 30-mpg gas car’s 296.\n\n\n\n\n\nPower source\nEV grams CO2 per mile\n\n\n\n\n100% coal (worst case)\n313\n\n\nAverage U.S. grid (2024)\n107\n\n\nGas car for comparison\n296\n\n\n\n\n\nNo U.S. state runs on 100% coal, and the grid has gotten cleaner almost every year as coal plants close. The Union of Concerned Scientists found that over 90% of Americans live where driving an average EV produces less global warming pollution than even the most efficient gas car."
+    "objectID": "posts/2026-11-ev-cost/index.html#the-results",
+    "href": "posts/2026-11-ev-cost/index.html#the-results",
+    "title": "Does an Electric Car Actually Save You Money?",
+    "section": "The results",
+    "text": "The results\n\n\n\n\n\n\n\n\n\nTotal cost per year, new 2026 models, 15,000 miles a year. Source: AAA.\n\n\nClass\nElectric\nGas\nHybrid\nEV vs gas\n\n\n\n\nMedium sedan\n$13,662\n$10,582\n$10,204\nEV costs $3,080 more\n\n\nCompact SUV\n$11,888\n$11,656\n$11,201\nEV costs $232 more\n\n\nMedium SUV\n$14,332\n$14,431\n$13,698\nEV saves $99\n\n\nPickup truck\n$17,414\n$16,626\n$16,117\nEV costs $788 more"
   },
   {
-    "objectID": "posts/2026-11-ev-environment/index.html#the-part-zero-emissions-leaves-out",
-    "href": "posts/2026-11-ev-environment/index.html#the-part-zero-emissions-leaves-out",
-    "title": "Are Electric Cars Really Better for the Environment?",
-    "section": "The part “zero emissions” leaves out",
-    "text": "The part “zero emissions” leaves out\nCarbon isn’t the only kind of environmental damage. EV batteries depend on lithium, nickel, cobalt, and graphite, and getting them out of the ground has real costs:\n\nWater. In Chile’s Atacama Desert, one of the driest places on Earth, lithium mining accounts for up to 65% of the region’s water use, according to a United Nations University report, competing with farms and local communities.\nHuman rights. About 70% of the world’s cobalt comes from the Democratic Republic of Congo, where child labor in small-scale mines has been widely documented.\nPollution where it’s processed. Nickel mining in Indonesia has been linked to deforestation and water pollution, and refining battery minerals produces far more emissions than digging them up.\nRecycling is still catching up. Most of today’s EV batteries haven’t reached the end of their lives yet, and recovery of some materials, especially lithium, remains limited.\n\nTo be fair, gasoline has its own hidden costs, from oil spills to the pollution near refineries, and burning it fouls the air in the cities where people actually drive. But it’s honest to say that EVs don’t eliminate environmental damage. They shrink the climate damage a lot and move much of the remaining harm to mining regions far from the people who benefit."
+    "objectID": "posts/2026-11-ev-cost/index.html#where-evs-win-running-costs",
+    "href": "posts/2026-11-ev-cost/index.html#where-evs-win-running-costs",
+    "title": "Does an Electric Car Actually Save You Money?",
+    "section": "Where EVs win: running costs",
+    "text": "Where EVs win: running costs\nThe EV advantage is real. For a medium sedan, charging cost about $712 a year versus $2,215 for gas, and maintenance was cheaper too (no oil changes, fewer moving parts, and brakes that last longer thanks to regenerative braking).\n\n\n\n\n\n\nOne big catch: where you charge. AAA’s EV fuel costs line up with home electricity prices, which average about $0.19 per kWh nationally. Public fast chargers typically cost around $0.45 per kWh, about 2.3 times more. If you can’t charge at home and rely on fast chargers, a medium sedan’s charging bill rises to roughly $1,661 a year: still less than gas, but most of the savings are gone."
   },
   {
-    "objectID": "posts/2026-11-ev-environment/index.html#the-fine-print",
-    "href": "posts/2026-11-ev-environment/index.html#the-fine-print",
-    "title": "Are Electric Cars Really Better for the Environment?",
+    "objectID": "posts/2026-11-ev-cost/index.html#where-evs-lose-owning-costs",
+    "href": "posts/2026-11-ev-cost/index.html#where-evs-lose-owning-costs",
+    "title": "Does an Electric Car Actually Save You Money?",
+    "section": "Where EVs lose: owning costs",
+    "text": "Where EVs lose: owning costs\n\n\n\n\n\n\nThe biggest single cost of owning any new car is depreciation, the value it loses while you own it. For EVs, it’s brutal. AAA puts a new electric medium sedan’s depreciation at $6,786 a year, versus $3,330 for gas. Fast-improving battery technology and price cuts on new EVs make used ones worth less.\nEVs also tend to cost more to insure (they’re pricier to repair), most states now charge an extra annual EV registration fee (often $100 to $250) to make up for lost gas-tax revenue, and a pricier car means more loan interest. And as of September 30, 2025, the $7,500 federal EV tax credit is gone."
+  },
+  {
+    "objectID": "posts/2026-11-ev-cost/index.html#so-who-should-buy-an-ev",
+    "href": "posts/2026-11-ev-cost/index.html#so-who-should-buy-an-ev",
+    "title": "Does an Electric Car Actually Save You Money?",
+    "section": "So who should buy an EV?",
+    "text": "So who should buy an EV?\nThe numbers point to a few clear cases where an EV makes financial sense:\n\nYou can charge at home. That’s where the fuel savings come from.\nYou drive a lot. More miles means more fuel savings to offset the extra ownership costs.\nYou keep cars a long time. Depreciation is heaviest in the first few years. Keep the car 10 years and the per-year cost of that early drop shrinks.\nYou buy used. The first owner already took the big depreciation hit. A used EV can capture the running-cost savings without paying for the steepest part of the value drop.\nYou’re shopping SUVs, not sedans. The gap is smallest there.\n\nIf saving money is the top priority and none of those fit, the data say: buy a hybrid. It beat both EVs and gas cars in every class AAA measured."
+  },
+  {
+    "objectID": "posts/2026-11-ev-cost/index.html#the-fine-print",
+    "href": "posts/2026-11-ev-cost/index.html#the-fine-print",
+    "title": "Does an Electric Car Actually Save You Money?",
     "section": "The fine print",
-    "text": "The fine print\n\nThis is a simplified model. Real results depend on the specific car, battery size, where the battery was made, how you drive, and your local grid.\nBigger batteries take longer to pay back. A large electric truck or SUV with a huge battery starts further behind than a small EV.\nThe grid keeps changing. Our grid figure is from 2024. A cleaner grid makes every EV mile cleaner over the car’s life.\nLifecycle studies differ in their assumptions, which is why we show several."
+    "text": "The fine print\n\nThese are averages across top-selling models. A specific EV with a big discount, or a gas guzzler, can change the answer.\nFive-year ownership is AAA’s assumption. Longer ownership generally helps EVs.\nElectricity and gas prices vary a lot by state. Cheap power and expensive gas favor EVs.\nPublic charging prices vary by network and membership; ours is a typical 2026 figure.\nThis post is about money. Whether EVs are better for the environment is a separate question, and our follow-up post tackles it."
   },
   {
-    "objectID": "posts/2026-11-ev-environment/index.html#the-bottom-line",
-    "href": "posts/2026-11-ev-environment/index.html#the-bottom-line",
-    "title": "Are Electric Cars Really Better for the Environment?",
+    "objectID": "posts/2026-11-ev-cost/index.html#the-bottom-line",
+    "href": "posts/2026-11-ev-cost/index.html#the-bottom-line",
+    "title": "Does an Electric Car Actually Save You Money?",
     "section": "The bottom line",
-    "text": "The bottom line\nOn climate, the evidence is clear: an EV starts in the hole, climbs out in under two years of driving, and ends up responsible for roughly half to two-thirds less carbon than a gas car. The battery argument is real but much smaller than critics suggest. What “zero emissions” really hides is not carbon but where the damage happens: in the water, mines, and refineries of the places that supply the batteries.\n\nHow we did this. Gas emissions use EPA’s 8,887 grams of CO2 per gallon. Grid emissions use EIA’s 2024 U.S. average of 0.785 lb CO2 per kWh and EIA’s figure for coal-fired power. Battery manufacturing uses the ICCT’s U.S. estimate of about 60 kg CO2 per kWh. Lifecycle comparisons are from the ICCT (2021), the Union of Concerned Scientists (2022), and BloombergNEF. Mining impacts are from the United Nations University and the ICCT (2026). ICCT lifecycle study · UCS “Driving Cleaner” · EPA · EIA · ICCT on battery materials (2026)"
+    "text": "The bottom line\nEVs really are cheaper to run. But “cheaper to run” isn’t “cheaper to own.” Buying new, without the old federal tax credit, an EV costs about the same as a gas SUV and more than a gas sedan, because it loses value so fast. If you can charge at home, drive a lot, keep cars for years, or buy used, the math tilts toward electric. Otherwise, a hybrid is the money winner.\n\nHow we did this. Annual costs are from AAA’s Your Driving Costs 2026 study (EV, gas, and hybrid comparison for medium sedans, compact SUVs, medium SUVs, and pickups; 15,000 miles a year, five-year ownership, full-coverage insurance). Home electricity is the BLS average U.S. price per kWh over the last 12 months, via FRED. The public fast-charging price is a typical 2026 figure from industry price trackers. AAA Your Driving Costs 2026"
+  },
+  {
+    "objectID": "posts/2026-11-gas-prices-politics/index.html",
+    "href": "posts/2026-11-gas-prices-politics/index.html",
+    "title": "Does the President Set Gas Prices? 33 Years of Data Say No",
+    "section": "",
+    "text": "Every time gas prices jump, someone blames the White House. Bumper stickers, memes, campaign ads: the president gets the credit when prices fall and the blame when they rise.\nSo we checked. We lined up every week of U.S. gas prices since April 1993 (1,753 weeks, six presidential terms) against who held the White House, the Senate, and the House."
+  },
+  {
+    "objectID": "posts/2026-11-gas-prices-politics/index.html#the-short-answer",
+    "href": "posts/2026-11-gas-prices-politics/index.html#the-short-answer",
+    "title": "Does the President Set Gas Prices? 33 Years of Data Say No",
+    "section": "The short answer",
+    "text": "The short answer\n\n\n\n\n\n\nAdjusted for inflation, the average gallon of gas cost $3.64 under Democratic presidents and $3.64 under Republican presidents.\n\n\n\nThat tie looks suspicious, so to be clear: it’s a coincidence of averaging. Individual presidencies range from $2.55 a gallon (Bill Clinton) to $4.48 (Barack Obama), and both of those are Democrats. Each party has had cheap years and expensive years. Leave out a single presidency and the party averages split apart. What the tie does tell you is that there’s no pattern by party.\nWhat “adjusted for inflation” means: prices rise over time, so a dollar in 1993 bought more than a dollar does now. To compare fairly, we convert every old price into today’s money. For example, the $1.07 a gallon drivers paid in 1993 bought what $2.51 buys today, so we count it as $2.51.\nWhat actually moves the price is crude oil, and crude oil answers to wars, OPEC, recessions, and hurricanes, not to elections."
+  },
+  {
+    "objectID": "posts/2026-11-gas-prices-politics/index.html#years-of-prices-and-who-was-in-charge",
+    "href": "posts/2026-11-gas-prices-politics/index.html#years-of-prices-and-who-was-in-charge",
+    "title": "Does the President Set Gas Prices? 33 Years of Data Say No",
+    "section": "33 years of prices and who was in charge",
+    "text": "33 years of prices and who was in charge\nShading shows the president’s party (blue = Democrat, red = Republican). Gold dots are major world events. The strip underneath shows which party controlled the White House, Senate, and House. Hover for details.\n\n\n\n\n\n\nThe chart above is in the dollars of each week, which makes recent years look worse than they were. A dollar in 1993 bought a lot more than a dollar today, so for fair comparisons the rest of this post uses October 2026 dollars."
+  },
+  {
+    "objectID": "posts/2026-11-gas-prices-politics/index.html#finding-1-no-pattern-by-party",
+    "href": "posts/2026-11-gas-prices-politics/index.html#finding-1-no-pattern-by-party",
+    "title": "Does the President Set Gas Prices? 33 Years of Data Say No",
+    "section": "Finding 1: No pattern by party",
+    "text": "Finding 1: No pattern by party\n\n\n\n\n\n\nWe see the same thing when we look at all of Washington. Republicans in full control, Democrats in full control, or split government: the inflation-adjusted averages land within a few cents of each other. Same caution as above: each group mixes cheap years with expensive ones, so the close numbers don’t mean either party lowers prices. They mean neither one has a track record of it."
+  },
+  {
+    "objectID": "posts/2026-11-gas-prices-politics/index.html#finding-2-crude-oil-is-the-steering-wheel",
+    "href": "posts/2026-11-gas-prices-politics/index.html#finding-2-crude-oil-is-the-steering-wheel",
+    "title": "Does the President Set Gas Prices? 33 Years of Data Say No",
+    "section": "Finding 2: Crude oil is the steering wheel",
+    "text": "Finding 2: Crude oil is the steering wheel\nGasoline is made from crude oil, and crude oil is priced on a world market. Here’s what gas prices would have been if you predicted them using nothing but the price of oil, against what they actually were.\n\n\n\n\n\n\nThe two lines barely separate. The price of crude oil alone explains 92% of the ups and downs in monthly gas prices over 33 years. As a rule of thumb, every $10 change in a barrel of oil moves a gallon of gas by about 29 cents."
+  },
+  {
+    "objectID": "posts/2026-11-gas-prices-politics/index.html#finding-3-presidents-can-move-oil-but-they-dont-control-it",
+    "href": "posts/2026-11-gas-prices-politics/index.html#finding-3-presidents-can-move-oil-but-they-dont-control-it",
+    "title": "Does the President Set Gas Prices? 33 Years of Data Say No",
+    "section": "Finding 3: Presidents can move oil, but they don’t control it",
+    "text": "Finding 3: Presidents can move oil, but they don’t control it\nFair question: if oil drives gas prices, can’t a president drive oil prices? Sometimes, yes. The levers a president actually has:\n\nMilitary action. In 2026 the U.S. and Israel struck Iran, shipping through the Strait of Hormuz was disrupted, and March 2026 saw the biggest one-month jump in gas prices in this data. That one traces straight back to a decision made in the White House.\nSanctions. Limiting oil sales from countries like Iran, Venezuela, or Russia takes supply off the world market, which tends to push prices up.\nThe emergency oil reserve. In 2022, the White House released 180 million barrels from the Strategic Petroleum Reserve, the largest release ever, to bring prices down.\nDrilling and permits. These matter, but new wells take years to come online, so the effect usually lands on a later president’s watch.\n\nBut the biggest swings in this data came from things no president controlled:\n\n2005: Hurricane Katrina knocked out Gulf Coast refineries.\n2008: Oil hit nearly $147 a barrel, then the financial crisis crushed demand. In today’s dollars, the most expensive gas in this data was June 2008, at $6.43 a gallon.\n2014–2015: OPEC kept pumping into a glut and prices collapsed.\n2020: COVID lockdowns emptied the roads.\n2022: Russia invaded Ukraine, and the national average hit its all-time high of $5.11 (June 2022).\n\nSo a president’s choices can push gas prices up or down, sometimes a lot. But presidents of both parties have pulled these levers, and both have been on the receiving end of world events. Over 33 years it evens out, with no party coming out ahead."
+  },
+  {
+    "objectID": "posts/2026-11-gas-prices-politics/index.html#every-presidency-side-by-side",
+    "href": "posts/2026-11-gas-prices-politics/index.html#every-presidency-side-by-side",
+    "title": "Does the President Set Gas Prices? 33 Years of Data Say No",
+    "section": "Every presidency, side by side",
+    "text": "Every presidency, side by side\n\n\n\nAverage price per gallon, in October 2026 dollars. Clinton’s term starts in April 1993, when the weekly data begins.\n\n\nPresident\nYears\nAverage\nAt start\nAt end\nChange\n\n\n\n\nBill Clinton (D)\n1993–2001\n$2.55\n$2.51\n$2.91\n+$0.40\n\n\nGeorge W. Bush (R)\n2001–2009\n$3.73\n$2.90\n$3.02\n+$0.12\n\n\nBarack Obama (D)\n2009–2017\n$4.48\n$3.01\n$3.42\n+$0.41\n\n\nDonald Trump (R)\n2017–2021\n$3.44\n$3.37\n$3.17\n–$0.21\n\n\nJoe Biden (D)\n2021–2025\n$4.07\n$3.18\n$3.35\n+$0.16\n\n\nDonald Trump (R)\n2025–now\n$3.70\n$3.42\n$4.29\n+$0.87"
+  },
+  {
+    "objectID": "posts/2026-11-gas-prices-politics/index.html#the-bottom-line",
+    "href": "posts/2026-11-gas-prices-politics/index.html#the-bottom-line",
+    "title": "Does the President Set Gas Prices? 33 Years of Data Say No",
+    "section": "The bottom line",
+    "text": "The bottom line\nGas prices are a great way to feel the economy and a terrible way to grade a president. If you want to know where prices are headed, watch the price of oil and the news from the Middle East, not the polls.\nRight now the national average is $4.29 (week of November 02, 2026). For where it’s likely headed next, see our monthly gas price tracker.\n\nHow we did this. Weekly U.S. retail gasoline prices (all grades) and weekly Brent crude prices come from the U.S. Energy Information Administration. Inflation adjustments use the Consumer Price Index (FRED, CPIAUCSL), converted to October 2026 dollars. Each week is assigned to whoever held the White House, Senate, and House majority that day. The “oil only” line is a simple linear regression of the monthly gas price on the monthly Brent price."
   },
   {
     "objectID": "posts/2026-11-groceries-minutes-of-work/index.html",
@@ -497,277 +714,60 @@
     "text": "The bottom line\nMonthly mortgage payments are high compared with the cheap-money years of 2010–2021, but not compared with the 1980s and early ’90s. What’s genuinely harder now is the price of entry: the down payment takes more of a paycheck than it did a generation ago. If rates come down, the monthly payment gets easier fast. The down payment problem only gets easier if pay grows faster than home prices.\n\nHow we did this. Home prices are the median sales price of new houses sold in the U.S. (Census Bureau and HUD). Mortgage rates are Freddie Mac’s 30-year fixed average. Pay is average hourly earnings of production and nonsupervisory employees (about 80% of private-sector workers) from the Bureau of Labor Statistics. All series come from FRED. We assume 10% down and a 30-year fixed loan at that quarter’s average rate. Hours of work = monthly payment ÷ hourly pay. “Today” is the average of the latest four quarters (through Q3 2026)."
   },
   {
-    "objectID": "posts/2026-11-thanksgiving-dinner/index.html",
-    "href": "posts/2026-11-thanksgiving-dinner/index.html",
-    "title": "Thanksgiving Dinner, Measured in Hours of Work",
+    "objectID": "posts/2026-11-insulin-cost/index.html",
+    "href": "posts/2026-11-insulin-cost/index.html",
+    "title": "Insulin Costs About $5 a Vial to Make. Here’s What Countries Actually Pay.",
     "section": "",
-    "text": "Every November, the American Farm Bureau Federation shops for the same classic Thanksgiving dinner for 10: a 16-pound turkey, stuffing, sweet potatoes, rolls, peas, cranberries, a veggie tray, pumpkin pie with whipped cream, and milk and coffee. They’ve done it every year since 1986.\nThe dollar price has roughly doubled since then. But that’s only half the story. So, as usual, we asked: how long does the average worker have to work to buy it?"
+    "text": "You’ve probably seen the claim: insulin costs a few dollars to make, but Americans pay hundreds. Insulin was discovered more than 100 years ago, and its inventors famously sold the patent to the University of Toronto for $1 each so it would stay affordable. So how did a vial end up costing more than a car payment?\nWe dug into the research to see what insulin really costs to make, what other wealthy countries pay, and what the U.S. number actually means."
   },
   {
-    "objectID": "posts/2026-11-thanksgiving-dinner/index.html#the-short-answer",
-    "href": "posts/2026-11-thanksgiving-dinner/index.html#the-short-answer",
-    "title": "Thanksgiving Dinner, Measured in Hours of Work",
+    "objectID": "posts/2026-11-insulin-cost/index.html#the-short-answer",
+    "href": "posts/2026-11-insulin-cost/index.html#the-short-answer",
+    "title": "Insulin Costs About $5 a Vial to Make. Here’s What Countries Actually Pay.",
     "section": "The short answer",
-    "text": "The short answer\n\n\n\n\n\n\nIn 2025, the classic dinner for 10 cost $55.18. At the average worker’s pay, that’s 1.7 hours of work, or about 10 minutes per guest. That’s the least work it has taken in the survey’s history. In 1986, it took 3.2 hours."
+    "text": "The short answer\n\n\n\n\n\n\nA vial of insulin (1,000 units) costs an estimated $3 to $9 to make, including a profit margin. In 2022, other wealthy countries paid an average of $24 per vial. The U.S. list price averaged $227.\nBut that list price is not what insurers actually paid. After secret discounts, the U.S. paid about $54, still about 2.3 times other countries. And a lot has changed since 2022."
   },
   {
-    "objectID": "posts/2026-11-thanksgiving-dinner/index.html#years-of-thanksgiving-dinner",
-    "href": "posts/2026-11-thanksgiving-dinner/index.html#years-of-thanksgiving-dinner",
-    "title": "Thanksgiving Dinner, Measured in Hours of Work",
-    "section": "40 years of Thanksgiving dinner",
-    "text": "40 years of Thanksgiving dinner\n\n\n\n\n\n\nHover to see the price each year. The dollar cost peaked at $64.05 in 2022, when inflation and bird flu sent turkey prices soaring. That year dinner took 2.3 hours of work, a visible bump. Since then, the price has fallen three years in a row while pay kept rising, so dinner got easier to afford on both counts."
+    "objectID": "posts/2026-11-insulin-cost/index.html#what-it-costs-to-make",
+    "href": "posts/2026-11-insulin-cost/index.html#what-it-costs-to-make",
+    "title": "Insulin Costs About $5 a Vial to Make. Here’s What Countries Actually Pay.",
+    "section": "What it costs to make",
+    "text": "What it costs to make\nIn 2018, researchers published a detailed estimate in BMJ Global Health of what insulin would cost if many companies competed to make it, the way they do for generic pills. They added up the raw ingredients, filling and packaging the vials, building factories, getting regulatory approval, shipping, and a 20% margin for overhead and profit.\n\n\n\nOne 10 mL vial = 1,000 units. Source: Gotham, Barber & Hill, BMJ Global Health (2018).\n\n\nType of insulin\nEstimated price per vial\n\n\n\n\nRegular human insulin\n$3.29 – $4.86\n\n\nNPH (human)\n$3.35 – $4.93\n\n\nGlargine (Lantus-type)\n$5.32 – $7.38\n\n\nLispro (Humalog-type)\n$6.51 – $8.87\n\n\nAspart (Novolog-type)\n$6.50 – $8.86\n\n\n\n\n\nSo yes, the viral claim holds up: insulin is cheap to make. Even the newer, longer-lasting insulins come in under $10 a vial.\nWhat these estimates don’t include: the original research that created each insulin, the pharmacy’s markup, or insurance. They’re an estimate of what a competitive market could charge, not what any company actually spends."
   },
   {
-    "objectID": "posts/2026-11-thanksgiving-dinner/index.html#dollars-vs.-work",
-    "href": "posts/2026-11-thanksgiving-dinner/index.html#dollars-vs.-work",
-    "title": "Thanksgiving Dinner, Measured in Hours of Work",
-    "section": "Dollars vs. work",
-    "text": "Dollars vs. work\n\n\n\n\n\n\n\n\n\n\n\n\nYear\nDinner for 10\nAverage hourly pay\nHours of work\nMinutes per guest\n\n\n\n\n1986\n$28.74\n$9.01\n3.2\n19\n\n\n1995\n$29.64\n$11.78\n2.5\n15\n\n\n2005\n$36.78\n$16.30\n2.3\n14\n\n\n2015\n$50.11\n$21.21\n2.4\n14\n\n\n2019\n$48.91\n$23.83\n2.1\n12\n\n\n2022\n$64.05\n$28.11\n2.3\n14\n\n\n2025\n$55.18\n$31.79\n1.7\n10\n\n\n\n\n\nIn dollars, Thanksgiving is about twice as expensive as in 1986. In work time, it’s about half the work."
+    "objectID": "posts/2026-11-insulin-cost/index.html#what-wealthy-countries-pay",
+    "href": "posts/2026-11-insulin-cost/index.html#what-wealthy-countries-pay",
+    "title": "Insulin Costs About $5 a Vial to Make. Here’s What Countries Actually Pay.",
+    "section": "What wealthy countries pay",
+    "text": "What wealthy countries pay\nThe RAND Corporation compared insulin prices in the U.S. and 33 other wealthy countries using 2022 sales data. These are the prices drugmakers charge before discounts, averaged across all the insulin each country uses.\n\n\n\n\n\n\nThe U.S. isn’t just a little higher. At $227 per vial, it was about 9.7 times the average of the other 33 countries (RAND’s careful like-for-like comparison). Canada, often the go-to comparison, was $38.\nNotice something else, though: every country pays well above the cost to make it. The UK pays roughly 2 to 7 times the estimated production cost. Everyone pays a markup. The U.S. markup was just in a different league."
   },
   {
-    "objectID": "posts/2026-11-thanksgiving-dinner/index.html#what-about-this-year",
-    "href": "posts/2026-11-thanksgiving-dinner/index.html#what-about-this-year",
-    "title": "Thanksgiving Dinner, Measured in Hours of Work",
-    "section": "What about this year?",
-    "text": "What about this year?\nThe Farm Bureau releases its 2026 survey the week before Thanksgiving. We’ll update this post when it comes out. With food prices rising again this fall, we’ll be watching to see whether the streak of cheaper dinners holds."
+    "objectID": "posts/2026-11-insulin-cost/index.html#why-the-u.s.-sticker-price-was-never-the-real-price",
+    "href": "posts/2026-11-insulin-cost/index.html#why-the-u.s.-sticker-price-was-never-the-real-price",
+    "title": "Insulin Costs About $5 a Vial to Make. Here’s What Countries Actually Pay.",
+    "section": "Why the U.S. sticker price was never the real price",
+    "text": "Why the U.S. sticker price was never the real price\nHere’s the part that rarely makes the viral posts. In the U.S., drugmakers set a high list price, then pay big secret rebates to the companies that manage insurance drug plans (called pharmacy benefit managers, or PBMs) in exchange for being covered. RAND estimates those discounts knocked about 76% off the U.S. list price.\n\n\n\n\n\n\nSo who paid the $227? Often the people with the least bargaining power: the uninsured, and people in high-deductible plans, whose out-of-pocket costs are frequently based on the list price. That’s how insulin became a symbol of American health care, even though insurers were paying far less.\nResearchers still argue over who’s to blame for the system. Some point to drugmakers raising list prices; others point to middlemen who earn more when list prices and rebates are both high. Either way, even after the discounts, the U.S. still paid about 2.3 times what other wealthy countries paid."
   },
   {
-    "objectID": "posts/2026-11-thanksgiving-dinner/index.html#the-fine-print",
-    "href": "posts/2026-11-thanksgiving-dinner/index.html#the-fine-print",
-    "title": "Thanksgiving Dinner, Measured in Hours of Work",
+    "objectID": "posts/2026-11-insulin-cost/index.html#whats-changed-since-2022",
+    "href": "posts/2026-11-insulin-cost/index.html#whats-changed-since-2022",
+    "title": "Insulin Costs About $5 a Vial to Make. Here’s What Countries Actually Pay.",
+    "section": "What’s changed since 2022",
+    "text": "What’s changed since 2022\nThe RAND data is from 2022, and the U.S. insulin market has changed a lot since then:\n\nList price cuts. In 2023, Eli Lilly cut list prices for its main insulins by about 70%. Novo Nordisk’s cuts of 65–75% and Sanofi’s 78% cut to Lantus took effect in January 2024.\n$35 caps. Since 2023, people on Medicare pay no more than $35 a month for insulin. Some states, including California, cap it for many private plans too, and the big makers offer $35 programs.\nNew low-cost insulin. In January 2026, California’s CalRx program and the nonprofit drugmaker Civica launched a long-acting insulin at no more than $55 for five pens, about $11 a pen. That works out to about $37 per 1,000 units, right in line with what Canada paid in 2022.\n\nThese changes don’t show up in the 2022 numbers, so today’s U.S. list prices are lower than our chart shows."
+  },
+  {
+    "objectID": "posts/2026-11-insulin-cost/index.html#the-fine-print",
+    "href": "posts/2026-11-insulin-cost/index.html#the-fine-print",
+    "title": "Insulin Costs About $5 a Vial to Make. Here’s What Countries Actually Pay.",
     "section": "The fine print",
-    "text": "The fine print\n\nOne menu, national average. The survey prices the same classic menu every year; your actual dinner, store, and region will differ. Regional prices in the Northeast and West run well above the national average.\nA few early years are estimates. The year-by-year series we used fills a few early gaps using inflation data; the Farm Bureau’s own figures anchor the start and recent years.\nPay is the average worker’s hourly earnings in November, before taxes, for the roughly 80% of private-sector workers who aren’t managers."
+    "text": "The fine print\n\nDifferent years, different sources. The cost estimate is from 2018; the country prices are from 2022.\nCountry prices are averages across all the insulin each country buys, so a country that uses more of the newer insulins will look a bit pricier.\nU.S. discounts are estimated. Rebates are confidential, so RAND applied an average discount.\nNo country’s price includes the pharmacy’s markup or taxes. What patients pay at the counter can differ."
   },
   {
-    "objectID": "posts/2026-11-thanksgiving-dinner/index.html#the-bottom-line",
-    "href": "posts/2026-11-thanksgiving-dinner/index.html#the-bottom-line",
-    "title": "Thanksgiving Dinner, Measured in Hours of Work",
+    "objectID": "posts/2026-11-insulin-cost/index.html#the-bottom-line",
+    "href": "posts/2026-11-insulin-cost/index.html#the-bottom-line",
+    "title": "Insulin Costs About $5 a Vial to Make. Here’s What Countries Actually Pay.",
     "section": "The bottom line",
-    "text": "The bottom line\nThanksgiving dinner feels more expensive because the receipt is bigger. But measured in the time it takes to earn it, last year’s feast was the most affordable in four decades: about 10 minutes of work per guest.\n\nHow we did this. Dinner costs are the American Farm Bureau Federation’s annual Thanksgiving Dinner Cost Survey (classic menu for 10). Years 1987–2022 come from a compilation by 24/7 Wall St.; 1986 and 2023–2025 are from AFBF. Pay is average hourly earnings of production and nonsupervisory employees for November of each year, via FRED. AFBF survey"
-  },
-  {
-    "objectID": "posts/2026-11-inflation-back/index.html",
-    "href": "posts/2026-11-inflation-back/index.html",
-    "title": "Is Inflation Back?",
-    "section": "",
-    "text": "After the 2021–2023 price surge finally cooled, a lot of people hoped inflation was behind us. This year, it started climbing again. We looked at the government’s own numbers to see how big the rebound is, what’s driving it, and what it means for your paycheck."
-  },
-  {
-    "objectID": "posts/2026-11-inflation-back/index.html#the-short-answer",
-    "href": "posts/2026-11-inflation-back/index.html#the-short-answer",
-    "title": "Is Inflation Back?",
-    "section": "The short answer",
-    "text": "The short answer\n\n\n\n\n\n\nPrices are up 4.1% from a year ago (October 2026), up from 2.7% in February 2026. Most of the jump is energy: gasoline is up 37.4%. Without food and energy, inflation is a calmer 2.9%.\nBut it’s enough to bite: pay is up only 3.3%, so the average paycheck now buys less than it did a year ago for the first time since early 2023."
-  },
-  {
-    "objectID": "posts/2026-11-inflation-back/index.html#the-rebound",
-    "href": "posts/2026-11-inflation-back/index.html#the-rebound",
-    "title": "Is Inflation Back?",
-    "section": "The rebound",
-    "text": "The rebound\n\n\n\n\n\n\nThe dashed line is the Federal Reserve’s 2% target. The dotted line marks the U.S. and Israeli strike on Iran in late February 2026, which disrupted oil shipping through the Strait of Hormuz. Notice that the red line (all prices) jumped right after, while the teal line (everything except food and energy) barely moved. That tells you this rebound is mostly about energy, not a broad-based surge like 2022."
-  },
-  {
-    "objectID": "posts/2026-11-inflation-back/index.html#whats-driving-it",
-    "href": "posts/2026-11-inflation-back/index.html#whats-driving-it",
-    "title": "Is Inflation Back?",
-    "section": "What’s driving it",
-    "text": "What’s driving it\n\n\n\nConsumer and producer price indexes, October 2026 vs. a year earlier. Source: BLS via FRED.\n\n\nCategory\nChange from a year ago\n\n\n\n\nGasoline\n37.4%\n\n\nAll energy (gas, electricity, heating)\n21.2%\n\n\nHousing costs (shelter)\n3.5%\n\n\nFood\n2.9%\n\n\nEverything except food & energy\n2.9%\n\n\nAll prices\n4.1%\n\n\nWholesale prices (producer prices)\n6.5%\n\n\n\n\n\nTwo things to watch:\n\nWholesale prices are up 6.5%. Producer prices measure what businesses pay. When those rise faster than consumer prices, some of it tends to show up on store shelves later.\nFood is starting to climb. Food prices rose 2.9% over the year, and higher fuel and shipping costs can push grocery prices up with a delay."
-  },
-  {
-    "objectID": "posts/2026-11-inflation-back/index.html#what-it-means-for-your-paycheck",
-    "href": "posts/2026-11-inflation-back/index.html#what-it-means-for-your-paycheck",
-    "title": "Is Inflation Back?",
-    "section": "What it means for your paycheck",
-    "text": "What it means for your paycheck\n\n\n\n\n\n\nThis line shows whether paychecks are beating prices. Above zero, the average worker’s pay is growing faster than prices; below zero, it’s falling behind. From mid-2023 through 2025, pay comfortably outran prices. In October 2026, it dipped below zero: -0.3%."
-  },
-  {
-    "objectID": "posts/2026-11-inflation-back/index.html#the-fed-is-raising-rates-again",
-    "href": "posts/2026-11-inflation-back/index.html#the-fed-is-raising-rates-again",
-    "title": "Is Inflation Back?",
-    "section": "The Fed is raising rates again",
-    "text": "The Fed is raising rates again\nTo fight inflation, the Federal Reserve raises interest rates, which makes borrowing more expensive and cools spending. After holding rates steady for most of 2026, the Fed has started nudging them up: the federal funds rate rose from 3.63% to 3.88% this fall, and many forecasters expect another increase in December. For households, that means higher rates on credit cards, car loans, and mortgages."
-  },
-  {
-    "objectID": "posts/2026-11-inflation-back/index.html#the-fine-print",
-    "href": "posts/2026-11-inflation-back/index.html#the-fine-print",
-    "title": "Is Inflation Back?",
-    "section": "The fine print",
-    "text": "The fine print\n\nInflation numbers are averages. If you drive a lot, energy inflation hits you much harder than someone who works from home.\n“Core” inflation leaves out food and energy because they swing wildly; it’s a better guide to the long-term trend, but you still pay for gas and groceries.\nPay is the average hourly earnings of production and nonsupervisory workers, before taxes.\nThis can change quickly. If oil prices fall (as they did briefly this month on hopes of calmer fighting with Iran), headline inflation could ease fast."
-  },
-  {
-    "objectID": "posts/2026-11-inflation-back/index.html#the-bottom-line",
-    "href": "posts/2026-11-inflation-back/index.html#the-bottom-line",
-    "title": "Is Inflation Back?",
-    "section": "The bottom line",
-    "text": "The bottom line\nInflation is back, but it’s a different animal than 2022: so far it’s mostly an energy shock, with everything else rising at a more normal pace. That’s the good news. The bad news is that it’s enough to put paychecks behind prices again, and the Fed’s response means borrowing is getting more expensive too.\n\nHow we did this. All figures are from the Bureau of Labor Statistics and the Federal Reserve via FRED: CPI for all urban consumers (CPIAUCSL), CPI less food and energy (CPILFESL), energy (CPIENGSL), food (CPIUFDSL), shelter (CUSR0000SAH1), gasoline (CUSR0000SETB01), producer prices for final demand (PPIFIS), average hourly earnings of production and nonsupervisory employees (AHETPI), and the effective federal funds rate (FEDFUNDS). Changes are compared with the same month a year earlier."
-  },
-  {
-    "objectID": "posts/2026-11-job-search/index.html",
-    "href": "posts/2026-11-job-search/index.html",
-    "title": "How Long Does It Take to Find a Job Now?",
-    "section": "",
-    "text": "The unemployment rate looks fine. Layoff headlines are rare. And yet, if you’ve looked for a job recently, you may have felt like you were sending applications into a void. Both things are true. We dug into the government’s job data to explain why."
-  },
-  {
-    "objectID": "posts/2026-11-job-search/index.html#the-short-answer",
-    "href": "posts/2026-11-job-search/index.html#the-short-answer",
-    "title": "How Long Does It Take to Find a Job Now?",
-    "section": "The short answer",
-    "text": "The short answer\n\n\n\n\n\n\nUnemployment is just 4.1%, and layoffs are near record lows. But companies are hiring slowly, so people who do lose a job are stuck looking longer. The average job seeker has been searching for 27.1 weeks, up from about 22 weeks in 2019, and 28% have been out of work for six months or more."
-  },
-  {
-    "objectID": "posts/2026-11-job-search/index.html#how-long-job-searches-last",
-    "href": "posts/2026-11-job-search/index.html#how-long-job-searches-last",
-    "title": "How Long Does It Take to Find a Job Now?",
-    "section": "How long job searches last",
-    "text": "How long job searches last\n\n\n\n\n\n\nTwo measures: the average (pulled up by people who’ve been looking a very long time) and the median, the typical job seeker. Both have been climbing since 2023. The average is now 27.1 weeks; the median is 11.9 weeks.\n(The sharp dip in 2020 isn’t a good sign: tens of millions of people lost their jobs at once in the pandemic, so almost everyone unemployed had just started looking.)"
-  },
-  {
-    "objectID": "posts/2026-11-job-search/index.html#no-hire-no-fire",
-    "href": "posts/2026-11-job-search/index.html#no-hire-no-fire",
-    "title": "How Long Does It Take to Find a Job Now?",
-    "section": "No hire, no fire",
-    "text": "No hire, no fire\n\n\n\n\n\n\nEvery month, the government counts how many people were hired, laid off, or quit, as a share of all jobs:\n\n\n\nShare of all jobs per month. Latest: September 2026 (BLS JOLTS).\n\n\nMeasure\nNow\n2019 average\n\n\n\n\nHired\n3.4%\n3.9%\n\n\nLaid off or fired\n1.0%\n1.2%\n\n\nQuit\n2.1%\n2.3%\n\n\n\n\n\nFewer people are being let go than before the pandemic, but fewer are being hired too, and fewer are quitting (people tend to stay put when they’re not confident they’ll land something better). The job market has slowed down without breaking. That’s good news if you have a job, and hard news if you need one."
-  },
-  {
-    "objectID": "posts/2026-11-job-search/index.html#why-is-hiring-so-slow",
-    "href": "posts/2026-11-job-search/index.html#why-is-hiring-so-slow",
-    "title": "How Long Does It Take to Find a Job Now?",
-    "section": "Why is hiring so slow?",
-    "text": "Why is hiring so slow?\nEconomists point to a mix of reasons: uncertainty about the economy and interest rates making companies cautious about adding staff, businesses that hired heavily in 2021–2022 still having enough workers, and employers testing whether new technology like AI can handle some tasks before they hire. The data can show that hiring has slowed, but not exactly why, so take any single explanation with a grain of salt."
-  },
-  {
-    "objectID": "posts/2026-11-job-search/index.html#if-youre-job-hunting",
-    "href": "posts/2026-11-job-search/index.html#if-youre-job-hunting",
-    "title": "How Long Does It Take to Find a Job Now?",
-    "section": "If you’re job hunting",
-    "text": "If you’re job hunting\nThe numbers suggest planning for a longer search than you might expect:\n\nBudget for months, not weeks. The typical search is about 12 weeks, and many take much longer.\nDon’t quit before you’ve landed something if you can avoid it; quits are down for a reason.\nUnemployment insurance usually lasts up to 26 weeks in most states, close to the current average search, so it may run out before a long search ends."
-  },
-  {
-    "objectID": "posts/2026-11-job-search/index.html#the-fine-print",
-    "href": "posts/2026-11-job-search/index.html#the-fine-print",
-    "title": "How Long Does It Take to Find a Job Now?",
-    "section": "The fine print",
-    "text": "The fine print\n\nSearch length comes from the monthly household survey and counts only people actively looking; people who gave up looking aren’t included.\nHiring and layoff rates come from the separate JOLTS employer survey and lag by about a month.\nNational averages hide big differences by industry, location, and experience."
-  },
-  {
-    "objectID": "posts/2026-11-job-search/index.html#the-bottom-line",
-    "href": "posts/2026-11-job-search/index.html#the-bottom-line",
-    "title": "How Long Does It Take to Find a Job Now?",
-    "section": "The bottom line",
-    "text": "The bottom line\nToday’s job market isn’t a recession. Layoffs are near record lows and unemployment is low. But it’s a market that’s stopped moving: if you lose your job, expect the search to take noticeably longer than it would have a few years ago.\n\nHow we did this. All data are from the Bureau of Labor Statistics via FRED: average and median weeks unemployed (UEMPMEAN, UEMPMED), share of unemployed out 27 weeks or more (LNS13025703), the unemployment rate (UNRATE), and JOLTS hires, layoffs and discharges, and quits rates (JTSHIR, JTSLDR, JTSQUR)."
-  },
-  {
-    "objectID": "posts/2026-11-electric-bills/index.html",
-    "href": "posts/2026-11-electric-bills/index.html",
-    "title": "Why Does My Electric Bill Keep Going Up?",
-    "section": "",
-    "text": "If your electric bill seems higher every time you open it, you’re not imagining it. We looked at government price data to see how much electricity has really gone up, how that compares with paychecks, and what’s driving it."
-  },
-  {
-    "objectID": "posts/2026-11-electric-bills/index.html#the-short-answer",
-    "href": "posts/2026-11-electric-bills/index.html#the-short-answer",
-    "title": "Why Does My Electric Bill Keep Going Up?",
-    "section": "The short answer",
-    "text": "The short answer\n\n\n\n\n\n\nThe average price of electricity is 19.0¢ per kWh, up 42% since January 2020, and up 5.4% in the last year alone. For a typical home, that’s a monthly bill of about $171, versus $120 in early 2020.\nThe drivers: power-hungry AI data centers, expensive grid upgrades, and natural gas prices, with experts still arguing about how much each one matters."
-  },
-  {
-    "objectID": "posts/2026-11-electric-bills/index.html#the-typical-monthly-bill",
-    "href": "posts/2026-11-electric-bills/index.html#the-typical-monthly-bill",
-    "title": "Why Does My Electric Bill Keep Going Up?",
-    "section": "The typical monthly bill",
-    "text": "The typical monthly bill\n\n\n\n\n\n\nWe used the Energy Information Administration’s figure for average home use, about 899 kWh a month, and the government’s average price per kWh. For most of the 2010s, the typical bill barely moved. Since 2021, it has climbed steadily."
-  },
-  {
-    "objectID": "posts/2026-11-electric-bills/index.html#in-hours-of-work",
-    "href": "posts/2026-11-electric-bills/index.html#in-hours-of-work",
-    "title": "Why Does My Electric Bill Keep Going Up?",
-    "section": "In hours of work",
-    "text": "In hours of work\nAs in our other posts, we also measured the bill in hours of work for the average worker:\n\n\n\n\n\nYear\nPrice per kWh\nTypical monthly bill\nHours of work\n\n\n\n\n1980\n6.0¢\n$54\n7.9\n\n\n1990\n8.4¢\n$75\n7.4\n\n\n2000\n8.7¢\n$78\n5.6\n\n\n2010\n12.8¢\n$115\n6.0\n\n\n2019\n13.6¢\n$123\n5.2\n\n\n2021\n14.1¢\n$127\n4.9\n\n\n2026 (so far)\n19.4¢\n$174\n5.4\n\n\n\n\n\nThis puts the jump in perspective. The monthly bill takes about 5.4 hours of work today, up from 4.9 in 2021. That’s a real increase, but it’s still well below the 1980s, when a similar bill took 7 to 8 hours. Electricity got much cheaper relative to pay for decades; the last few years reversed some of that."
-  },
-  {
-    "objectID": "posts/2026-11-electric-bills/index.html#whats-driving-it",
-    "href": "posts/2026-11-electric-bills/index.html#whats-driving-it",
-    "title": "Why Does My Electric Bill Keep Going Up?",
-    "section": "What’s driving it",
-    "text": "What’s driving it\n1. Data centers. The AI boom runs on enormous data centers, and they use a lot of power. A Lawrence Berkeley National Laboratory report for the Department of Energy found data centers used 4.4% of all U.S. electricity in 2023, and projected 6.7% to 12% by 2028. More demand can push up prices, especially in regions where data centers are clustered, and utilities are building new capacity to serve them.\n2. The grid itself. Utilities are spending heavily to replace aging equipment, build new power lines, and harden the grid against storms and wildfires. Those costs are passed on to customers, and they rise even when the cost of generating power doesn’t.\n3. Natural gas. Natural gas is the biggest fuel for U.S. electricity, so its price swings flow through to power prices. The energy shock of 2022 and this year’s oil and gas disruptions both played a role.\nHow much is each one? Honestly, nobody has a clean answer. Government data counts data centers inside “commercial” electricity use, so their exact effect on household bills is hard to isolate, and researchers disagree on the split. Where you live matters a lot: bills have jumped most in regions with tight power supplies and fast data center growth."
-  },
-  {
-    "objectID": "posts/2026-11-electric-bills/index.html#ways-to-fight-back",
-    "href": "posts/2026-11-electric-bills/index.html#ways-to-fight-back",
-    "title": "Why Does My Electric Bill Keep Going Up?",
-    "section": "Ways to fight back",
-    "text": "Ways to fight back\n\nCheck for a cheaper plan or time-of-use rate. Some utilities charge much less at night.\nLook for state and utility rebates on efficient appliances, heat pumps, and insulation.\nAsk about budget billing to smooth out big seasonal swings."
-  },
-  {
-    "objectID": "posts/2026-11-electric-bills/index.html#the-fine-print",
-    "href": "posts/2026-11-electric-bills/index.html#the-fine-print",
-    "title": "Why Does My Electric Bill Keep Going Up?",
-    "section": "The fine print",
-    "text": "The fine print\n\nNational averages. Electricity prices vary enormously by state, from well under to well over double the national average.\nThe “typical bill” uses average usage and the average price per kWh; real bills include fixed monthly charges and taxes.\nPay is average hourly earnings before taxes."
-  },
-  {
-    "objectID": "posts/2026-11-electric-bills/index.html#the-bottom-line",
-    "href": "posts/2026-11-electric-bills/index.html#the-bottom-line",
-    "title": "Why Does My Electric Bill Keep Going Up?",
-    "section": "The bottom line",
-    "text": "The bottom line\nElectricity really has gotten more expensive, fast: about 40% since 2020. Data centers are a real and growing part of the story, alongside grid spending and fuel costs. In work time it’s not as bad as the 1980s, but the long trend of electricity getting cheaper has clearly reversed.\n\nHow we did this. Prices are the BLS average price of electricity per kWh, U.S. city average (APU000072610), and the CPI for electricity (CUSR0000SEHF01), via FRED. Typical home use is from EIA (about 10,791 kWh a year, or 899 kWh a month, in 2022). Data center figures are from Lawrence Berkeley National Laboratory’s 2024 report for the U.S. Department of Energy. Berkeley Lab report summary · DOE release"
-  },
-  {
-    "objectID": "posts/2026-11-good-time-to-buy/index.html",
-    "href": "posts/2026-11-good-time-to-buy/index.html",
-    "title": "Home Prices Are Dipping. Is Now a Good Time to Buy?",
-    "section": "",
-    "text": "You may have seen headlines that home prices are finally coming down. Some are. So is this the moment to buy? We pulled the latest market data to see what’s actually changed for buyers, and what it does to the monthly payment. (This is general information, not financial advice; everyone’s situation is different.)"
-  },
-  {
-    "objectID": "posts/2026-11-good-time-to-buy/index.html#the-short-answer",
-    "href": "posts/2026-11-good-time-to-buy/index.html#the-short-answer",
-    "title": "Home Prices Are Dipping. Is Now a Good Time to Buy?",
-    "section": "The short answer",
-    "text": "The short answer\n\n\n\n\n\n\nThe median listed home is -2.2% cheaper than a year ago. But mortgage rates rose from about 6.25% to 7.33%, so the monthly payment on that typical home is $215 higher: about $2,568 a month, versus $2,353 a year ago.\nThe real change is leverage: more homes for sale, fewer buyers, and more room to negotiate than in years."
-  },
-  {
-    "objectID": "posts/2026-11-good-time-to-buy/index.html#the-monthly-payment",
-    "href": "posts/2026-11-good-time-to-buy/index.html#the-monthly-payment",
-    "title": "Home Prices Are Dipping. Is Now a Good Time to Buy?",
-    "section": "The monthly payment",
-    "text": "The monthly payment\n\n\n\n\n\n\nThis is the monthly principal and interest on the median listed home, with 10% down and a 30-year fixed mortgage at that month’s average rate. It doubled from 2021 to 2023 as rates shot up, eased in 2025 as rates fell, and has climbed again this fall."
-  },
-  {
-    "objectID": "posts/2026-11-good-time-to-buy/index.html#are-prices-really-falling",
-    "href": "posts/2026-11-good-time-to-buy/index.html#are-prices-really-falling",
-    "title": "Home Prices Are Dipping. Is Now a Good Time to Buy?",
-    "section": "Are prices really falling?",
-    "text": "Are prices really falling?\nIt depends on which measure you use:\n\n\n\n\n\n\n\n\n\n\nMeasure\nLatest\nChange from a year ago\n\n\n\n\nMedian listing price (Realtor.com)\n$415,000\n-2.2%\n\n\nMedian price of new homes sold (Census)\n$393,300\n-4.1%\n\n\nCase-Shiller home price index (repeat sales)\n336.7\n+2.1%\n\n\n\n\n\nAsking prices and new-home prices are down. But the Case-Shiller index, which tracks the same homes selling again over time and is often the best measure of true price changes, is still slightly up over the year, just off its summer peak. So “prices are dipping” is fair; “prices are falling fast” is not."
-  },
-  {
-    "objectID": "posts/2026-11-good-time-to-buy/index.html#the-buyers-market-signals",
-    "href": "posts/2026-11-good-time-to-buy/index.html#the-buyers-market-signals",
-    "title": "Home Prices Are Dipping. Is Now a Good Time to Buy?",
-    "section": "The buyer’s market signals",
-    "text": "The buyer’s market signals\n\n\n\n\n\nSignal\nLatest\nChange from a year ago\n\n\n\n\nHomes listed for sale\n1,183,520\n+7.4%\n\n\nExisting homes sold (yearly pace)\n3,750,000\n-8.8%\n\n\nMedian days on market\n63\n0.0%\n\n\nRents (CPI)\n\n+3.0%\n\n\n\n\n\nMore homes for sale and fewer sales means sellers are competing for buyers, not the other way around. That can mean room to negotiate on price, repairs, or seller-paid closing costs. Meanwhile rents are still rising, so waiting isn’t free either."
-  },
-  {
-    "objectID": "posts/2026-11-good-time-to-buy/index.html#things-to-weigh",
-    "href": "posts/2026-11-good-time-to-buy/index.html#things-to-weigh",
-    "title": "Home Prices Are Dipping. Is Now a Good Time to Buy?",
-    "section": "Things to weigh",
-    "text": "Things to weigh\nThe data can’t tell you whether you should buy, but it does point to the questions that matter most:\n\nCan you afford the payment at today’s rate? Some people buy hoping to refinance later if rates drop. That can work, but rates aren’t guaranteed to fall, and refinancing has costs.\nHow long will you stay? Buying and selling costs thousands; it usually takes several years for owning to beat renting.\nUse the leverage. In a slower market, asking for a lower price or concessions is more realistic than it was in 2021–2022."
-  },
-  {
-    "objectID": "posts/2026-11-good-time-to-buy/index.html#the-fine-print",
-    "href": "posts/2026-11-good-time-to-buy/index.html#the-fine-print",
-    "title": "Home Prices Are Dipping. Is Now a Good Time to Buy?",
-    "section": "The fine print",
-    "text": "The fine print\n\nPayments shown are principal and interest only. Property taxes, insurance, and HOA fees can add hundreds a month.\nNational medians. Local markets vary widely; some areas are seeing real price drops, others are still rising.\nThe median listing price reflects the mix of homes for sale, not just price changes."
-  },
-  {
-    "objectID": "posts/2026-11-good-time-to-buy/index.html#the-bottom-line",
-    "href": "posts/2026-11-good-time-to-buy/index.html#the-bottom-line",
-    "title": "Home Prices Are Dipping. Is Now a Good Time to Buy?",
-    "section": "The bottom line",
-    "text": "The bottom line\nHome prices are softening, and buyers have more choices and leverage than they’ve had in years. But mortgage rates climbed even more than prices dipped, so the typical monthly payment is higher than a year ago. Whether that makes now a good time depends far more on your budget and timeline than on the headlines.\n\nHow we did this. Median listing price, active listings, and days on market are from Realtor.com; new-home prices from the Census Bureau; the Case-Shiller U.S. National Home Price Index from S&P; existing home sales from the National Association of Realtors; mortgage rates from Freddie Mac’s weekly survey (averaged by month); and rents from the BLS CPI, all via FRED. Payments assume 10% down and a 30-year fixed loan."
+    "text": "The bottom line\nInsulin really is cheap to make, roughly $3 to $9 a vial. Other wealthy countries pay a few times that. The U.S. list price was about ten times higher than theirs, but it mostly functioned as a starting point for secret discounts, and the people who paid it were the ones least able to. After a wave of price cuts, caps, and new low-cost options since 2023, the gap is closing. But it hasn’t closed.\n\nHow we did this. Country prices are from RAND’s report Comparing Insulin Prices in the United States to Other Countries: Updated Results Using 2022 Data (Mulcahy & Schwam, 2024), which analyzed IQVIA sales data for the U.S. and 33 OECD countries (Table A.5, average gross price per 100 units, all insulins, multiplied by 10 for a 1,000-unit vial). The U.S. after-discount price applies RAND’s 76% gross-to-net estimate. Production cost estimates are from Gotham, Barber & Hill, “Production costs and potential prices for biosimilars of human insulin and insulin analogues,” BMJ Global Health (2018), Table 1. RAND report · BMJ Global Health study"
   },
   {
     "objectID": "posts/2026-11-snap-facts/index.html",
