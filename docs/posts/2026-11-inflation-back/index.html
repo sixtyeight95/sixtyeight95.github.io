@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="SixtyEight95">
+<meta name="dcterms.date" content="2026-11-19">
+
+<title>Is Inflation Back? – SixtyEight95</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/logo.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-fad9b177c07875ef04f3d87e300b1a75.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link href="../../site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+
+<script src="../../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
+<script src="../../site_libs/plotly-binding-4.10.4/plotly.js"></script>
+
+<script src="../../site_libs/typedarray-0.1/typedarray.min.js"></script>
+
+<script src="../../site_libs/jquery-3.5.1/jquery.min.js"></script>
+
+<link href="../../site_libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+
+<script src="../../site_libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+
+<link href="../../site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+
+<script src="../../site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+
+
+
+<meta property="og:title" content="Is Inflation Back? – SixtyEight95">
+<meta property="og:description" content="Prices are rising faster again, mostly because of gas. And for the first time in years, paychecks are falling behind.">
+<meta property="og:image" content="https://sixtyeight95.github.io/posts/2026-11-inflation-back/infographic.png">
+<meta property="og:site_name" content="SixtyEight95">
+<meta property="og:image:height" content="1350">
+<meta property="og:image:width" content="1080">
+<meta name="twitter:title" content="Is Inflation Back? – SixtyEight95">
+<meta name="twitter:description" content="Prices are rising faster again, mostly because of gas. And for the first time in years, paychecks are falling behind.">
+<meta name="twitter:image" content="https://sixtyeight95.github.io/posts/2026-11-inflation-back/infographic.png">
+<meta name="twitter:image-height" content="1350">
+<meta name="twitter:image-width" content="1080">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/logo.png" alt="" class="navbar-logo light-content">
+    <img src="../../images/logo.png" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">SixtyEight95</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Posts</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Is Inflation Back?</h1>
+<p class="subtitle lead">Prices are rising faster again, mostly because of gas. And for the first time in years, paychecks are falling behind.</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">inflation</div>
+    <div class="quarto-category">cost of living</div>
+    <div class="quarto-category">wages</div>
+    <div class="quarto-category">energy</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>SixtyEight95 </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 19, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>After the 2021–2023 price surge finally cooled, a lot of people hoped inflation was behind us. This year, it started climbing again. We looked at the government’s own numbers to see how big the rebound is, what’s driving it, and what it means for your paycheck.</p>
+<section id="the-short-answer" class="level2">
+<h2 class="anchored" data-anchor-id="the-short-answer">The short answer</h2>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Prices are up <strong>4.1%</strong> from a year ago (October 2026), up from <strong>2.7%</strong> in February 2026. Most of the jump is <strong>energy</strong>: gasoline is up <strong>37.4%</strong>. Without food and energy, inflation is a calmer <strong>2.9%</strong>.</p>
+<p>But it’s enough to bite: pay is up only <strong>3.3%</strong>, so the average paycheck now buys <strong>less</strong> than it did a year ago for the first time since early 2023.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="the-rebound" class="level2">
+<h2 class="anchored" data-anchor-id="the-rebound">The rebound</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-a0e0788cc83ffdb0c517" style="width:100%;height:417px;"></div>
+<script type="application/json" data-for="htmlwidget-a0e0788cc83ffdb0c517">{"x":{"data":[{"x":[17755.5,20868.5],"y":[2,2],"text":"","type":"scatter","mode":"lines","line":{"width":1.8897637795275593,"color":"rgba(153,153,153,1)","dash":"dash"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[20512,20512],"y":[-0.24085668639119207,9.4184190930818463],"text":"","type":"scatter","mode":"lines","line":{"width":1.8897637795275593,"color":"rgba(214,158,46,1)","dash":"dot"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[17897,17928,17956,17987,18017,18048,18078,18109,18140,18170,18201,18231,18262,18293,18322,18353,18383,18414,18444,18475,18506,18536,18567,18597,18628,18659,18687,18718,18748,18779,18809,18840,18871,18901,18932,18962,18993,19024,19052,19083,19113,19144,19174,19205,19236,19266,19297,19327,19358,19389,19417,19448,19478,19509,19539,19570,19601,19631,19662,19692,19723,19754,19783,19814,19844,19875,19905,19936,19967,19997,20028,20058,20089,20120,20148,20179,20209,20240,20270,20301,20332,20393,20423,20454,20485,20513,20544,20574,20605,20635,20666,20697,20727],"y":[1.4875893578291333,1.5188615351321877,1.8831863513063984,2.0005834702090608,1.7959105553606136,1.671194894390049,1.826331335037068,1.7376412106666406,1.6844977040391562,1.7339736996186295,2.0922903948629168,2.3195274699624457,2.599767976845202,2.3413166797595197,1.4940399642909163,0.31304729404111331,0.1982013035848551,0.71665628318304808,0.99686476258979972,1.2810698495523853,1.3910228912373812,1.2303863428671624,1.1757452138405844,1.3204191315779434,1.3738437137002402,1.6698167791706853,2.6678187820641908,4.1330771153605728,4.9182570894676259,5.2956326203499993,5.2451693813092337,5.1520153017939663,5.3512155909491321,6.2350423902980623,6.9019704037008633,7.1743402850655391,7.5588057269678322,7.9372787665178191,8.5722049660138531,8.2317507707772251,8.5381711956420645,8.9793611031057985,8.4625767277300987,8.222579178218826,8.1921068964258215,7.7588139576930004,7.122856456533988,6.4046004023571523,6.327178517960097,5.9578207381370873,4.9177193628899607,4.9500798791243694,4.131851231385042,3.070617072997095,3.2877492684282972,3.7225048035052888,3.6872066381192559,3.2512659098611785,3.1333462745911866,3.3159099427102934,3.0883429864855705,3.1570741416486969,3.4868349120836584,3.3607951262196734,3.244278584003113,2.9702579486470926,2.9414757935583014,2.6071444906920371,2.4264830315416708,2.5788440538713431,2.7194724612848331,2.8706909675099812,2.9909783078999608,2.8015834477613355,2.3819814628055491,2.3253882302578299,2.3772651073680873,2.6804538659102262,2.7426180521671339,2.9385917430316155,3.0225715847133294,2.988299628363511,3.00226204316838,2.8286797395498997,2.6645890876940914,3.3202055812236786,3.9470269087042764,4.2700326566802449,3.7265298484186804,3.5397514271936714,3.7129581058388483,4.0233102684578359,4.080556369412025],"text":["All prices, Jan 2019: 1.5%","All prices, Feb 2019: 1.5%","All prices, Mar 2019: 1.9%","All prices, Apr 2019: 2.0%","All prices, May 2019: 1.8%","All prices, Jun 2019: 1.7%","All prices, Jul 2019: 1.8%","All prices, Aug 2019: 1.7%","All prices, Sep 2019: 1.7%","All prices, Oct 2019: 1.7%","All prices, Nov 2019: 2.1%","All prices, Dec 2019: 2.3%","All prices, Jan 2020: 2.6%","All prices, Feb 2020: 2.3%","All prices, Mar 2020: 1.5%","All prices, Apr 2020: 0.3%","All prices, May 2020: 0.2%","All prices, Jun 2020: 0.7%","All prices, Jul 2020: 1.0%","All prices, Aug 2020: 1.3%","All prices, Sep 2020: 1.4%","All prices, Oct 2020: 1.2%","All prices, Nov 2020: 1.2%","All prices, Dec 2020: 1.3%","All prices, Jan 2021: 1.4%","All prices, Feb 2021: 1.7%","All prices, Mar 2021: 2.7%","All prices, Apr 2021: 4.1%","All prices, May 2021: 4.9%","All prices, Jun 2021: 5.3%","All prices, Jul 2021: 5.2%","All prices, Aug 2021: 5.2%","All prices, Sep 2021: 5.4%","All prices, Oct 2021: 6.2%","All prices, Nov 2021: 6.9%","All prices, Dec 2021: 7.2%","All prices, Jan 2022: 7.6%","All prices, Feb 2022: 7.9%","All prices, Mar 2022: 8.6%","All prices, Apr 2022: 8.2%","All prices, May 2022: 8.5%","All prices, Jun 2022: 9.0%","All prices, Jul 2022: 8.5%","All prices, Aug 2022: 8.2%","All prices, Sep 2022: 8.2%","All prices, Oct 2022: 7.8%","All prices, Nov 2022: 7.1%","All prices, Dec 2022: 6.4%","All prices, Jan 2023: 6.3%","All prices, Feb 2023: 6.0%","All prices, Mar 2023: 4.9%","All prices, Apr 2023: 5.0%","All prices, May 2023: 4.1%","All prices, Jun 2023: 3.1%","All prices, Jul 2023: 3.3%","All prices, Aug 2023: 3.7%","All prices, Sep 2023: 3.7%","All prices, Oct 2023: 3.3%","All prices, Nov 2023: 3.1%","All prices, Dec 2023: 3.3%","All prices, Jan 2024: 3.1%","All prices, Feb 2024: 3.2%","All prices, Mar 2024: 3.5%","All prices, Apr 2024: 3.4%","All prices, May 2024: 3.2%","All prices, Jun 2024: 3.0%","All prices, Jul 2024: 2.9%","All prices, Aug 2024: 2.6%","All prices, Sep 2024: 2.4%","All prices, Oct 2024: 2.6%","All prices, Nov 2024: 2.7%","All prices, Dec 2024: 2.9%","All prices, Jan 2025: 3.0%","All prices, Feb 2025: 2.8%","All prices, Mar 2025: 2.4%","All prices, Apr 2025: 2.3%","All prices, May 2025: 2.4%","All prices, Jun 2025: 2.7%","All prices, Jul 2025: 2.7%","All prices, Aug 2025: 2.9%","All prices, Sep 2025: 3.0%","All prices, Nov 2025: 3.0%","All prices, Dec 2025: 3.0%","All prices, Jan 2026: 2.8%","All prices, Feb 2026: 2.7%","All prices, Mar 2026: 3.3%","All prices, Apr 2026: 3.9%","All prices, May 2026: 4.3%","All prices, Jun 2026: 3.7%","All prices, Jul 2026: 3.5%","All prices, Aug 2026: 3.7%","All prices, Sep 2026: 4.0%","All prices, Oct 2026: 4.1%"],"type":"scatter","mode":"lines","line":{"width":3.4015748031496069,"color":"rgba(197,48,48,1)","dash":"solid"},"hoveron":"points","name":"All prices","legendgroup":"All prices","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[17897,17928,17956,17987,18017,18048,18078,18109,18140,18170,18201,18231,18262,18293,18322,18353,18383,18414,18444,18475,18506,18536,18567,18597,18628,18659,18687,18718,18748,18779,18809,18840,18871,18901,18932,18962,18993,19024,19052,19083,19113,19144,19174,19205,19236,19266,19297,19327,19358,19389,19417,19448,19478,19509,19539,19570,19601,19631,19662,19692,19723,19754,19783,19814,19844,19875,19905,19936,19967,19997,20028,20058,20089,20120,20148,20179,20209,20240,20270,20301,20332,20393,20423,20454,20485,20513,20544,20574,20605,20635,20666,20697,20727],"y":[2.1794329242488475,2.1410889637129227,2.0665623500122798,2.0913377235709074,1.9724280075443801,2.0746001344216447,2.1657049503490455,2.3211356735985289,2.3300099083477743,2.3378148209658223,2.3546960942649298,2.2905988164406255,2.2817391837892886,2.3676613601035346,2.097741687598198,1.4309324152566472,1.2184564692601985,1.1836841884912408,1.5606958371315871,1.7223933878284248,1.7190644053436621,1.6364116692455521,1.6693780408814973,1.624313961356294,1.3763703714812836,1.2802483449900981,1.6494791315614155,2.9780316542864504,3.7876961101984907,4.4393621943283668,4.2107192143281846,3.9396919775577244,4.0028557298658063,4.5903173341849124,4.9725721439656922,5.4889935303930937,6.0542851542418896,6.4551151617656455,6.4823785544041668,6.1587371190528373,6.0254478790408905,5.9063356515913767,5.8999167408343212,6.2860890977322281,6.6242876245093063,6.2949997869832464,5.9698806658998071,5.6855319447366659,5.5395334725917733,5.4982603296180876,5.5667413926713261,5.5143641958735223,5.3375470360846888,4.8535963271552518,4.7009705579352357,4.3991434400660889,4.128747996485882,4.0274015611274638,4.017980521102138,3.9154727698627045,3.8583540949372663,3.7619647313751337,3.8161935067360986,3.6260251717590952,3.3944196689766448,3.2654173234475614,3.2301916105644812,3.2850959364300047,3.2823574494668994,3.2986897067653009,3.2859356193500444,3.2133335461932644,3.2829704853985842,3.1375568822805899,2.808783050077035,2.7760200724699313,2.7658403935930886,2.9108954426960709,3.0544930080893096,3.1118060985144691,3.0199668258857892,2.8943434111105226,2.837998245815232,2.9493378374616075,2.7335062438778035,2.6730984898529986,2.9884245755166017,2.9571135826898187,2.8058110757954502,2.786747157096725,2.7634613395318253,2.7892023051258708,2.8696983820494015],"text":["Without food & energy (core), Jan 2019: 2.2%","Without food & energy (core), Feb 2019: 2.1%","Without food & energy (core), Mar 2019: 2.1%","Without food & energy (core), Apr 2019: 2.1%","Without food & energy (core), May 2019: 2.0%","Without food & energy (core), Jun 2019: 2.1%","Without food & energy (core), Jul 2019: 2.2%","Without food & energy (core), Aug 2019: 2.3%","Without food & energy (core), Sep 2019: 2.3%","Without food & energy (core), Oct 2019: 2.3%","Without food & energy (core), Nov 2019: 2.4%","Without food & energy (core), Dec 2019: 2.3%","Without food & energy (core), Jan 2020: 2.3%","Without food & energy (core), Feb 2020: 2.4%","Without food & energy (core), Mar 2020: 2.1%","Without food & energy (core), Apr 2020: 1.4%","Without food & energy (core), May 2020: 1.2%","Without food & energy (core), Jun 2020: 1.2%","Without food & energy (core), Jul 2020: 1.6%","Without food & energy (core), Aug 2020: 1.7%","Without food & energy (core), Sep 2020: 1.7%","Without food & energy (core), Oct 2020: 1.6%","Without food & energy (core), Nov 2020: 1.7%","Without food & energy (core), Dec 2020: 1.6%","Without food & energy (core), Jan 2021: 1.4%","Without food & energy (core), Feb 2021: 1.3%","Without food & energy (core), Mar 2021: 1.6%","Without food & energy (core), Apr 2021: 3.0%","Without food & energy (core), May 2021: 3.8%","Without food & energy (core), Jun 2021: 4.4%","Without food & energy (core), Jul 2021: 4.2%","Without food & energy (core), Aug 2021: 3.9%","Without food & energy (core), Sep 2021: 4.0%","Without food & energy (core), Oct 2021: 4.6%","Without food & energy (core), Nov 2021: 5.0%","Without food & energy (core), Dec 2021: 5.5%","Without food & energy (core), Jan 2022: 6.1%","Without food & energy (core), Feb 2022: 6.5%","Without food & energy (core), Mar 2022: 6.5%","Without food & energy (core), Apr 2022: 6.2%","Without food & energy (core), May 2022: 6.0%","Without food & energy (core), Jun 2022: 5.9%","Without food & energy (core), Jul 2022: 5.9%","Without food & energy (core), Aug 2022: 6.3%","Without food & energy (core), Sep 2022: 6.6%","Without food & energy (core), Oct 2022: 6.3%","Without food & energy (core), Nov 2022: 6.0%","Without food & energy (core), Dec 2022: 5.7%","Without food & energy (core), Jan 2023: 5.5%","Without food & energy (core), Feb 2023: 5.5%","Without food & energy (core), Mar 2023: 5.6%","Without food & energy (core), Apr 2023: 5.5%","Without food & energy (core), May 2023: 5.3%","Without food & energy (core), Jun 2023: 4.9%","Without food & energy (core), Jul 2023: 4.7%","Without food & energy (core), Aug 2023: 4.4%","Without food & energy (core), Sep 2023: 4.1%","Without food & energy (core), Oct 2023: 4.0%","Without food & energy (core), Nov 2023: 4.0%","Without food & energy (core), Dec 2023: 3.9%","Without food & energy (core), Jan 2024: 3.9%","Without food & energy (core), Feb 2024: 3.8%","Without food & energy (core), Mar 2024: 3.8%","Without food & energy (core), Apr 2024: 3.6%","Without food & energy (core), May 2024: 3.4%","Without food & energy (core), Jun 2024: 3.3%","Without food & energy (core), Jul 2024: 3.2%","Without food & energy (core), Aug 2024: 3.3%","Without food & energy (core), Sep 2024: 3.3%","Without food & energy (core), Oct 2024: 3.3%","Without food & energy (core), Nov 2024: 3.3%","Without food & energy (core), Dec 2024: 3.2%","Without food & energy (core), Jan 2025: 3.3%","Without food & energy (core), Feb 2025: 3.1%","Without food & energy (core), Mar 2025: 2.8%","Without food & energy (core), Apr 2025: 2.8%","Without food & energy (core), May 2025: 2.8%","Without food & energy (core), Jun 2025: 2.9%","Without food & energy (core), Jul 2025: 3.1%","Without food & energy (core), Aug 2025: 3.1%","Without food & energy (core), Sep 2025: 3.0%","Without food & energy (core), Nov 2025: 2.9%","Without food & energy (core), Dec 2025: 2.8%","Without food & energy (core), Jan 2026: 2.9%","Without food & energy (core), Feb 2026: 2.7%","Without food & energy (core), Mar 2026: 2.7%","Without food & energy (core), Apr 2026: 3.0%","Without food & energy (core), May 2026: 3.0%","Without food & energy (core), Jun 2026: 2.8%","Without food & energy (core), Jul 2026: 2.8%","Without food & energy (core), Aug 2026: 2.8%","Without food & energy (core), Sep 2026: 2.8%","Without food & energy (core), Oct 2026: 2.9%"],"type":"scatter","mode":"lines","line":{"width":3.4015748031496069,"color":"rgba(42,157,143,1)","dash":"solid"},"hoveron":"points","name":"Without food & energy (core)","legendgroup":"Without food & energy (core)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":27.364789446981227,"r":7.3059360730593621,"b":26.707255200405889,"l":43.105022831050235},"font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[17755.5,20868.5],"tickmode":"array","ticktext":["2020","2022","2024","2026"],"tickvals":[18262,18993,19723,20454],"categoryorder":"array","categoryarray":["2020","2022","2024","2026"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.24085668639119207,9.4184190930818463],"tickmode":"array","ticktext":["0.0","2.5","5.0","7.5"],"tickvals":[0,2.5,5,7.5],"categoryorder":"array","categoryarray":["0.0","2.5","5.0","7.5"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Change from a year earlier (%)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":true,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498},"title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"orientation":"h","y":1.0800000000000001},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"source":"A","attrs":{"22b421893288":{"yintercept":{},"type":"scatter"},"22b41592653":{"xintercept":{}},"22b412a7d51":{"x":{},"y":{},"colour":{},"text":{}}},"cur_data":"22b421893288","visdat":{"22b421893288":["function (y) ","x"],"22b41592653":["function (y) ","x"],"22b412a7d51":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p>The dashed line is the Federal Reserve’s 2% target. The dotted line marks the U.S. and Israeli strike on Iran in late February 2026, which disrupted oil shipping through the Strait of Hormuz. Notice that the red line (all prices) jumped right after, while the teal line (everything except food and energy) barely moved. That tells you this rebound is mostly about energy, not a broad-based surge like 2022.</p>
+</section>
+<section id="whats-driving-it" class="level2">
+<h2 class="anchored" data-anchor-id="whats-driving-it">What’s driving it</h2>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Consumer and producer price indexes, October 2026 vs.&nbsp;a year earlier. Source: BLS via FRED.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Category</th>
+<th style="text-align: right;">Change from a year ago</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gasoline</td>
+<td style="text-align: right;">37.4%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">All energy (gas, electricity, heating)</td>
+<td style="text-align: right;">21.2%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Housing costs (shelter)</td>
+<td style="text-align: right;">3.5%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Food</td>
+<td style="text-align: right;">2.9%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Everything except food &amp; energy</td>
+<td style="text-align: right;">2.9%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">All prices</td>
+<td style="text-align: right;">4.1%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Wholesale prices (producer prices)</td>
+<td style="text-align: right;">6.5%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Two things to watch:</p>
+<ul>
+<li><strong>Wholesale prices are up 6.5%.</strong> Producer prices measure what businesses pay. When those rise faster than consumer prices, some of it tends to show up on store shelves later.</li>
+<li><strong>Food is starting to climb.</strong> Food prices rose 2.9% over the year, and higher fuel and shipping costs can push grocery prices up with a delay.</li>
+</ul>
+</section>
+<section id="what-it-means-for-your-paycheck" class="level2">
+<h2 class="anchored" data-anchor-id="what-it-means-for-your-paycheck">What it means for your paycheck</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-e8b1a050a0713ecc9a03" style="width:100%;height:371px;"></div>
+<script type="application/json" data-for="htmlwidget-e8b1a050a0713ecc9a03">{"x":{"data":[{"x":[17755.5,20868.5],"y":[0,0],"text":"","type":"scatter","mode":"lines","line":{"width":1.8897637795275593,"color":"rgba(102,102,102,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[17897,17928,17956,17987,18017,18048,18078,18109,18140,18170,18201,18231,18262,18293,18322,18353,18383,18414,18444,18475,18506,18536,18567,18597,18628,18659,18687,18718,18748,18779,18809,18840,18871,18901,18932,18962,18993,19024,19052,19083,19113,19144,19174,19205,19236,19266,19297,19327,19358,19389,19417,19448,19478,19509,19539,19570,19601,19631,19662,19692,19723,19754,19783,19814,19844,19875,19905,19936,19967,19997,20028,20058,20089,20120,20148,20179,20209,20240,20270,20301,20332,20393,20423,20454,20485,20513,20544,20574,20605,20635,20666,20697,20727],"y":[1.9273883914574519,1.9323773513226783,1.6430092282694986,1.4297923840433713,1.7131458856989523,1.9155046749815385,1.7972329024992462,1.8733535962506265,1.8710363501485361,1.988642925025319,1.4853278846482798,0.86254263950782395,0.75290215324759213,1.2516296761106771,2.0392540363641354,7.4219696096710752,6.5409711584487384,4.7856738013516198,3.8941921610503138,3.711618907327896,3.3762025476593127,3.3182599244125477,3.4417823203100273,4.1178701963307196,3.8018627353199497,3.351211232817275,2.2877324109209063,-2.5174918347089514,-2.0168227672982431,-1.043442716963483,-0.057849919368924141,0.16220834463114286,0.58064591288520262,0.2319753309628636,-0.38014359096583128,-0.76048035933801161,-0.56092183827139985,-1.0426403104282334,-1.4593453443611737,-1.2336482013185712,-1.695580329691615,-2.1979553758005976,-1.8025277684439955,-1.8315497589052931,-2.0542396401468044,-1.7970759405982695,-1.2014364866775318,-0.89159309272501819,-1.0577272828816375,-0.54878124905251013,0.44771704389043876,0.2431620000145962,0.86874967484229515,1.8507511215058781,1.542239893909314,0.96239087082063968,0.97715820915815765,1.2455719949009847,1.3080583365747245,1.0778327310239755,1.4586265770622386,1.1691398079632709,0.75842861756911795,0.62516306507338637,0.86255361802800579,1.0820603576368271,0.99345233936125599,1.5171015171613345,1.6794414128958435,1.5506809972666291,1.2970092201096683,1.1347389349727566,0.96529022617963811,1.308750150345217,1.7404301809435196,1.7871572773546784,1.6867406986551092,1.4055815103629188,1.2999778573140164,1.060633691399171,0.80310464417476801,1.2716013749420219,1.119875521424829,1.3091103348175537,1.3589598779206957,0.64040288225131192,-0.044558935665184318,-0.33177443237125681,0.053526743557075207,0.0052557609339753952,-0.016886700670071253,-0.38752216163526754,-0.29780843749920294],"text":["Jan 2019: real pay up 1.9% vs a year earlier","Feb 2019: real pay up 1.9% vs a year earlier","Mar 2019: real pay up 1.6% vs a year earlier","Apr 2019: real pay up 1.4% vs a year earlier","May 2019: real pay up 1.7% vs a year earlier","Jun 2019: real pay up 1.9% vs a year earlier","Jul 2019: real pay up 1.8% vs a year earlier","Aug 2019: real pay up 1.9% vs a year earlier","Sep 2019: real pay up 1.9% vs a year earlier","Oct 2019: real pay up 2.0% vs a year earlier","Nov 2019: real pay up 1.5% vs a year earlier","Dec 2019: real pay up 0.9% vs a year earlier","Jan 2020: real pay up 0.8% vs a year earlier","Feb 2020: real pay up 1.3% vs a year earlier","Mar 2020: real pay up 2.0% vs a year earlier","Apr 2020: real pay up 7.4% vs a year earlier","May 2020: real pay up 6.5% vs a year earlier","Jun 2020: real pay up 4.8% vs a year earlier","Jul 2020: real pay up 3.9% vs a year earlier","Aug 2020: real pay up 3.7% vs a year earlier","Sep 2020: real pay up 3.4% vs a year earlier","Oct 2020: real pay up 3.3% vs a year earlier","Nov 2020: real pay up 3.4% vs a year earlier","Dec 2020: real pay up 4.1% vs a year earlier","Jan 2021: real pay up 3.8% vs a year earlier","Feb 2021: real pay up 3.4% vs a year earlier","Mar 2021: real pay up 2.3% vs a year earlier","Apr 2021: real pay down 2.5% vs a year earlier","May 2021: real pay down 2.0% vs a year earlier","Jun 2021: real pay down 1.0% vs a year earlier","Jul 2021: real pay down 0.1% vs a year earlier","Aug 2021: real pay up 0.2% vs a year earlier","Sep 2021: real pay up 0.6% vs a year earlier","Oct 2021: real pay up 0.2% vs a year earlier","Nov 2021: real pay down 0.4% vs a year earlier","Dec 2021: real pay down 0.8% vs a year earlier","Jan 2022: real pay down 0.6% vs a year earlier","Feb 2022: real pay down 1.0% vs a year earlier","Mar 2022: real pay down 1.5% vs a year earlier","Apr 2022: real pay down 1.2% vs a year earlier","May 2022: real pay down 1.7% vs a year earlier","Jun 2022: real pay down 2.2% vs a year earlier","Jul 2022: real pay down 1.8% vs a year earlier","Aug 2022: real pay down 1.8% vs a year earlier","Sep 2022: real pay down 2.1% vs a year earlier","Oct 2022: real pay down 1.8% vs a year earlier","Nov 2022: real pay down 1.2% vs a year earlier","Dec 2022: real pay down 0.9% vs a year earlier","Jan 2023: real pay down 1.1% vs a year earlier","Feb 2023: real pay down 0.5% vs a year earlier","Mar 2023: real pay up 0.4% vs a year earlier","Apr 2023: real pay up 0.2% vs a year earlier","May 2023: real pay up 0.9% vs a year earlier","Jun 2023: real pay up 1.9% vs a year earlier","Jul 2023: real pay up 1.5% vs a year earlier","Aug 2023: real pay up 1.0% vs a year earlier","Sep 2023: real pay up 1.0% vs a year earlier","Oct 2023: real pay up 1.2% vs a year earlier","Nov 2023: real pay up 1.3% vs a year earlier","Dec 2023: real pay up 1.1% vs a year earlier","Jan 2024: real pay up 1.5% vs a year earlier","Feb 2024: real pay up 1.2% vs a year earlier","Mar 2024: real pay up 0.8% vs a year earlier","Apr 2024: real pay up 0.6% vs a year earlier","May 2024: real pay up 0.9% vs a year earlier","Jun 2024: real pay up 1.1% vs a year earlier","Jul 2024: real pay up 1.0% vs a year earlier","Aug 2024: real pay up 1.5% vs a year earlier","Sep 2024: real pay up 1.7% vs a year earlier","Oct 2024: real pay up 1.6% vs a year earlier","Nov 2024: real pay up 1.3% vs a year earlier","Dec 2024: real pay up 1.1% vs a year earlier","Jan 2025: real pay up 1.0% vs a year earlier","Feb 2025: real pay up 1.3% vs a year earlier","Mar 2025: real pay up 1.7% vs a year earlier","Apr 2025: real pay up 1.8% vs a year earlier","May 2025: real pay up 1.7% vs a year earlier","Jun 2025: real pay up 1.4% vs a year earlier","Jul 2025: real pay up 1.3% vs a year earlier","Aug 2025: real pay up 1.1% vs a year earlier","Sep 2025: real pay up 0.8% vs a year earlier","Nov 2025: real pay up 1.3% vs a year earlier","Dec 2025: real pay up 1.1% vs a year earlier","Jan 2026: real pay up 1.3% vs a year earlier","Feb 2026: real pay up 1.4% vs a year earlier","Mar 2026: real pay up 0.6% vs a year earlier","Apr 2026: real pay down 0.0% vs a year earlier","May 2026: real pay down 0.3% vs a year earlier","Jun 2026: real pay up 0.1% vs a year earlier","Jul 2026: real pay up 0.0% vs a year earlier","Aug 2026: real pay down 0.0% vs a year earlier","Sep 2026: real pay down 0.4% vs a year earlier","Oct 2026: real pay down 0.3% vs a year earlier"],"type":"scatter","mode":"lines","line":{"width":3.4015748031496069,"color":"rgba(31,78,90,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":28.785388127853885,"r":7.3059360730593621,"b":28.127853881278547,"l":48.949771689497723},"font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[17755.5,20868.5],"tickmode":"array","ticktext":["2020","2022","2024","2026"],"tickvals":[18262,18993,19723,20454],"categoryorder":"array","categoryarray":["2020","2022","2024","2026"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716894984},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-3.0144649069279525,7.9189426818900763],"tickmode":"array","ticktext":["-2.5","0.0","2.5","5.0","7.5"],"tickvals":[-2.5,0,2.5,4.9999999999999991,7.4999999999999991],"categoryorder":"array","categoryarray":["-2.5","0.0","2.5","5.0","7.5"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Pay growth minus price growth (%)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.689497716894984}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"source":"A","attrs":{"22b46c5cf13":{"yintercept":{},"type":"scatter"},"22b465e8c6c":{"x":{},"y":{},"text":{}}},"cur_data":"22b46c5cf13","visdat":{"22b46c5cf13":["function (y) ","x"],"22b465e8c6c":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p>This line shows whether paychecks are beating prices. Above zero, the average worker’s pay is growing faster than prices; below zero, it’s falling behind. From mid-2023 through 2025, pay comfortably outran prices. In October 2026, it dipped below zero: <strong>-0.3%</strong>.</p>
+</section>
+<section id="the-fed-is-raising-rates-again" class="level2">
+<h2 class="anchored" data-anchor-id="the-fed-is-raising-rates-again">The Fed is raising rates again</h2>
+<p>To fight inflation, the Federal Reserve raises interest rates, which makes borrowing more expensive and cools spending. After holding rates steady for most of 2026, the Fed has started nudging them up: the federal funds rate rose from <strong>3.63%</strong> to <strong>3.88%</strong> this fall, and many forecasters expect another increase in December. For households, that means <strong>higher rates on credit cards, car loans, and mortgages.</strong></p>
+</section>
+<section id="the-fine-print" class="level2">
+<h2 class="anchored" data-anchor-id="the-fine-print">The fine print</h2>
+<ul>
+<li><strong>Inflation numbers are averages.</strong> If you drive a lot, energy inflation hits you much harder than someone who works from home.</li>
+<li><strong>“Core” inflation</strong> leaves out food and energy because they swing wildly; it’s a better guide to the long-term trend, but you still pay for gas and groceries.</li>
+<li><strong>Pay is the average hourly earnings</strong> of production and nonsupervisory workers, before taxes.</li>
+<li><strong>This can change quickly.</strong> If oil prices fall (as they did briefly this month on hopes of calmer fighting with Iran), headline inflation could ease fast.</li>
+</ul>
+</section>
+<section id="the-bottom-line" class="level2">
+<h2 class="anchored" data-anchor-id="the-bottom-line">The bottom line</h2>
+<p>Inflation is back, but it’s a different animal than 2022: so far it’s mostly an energy shock, with everything else rising at a more normal pace. That’s the good news. The bad news is that it’s enough to put paychecks behind prices again, and the Fed’s response means borrowing is getting more expensive too.</p>
+<hr>
+<p><strong>How we did this.</strong> All figures are from the Bureau of Labor Statistics and the Federal Reserve via <a href="https://fred.stlouisfed.org/">FRED</a>: CPI for all urban consumers (CPIAUCSL), CPI less food and energy (CPILFESL), energy (CPIENGSL), food (CPIUFDSL), shelter (CUSR0000SAH1), gasoline (CUSR0000SETB01), producer prices for final demand (PPIFIS), average hourly earnings of production and nonsupervisory employees (AHETPI), and the effective federal funds rate (FEDFUNDS). Changes are compared with the same month a year earlier.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/sixtyeight95\.github\.io");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

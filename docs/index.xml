@@ -17,7 +17,274 @@
 <width>144</width>
 </image>
 <generator>quarto-1.10.18</generator>
-<lastBuildDate>Tue, 17 Nov 2026 05:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 19 Nov 2026 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>Is Inflation Back?</title>
+  <dc:creator>SixtyEight95 </dc:creator>
+  <link>https://sixtyeight95.github.io/posts/2026-11-inflation-back/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>After the 2021–2023 price surge finally cooled, a lot of people hoped inflation was behind us. This year, it started climbing again. We looked at the government’s own numbers to see how big the rebound is, what’s driving it, and what it means for your paycheck.</p>
+<section id="the-short-answer" class="level2">
+<h2 class="anchored" data-anchor-id="the-short-answer">The short answer</h2>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Prices are up <strong>4.1%</strong> from a year ago (October 2026), up from <strong>2.7%</strong> in February 2026. Most of the jump is <strong>energy</strong>: gasoline is up <strong>37.4%</strong>. Without food and energy, inflation is a calmer <strong>2.9%</strong>.</p>
+<p>But it’s enough to bite: pay is up only <strong>3.3%</strong>, so the average paycheck now buys <strong>less</strong> than it did a year ago for the first time since early 2023.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="the-rebound" class="level2">
+<h2 class="anchored" data-anchor-id="the-rebound">The rebound</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-a0e0788cc83ffdb0c517" style="width:100%;height:417px;"></div>
+<script type="application/json" data-for="htmlwidget-a0e0788cc83ffdb0c517">{"x":{"data":[{"x":[17755.5,20868.5],"y":[2,2],"text":"","type":"scatter","mode":"lines","line":{"width":1.8897637795275593,"color":"rgba(153,153,153,1)","dash":"dash"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[20512,20512],"y":[-0.24085668639119207,9.4184190930818463],"text":"","type":"scatter","mode":"lines","line":{"width":1.8897637795275593,"color":"rgba(214,158,46,1)","dash":"dot"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[17897,17928,17956,17987,18017,18048,18078,18109,18140,18170,18201,18231,18262,18293,18322,18353,18383,18414,18444,18475,18506,18536,18567,18597,18628,18659,18687,18718,18748,18779,18809,18840,18871,18901,18932,18962,18993,19024,19052,19083,19113,19144,19174,19205,19236,19266,19297,19327,19358,19389,19417,19448,19478,19509,19539,19570,19601,19631,19662,19692,19723,19754,19783,19814,19844,19875,19905,19936,19967,19997,20028,20058,20089,20120,20148,20179,20209,20240,20270,20301,20332,20393,20423,20454,20485,20513,20544,20574,20605,20635,20666,20697,20727],"y":[1.4875893578291333,1.5188615351321877,1.8831863513063984,2.0005834702090608,1.7959105553606136,1.671194894390049,1.826331335037068,1.7376412106666406,1.6844977040391562,1.7339736996186295,2.0922903948629168,2.3195274699624457,2.599767976845202,2.3413166797595197,1.4940399642909163,0.31304729404111331,0.1982013035848551,0.71665628318304808,0.99686476258979972,1.2810698495523853,1.3910228912373812,1.2303863428671624,1.1757452138405844,1.3204191315779434,1.3738437137002402,1.6698167791706853,2.6678187820641908,4.1330771153605728,4.9182570894676259,5.2956326203499993,5.2451693813092337,5.1520153017939663,5.3512155909491321,6.2350423902980623,6.9019704037008633,7.1743402850655391,7.5588057269678322,7.9372787665178191,8.5722049660138531,8.2317507707772251,8.5381711956420645,8.9793611031057985,8.4625767277300987,8.222579178218826,8.1921068964258215,7.7588139576930004,7.122856456533988,6.4046004023571523,6.327178517960097,5.9578207381370873,4.9177193628899607,4.9500798791243694,4.131851231385042,3.070617072997095,3.2877492684282972,3.7225048035052888,3.6872066381192559,3.2512659098611785,3.1333462745911866,3.3159099427102934,3.0883429864855705,3.1570741416486969,3.4868349120836584,3.3607951262196734,3.244278584003113,2.9702579486470926,2.9414757935583014,2.6071444906920371,2.4264830315416708,2.5788440538713431,2.7194724612848331,2.8706909675099812,2.9909783078999608,2.8015834477613355,2.3819814628055491,2.3253882302578299,2.3772651073680873,2.6804538659102262,2.7426180521671339,2.9385917430316155,3.0225715847133294,2.988299628363511,3.00226204316838,2.8286797395498997,2.6645890876940914,3.3202055812236786,3.9470269087042764,4.2700326566802449,3.7265298484186804,3.5397514271936714,3.7129581058388483,4.0233102684578359,4.080556369412025],"text":["All prices, Jan 2019: 1.5%","All prices, Feb 2019: 1.5%","All prices, Mar 2019: 1.9%","All prices, Apr 2019: 2.0%","All prices, May 2019: 1.8%","All prices, Jun 2019: 1.7%","All prices, Jul 2019: 1.8%","All prices, Aug 2019: 1.7%","All prices, Sep 2019: 1.7%","All prices, Oct 2019: 1.7%","All prices, Nov 2019: 2.1%","All prices, Dec 2019: 2.3%","All prices, Jan 2020: 2.6%","All prices, Feb 2020: 2.3%","All prices, Mar 2020: 1.5%","All prices, Apr 2020: 0.3%","All prices, May 2020: 0.2%","All prices, Jun 2020: 0.7%","All prices, Jul 2020: 1.0%","All prices, Aug 2020: 1.3%","All prices, Sep 2020: 1.4%","All prices, Oct 2020: 1.2%","All prices, Nov 2020: 1.2%","All prices, Dec 2020: 1.3%","All prices, Jan 2021: 1.4%","All prices, Feb 2021: 1.7%","All prices, Mar 2021: 2.7%","All prices, Apr 2021: 4.1%","All prices, May 2021: 4.9%","All prices, Jun 2021: 5.3%","All prices, Jul 2021: 5.2%","All prices, Aug 2021: 5.2%","All prices, Sep 2021: 5.4%","All prices, Oct 2021: 6.2%","All prices, Nov 2021: 6.9%","All prices, Dec 2021: 7.2%","All prices, Jan 2022: 7.6%","All prices, Feb 2022: 7.9%","All prices, Mar 2022: 8.6%","All prices, Apr 2022: 8.2%","All prices, May 2022: 8.5%","All prices, Jun 2022: 9.0%","All prices, Jul 2022: 8.5%","All prices, Aug 2022: 8.2%","All prices, Sep 2022: 8.2%","All prices, Oct 2022: 7.8%","All prices, Nov 2022: 7.1%","All prices, Dec 2022: 6.4%","All prices, Jan 2023: 6.3%","All prices, Feb 2023: 6.0%","All prices, Mar 2023: 4.9%","All prices, Apr 2023: 5.0%","All prices, May 2023: 4.1%","All prices, Jun 2023: 3.1%","All prices, Jul 2023: 3.3%","All prices, Aug 2023: 3.7%","All prices, Sep 2023: 3.7%","All prices, Oct 2023: 3.3%","All prices, Nov 2023: 3.1%","All prices, Dec 2023: 3.3%","All prices, Jan 2024: 3.1%","All prices, Feb 2024: 3.2%","All prices, Mar 2024: 3.5%","All prices, Apr 2024: 3.4%","All prices, May 2024: 3.2%","All prices, Jun 2024: 3.0%","All prices, Jul 2024: 2.9%","All prices, Aug 2024: 2.6%","All prices, Sep 2024: 2.4%","All prices, Oct 2024: 2.6%","All prices, Nov 2024: 2.7%","All prices, Dec 2024: 2.9%","All prices, Jan 2025: 3.0%","All prices, Feb 2025: 2.8%","All prices, Mar 2025: 2.4%","All prices, Apr 2025: 2.3%","All prices, May 2025: 2.4%","All prices, Jun 2025: 2.7%","All prices, Jul 2025: 2.7%","All prices, Aug 2025: 2.9%","All prices, Sep 2025: 3.0%","All prices, Nov 2025: 3.0%","All prices, Dec 2025: 3.0%","All prices, Jan 2026: 2.8%","All prices, Feb 2026: 2.7%","All prices, Mar 2026: 3.3%","All prices, Apr 2026: 3.9%","All prices, May 2026: 4.3%","All prices, Jun 2026: 3.7%","All prices, Jul 2026: 3.5%","All prices, Aug 2026: 3.7%","All prices, Sep 2026: 4.0%","All prices, Oct 2026: 4.1%"],"type":"scatter","mode":"lines","line":{"width":3.4015748031496069,"color":"rgba(197,48,48,1)","dash":"solid"},"hoveron":"points","name":"All prices","legendgroup":"All prices","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[17897,17928,17956,17987,18017,18048,18078,18109,18140,18170,18201,18231,18262,18293,18322,18353,18383,18414,18444,18475,18506,18536,18567,18597,18628,18659,18687,18718,18748,18779,18809,18840,18871,18901,18932,18962,18993,19024,19052,19083,19113,19144,19174,19205,19236,19266,19297,19327,19358,19389,19417,19448,19478,19509,19539,19570,19601,19631,19662,19692,19723,19754,19783,19814,19844,19875,19905,19936,19967,19997,20028,20058,20089,20120,20148,20179,20209,20240,20270,20301,20332,20393,20423,20454,20485,20513,20544,20574,20605,20635,20666,20697,20727],"y":[2.1794329242488475,2.1410889637129227,2.0665623500122798,2.0913377235709074,1.9724280075443801,2.0746001344216447,2.1657049503490455,2.3211356735985289,2.3300099083477743,2.3378148209658223,2.3546960942649298,2.2905988164406255,2.2817391837892886,2.3676613601035346,2.097741687598198,1.4309324152566472,1.2184564692601985,1.1836841884912408,1.5606958371315871,1.7223933878284248,1.7190644053436621,1.6364116692455521,1.6693780408814973,1.624313961356294,1.3763703714812836,1.2802483449900981,1.6494791315614155,2.9780316542864504,3.7876961101984907,4.4393621943283668,4.2107192143281846,3.9396919775577244,4.0028557298658063,4.5903173341849124,4.9725721439656922,5.4889935303930937,6.0542851542418896,6.4551151617656455,6.4823785544041668,6.1587371190528373,6.0254478790408905,5.9063356515913767,5.8999167408343212,6.2860890977322281,6.6242876245093063,6.2949997869832464,5.9698806658998071,5.6855319447366659,5.5395334725917733,5.4982603296180876,5.5667413926713261,5.5143641958735223,5.3375470360846888,4.8535963271552518,4.7009705579352357,4.3991434400660889,4.128747996485882,4.0274015611274638,4.017980521102138,3.9154727698627045,3.8583540949372663,3.7619647313751337,3.8161935067360986,3.6260251717590952,3.3944196689766448,3.2654173234475614,3.2301916105644812,3.2850959364300047,3.2823574494668994,3.2986897067653009,3.2859356193500444,3.2133335461932644,3.2829704853985842,3.1375568822805899,2.808783050077035,2.7760200724699313,2.7658403935930886,2.9108954426960709,3.0544930080893096,3.1118060985144691,3.0199668258857892,2.8943434111105226,2.837998245815232,2.9493378374616075,2.7335062438778035,2.6730984898529986,2.9884245755166017,2.9571135826898187,2.8058110757954502,2.786747157096725,2.7634613395318253,2.7892023051258708,2.8696983820494015],"text":["Without food & energy (core), Jan 2019: 2.2%","Without food & energy (core), Feb 2019: 2.1%","Without food & energy (core), Mar 2019: 2.1%","Without food & energy (core), Apr 2019: 2.1%","Without food & energy (core), May 2019: 2.0%","Without food & energy (core), Jun 2019: 2.1%","Without food & energy (core), Jul 2019: 2.2%","Without food & energy (core), Aug 2019: 2.3%","Without food & energy (core), Sep 2019: 2.3%","Without food & energy (core), Oct 2019: 2.3%","Without food & energy (core), Nov 2019: 2.4%","Without food & energy (core), Dec 2019: 2.3%","Without food & energy (core), Jan 2020: 2.3%","Without food & energy (core), Feb 2020: 2.4%","Without food & energy (core), Mar 2020: 2.1%","Without food & energy (core), Apr 2020: 1.4%","Without food & energy (core), May 2020: 1.2%","Without food & energy (core), Jun 2020: 1.2%","Without food & energy (core), Jul 2020: 1.6%","Without food & energy (core), Aug 2020: 1.7%","Without food & energy (core), Sep 2020: 1.7%","Without food & energy (core), Oct 2020: 1.6%","Without food & energy (core), Nov 2020: 1.7%","Without food & energy (core), Dec 2020: 1.6%","Without food & energy (core), Jan 2021: 1.4%","Without food & energy (core), Feb 2021: 1.3%","Without food & energy (core), Mar 2021: 1.6%","Without food & energy (core), Apr 2021: 3.0%","Without food & energy (core), May 2021: 3.8%","Without food & energy (core), Jun 2021: 4.4%","Without food & energy (core), Jul 2021: 4.2%","Without food & energy (core), Aug 2021: 3.9%","Without food & energy (core), Sep 2021: 4.0%","Without food & energy (core), Oct 2021: 4.6%","Without food & energy (core), Nov 2021: 5.0%","Without food & energy (core), Dec 2021: 5.5%","Without food & energy (core), Jan 2022: 6.1%","Without food & energy (core), Feb 2022: 6.5%","Without food & energy (core), Mar 2022: 6.5%","Without food & energy (core), Apr 2022: 6.2%","Without food & energy (core), May 2022: 6.0%","Without food & energy (core), Jun 2022: 5.9%","Without food & energy (core), Jul 2022: 5.9%","Without food & energy (core), Aug 2022: 6.3%","Without food & energy (core), Sep 2022: 6.6%","Without food & energy (core), Oct 2022: 6.3%","Without food & energy (core), Nov 2022: 6.0%","Without food & energy (core), Dec 2022: 5.7%","Without food & energy (core), Jan 2023: 5.5%","Without food & energy (core), Feb 2023: 5.5%","Without food & energy (core), Mar 2023: 5.6%","Without food & energy (core), Apr 2023: 5.5%","Without food & energy (core), May 2023: 5.3%","Without food & energy (core), Jun 2023: 4.9%","Without food & energy (core), Jul 2023: 4.7%","Without food & energy (core), Aug 2023: 4.4%","Without food & energy (core), Sep 2023: 4.1%","Without food & energy (core), Oct 2023: 4.0%","Without food & energy (core), Nov 2023: 4.0%","Without food & energy (core), Dec 2023: 3.9%","Without food & energy (core), Jan 2024: 3.9%","Without food & energy (core), Feb 2024: 3.8%","Without food & energy (core), Mar 2024: 3.8%","Without food & energy (core), Apr 2024: 3.6%","Without food & energy (core), May 2024: 3.4%","Without food & energy (core), Jun 2024: 3.3%","Without food & energy (core), Jul 2024: 3.2%","Without food & energy (core), Aug 2024: 3.3%","Without food & energy (core), Sep 2024: 3.3%","Without food & energy (core), Oct 2024: 3.3%","Without food & energy (core), Nov 2024: 3.3%","Without food & energy (core), Dec 2024: 3.2%","Without food & energy (core), Jan 2025: 3.3%","Without food & energy (core), Feb 2025: 3.1%","Without food & energy (core), Mar 2025: 2.8%","Without food & energy (core), Apr 2025: 2.8%","Without food & energy (core), May 2025: 2.8%","Without food & energy (core), Jun 2025: 2.9%","Without food & energy (core), Jul 2025: 3.1%","Without food & energy (core), Aug 2025: 3.1%","Without food & energy (core), Sep 2025: 3.0%","Without food & energy (core), Nov 2025: 2.9%","Without food & energy (core), Dec 2025: 2.8%","Without food & energy (core), Jan 2026: 2.9%","Without food & energy (core), Feb 2026: 2.7%","Without food & energy (core), Mar 2026: 2.7%","Without food & energy (core), Apr 2026: 3.0%","Without food & energy (core), May 2026: 3.0%","Without food & energy (core), Jun 2026: 2.8%","Without food & energy (core), Jul 2026: 2.8%","Without food & energy (core), Aug 2026: 2.8%","Without food & energy (core), Sep 2026: 2.8%","Without food & energy (core), Oct 2026: 2.9%"],"type":"scatter","mode":"lines","line":{"width":3.4015748031496069,"color":"rgba(42,157,143,1)","dash":"solid"},"hoveron":"points","name":"Without food & energy (core)","legendgroup":"Without food & energy (core)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":27.364789446981227,"r":7.3059360730593621,"b":26.707255200405889,"l":43.105022831050235},"font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[17755.5,20868.5],"tickmode":"array","ticktext":["2020","2022","2024","2026"],"tickvals":[18262,18993,19723,20454],"categoryorder":"array","categoryarray":["2020","2022","2024","2026"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.24085668639119207,9.4184190930818463],"tickmode":"array","ticktext":["0.0","2.5","5.0","7.5"],"tickvals":[0,2.5,5,7.5],"categoryorder":"array","categoryarray":["0.0","2.5","5.0","7.5"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Change from a year earlier (%)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":true,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498},"title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"orientation":"h","y":1.0800000000000001},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"source":"A","attrs":{"22b421893288":{"yintercept":{},"type":"scatter"},"22b41592653":{"xintercept":{}},"22b412a7d51":{"x":{},"y":{},"colour":{},"text":{}}},"cur_data":"22b421893288","visdat":{"22b421893288":["function (y) ","x"],"22b41592653":["function (y) ","x"],"22b412a7d51":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p>The dashed line is the Federal Reserve’s 2% target. The dotted line marks the U.S. and Israeli strike on Iran in late February 2026, which disrupted oil shipping through the Strait of Hormuz. Notice that the red line (all prices) jumped right after, while the teal line (everything except food and energy) barely moved. That tells you this rebound is mostly about energy, not a broad-based surge like 2022.</p>
+</section>
+<section id="whats-driving-it" class="level2">
+<h2 class="anchored" data-anchor-id="whats-driving-it">What’s driving it</h2>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Consumer and producer price indexes, October 2026 vs.&nbsp;a year earlier. Source: BLS via FRED.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Category</th>
+<th style="text-align: right;">Change from a year ago</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gasoline</td>
+<td style="text-align: right;">37.4%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">All energy (gas, electricity, heating)</td>
+<td style="text-align: right;">21.2%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Housing costs (shelter)</td>
+<td style="text-align: right;">3.5%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Food</td>
+<td style="text-align: right;">2.9%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Everything except food &amp; energy</td>
+<td style="text-align: right;">2.9%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">All prices</td>
+<td style="text-align: right;">4.1%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Wholesale prices (producer prices)</td>
+<td style="text-align: right;">6.5%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Two things to watch:</p>
+<ul>
+<li><strong>Wholesale prices are up 6.5%.</strong> Producer prices measure what businesses pay. When those rise faster than consumer prices, some of it tends to show up on store shelves later.</li>
+<li><strong>Food is starting to climb.</strong> Food prices rose 2.9% over the year, and higher fuel and shipping costs can push grocery prices up with a delay.</li>
+</ul>
+</section>
+<section id="what-it-means-for-your-paycheck" class="level2">
+<h2 class="anchored" data-anchor-id="what-it-means-for-your-paycheck">What it means for your paycheck</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-e8b1a050a0713ecc9a03" style="width:100%;height:371px;"></div>
+<script type="application/json" data-for="htmlwidget-e8b1a050a0713ecc9a03">{"x":{"data":[{"x":[17755.5,20868.5],"y":[0,0],"text":"","type":"scatter","mode":"lines","line":{"width":1.8897637795275593,"color":"rgba(102,102,102,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[17897,17928,17956,17987,18017,18048,18078,18109,18140,18170,18201,18231,18262,18293,18322,18353,18383,18414,18444,18475,18506,18536,18567,18597,18628,18659,18687,18718,18748,18779,18809,18840,18871,18901,18932,18962,18993,19024,19052,19083,19113,19144,19174,19205,19236,19266,19297,19327,19358,19389,19417,19448,19478,19509,19539,19570,19601,19631,19662,19692,19723,19754,19783,19814,19844,19875,19905,19936,19967,19997,20028,20058,20089,20120,20148,20179,20209,20240,20270,20301,20332,20393,20423,20454,20485,20513,20544,20574,20605,20635,20666,20697,20727],"y":[1.9273883914574519,1.9323773513226783,1.6430092282694986,1.4297923840433713,1.7131458856989523,1.9155046749815385,1.7972329024992462,1.8733535962506265,1.8710363501485361,1.988642925025319,1.4853278846482798,0.86254263950782395,0.75290215324759213,1.2516296761106771,2.0392540363641354,7.4219696096710752,6.5409711584487384,4.7856738013516198,3.8941921610503138,3.711618907327896,3.3762025476593127,3.3182599244125477,3.4417823203100273,4.1178701963307196,3.8018627353199497,3.351211232817275,2.2877324109209063,-2.5174918347089514,-2.0168227672982431,-1.043442716963483,-0.057849919368924141,0.16220834463114286,0.58064591288520262,0.2319753309628636,-0.38014359096583128,-0.76048035933801161,-0.56092183827139985,-1.0426403104282334,-1.4593453443611737,-1.2336482013185712,-1.695580329691615,-2.1979553758005976,-1.8025277684439955,-1.8315497589052931,-2.0542396401468044,-1.7970759405982695,-1.2014364866775318,-0.89159309272501819,-1.0577272828816375,-0.54878124905251013,0.44771704389043876,0.2431620000145962,0.86874967484229515,1.8507511215058781,1.542239893909314,0.96239087082063968,0.97715820915815765,1.2455719949009847,1.3080583365747245,1.0778327310239755,1.4586265770622386,1.1691398079632709,0.75842861756911795,0.62516306507338637,0.86255361802800579,1.0820603576368271,0.99345233936125599,1.5171015171613345,1.6794414128958435,1.5506809972666291,1.2970092201096683,1.1347389349727566,0.96529022617963811,1.308750150345217,1.7404301809435196,1.7871572773546784,1.6867406986551092,1.4055815103629188,1.2999778573140164,1.060633691399171,0.80310464417476801,1.2716013749420219,1.119875521424829,1.3091103348175537,1.3589598779206957,0.64040288225131192,-0.044558935665184318,-0.33177443237125681,0.053526743557075207,0.0052557609339753952,-0.016886700670071253,-0.38752216163526754,-0.29780843749920294],"text":["Jan 2019: real pay up 1.9% vs a year earlier","Feb 2019: real pay up 1.9% vs a year earlier","Mar 2019: real pay up 1.6% vs a year earlier","Apr 2019: real pay up 1.4% vs a year earlier","May 2019: real pay up 1.7% vs a year earlier","Jun 2019: real pay up 1.9% vs a year earlier","Jul 2019: real pay up 1.8% vs a year earlier","Aug 2019: real pay up 1.9% vs a year earlier","Sep 2019: real pay up 1.9% vs a year earlier","Oct 2019: real pay up 2.0% vs a year earlier","Nov 2019: real pay up 1.5% vs a year earlier","Dec 2019: real pay up 0.9% vs a year earlier","Jan 2020: real pay up 0.8% vs a year earlier","Feb 2020: real pay up 1.3% vs a year earlier","Mar 2020: real pay up 2.0% vs a year earlier","Apr 2020: real pay up 7.4% vs a year earlier","May 2020: real pay up 6.5% vs a year earlier","Jun 2020: real pay up 4.8% vs a year earlier","Jul 2020: real pay up 3.9% vs a year earlier","Aug 2020: real pay up 3.7% vs a year earlier","Sep 2020: real pay up 3.4% vs a year earlier","Oct 2020: real pay up 3.3% vs a year earlier","Nov 2020: real pay up 3.4% vs a year earlier","Dec 2020: real pay up 4.1% vs a year earlier","Jan 2021: real pay up 3.8% vs a year earlier","Feb 2021: real pay up 3.4% vs a year earlier","Mar 2021: real pay up 2.3% vs a year earlier","Apr 2021: real pay down 2.5% vs a year earlier","May 2021: real pay down 2.0% vs a year earlier","Jun 2021: real pay down 1.0% vs a year earlier","Jul 2021: real pay down 0.1% vs a year earlier","Aug 2021: real pay up 0.2% vs a year earlier","Sep 2021: real pay up 0.6% vs a year earlier","Oct 2021: real pay up 0.2% vs a year earlier","Nov 2021: real pay down 0.4% vs a year earlier","Dec 2021: real pay down 0.8% vs a year earlier","Jan 2022: real pay down 0.6% vs a year earlier","Feb 2022: real pay down 1.0% vs a year earlier","Mar 2022: real pay down 1.5% vs a year earlier","Apr 2022: real pay down 1.2% vs a year earlier","May 2022: real pay down 1.7% vs a year earlier","Jun 2022: real pay down 2.2% vs a year earlier","Jul 2022: real pay down 1.8% vs a year earlier","Aug 2022: real pay down 1.8% vs a year earlier","Sep 2022: real pay down 2.1% vs a year earlier","Oct 2022: real pay down 1.8% vs a year earlier","Nov 2022: real pay down 1.2% vs a year earlier","Dec 2022: real pay down 0.9% vs a year earlier","Jan 2023: real pay down 1.1% vs a year earlier","Feb 2023: real pay down 0.5% vs a year earlier","Mar 2023: real pay up 0.4% vs a year earlier","Apr 2023: real pay up 0.2% vs a year earlier","May 2023: real pay up 0.9% vs a year earlier","Jun 2023: real pay up 1.9% vs a year earlier","Jul 2023: real pay up 1.5% vs a year earlier","Aug 2023: real pay up 1.0% vs a year earlier","Sep 2023: real pay up 1.0% vs a year earlier","Oct 2023: real pay up 1.2% vs a year earlier","Nov 2023: real pay up 1.3% vs a year earlier","Dec 2023: real pay up 1.1% vs a year earlier","Jan 2024: real pay up 1.5% vs a year earlier","Feb 2024: real pay up 1.2% vs a year earlier","Mar 2024: real pay up 0.8% vs a year earlier","Apr 2024: real pay up 0.6% vs a year earlier","May 2024: real pay up 0.9% vs a year earlier","Jun 2024: real pay up 1.1% vs a year earlier","Jul 2024: real pay up 1.0% vs a year earlier","Aug 2024: real pay up 1.5% vs a year earlier","Sep 2024: real pay up 1.7% vs a year earlier","Oct 2024: real pay up 1.6% vs a year earlier","Nov 2024: real pay up 1.3% vs a year earlier","Dec 2024: real pay up 1.1% vs a year earlier","Jan 2025: real pay up 1.0% vs a year earlier","Feb 2025: real pay up 1.3% vs a year earlier","Mar 2025: real pay up 1.7% vs a year earlier","Apr 2025: real pay up 1.8% vs a year earlier","May 2025: real pay up 1.7% vs a year earlier","Jun 2025: real pay up 1.4% vs a year earlier","Jul 2025: real pay up 1.3% vs a year earlier","Aug 2025: real pay up 1.1% vs a year earlier","Sep 2025: real pay up 0.8% vs a year earlier","Nov 2025: real pay up 1.3% vs a year earlier","Dec 2025: real pay up 1.1% vs a year earlier","Jan 2026: real pay up 1.3% vs a year earlier","Feb 2026: real pay up 1.4% vs a year earlier","Mar 2026: real pay up 0.6% vs a year earlier","Apr 2026: real pay down 0.0% vs a year earlier","May 2026: real pay down 0.3% vs a year earlier","Jun 2026: real pay up 0.1% vs a year earlier","Jul 2026: real pay up 0.0% vs a year earlier","Aug 2026: real pay down 0.0% vs a year earlier","Sep 2026: real pay down 0.4% vs a year earlier","Oct 2026: real pay down 0.3% vs a year earlier"],"type":"scatter","mode":"lines","line":{"width":3.4015748031496069,"color":"rgba(31,78,90,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":28.785388127853885,"r":7.3059360730593621,"b":28.127853881278547,"l":48.949771689497723},"font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[17755.5,20868.5],"tickmode":"array","ticktext":["2020","2022","2024","2026"],"tickvals":[18262,18993,19723,20454],"categoryorder":"array","categoryarray":["2020","2022","2024","2026"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716894984},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-3.0144649069279525,7.9189426818900763],"tickmode":"array","ticktext":["-2.5","0.0","2.5","5.0","7.5"],"tickvals":[-2.5,0,2.5,4.9999999999999991,7.4999999999999991],"categoryorder":"array","categoryarray":["-2.5","0.0","2.5","5.0","7.5"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Pay growth minus price growth (%)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.689497716894984}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"source":"A","attrs":{"22b46c5cf13":{"yintercept":{},"type":"scatter"},"22b465e8c6c":{"x":{},"y":{},"text":{}}},"cur_data":"22b46c5cf13","visdat":{"22b46c5cf13":["function (y) ","x"],"22b465e8c6c":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p>This line shows whether paychecks are beating prices. Above zero, the average worker’s pay is growing faster than prices; below zero, it’s falling behind. From mid-2023 through 2025, pay comfortably outran prices. In October 2026, it dipped below zero: <strong>-0.3%</strong>.</p>
+</section>
+<section id="the-fed-is-raising-rates-again" class="level2">
+<h2 class="anchored" data-anchor-id="the-fed-is-raising-rates-again">The Fed is raising rates again</h2>
+<p>To fight inflation, the Federal Reserve raises interest rates, which makes borrowing more expensive and cools spending. After holding rates steady for most of 2026, the Fed has started nudging them up: the federal funds rate rose from <strong>3.63%</strong> to <strong>3.88%</strong> this fall, and many forecasters expect another increase in December. For households, that means <strong>higher rates on credit cards, car loans, and mortgages.</strong></p>
+</section>
+<section id="the-fine-print" class="level2">
+<h2 class="anchored" data-anchor-id="the-fine-print">The fine print</h2>
+<ul>
+<li><strong>Inflation numbers are averages.</strong> If you drive a lot, energy inflation hits you much harder than someone who works from home.</li>
+<li><strong>“Core” inflation</strong> leaves out food and energy because they swing wildly; it’s a better guide to the long-term trend, but you still pay for gas and groceries.</li>
+<li><strong>Pay is the average hourly earnings</strong> of production and nonsupervisory workers, before taxes.</li>
+<li><strong>This can change quickly.</strong> If oil prices fall (as they did briefly this month on hopes of calmer fighting with Iran), headline inflation could ease fast.</li>
+</ul>
+</section>
+<section id="the-bottom-line" class="level2">
+<h2 class="anchored" data-anchor-id="the-bottom-line">The bottom line</h2>
+<p>Inflation is back, but it’s a different animal than 2022: so far it’s mostly an energy shock, with everything else rising at a more normal pace. That’s the good news. The bad news is that it’s enough to put paychecks behind prices again, and the Fed’s response means borrowing is getting more expensive too.</p>
+<hr>
+<p><strong>How we did this.</strong> All figures are from the Bureau of Labor Statistics and the Federal Reserve via <a href="https://fred.stlouisfed.org/">FRED</a>: CPI for all urban consumers (CPIAUCSL), CPI less food and energy (CPILFESL), energy (CPIENGSL), food (CPIUFDSL), shelter (CUSR0000SAH1), gasoline (CUSR0000SETB01), producer prices for final demand (PPIFIS), average hourly earnings of production and nonsupervisory employees (AHETPI), and the effective federal funds rate (FEDFUNDS). Changes are compared with the same month a year earlier.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>inflation</category>
+  <category>cost of living</category>
+  <category>wages</category>
+  <category>energy</category>
+  <guid>https://sixtyeight95.github.io/posts/2026-11-inflation-back/</guid>
+  <pubDate>Thu, 19 Nov 2026 05:00:00 GMT</pubDate>
+  <media:content url="https://sixtyeight95.github.io/posts/2026-11-inflation-back/infographic.png" medium="image" type="image/png" height="180" width="144"/>
+</item>
+<item>
+  <title>Thanksgiving Dinner, Measured in Hours of Work</title>
+  <dc:creator>SixtyEight95 </dc:creator>
+  <link>https://sixtyeight95.github.io/posts/2026-11-thanksgiving-dinner/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Every November, the American Farm Bureau Federation shops for the same classic Thanksgiving dinner for 10: a 16-pound turkey, stuffing, sweet potatoes, rolls, peas, cranberries, a veggie tray, pumpkin pie with whipped cream, and milk and coffee. They’ve done it every year since 1986.</p>
+<p>The dollar price has roughly doubled since then. But that’s only half the story. So, as usual, we asked: <strong>how long does the average worker have to work to buy it?</strong></p>
+<section id="the-short-answer" class="level2">
+<h2 class="anchored" data-anchor-id="the-short-answer">The short answer</h2>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>In 2025, the classic dinner for 10 cost <strong>$55.18</strong>. At the average worker’s pay, that’s <strong>1.7 hours of work</strong>, or about <strong>10 minutes per guest.</strong> That’s the least work it has taken in the survey’s history. In 1986, it took 3.2 hours.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="years-of-thanksgiving-dinner" class="level2">
+<h2 class="anchored" data-anchor-id="years-of-thanksgiving-dinner">40 years of Thanksgiving dinner</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-510e4ed65aad588f53b9" style="width:100%;height:417px;"></div>
+<script type="application/json" data-for="htmlwidget-510e4ed65aad588f53b9">{"x":{"data":[{"x":[1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025],"y":[3.1897891231964484,2.6440129449838192,2.7776617954070981,2.487411883182276,2.7955426356589146,2.4458058435438268,2.4300184162062619,2.4654708520179369,2.4803493449781659,2.5161290322580645,2.5950819672131149,2.4980330448465775,2.5125284738041005,2.4765739385065886,2.2747716092761769,2.3804347826086953,2.2811881188118814,2.3467011642949545,2.2525252525252526,2.2564417177914109,2.2438162544169611,2.3970504821327285,2.4363735663571822,2.2824468085106382,2.2628839146277979,2.5153374233128836,2.4939516129032255,2.4145741014278683,2.3789118921521424,2.3625648279113625,2.2970981114693689,2.2106210621062106,2.1260869565217391,2.0524548887956358,1.8805132317562148,2.0071536144578315,2.2785485592315902,2.0827374872318694,1.9005235602094241,1.7357659641396666],"text":["1986: $28.74 for 10<br>3.2 hours of work (19 min per guest)","1987: $24.51 for 10<br>2.6 hours of work (16 min per guest)","1988: $26.61 for 10<br>2.8 hours of work (17 min per guest)","1989: $24.70 for 10<br>2.5 hours of work (15 min per guest)","1990: $28.85 for 10<br>2.8 hours of work (17 min per guest)","1991: $25.95 for 10<br>2.4 hours of work (15 min per guest)","1992: $26.39 for 10<br>2.4 hours of work (15 min per guest)","1993: $27.49 for 10<br>2.5 hours of work (15 min per guest)","1994: $28.40 for 10<br>2.5 hours of work (15 min per guest)","1995: $29.64 for 10<br>2.5 hours of work (15 min per guest)","1996: $31.66 for 10<br>2.6 hours of work (16 min per guest)","1997: $31.75 for 10<br>2.5 hours of work (15 min per guest)","1998: $33.09 for 10<br>2.5 hours of work (15 min per guest)","1999: $33.83 for 10<br>2.5 hours of work (15 min per guest)","2000: $32.37 for 10<br>2.3 hours of work (14 min per guest)","2001: $35.04 for 10<br>2.4 hours of work (14 min per guest)","2002: $34.56 for 10<br>2.3 hours of work (14 min per guest)","2003: $36.28 for 10<br>2.3 hours of work (14 min per guest)","2004: $35.68 for 10<br>2.3 hours of work (14 min per guest)","2005: $36.78 for 10<br>2.3 hours of work (14 min per guest)","2006: $38.10 for 10<br>2.2 hours of work (13 min per guest)","2007: $42.26 for 10<br>2.4 hours of work (14 min per guest)","2008: $44.61 for 10<br>2.4 hours of work (15 min per guest)","2009: $42.91 for 10<br>2.3 hours of work (14 min per guest)","2010: $43.47 for 10<br>2.3 hours of work (14 min per guest)","2011: $49.20 for 10<br>2.5 hours of work (15 min per guest)","2012: $49.48 for 10<br>2.5 hours of work (15 min per guest)","2013: $49.04 for 10<br>2.4 hours of work (14 min per guest)","2014: $49.41 for 10<br>2.4 hours of work (14 min per guest)","2015: $50.11 for 10<br>2.4 hours of work (14 min per guest)","2016: $49.87 for 10<br>2.3 hours of work (14 min per guest)","2017: $49.12 for 10<br>2.2 hours of work (13 min per guest)","2018: $48.90 for 10<br>2.1 hours of work (13 min per guest)","2019: $48.91 for 10<br>2.1 hours of work (12 min per guest)","2020: $46.90 for 10<br>1.9 hours of work (11 min per guest)","2021: $53.31 for 10<br>2.0 hours of work (12 min per guest)","2022: $64.05 for 10<br>2.3 hours of work (14 min per guest)","2023: $61.17 for 10<br>2.1 hours of work (12 min per guest)","2024: $58.08 for 10<br>1.9 hours of work (11 min per guest)","2025: $55.18 for 10<br>1.7 hours of work (10 min per guest)"],"type":"scatter","mode":"lines","line":{"width":3.4015748031496069,"color":"rgba(192,86,33,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"visible":false,"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":27.364789446981227,"r":7.3059360730593621,"b":26.707255200405889,"l":31.415525114155255},"font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[1984.05,2026.95],"tickmode":"array","ticktext":["1990","2000","2010","2020"],"tickvals":[1990,2000,2010,2020],"categoryorder":"array","categoryarray":["1990","2000","2010","2020"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.15948945615982243,3.3492785793562709],"tickmode":"array","ticktext":["0","1","2","3"],"tickvals":[0,0.99999999999999989,2,3],"categoryorder":"array","categoryarray":["0","1","2","3"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Hours of work for dinner for 10","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"source":"A","attrs":{"4a70714b5f29":{"x":{},"y":{},"text":{},"type":"scatter"},"4a70d7e30a8":{"y":{}}},"cur_data":"4a70714b5f29","visdat":{"4a70714b5f29":["function (y) ","x"],"4a70d7e30a8":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p>Hover to see the price each year. The dollar cost peaked at <strong>$64.05</strong> in 2022, when inflation and bird flu sent turkey prices soaring. That year dinner took 2.3 hours of work, a visible bump. Since then, the price has fallen three years in a row while pay kept rising, so dinner got easier to afford on both counts.</p>
+</section>
+<section id="dollars-vs.-work" class="level2">
+<h2 class="anchored" data-anchor-id="dollars-vs.-work">Dollars vs.&nbsp;work</h2>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 7%">
+<col style="width: 20%">
+<col style="width: 27%">
+<col style="width: 20%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Year</th>
+<th style="text-align: right;">Dinner for 10</th>
+<th style="text-align: right;">Average hourly pay</th>
+<th style="text-align: right;">Hours of work</th>
+<th style="text-align: right;">Minutes per guest</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">1986</td>
+<td style="text-align: right;">$28.74</td>
+<td style="text-align: right;">$9.01</td>
+<td style="text-align: right;">3.2</td>
+<td style="text-align: right;">19</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1995</td>
+<td style="text-align: right;">$29.64</td>
+<td style="text-align: right;">$11.78</td>
+<td style="text-align: right;">2.5</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2005</td>
+<td style="text-align: right;">$36.78</td>
+<td style="text-align: right;">$16.30</td>
+<td style="text-align: right;">2.3</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2015</td>
+<td style="text-align: right;">$50.11</td>
+<td style="text-align: right;">$21.21</td>
+<td style="text-align: right;">2.4</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2019</td>
+<td style="text-align: right;">$48.91</td>
+<td style="text-align: right;">$23.83</td>
+<td style="text-align: right;">2.1</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2022</td>
+<td style="text-align: right;">$64.05</td>
+<td style="text-align: right;">$28.11</td>
+<td style="text-align: right;">2.3</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2025</td>
+<td style="text-align: right;">$55.18</td>
+<td style="text-align: right;">$31.79</td>
+<td style="text-align: right;">1.7</td>
+<td style="text-align: right;">10</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>In dollars, Thanksgiving is about twice as expensive as in 1986. In work time, it’s about half the work.</p>
+</section>
+<section id="what-about-this-year" class="level2">
+<h2 class="anchored" data-anchor-id="what-about-this-year">What about this year?</h2>
+<p>The Farm Bureau releases its 2026 survey the week before Thanksgiving. We’ll update this post when it comes out. With food prices rising again this fall, we’ll be watching to see whether the streak of cheaper dinners holds.</p>
+</section>
+<section id="the-fine-print" class="level2">
+<h2 class="anchored" data-anchor-id="the-fine-print">The fine print</h2>
+<ul>
+<li><strong>One menu, national average.</strong> The survey prices the same classic menu every year; your actual dinner, store, and region will differ. Regional prices in the Northeast and West run well above the national average.</li>
+<li><strong>A few early years are estimates.</strong> The year-by-year series we used fills a few early gaps using inflation data; the Farm Bureau’s own figures anchor the start and recent years.</li>
+<li><strong>Pay is the average worker’s hourly earnings in November</strong>, before taxes, for the roughly 80% of private-sector workers who aren’t managers.</li>
+</ul>
+</section>
+<section id="the-bottom-line" class="level2">
+<h2 class="anchored" data-anchor-id="the-bottom-line">The bottom line</h2>
+<p>Thanksgiving dinner feels more expensive because the receipt is bigger. But measured in the time it takes to earn it, last year’s feast was the most affordable in four decades: about <strong>10 minutes of work per guest.</strong></p>
+<hr>
+<p><strong>How we did this.</strong> Dinner costs are the American Farm Bureau Federation’s annual Thanksgiving Dinner Cost Survey (classic menu for 10). Years 1987–2022 come from a compilation by 24/7 Wall St.; 1986 and 2023–2025 are from AFBF. Pay is average hourly earnings of production and nonsupervisory employees for November of each year, via <a href="https://fred.stlouisfed.org/series/AHETPI">FRED</a>. <a href="https://www.fb.org/market-intel/thanksgiving-dinner-cost-analysis-moderate-decline">AFBF survey</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>groceries</category>
+  <category>holidays</category>
+  <category>cost of living</category>
+  <category>wages</category>
+  <guid>https://sixtyeight95.github.io/posts/2026-11-thanksgiving-dinner/</guid>
+  <pubDate>Wed, 18 Nov 2026 05:00:00 GMT</pubDate>
+  <media:content url="https://sixtyeight95.github.io/posts/2026-11-thanksgiving-dinner/infographic.png" medium="image" type="image/png" height="180" width="144"/>
+</item>
 <item>
   <title>Are Electric Cars Really Better for the Environment?</title>
   <dc:creator>SixtyEight95 </dc:creator>

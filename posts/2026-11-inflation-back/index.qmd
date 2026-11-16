@@ -1,0 +1,128 @@
+---
+title: "Is Inflation Back?"
+subtitle: "Prices are rising faster again, mostly because of gas. And for the first time in years, paychecks are falling behind."
+author: "SixtyEight95"
+date: "2026-11-19"
+categories: [inflation, cost of living, wages, energy]
+image: infographic.png
+---
+
+```{r setup}
+source("../../R/fred.R")
+source("../../R/inflation_data.R")
+library(plotly)
+library(knitr)
+pct  <- function(x) paste0(formatC(x, format = "f", digits = 1), "%")
+pct2 <- function(x) paste0(formatC(x, format = "f", digits = 2), "%")
+```
+
+After the 2021–2023 price surge finally cooled, a lot of people hoped inflation was behind us. This year, it
+started climbing again. We looked at the government's own numbers to see how big the rebound is, what's
+driving it, and what it means for your paycheck.
+
+## The short answer
+
+::: {.callout-note appearance="simple"}
+Prices are up **`r pct(infl_now$all)`** from a year ago (`r month_label(infl_now$date)`), up from **`r pct(infl_low$all)`** in
+`r month_label(infl_low$date)`. Most of the jump is **energy**: gasoline is up **`r pct(infl_now$gasoline)`**. Without food and energy,
+inflation is a calmer **`r pct(infl_now$core)`**.
+
+But it's enough to bite: pay is up only **`r pct(infl_now$pay)`**, so the average paycheck now buys **less** than it did a
+year ago for the first time since early 2023.
+:::
+
+## The rebound
+
+```{r rebound chart}
+#| fig-height: 4.5
+recent <- inflation %>% filter(date >= as.Date("2019-01-01")) %>%
+  select(date, `All prices` = all, `Without food & energy (core)` = core) %>%
+  pivot_longer(-date, names_to = "series", values_to = "rate")
+
+p <- ggplot(recent, aes(date, rate, color = series, group = series,
+                        text = paste0(series, ", ", format(date, "%b %Y"), ": ", pct(rate)))) +
+  geom_hline(yintercept = 2, linetype = "dashed", color = "grey60") +
+  geom_vline(xintercept = as.numeric(iran_strike), linetype = "dotted", color = "#D69E2E") +
+  geom_line(linewidth = 0.9) +
+  scale_color_manual(values = c("All prices" = "#C53030", "Without food & energy (core)" = "#2A9D8F")) +
+  theme_minimal() +
+  labs(x = NULL, y = "Change from a year earlier (%)", color = NULL)
+ggplotly(p, tooltip = "text") %>% layout(legend = list(orientation = "h", y = 1.08)) %>% config(displayModeBar = FALSE)
+```
+
+The dashed line is the Federal Reserve's 2% target. The dotted line marks the U.S. and Israeli strike on Iran in
+late February 2026, which disrupted oil shipping through the Strait of Hormuz. Notice that the red line (all prices)
+jumped right after, while the teal line (everything except food and energy) barely moved. That tells you this
+rebound is mostly about energy, not a broad-based surge like 2022.
+
+## What's driving it
+
+```{r drivers table}
+tribble(
+  ~Category, ~`Change from a year ago`,
+  "Gasoline", pct(infl_now$gasoline),
+  "All energy (gas, electricity, heating)", pct(infl_now$energy),
+  "Housing costs (shelter)", pct(infl_now$shelter),
+  "Food", pct(infl_now$food),
+  "Everything except food & energy", pct(infl_now$core),
+  "All prices", pct(infl_now$all),
+  "Wholesale prices (producer prices)", pct(infl_now$wholesale)
+) %>% kable(align = "lr", caption = paste("Consumer and producer price indexes,", month_label(infl_now$date), "vs. a year earlier. Source: BLS via FRED."))
+```
+
+Two things to watch:
+
+- **Wholesale prices are up `r pct(infl_now$wholesale)`.** Producer prices measure what businesses pay. When those rise
+  faster than consumer prices, some of it tends to show up on store shelves later.
+- **Food is starting to climb.** Food prices rose `r pct(infl_now$food)` over the year, and higher fuel and shipping costs
+  can push grocery prices up with a delay.
+
+## What it means for your paycheck
+
+```{r real pay chart}
+#| fig-height: 4
+rp <- real_pay %>% filter(date >= as.Date("2019-01-01"), !is.na(real_pay_change))
+p2 <- ggplot(rp, aes(date, real_pay_change, group = 1,
+             text = paste0(format(date, "%b %Y"), ": real pay ", ifelse(real_pay_change >= 0, "up ", "down "),
+                           pct(abs(real_pay_change)), " vs a year earlier"))) +
+  geom_hline(yintercept = 0, color = "grey40") +
+  geom_line(color = "#1F4E5A", linewidth = 0.9) +
+  theme_minimal() +
+  labs(x = NULL, y = "Pay growth minus price growth (%)")
+ggplotly(p2, tooltip = "text") %>% config(displayModeBar = FALSE)
+```
+
+This line shows whether paychecks are beating prices. Above zero, the average worker's pay is growing faster than
+prices; below zero, it's falling behind. From mid-2023 through 2025, pay comfortably outran prices. In
+`r month_label(real_now$date)`, it dipped below zero: **`r pct(real_now$real_pay_change)`**.
+
+## The Fed is raising rates again
+
+To fight inflation, the Federal Reserve raises interest rates, which makes borrowing more expensive and cools
+spending. After holding rates steady for most of 2026, the Fed has started nudging them up: the federal funds rate
+rose from **`r pct2(fed_low$rate)`** to **`r pct2(fed_now$rate)`** this fall, and many forecasters expect another increase in December.
+For households, that means **higher rates on credit cards, car loans, and mortgages.**
+
+## The fine print
+
+- **Inflation numbers are averages.** If you drive a lot, energy inflation hits you much harder than someone who
+  works from home.
+- **"Core" inflation** leaves out food and energy because they swing wildly; it's a better guide to the long-term
+  trend, but you still pay for gas and groceries.
+- **Pay is the average hourly earnings** of production and nonsupervisory workers, before taxes.
+- **This can change quickly.** If oil prices fall (as they did briefly this month on hopes of calmer fighting with
+  Iran), headline inflation could ease fast.
+
+## The bottom line
+
+Inflation is back, but it's a different animal than 2022: so far it's mostly an energy shock, with everything else
+rising at a more normal pace. That's the good news. The bad news is that it's enough to put paychecks behind prices
+again, and the Fed's response means borrowing is getting more expensive too.
+
+---
+
+**How we did this.** All figures are from the Bureau of Labor Statistics and the Federal Reserve via
+[FRED](https://fred.stlouisfed.org/): CPI for all urban consumers (CPIAUCSL), CPI less food and energy (CPILFESL),
+energy (CPIENGSL), food (CPIUFDSL), shelter (CUSR0000SAH1), gasoline (CUSR0000SETB01), producer prices for final
+demand (PPIFIS), average hourly earnings of production and nonsupervisory employees (AHETPI), and the effective
+federal funds rate (FEDFUNDS). Changes are compared with the same month a year earlier.

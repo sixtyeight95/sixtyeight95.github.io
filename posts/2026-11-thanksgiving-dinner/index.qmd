@@ -1,0 +1,92 @@
+---
+title: "Thanksgiving Dinner, Measured in Hours of Work"
+subtitle: "Prices spiked in 2022. Paychecks caught up. Last year, dinner took the least work in 40 years."
+author: "SixtyEight95"
+date: "2026-11-18"
+categories: [groceries, holidays, cost of living, wages]
+image: infographic.png
+---
+
+```{r setup}
+source("../../R/fred.R")
+source("../../R/thanksgiving_data.R")
+library(plotly)
+library(knitr)
+usd <- function(x) paste0("$", formatC(x, format = "f", digits = 2))
+hrs <- function(x) formatC(x, format = "f", digits = 1)
+```
+
+Every November, the American Farm Bureau Federation shops for the same classic Thanksgiving dinner for 10:
+a 16-pound turkey, stuffing, sweet potatoes, rolls, peas, cranberries, a veggie tray, pumpkin pie with whipped
+cream, and milk and coffee. They've done it every year since 1986.
+
+The dollar price has roughly doubled since then. But that's only half the story. So, as usual, we asked:
+**how long does the average worker have to work to buy it?**
+
+## The short answer
+
+::: {.callout-note appearance="simple"}
+In `r tg_latest$year`, the classic dinner for 10 cost **`r usd(tg_latest$cost_for_10)`**. At the average worker's pay, that's
+**`r hrs(tg_latest$hours_of_work)` hours of work**, or about **`r round(tg_latest$minutes_per_guest)` minutes per guest.**
+That's the least work it has taken in the survey's history. In `r tg_first$year`, it took `r hrs(tg_first$hours_of_work)` hours.
+:::
+
+## 40 years of Thanksgiving dinner
+
+```{r hours chart}
+#| fig-height: 4.5
+p <- ggplot(thanksgiving, aes(year, hours_of_work, group = 1,
+            text = paste0(year, ": ", usd(cost_for_10), " for 10<br>",
+                          hrs(hours_of_work), " hours of work (", round(minutes_per_guest), " min per guest)"))) +
+  geom_line(color = "#C05621", linewidth = 0.9) +
+  expand_limits(y = 0) +
+  theme_minimal() +
+  labs(x = NULL, y = "Hours of work for dinner for 10")
+ggplotly(p, tooltip = "text") %>% config(displayModeBar = FALSE)
+```
+
+Hover to see the price each year. The dollar cost peaked at **`r usd(tg_peak$cost_for_10)`** in `r tg_peak$year`, when
+inflation and bird flu sent turkey prices soaring. That year dinner took `r hrs(tg_peak$hours_of_work)` hours of work, a
+visible bump. Since then, the price has fallen three years in a row while pay kept rising, so dinner got easier
+to afford on both counts.
+
+## Dollars vs. work
+
+```{r compare table}
+thanksgiving %>%
+  filter(year %in% c(1986, 1995, 2005, 2015, 2019, 2022, max(year))) %>%
+  transmute(Year = year, `Dinner for 10` = usd(cost_for_10), `Average hourly pay` = usd(wage),
+            `Hours of work` = hrs(hours_of_work), `Minutes per guest` = round(minutes_per_guest)) %>%
+  kable(align = "lrrrr")
+```
+
+In dollars, Thanksgiving is about twice as expensive as in 1986. In work time, it's about half the work.
+
+## What about this year?
+
+The Farm Bureau releases its `r tg_latest$year + 1` survey the week before Thanksgiving. We'll update this post when it
+comes out. With food prices rising again this fall, we'll be watching to see whether the streak of cheaper
+dinners holds.
+
+## The fine print
+
+- **One menu, national average.** The survey prices the same classic menu every year; your actual dinner, store,
+  and region will differ. Regional prices in the Northeast and West run well above the national average.
+- **A few early years are estimates.** The year-by-year series we used fills a few early gaps using inflation
+  data; the Farm Bureau's own figures anchor the start and recent years.
+- **Pay is the average worker's hourly earnings in November**, before taxes, for the roughly 80% of private-sector
+  workers who aren't managers.
+
+## The bottom line
+
+Thanksgiving dinner feels more expensive because the receipt is bigger. But measured in the time it takes to
+earn it, last year's feast was the most affordable in four decades: about **`r round(tg_latest$minutes_per_guest)` minutes
+of work per guest.**
+
+---
+
+**How we did this.** Dinner costs are the American Farm Bureau Federation's annual Thanksgiving Dinner Cost
+Survey (classic menu for 10). Years 1987–2022 come from a compilation by 24/7 Wall St.; 1986 and 2023–2025 are
+from AFBF. Pay is average hourly earnings of production and nonsupervisory employees for November of each year,
+via [FRED](https://fred.stlouisfed.org/series/AHETPI).
+[AFBF survey](https://www.fb.org/market-intel/thanksgiving-dinner-cost-analysis-moderate-decline)
