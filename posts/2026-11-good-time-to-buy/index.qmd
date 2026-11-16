@@ -72,7 +72,7 @@ tribble(
   ~Signal, ~Latest, ~`Change from a year ago`,
   "Homes listed for sale", formatC(m("ACTLISCOUUS")$now, format = "d", big.mark = ","), pct(m("ACTLISCOUUS")$change),
   "Existing homes sold (yearly pace)", formatC(m("EXHOSLUSM495S")$now, format = "d", big.mark = ","), pct(m("EXHOSLUSM495S")$change),
-  "Median days on market", round(m("MEDDAYONMARUS")$now), pct(m("MEDDAYONMARUS")$change),
+  "Median days on market", as.character(round(m("MEDDAYONMARUS")$now)), pct(m("MEDDAYONMARUS")$change),
   "Rents (CPI)", "", pct(m("CUSR0000SEHA")$change)
 ) %>% kable(align = "lrr")
 ```

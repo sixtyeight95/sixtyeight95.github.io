@@ -15,7 +15,7 @@ draw_frame <- function(t) {
 
   a <- fade(t, 3.5, 9)
   txt("THE TYPICAL LISTED HOME", 0.5, 0.72, 30, brand$muted, "bold", a)
-  txt(paste0("Price: ", usd(pay_yearago$price), " → ", usd(pay_latest$price)), 0.5, 0.6, 38, brand$mint, "bold", a * appear(t, 4.2))
+  txt(paste0("Price: ", usd(pay_yearago$price), " → ", usd(pay_latest$price)), 0.5, 0.6, 33, brand$mint, "bold", a * appear(t, 4.2))
   txt(paste0("Rate: ", f2(pay_yearago$rate), "% → ", f2(pay_latest$rate), "%"), 0.5, 0.5, 38, brand$red, "bold", a * appear(t, 5.2))
   txt("(a year ago → now)", 0.5, 0.43, 24, brand$muted, "plain", a * appear(t, 5.2))
 

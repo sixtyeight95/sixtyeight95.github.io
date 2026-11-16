@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="SixtyEight95">
+<meta name="dcterms.date" content="2026-11-22">
+
+<title>Home Prices Are Dipping. Is Now a Good Time to Buy? – SixtyEight95</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/logo.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-fad9b177c07875ef04f3d87e300b1a75.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link href="../../site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+
+<script src="../../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
+<script src="../../site_libs/plotly-binding-4.10.4/plotly.js"></script>
+
+<script src="../../site_libs/typedarray-0.1/typedarray.min.js"></script>
+
+<script src="../../site_libs/jquery-3.5.1/jquery.min.js"></script>
+
+<link href="../../site_libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+
+<script src="../../site_libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+
+<link href="../../site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+
+<script src="../../site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+
+
+
+<meta property="og:title" content="Home Prices Are Dipping. Is Now a Good Time to Buy? – SixtyEight95">
+<meta property="og:description" content="Prices are down a little. Mortgage rates are up a lot. Here’s what that does to the monthly payment.">
+<meta property="og:image" content="https://sixtyeight95.github.io/posts/2026-11-good-time-to-buy/infographic.png">
+<meta property="og:site_name" content="SixtyEight95">
+<meta property="og:image:height" content="1350">
+<meta property="og:image:width" content="1080">
+<meta name="twitter:title" content="Home Prices Are Dipping. Is Now a Good Time to Buy? – SixtyEight95">
+<meta name="twitter:description" content="Prices are down a little. Mortgage rates are up a lot. Here’s what that does to the monthly payment.">
+<meta name="twitter:image" content="https://sixtyeight95.github.io/posts/2026-11-good-time-to-buy/infographic.png">
+<meta name="twitter:image-height" content="1350">
+<meta name="twitter:image-width" content="1080">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/logo.png" alt="" class="navbar-logo light-content">
+    <img src="../../images/logo.png" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">SixtyEight95</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Posts</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Home Prices Are Dipping. Is Now a Good Time to Buy?</h1>
+<p class="subtitle lead">Prices are down a little. Mortgage rates are up a lot. Here’s what that does to the monthly payment.</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">housing</div>
+    <div class="quarto-category">cost of living</div>
+    <div class="quarto-category">interest rates</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>SixtyEight95 </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 22, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>You may have seen headlines that home prices are finally coming down. Some are. So is this the moment to buy? We pulled the latest market data to see what’s actually changed for buyers, and what it does to the monthly payment. (This is general information, not financial advice; everyone’s situation is different.)</p>
+<section id="the-short-answer" class="level2">
+<h2 class="anchored" data-anchor-id="the-short-answer">The short answer</h2>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>The median listed home is <strong>-2.2%</strong> cheaper than a year ago. But mortgage rates rose from about <strong>6.25%</strong> to <strong>7.33%</strong>, so the monthly payment on that typical home is <strong>$215 higher</strong>: about <strong>$2,568 a month</strong>, versus $2,353 a year ago.</p>
+<p>The real change is leverage: more homes for sale, fewer buyers, and more room to negotiate than in years.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="the-monthly-payment" class="level2">
+<h2 class="anchored" data-anchor-id="the-monthly-payment">The monthly payment</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-3b0f03d328ee6f0d9104" style="width:100%;height:417px;"></div>
+<script type="application/json" data-for="htmlwidget-3b0f03d328ee6f0d9104">{"x":{"data":[{"x":[17167,17198,17226,17257,17287,17318,17348,17379,17410,17440,17471,17501,17532,17563,17591,17622,17652,17683,17713,17744,17775,17805,17836,17866,17897,17928,17956,17987,18017,18048,18078,18109,18140,18170,18201,18231,18262,18293,18322,18353,18383,18414,18444,18475,18506,18536,18567,18597,18628,18659,18687,18718,18748,18779,18809,18840,18871,18901,18932,18962,18993,19024,19052,19083,19113,19144,19174,19205,19236,19266,19297,19327,19358,19389,19417,19448,19478,19509,19539,19570,19601,19631,19662,19692,19723,19754,19783,19814,19844,19875,19905,19936,19967,19997,20028,20058,20089,20120,20148,20179,20209,20240,20270,20301,20332,20362,20393,20423,20454,20485,20513,20544,20574,20605,20635,20666,20697,20727],"y":[1093.2949832783625,1119.6989969665401,1163.329737812408,1166.4321774086868,1193.6774416954056,1184.9343559592025,1194.0898074189088,1164.5447382691229,1153.9490221379319,1166.6699522654314,1168.1381405364732,1152.6983996959766,1163.5466229074661,1231.1820013898648,1291.1270146499096,1339.9002124590411,1379.3482146544275,1378.843407544191,1369.9494531490479,1369.2029972949572,1377.009195851386,1398.9895802846131,1403.5978196885974,1343.394005164494,1314.3741193315925,1329.3103978966496,1356.3969790238214,1376.6474286047508,1386.7207238154865,1342.3670745702709,1333.9287827059934,1294.7127969081314,1279.386206048343,1282.0691187096245,1262.7006274796165,1245.4050299840301,1228.1085866186895,1229.0816559231182,1281.2075647853176,1259.3044391467936,1285.8036927229657,1314.9500046682797,1311.7614105875145,1313.2726044777269,1305.6970208477301,1296.3038660542243,1259.0132447222904,1224.8859963399864,1228.4529867011411,1271.9242762836086,1351.5041732986504,1412.6370810823048,1421.4289639713436,1436.9004369428367,1413.9222898211881,1394.4059793322872,1404.7761829702581,1435.2295186157307,1431.8806497389608,1418.3677919373215,1484.7125785780242,1605.0670166034847,1752.1710094728614,2022.7339670590468,2169.1791001918928,2300.016299160829,2246.4899559786318,2143.0654588398829,2335.9132475842139,2519.1455071476953,2442.0549977860833,2271.3840448668125,2242.4381679047906,2298.0320542677787,2423.0243727835668,2406.1562556760468,2489.1729817630858,2588.0586587758621,2592.1837478419143,2626.6031552579448,2623.9535691986471,2705.9955574130181,2628.0346008826004,2409.2920304152112,2364.132206195774,2431.8989998872571,2498.1237970270136,2572.4724827206542,2647.5622735552065,2612.0996659379871,2579.1313287704543,2446.0463647956612,2337.7319799303809,2386.1619528507877,2447.2678459544341,2343.6609298058456,2390.8756069918095,2427.8451450299417,2454.9378671916597,2512.0893515769244,2585.8456420058196,2592.1194105960881,2557.355841509233,2468.3578955968619,2380.6763390336837,2352.7871891759778,2296.6681304056315,2202.2774735686176,2181.6170559982361,2190.8107766372409,2287.6202817718004,2375.5553189166385,2428.659955469293,2443.5586979545069,2450.8033107706833,2457.0539392106266,2475.6059247270955,2567.7183400286767],"text":["Jan 2017<br>Median list price: $249,900<br>Mortgage rate: 4.15%<br>Monthly payment: $1,093","Feb 2017<br>Median list price: $255,400<br>Mortgage rate: 4.17%<br>Monthly payment: $1,120","Mar 2017<br>Median list price: $264,450<br>Mortgage rate: 4.20%<br>Monthly payment: $1,163","Apr 2017<br>Median list price: $270,000<br>Mortgage rate: 4.04%<br>Monthly payment: $1,166","May 2017<br>Median list price: $277,475<br>Mortgage rate: 4.01%<br>Monthly payment: $1,194","Jun 2017<br>Median list price: $279,000<br>Mortgage rate: 3.90%<br>Monthly payment: $1,185","Jul 2017<br>Median list price: $279,000<br>Mortgage rate: 3.97%<br>Monthly payment: $1,194","Aug 2017<br>Median list price: $275,000<br>Mortgage rate: 3.88%<br>Monthly payment: $1,165","Sep 2017<br>Median list price: $275,000<br>Mortgage rate: 3.80%<br>Monthly payment: $1,154","Oct 2017<br>Median list price: $275,000<br>Mortgage rate: 3.90%<br>Monthly payment: $1,167","Nov 2017<br>Median list price: $274,445<br>Mortgage rate: 3.92%<br>Monthly payment: $1,168","Dec 2017<br>Median list price: $269,900<br>Mortgage rate: 3.95%<br>Monthly payment: $1,153","Jan 2018<br>Median list price: $269,738<br>Mortgage rate: 4.03%<br>Monthly payment: $1,164","Feb 2018<br>Median list price: $275,450<br>Mortgage rate: 4.33%<br>Monthly payment: $1,231","Mar 2018<br>Median list price: $285,000<br>Mortgage rate: 4.44%<br>Monthly payment: $1,291","Apr 2018<br>Median list price: $294,950<br>Mortgage rate: 4.47%<br>Monthly payment: $1,340","May 2018<br>Median list price: $299,450<br>Mortgage rate: 4.59%<br>Monthly payment: $1,379","Jun 2018<br>Median list price: $299,900<br>Mortgage rate: 4.57%<br>Monthly payment: $1,379","Jul 2018<br>Median list price: $299,450<br>Mortgage rate: 4.53%<br>Monthly payment: $1,370","Aug 2018<br>Median list price: $298,500<br>Mortgage rate: 4.55%<br>Monthly payment: $1,369","Sep 2018<br>Median list price: $297,500<br>Mortgage rate: 4.63%<br>Monthly payment: $1,377","Oct 2018<br>Median list price: $295,250<br>Mortgage rate: 4.83%<br>Monthly payment: $1,399","Nov 2018<br>Median list price: $295,000<br>Mortgage rate: 4.87%<br>Monthly payment: $1,404","Dec 2018<br>Median list price: $289,900<br>Mortgage rate: 4.64%<br>Monthly payment: $1,343","Jan 2019<br>Median list price: $289,450<br>Mortgage rate: 4.46%<br>Monthly payment: $1,314","Feb 2019<br>Median list price: $296,000<br>Mortgage rate: 4.37%<br>Monthly payment: $1,329","Mar 2019<br>Median list price: $305,814<br>Mortgage rate: 4.26%<br>Monthly payment: $1,356","Apr 2019<br>Median list price: $314,950<br>Mortgage rate: 4.14%<br>Monthly payment: $1,377","May 2019<br>Median list price: $319,950<br>Mortgage rate: 4.07%<br>Monthly payment: $1,387","Jun 2019<br>Median list price: $320,000<br>Mortgage rate: 3.80%<br>Monthly payment: $1,342","Jul 2019<br>Median list price: $319,450<br>Mortgage rate: 3.77%<br>Monthly payment: $1,334","Aug 2019<br>Median list price: $315,791<br>Mortgage rate: 3.62%<br>Monthly payment: $1,295","Sep 2019<br>Median list price: $312,477<br>Mortgage rate: 3.60%<br>Monthly payment: $1,279","Oct 2019<br>Median list price: $309,945<br>Mortgage rate: 3.69%<br>Monthly payment: $1,282","Nov 2019<br>Median list price: $305,000<br>Mortgage rate: 3.70%<br>Monthly payment: $1,263","Dec 2019<br>Median list price: $299,900<br>Mortgage rate: 3.72%<br>Monthly payment: $1,245","Jan 2020<br>Median list price: $299,250<br>Mortgage rate: 3.62%<br>Monthly payment: $1,228","Feb 2020<br>Median list price: $305,450<br>Mortgage rate: 3.47%<br>Monthly payment: $1,229","Mar 2020<br>Median list price: $319,000<br>Mortgage rate: 3.45%<br>Monthly payment: $1,281","Apr 2020<br>Median list price: $319,250<br>Mortgage rate: 3.31%<br>Monthly payment: $1,259","May 2020<br>Median list price: $329,000<br>Mortgage rate: 3.23%<br>Monthly payment: $1,286","Jun 2020<br>Median list price: $339,450<br>Mortgage rate: 3.16%<br>Monthly payment: $1,315","Jul 2020<br>Median list price: $345,000<br>Mortgage rate: 3.02%<br>Monthly payment: $1,312","Aug 2020<br>Median list price: $349,000<br>Mortgage rate: 2.94%<br>Monthly payment: $1,313","Sep 2020<br>Median list price: $349,000<br>Mortgage rate: 2.89%<br>Monthly payment: $1,306","Oct 2020<br>Median list price: $349,000<br>Mortgage rate: 2.83%<br>Monthly payment: $1,296","Nov 2020<br>Median list price: $342,000<br>Mortgage rate: 2.77%<br>Monthly payment: $1,259","Dec 2020<br>Median list price: $336,250<br>Mortgage rate: 2.68%<br>Monthly payment: $1,225","Jan 2021<br>Median list price: $335,000<br>Mortgage rate: 2.73%<br>Monthly payment: $1,228","Feb 2021<br>Median list price: $343,500<br>Mortgage rate: 2.81%<br>Monthly payment: $1,272","Mar 2021<br>Median list price: $352,450<br>Mortgage rate: 3.08%<br>Monthly payment: $1,352","Apr 2021<br>Median list price: $369,450<br>Mortgage rate: 3.06%<br>Monthly payment: $1,413","May 2021<br>Median list price: $376,412<br>Mortgage rate: 2.96%<br>Monthly payment: $1,421","Jun 2021<br>Median list price: $379,900<br>Mortgage rate: 2.98%<br>Monthly payment: $1,437","Jul 2021<br>Median list price: $379,000<br>Mortgage rate: 2.87%<br>Monthly payment: $1,414","Aug 2021<br>Median list price: $375,000<br>Mortgage rate: 2.84%<br>Monthly payment: $1,394","Sep 2021<br>Median list price: $375,000<br>Mortgage rate: 2.90%<br>Monthly payment: $1,405","Oct 2021<br>Median list price: $375,000<br>Mortgage rate: 3.07%<br>Monthly payment: $1,435","Nov 2021<br>Median list price: $374,125<br>Mortgage rate: 3.07%<br>Monthly payment: $1,432","Dec 2021<br>Median list price: $369,158<br>Mortgage rate: 3.10%<br>Monthly payment: $1,418","Jan 2022<br>Median list price: $369,900<br>Mortgage rate: 3.45%<br>Monthly payment: $1,485","Feb 2022<br>Median list price: $384,500<br>Mortgage rate: 3.76%<br>Monthly payment: $1,605","Mar 2022<br>Median list price: $399,450<br>Mortgage rate: 4.17%<br>Monthly payment: $1,752","Apr 2022<br>Median list price: $419,500<br>Mortgage rate: 4.98%<br>Monthly payment: $2,023","May 2022<br>Median list price: $437,450<br>Mortgage rate: 5.23%<br>Monthly payment: $2,169","Jun 2022<br>Median list price: $449,000<br>Mortgage rate: 5.52%<br>Monthly payment: $2,300","Jul 2022<br>Median list price: $443,900<br>Mortgage rate: 5.41%<br>Monthly payment: $2,246","Aug 2022<br>Median list price: $432,548<br>Mortgage rate: 5.22%<br>Monthly payment: $2,143","Sep 2022<br>Median list price: $427,750<br>Mortgage rate: 6.11%<br>Monthly payment: $2,336","Oct 2022<br>Median list price: $425,000<br>Mortgage rate: 6.90%<br>Monthly payment: $2,519","Nov 2022<br>Median list price: $416,000<br>Mortgage rate: 6.80%<br>Monthly payment: $2,442","Dec 2022<br>Median list price: $405,000<br>Mortgage rate: 6.36%<br>Monthly payment: $2,271","Jan 2023<br>Median list price: $403,706<br>Mortgage rate: 6.27%<br>Monthly payment: $2,242","Feb 2023<br>Median list price: $414,370<br>Mortgage rate: 6.26%<br>Monthly payment: $2,298","Mar 2023<br>Median list price: $424,000<br>Mortgage rate: 6.54%<br>Monthly payment: $2,423","Apr 2023<br>Median list price: $430,000<br>Mortgage rate: 6.34%<br>Monthly payment: $2,406","May 2023<br>Median list price: $441,007<br>Mortgage rate: 6.42%<br>Monthly payment: $2,489","Jun 2023<br>Median list price: $445,000<br>Mortgage rate: 6.71%<br>Monthly payment: $2,588","Jul 2023<br>Median list price: $440,000<br>Mortgage rate: 6.84%<br>Monthly payment: $2,592","Aug 2023<br>Median list price: $435,495<br>Mortgage rate: 7.07%<br>Monthly payment: $2,627","Sep 2023<br>Median list price: $429,516<br>Mortgage rate: 7.20%<br>Monthly payment: $2,624","Oct 2023<br>Median list price: $425,000<br>Mortgage rate: 7.62%<br>Monthly payment: $2,706","Nov 2023<br>Median list price: $420,000<br>Mortgage rate: 7.44%<br>Monthly payment: $2,628","Dec 2023<br>Median list price: $410,000<br>Mortgage rate: 6.82%<br>Monthly payment: $2,409","Jan 2024<br>Median list price: $409,500<br>Mortgage rate: 6.64%<br>Monthly payment: $2,364","Feb 2024<br>Median list price: $415,500<br>Mortgage rate: 6.78%<br>Monthly payment: $2,432","Mar 2024<br>Median list price: $424,900<br>Mortgage rate: 6.82%<br>Monthly payment: $2,498","Apr 2024<br>Median list price: $429,950<br>Mortgage rate: 6.99%<br>Monthly payment: $2,572","May 2024<br>Median list price: $439,500<br>Mortgage rate: 7.06%<br>Monthly payment: $2,648","Jun 2024<br>Median list price: $439,900<br>Mortgage rate: 6.92%<br>Monthly payment: $2,612","Jul 2024<br>Median list price: $437,450<br>Mortgage rate: 6.85%<br>Monthly payment: $2,579","Aug 2024<br>Median list price: $429,990<br>Mortgage rate: 6.50%<br>Monthly payment: $2,446","Sep 2024<br>Median list price: $425,000<br>Mortgage rate: 6.18%<br>Monthly payment: $2,338","Oct 2024<br>Median list price: $422,624<br>Mortgage rate: 6.43%<br>Monthly payment: $2,386","Nov 2024<br>Median list price: $416,888<br>Mortgage rate: 6.80%<br>Monthly payment: $2,447","Dec 2024<br>Median list price: $402,936<br>Mortgage rate: 6.71%<br>Monthly payment: $2,344","Jan 2025<br>Median list price: $400,995<br>Mortgage rate: 6.96%<br>Monthly payment: $2,391","Feb 2025<br>Median list price: $412,000<br>Mortgage rate: 6.84%<br>Monthly payment: $2,428","Mar 2025<br>Median list price: $424,900<br>Mortgage rate: 6.65%<br>Monthly payment: $2,455","Apr 2025<br>Median list price: $431,450<br>Mortgage rate: 6.72%<br>Monthly payment: $2,512","May 2025<br>Median list price: $440,000<br>Mortgage rate: 6.82%<br>Monthly payment: $2,586","Jun 2025<br>Median list price: $441,000<br>Mortgage rate: 6.82%<br>Monthly payment: $2,592","Jul 2025<br>Median list price: $439,450<br>Mortgage rate: 6.72%<br>Monthly payment: $2,557","Aug 2025<br>Median list price: $429,990<br>Mortgage rate: 6.59%<br>Monthly payment: $2,468","Sep 2025<br>Median list price: $425,000<br>Mortgage rate: 6.35%<br>Monthly payment: $2,381","Oct 2025<br>Median list price: $424,400<br>Mortgage rate: 6.25%<br>Monthly payment: $2,353","Nov 2025<br>Median list price: $415,000<br>Mortgage rate: 6.24%<br>Monthly payment: $2,297","Dec 2025<br>Median list price: $399,950<br>Mortgage rate: 6.19%<br>Monthly payment: $2,202","Jan 2026<br>Median list price: $399,900<br>Mortgage rate: 6.10%<br>Monthly payment: $2,182","Feb 2026<br>Median list price: $403,950<br>Mortgage rate: 6.05%<br>Monthly payment: $2,191","Mar 2026<br>Median list price: $416,000<br>Mortgage rate: 6.18%<br>Monthly payment: $2,288","Apr 2026<br>Median list price: $425,000<br>Mortgage rate: 6.33%<br>Monthly payment: $2,376","May 2026<br>Median list price: $429,500<br>Mortgage rate: 6.44%<br>Monthly payment: $2,429","Jun 2026<br>Median list price: $430,000<br>Mortgage rate: 6.49%<br>Monthly payment: $2,444","Jul 2026<br>Median list price: $428,950<br>Mortgage rate: 6.54%<br>Monthly payment: $2,451","Aug 2026<br>Median list price: $424,500<br>Mortgage rate: 6.67%<br>Monthly payment: $2,457","Sep 2026<br>Median list price: $419,250<br>Mortgage rate: 6.86%<br>Monthly payment: $2,476","Oct 2026<br>Median list price: $415,000<br>Mortgage rate: 7.33%<br>Monthly payment: $2,568"],"type":"scatter","mode":"lines","line":{"width":3.4015748031496069,"color":"rgba(192,86,33,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"visible":false,"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":27.364789446981227,"r":7.3059360730593621,"b":26.707255200405889,"l":60.639269406392714},"font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[16989,20905],"tickmode":"array","ticktext":["2018","2020","2022","2024","2026"],"tickvals":[17532,18262,18993,19723,20454],"categoryorder":"array","categoryarray":["2018","2020","2022","2024","2026"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-135.2997778706509,2841.2953352836689],"tickmode":"array","ticktext":["$0","$1,000","$2,000"],"tickvals":[0,999.99999999999989,2000],"categoryorder":"array","categoryarray":["$0","$1,000","$2,000"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Monthly principal + interest","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"source":"A","attrs":{"382826ca47e1":{"x":{},"y":{},"text":{},"type":"scatter"},"38282c472bbf":{"y":{}}},"cur_data":"382826ca47e1","visdat":{"382826ca47e1":["function (y) ","x"],"38282c472bbf":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p>This is the monthly principal and interest on the median listed home, with 10% down and a 30-year fixed mortgage at that month’s average rate. It doubled from 2021 to 2023 as rates shot up, eased in 2025 as rates fell, and has climbed again this fall.</p>
+</section>
+<section id="are-prices-really-falling" class="level2">
+<h2 class="anchored" data-anchor-id="are-prices-really-falling">Are prices really falling?</h2>
+<p>It depends on which measure you use:</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 58%">
+<col style="width: 11%">
+<col style="width: 29%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Measure</th>
+<th style="text-align: right;">Latest</th>
+<th style="text-align: right;">Change from a year ago</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Median listing price (Realtor.com)</td>
+<td style="text-align: right;">$415,000</td>
+<td style="text-align: right;">-2.2%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Median price of new homes sold (Census)</td>
+<td style="text-align: right;">$393,300</td>
+<td style="text-align: right;">-4.1%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Case-Shiller home price index (repeat sales)</td>
+<td style="text-align: right;">336.7</td>
+<td style="text-align: right;">+2.1%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><strong>Asking prices</strong> and <strong>new-home prices</strong> are down. But the <strong>Case-Shiller index</strong>, which tracks the same homes selling again over time and is often the best measure of true price changes, is still slightly <strong>up</strong> over the year, just off its summer peak. So “prices are dipping” is fair; “prices are falling fast” is not.</p>
+</section>
+<section id="the-buyers-market-signals" class="level2">
+<h2 class="anchored" data-anchor-id="the-buyers-market-signals">The buyer’s market signals</h2>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Signal</th>
+<th style="text-align: right;">Latest</th>
+<th style="text-align: right;">Change from a year ago</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Homes listed for sale</td>
+<td style="text-align: right;">1,183,520</td>
+<td style="text-align: right;">+7.4%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Existing homes sold (yearly pace)</td>
+<td style="text-align: right;">3,750,000</td>
+<td style="text-align: right;">-8.8%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Median days on market</td>
+<td style="text-align: right;">63</td>
+<td style="text-align: right;">0.0%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Rents (CPI)</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">+3.0%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>More homes for sale and fewer sales means sellers are competing for buyers, not the other way around. That can mean room to negotiate on price, repairs, or seller-paid closing costs. Meanwhile rents are still rising, so waiting isn’t free either.</p>
+</section>
+<section id="things-to-weigh" class="level2">
+<h2 class="anchored" data-anchor-id="things-to-weigh">Things to weigh</h2>
+<p>The data can’t tell you whether <em>you</em> should buy, but it does point to the questions that matter most:</p>
+<ul>
+<li><strong>Can you afford the payment at today’s rate?</strong> Some people buy hoping to refinance later if rates drop. That can work, but rates aren’t guaranteed to fall, and refinancing has costs.</li>
+<li><strong>How long will you stay?</strong> Buying and selling costs thousands; it usually takes several years for owning to beat renting.</li>
+<li><strong>Use the leverage.</strong> In a slower market, asking for a lower price or concessions is more realistic than it was in 2021–2022.</li>
+</ul>
+</section>
+<section id="the-fine-print" class="level2">
+<h2 class="anchored" data-anchor-id="the-fine-print">The fine print</h2>
+<ul>
+<li><strong>Payments shown are principal and interest only.</strong> Property taxes, insurance, and HOA fees can add hundreds a month.</li>
+<li><strong>National medians.</strong> Local markets vary widely; some areas are seeing real price drops, others are still rising.</li>
+<li><strong>The median listing price</strong> reflects the mix of homes for sale, not just price changes.</li>
+</ul>
+</section>
+<section id="the-bottom-line" class="level2">
+<h2 class="anchored" data-anchor-id="the-bottom-line">The bottom line</h2>
+<p>Home prices are softening, and buyers have more choices and leverage than they’ve had in years. But mortgage rates climbed even more than prices dipped, so the typical monthly payment is higher than a year ago. Whether that makes now a good time depends far more on your budget and timeline than on the headlines.</p>
+<hr>
+<p><strong>How we did this.</strong> Median listing price, active listings, and days on market are from Realtor.com; new-home prices from the Census Bureau; the Case-Shiller U.S. National Home Price Index from S&amp;P; existing home sales from the National Association of Realtors; mortgage rates from Freddie Mac’s weekly survey (averaged by month); and rents from the BLS CPI, all via <a href="https://fred.stlouisfed.org/">FRED</a>. Payments assume 10% down and a 30-year fixed loan.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/sixtyeight95\.github\.io");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
