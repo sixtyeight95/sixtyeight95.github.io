@@ -1,0 +1,117 @@
+---
+title: "How Long Does It Take to Find a Job Now?"
+subtitle: "Almost nobody is getting laid off. Almost nobody is getting hired. Welcome to the 'no hire, no fire' job market."
+author: "SixtyEight95"
+date: "2026-11-20"
+categories: [jobs, wages, economy]
+image: infographic.png
+---
+
+```{r setup}
+source("../../R/fred.R")
+source("../../R/jobs_data.R")
+library(plotly)
+library(knitr)
+f1 <- function(x) formatC(x, format = "f", digits = 1)
+```
+
+The unemployment rate looks fine. Layoff headlines are rare. And yet, if you've looked for a job recently, you
+may have felt like you were sending applications into a void. Both things are true. We dug into the government's
+job data to explain why.
+
+## The short answer
+
+::: {.callout-note appearance="simple"}
+Unemployment is just **`r f1(jobs_now$unemployment)`%**, and layoffs are near record lows. But companies are hiring slowly,
+so people who **do** lose a job are stuck looking longer. The average job seeker has been searching for
+**`r f1(jobs_now$avg_weeks)` weeks**, up from about `r round(jobs_2019$avg_weeks)` weeks in 2019, and **`r round(jobs_now$long_term_share)`%** have
+been out of work for six months or more.
+:::
+
+## How long job searches last
+
+```{r duration chart}
+#| fig-height: 4.5
+d <- jobs %>% filter(date >= as.Date("2000-01-01")) %>%
+  select(date, Average = avg_weeks, Median = median_weeks) %>%
+  pivot_longer(-date, names_to = "measure", values_to = "weeks") %>% filter(!is.na(weeks))
+p <- ggplot(d, aes(date, weeks, color = measure, group = measure,
+                   text = paste0(format(date, "%b %Y"), " - ", measure, ": ", f1(weeks), " weeks"))) +
+  geom_line(linewidth = 0.8) +
+  scale_color_manual(values = c(Average = "#C05621", Median = "#1F4E5A")) +
+  theme_minimal() + labs(x = NULL, y = "Weeks unemployed", color = NULL)
+ggplotly(p, tooltip = "text") %>% layout(legend = list(orientation = "h", y = 1.08)) %>% config(displayModeBar = FALSE)
+```
+
+Two measures: the **average** (pulled up by people who've been looking a very long time) and the **median**, the
+typical job seeker. Both have been climbing since 2023. The average is now `r f1(jobs_now$avg_weeks)` weeks; the median is
+`r f1(jobs_now$median_weeks)` weeks.
+
+(The sharp dip in 2020 isn't a good sign: tens of millions of people lost their jobs at once in the pandemic, so
+almost everyone unemployed had *just* started looking.)
+
+## No hire, no fire
+
+```{r flows chart}
+#| fig-height: 4
+flows <- jobs %>% filter(date >= as.Date("2015-01-01")) %>%
+  select(date, `Hired` = hires, `Laid off` = layoffs, `Quit` = quits) %>%
+  pivot_longer(-date, names_to = "flow", values_to = "rate") %>% filter(!is.na(rate))
+p2 <- ggplot(flows, aes(date, rate, color = flow, group = flow,
+                        text = paste0(format(date, "%b %Y"), " - ", flow, ": ", f1(rate), "% of jobs"))) +
+  geom_line(linewidth = 0.8) +
+  scale_color_manual(values = c(Hired = "#2A9D8F", `Laid off` = "#C53030", Quit = "#D69E2E")) +
+  coord_cartesian(ylim = c(0, 5)) +
+  theme_minimal() + labs(x = NULL, y = "% of all jobs, per month", color = NULL)
+ggplotly(p2, tooltip = "text") %>% layout(legend = list(orientation = "h", y = 1.08)) %>% config(displayModeBar = FALSE)
+```
+
+Every month, the government counts how many people were hired, laid off, or quit, as a share of all jobs:
+
+```{r flows table}
+tribble(
+  ~Measure, ~Now, ~`2019 average`,
+  "Hired", paste0(f1(jobs_now$hires), "%"), paste0(f1(jobs_2019$hires), "%"),
+  "Laid off or fired", paste0(f1(jobs_now$layoffs), "%"), paste0(f1(jobs_2019$layoffs), "%"),
+  "Quit", paste0(f1(jobs_now$quits), "%"), paste0(f1(jobs_2019$quits), "%")
+) %>% kable(align = "lrr", caption = paste("Share of all jobs per month. Latest:", format(jobs_now$jolts_date, "%B %Y"), "(BLS JOLTS)."))
+```
+
+Fewer people are being let go than before the pandemic, but fewer are being hired too, and fewer are quitting
+(people tend to stay put when they're not confident they'll land something better). The job market has slowed
+down without breaking. That's good news if you have a job, and hard news if you need one.
+
+## Why is hiring so slow?
+
+Economists point to a mix of reasons: uncertainty about the economy and interest rates making companies cautious
+about adding staff, businesses that hired heavily in 2021–2022 still having enough workers, and employers testing
+whether new technology like AI can handle some tasks before they hire. The data can show *that* hiring has slowed,
+but not exactly *why*, so take any single explanation with a grain of salt.
+
+## If you're job hunting
+
+The numbers suggest planning for a longer search than you might expect:
+
+- **Budget for months, not weeks.** The typical search is about `r round(jobs_now$median_weeks)` weeks, and many take much longer.
+- **Don't quit before you've landed something** if you can avoid it; quits are down for a reason.
+- **Unemployment insurance** usually lasts up to 26 weeks in most states, close to the current *average* search, so
+  it may run out before a long search ends.
+
+## The fine print
+
+- **Search length** comes from the monthly household survey and counts only people actively looking; people who
+  gave up looking aren't included.
+- **Hiring and layoff rates** come from the separate JOLTS employer survey and lag by about a month.
+- **National averages** hide big differences by industry, location, and experience.
+
+## The bottom line
+
+Today's job market isn't a recession. Layoffs are near record lows and unemployment is low. But it's a market
+that's stopped moving: if you lose your job, expect the search to take noticeably longer than it would have a few
+years ago.
+
+---
+
+**How we did this.** All data are from the Bureau of Labor Statistics via [FRED](https://fred.stlouisfed.org/):
+average and median weeks unemployed (UEMPMEAN, UEMPMED), share of unemployed out 27 weeks or more (LNS13025703),
+the unemployment rate (UNRATE), and JOLTS hires, layoffs and discharges, and quits rates (JTSHIR, JTSLDR, JTSQUR).
