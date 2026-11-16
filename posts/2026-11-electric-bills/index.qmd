@@ -1,0 +1,113 @@
+---
+title: "Why Does My Electric Bill Keep Going Up?"
+subtitle: "Electricity prices are up about 40% since 2020. AI data centers are part of the story, but not all of it."
+author: "SixtyEight95"
+date: "2026-11-21"
+categories: [energy, cost of living, utilities]
+image: infographic.png
+---
+
+```{r setup}
+source("../../R/fred.R")
+source("../../R/electricity_data.R")
+library(plotly)
+library(knitr)
+usd <- function(x) paste0("$", formatC(round(x), format = "d", big.mark = ","))
+cents <- function(x) paste0(formatC(x * 100, format = "f", digits = 1), "¢")
+f1 <- function(x) formatC(x, format = "f", digits = 1)
+```
+
+If your electric bill seems higher every time you open it, you're not imagining it. We looked at government price
+data to see how much electricity has really gone up, how that compares with paychecks, and what's driving it.
+
+## The short answer
+
+::: {.callout-note appearance="simple"}
+The average price of electricity is **`r cents(elec_latest$price)` per kWh**, up **`r round(since_2020)`%** since January 2020,
+and up **`r f1(elec_yoy$yoy)`%** in the last year alone. For a typical home, that's a monthly bill of about
+**`r usd(elec_latest$bill)`**, versus **`r usd(elec_2020$bill)`** in early 2020.
+
+The drivers: power-hungry **AI data centers**, expensive **grid upgrades**, and **natural gas** prices, with experts
+still arguing about how much each one matters.
+:::
+
+## The typical monthly bill
+
+```{r bill chart}
+#| fig-height: 4.5
+p <- ggplot(elec %>% filter(date >= as.Date("1990-01-01")), aes(date, bill, group = 1,
+            text = paste0(format(date, "%b %Y"), ": ", cents(price), "/kWh<br>Typical bill: ", usd(bill),
+                          "<br>Hours of work to pay it: ", f1(hours_for_bill)))) +
+  geom_line(color = "#C05621", linewidth = 0.8) +
+  scale_y_continuous(labels = scales::dollar) + expand_limits(y = 0) +
+  theme_minimal() + labs(x = NULL, y = paste("Monthly bill at", home_kwh_month, "kWh"))
+ggplotly(p, tooltip = "text") %>% config(displayModeBar = FALSE)
+```
+
+We used the Energy Information Administration's figure for average home use, about **`r home_kwh_month` kWh a month**, and
+the government's average price per kWh. For most of the 2010s, the typical bill barely moved. Since 2021, it has climbed
+steadily.
+
+## In hours of work
+
+As in our other posts, we also measured the bill in **hours of work** for the average worker:
+
+```{r hours table}
+elec_yearly %>% filter(year %in% c(1980, 1990, 2000, 2010, 2019, 2021, max(year))) %>%
+  transmute(Year = ifelse(year == max(year), paste(year, "(so far)"), as.character(year)),
+            `Price per kWh` = cents(price), `Typical monthly bill` = usd(bill),
+            `Hours of work` = f1(hours_for_bill)) %>%
+  kable(align = "lrrr")
+```
+
+This puts the jump in perspective. The monthly bill takes about **`r f1(elec_now$hours_for_bill)` hours** of work today,
+up from `r f1(year_row_e(2021)$hours_for_bill)` in 2021. That's a real increase, but it's still well below the 1980s,
+when a similar bill took 7 to 8 hours. Electricity got much cheaper relative to pay for decades; the last few years
+reversed some of that.
+
+## What's driving it
+
+**1. Data centers.** The AI boom runs on enormous data centers, and they use a lot of power. A Lawrence Berkeley
+National Laboratory report for the Department of Energy found data centers used **`r dc_share_2023`%** of all U.S. electricity
+in 2023, and projected **`r dc_share_2028_low`% to `r dc_share_2028_high`%** by 2028. More demand can push up prices, especially in
+regions where data centers are clustered, and utilities are building new capacity to serve them.
+
+**2. The grid itself.** Utilities are spending heavily to replace aging equipment, build new power lines, and harden
+the grid against storms and wildfires. Those costs are passed on to customers, and they rise even when the cost of
+generating power doesn't.
+
+**3. Natural gas.** Natural gas is the biggest fuel for U.S. electricity, so its price swings flow through to power
+prices. The energy shock of 2022 and this year's oil and gas disruptions both played a role.
+
+**How much is each one?** Honestly, nobody has a clean answer. Government data counts data centers inside "commercial"
+electricity use, so their exact effect on household bills is hard to isolate, and researchers disagree on the split.
+Where you live matters a lot: bills have jumped most in regions with tight power supplies and fast data center growth.
+
+## Ways to fight back
+
+- **Check for a cheaper plan or time-of-use rate.** Some utilities charge much less at night.
+- **Look for state and utility rebates** on efficient appliances, heat pumps, and insulation.
+- **Ask about budget billing** to smooth out big seasonal swings.
+
+## The fine print
+
+- **National averages.** Electricity prices vary enormously by state, from well under to well over double the national
+  average.
+- **The "typical bill"** uses average usage and the average price per kWh; real bills include fixed monthly charges and
+  taxes.
+- **Pay is average hourly earnings** before taxes.
+
+## The bottom line
+
+Electricity really has gotten more expensive, fast: about 40% since 2020. Data centers are a real and growing part of
+the story, alongside grid spending and fuel costs. In work time it's not as bad as the 1980s, but the long trend of
+electricity getting cheaper has clearly reversed.
+
+---
+
+**How we did this.** Prices are the BLS average price of electricity per kWh, U.S. city average (APU000072610), and the
+CPI for electricity (CUSR0000SEHF01), via [FRED](https://fred.stlouisfed.org/). Typical home use is from EIA (about 10,791
+kWh a year, or 899 kWh a month, in 2022). Data center figures are from Lawrence Berkeley National Laboratory's 2024
+report for the U.S. Department of Energy.
+[Berkeley Lab report summary](https://energyanalysis.lbl.gov/news/berkeley-lab-report-evaluates-increase-electricity-demand-data-centers) ·
+[DOE release](https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers)

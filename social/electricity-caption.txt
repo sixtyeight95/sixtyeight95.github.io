@@ -1,0 +1,38 @@
+POST CAPTION
+------------
+Why does your electric bill keep going up? ⚡
+
+The government's numbers:
+💡 Average price: about 19 cents per kWh, up 42% since January 2020
+📈 Up 5.4% in just the last year
+🏠 A typical home's monthly bill: about $120 in early 2020, about $171 now
+
+What's behind it:
+🤖 AI data centers used 4.4% of all U.S. power in 2023, projected 6.7% to 12% by 2028
+🔌 Utilities are spending big on new power lines and grid upgrades
+🔥 Natural gas, the biggest fuel for power plants, has seen big price swings
+
+Experts still argue about how much each one matters, and where you live makes a huge difference.
+
+How much has YOUR bill gone up? 👇
+
+
+FIRST COMMENT
+-------------
+Full breakdown, the bill in hours of work, and ways to fight back: https://sixtyeight95.github.io/posts/2026-11-electric-bills/
+
+
+GROUP VERSION (no link, sounds like a person)
+-------------
+I looked up why electric bills keep rising. Government data shows the average price per kWh is up about 42% since 2020, so a typical monthly bill went from about $120 to about $171. A big part of the story is AI data centers (the Energy Dept. says they could use up to 12% of all U.S. power by 2028), plus grid upgrades and natural gas prices. Chart attached. Has anyone switched to a time-of-use plan and saved money?
+
+
+REEL CAPTION
+------------
+Electric bills are up 42% since 2020. Here are the 3 big reasons why. ⚡
+
+Full breakdown at sixtyeight95.github.io
+
+#electricbill #energy #datacenters #AI #costofliving
+
+Comment link: https://sixtyeight95.github.io/posts/2026-11-electric-bills/
