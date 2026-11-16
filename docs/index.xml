@@ -17,7 +17,172 @@
 <width>144</width>
 </image>
 <generator>quarto-1.10.18</generator>
-<lastBuildDate>Sun, 22 Nov 2026 05:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 23 Nov 2026 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>What SNAP Food Aid Really Is</title>
+  <dc:creator>SixtyEight95 </dc:creator>
+  <link>https://sixtyeight95.github.io/posts/2026-11-snap-facts/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>On November 10, the U.S. Department of Agriculture proposed a rule that it estimates would end SNAP benefits for <strong>6.3 million people</strong> by 2029. SNAP, the Supplemental Nutrition Assistance Program (often still called food stamps), comes up in a lot of arguments, but the basic facts often get lost. Here they are, straight from USDA’s own data, plus what the proposal would and wouldn’t do.</p>
+<section id="the-short-answer" class="level2">
+<h2 class="anchored" data-anchor-id="the-short-answer">The short answer</h2>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>About <strong>36 million people</strong> get SNAP. The average benefit is about <strong>$189.15 a month</strong> per person, which works out to about <strong>$2.07 a meal</strong>. Most SNAP households include a <strong>child, a senior, or someone with a disability</strong>, and most are at or below the poverty line. The proposed rule would mainly affect families who earn somewhat more than SNAP’s normal limits but qualify through their state’s rules.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="how-much-snap-pays" class="level2">
+<h2 class="anchored" data-anchor-id="how-much-snap-pays">How much SNAP pays</h2>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Source: USDA Food and Nutrition Service. *FY2026 covers October 2025 to June 2026 and is preliminary.</caption>
+<colgroup>
+<col style="width: 10%">
+<col style="width: 30%">
+<col style="width: 25%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Fiscal year</th>
+<th style="text-align: right;">People (millions, monthly average)</th>
+<th style="text-align: right;">Benefit per person per month</th>
+<th style="text-align: left;">Note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">FY2022</td>
+<td style="text-align: right;">41.2</td>
+<td style="text-align: right;">$236.40</td>
+<td style="text-align: left;">includes pandemic emergency allotments</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">FY2023</td>
+<td style="text-align: right;">42.1</td>
+<td style="text-align: right;">$208.75</td>
+<td style="text-align: left;">emergency allotments ended early 2023</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">FY2024</td>
+<td style="text-align: right;">41.7</td>
+<td style="text-align: right;">$187.17</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">FY2025</td>
+<td style="text-align: right;">42.1</td>
+<td style="text-align: right;">$187.91</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">FY2026*</td>
+<td style="text-align: right;">38.2</td>
+<td style="text-align: right;">$189.15</td>
+<td style="text-align: left;">Oct 2025-Jun 2026, preliminary</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>The average benefit is about <strong>$189.15 a month</strong>, about <strong>$6.22 a day</strong>, or about <strong>$2.07 per meal</strong>. Benefits were higher in 2022 because of temporary pandemic payments that ended in early 2023. Participation has dropped this year, to about <strong>36.1 million</strong> in July 2026.</p>
+<p>SNAP is designed as a <strong>supplement</strong>: the benefit formula assumes households spend some of their own income on food too, so households with more income get less.</p>
+</section>
+<section id="who-gets-snap" class="level2">
+<h2 class="anchored" data-anchor-id="who-gets-snap">Who gets SNAP</h2>
+<p>According to USDA’s most recent detailed study (fiscal year 2023):</p>
+<ul>
+<li><strong>79%</strong> of SNAP households include a <strong>child</strong>, a <strong>senior</strong> (60+), or a <strong>person with a disability</strong>.</li>
+<li>About <strong>4 in 10</strong> people on SNAP are <strong>children</strong>.</li>
+<li><strong>73%</strong> of SNAP households have income at or below the <strong>federal poverty line</strong>.</li>
+<li>Many SNAP households include someone who <strong>works</strong>; adults without kids who are able to work face time limits unless they work or train at least 20 hours a week.</li>
+</ul>
+</section>
+<section id="what-the-proposed-rule-would-change" class="level2">
+<h2 class="anchored" data-anchor-id="what-the-proposed-rule-would-change">What the proposed rule would change</h2>
+<p>Normally, SNAP has a gross income limit of 130% of the poverty line and limits on savings. But under a policy called <strong>broad-based categorical eligibility</strong>, more than 40 states let households qualify for SNAP if they receive certain other aid funded by the federal welfare program TANF, such as help with childcare or job training. That lets some families with income or savings above the usual limits still get SNAP.</p>
+<p>The proposed rule would end that option. According to <strong>USDA’s own estimates</strong>, when fully in effect in 2029:</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 76%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">What USDA estimates</th>
+<th style="text-align: right;">Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">People who would lose SNAP</td>
+<td style="text-align: right;">6.3 million</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Households</td>
+<td style="text-align: right;">3.2 million</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Children losing automatic eligibility for free school meals</td>
+<td style="text-align: right;">1.78 million</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Federal savings over five years</td>
+<td style="text-align: right;">about $45 billion</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="the-arguments-on-each-side" class="level2">
+<h2 class="anchored" data-anchor-id="the-arguments-on-each-side">The arguments on each side</h2>
+<p><strong>Supporters, including USDA,</strong> argue that the policy lets households qualify even when they’re above the program’s normal income and savings limits, and that SNAP should be targeted to those who meet the standard rules. They point to the federal savings.</p>
+<p><strong>Critics,</strong> including anti-hunger groups, argue the people affected are mostly lower-income <strong>working families</strong> whose earnings put them just above the cutoff, that losing SNAP can be a sudden “cliff” when a small raise costs more in food aid, and that the change would also remove many children’s automatic eligibility for free school meals.</p>
+<p>A similar rule was proposed in 2019 and withdrawn in 2021, so this debate isn’t new.</p>
+</section>
+<section id="what-happens-next" class="level2">
+<h2 class="anchored" data-anchor-id="what-happens-next">What happens next</h2>
+<p>This is a <strong>proposal, not a final rule.</strong> Anyone can submit a public comment at regulations.gov until <strong>December 10, 2026</strong>. USDA then reviews the comments and decides whether to finalize it, change it, or drop it. Even if finalized, USDA expects it would take about two years to reach full effect.</p>
+</section>
+<section id="the-fine-print" class="level2">
+<h2 class="anchored" data-anchor-id="the-fine-print">The fine print</h2>
+<ul>
+<li><strong>FY2026 numbers are preliminary</strong>, and USDA has revised recent months’ participation data.</li>
+<li><strong>The household facts are from fiscal year 2023</strong>, the latest detailed study available.</li>
+<li><strong>The rule’s effects are USDA’s estimates.</strong> Outside analysts may estimate differently.</li>
+</ul>
+</section>
+<section id="the-bottom-line" class="level2">
+<h2 class="anchored" data-anchor-id="the-bottom-line">The bottom line</h2>
+<p>SNAP averages about $2 a meal, and most of it goes to households with kids, seniors, or people with disabilities. The proposed rule targets a narrower group: families a bit above SNAP’s normal limits who qualify through their state’s rules. Whether that’s closing a gap or cutting off struggling working families is the heart of the debate, and right now, the public can weigh in.</p>
+<hr>
+<p><strong>How we did this.</strong> Participation and benefit figures are from USDA Food and Nutrition Service SNAP Data Tables. Household characteristics are from USDA’s <em>Characteristics of SNAP Households: Fiscal Year 2023</em>. Rule estimates are from USDA’s proposed rule on categorical eligibility (Federal Register, November 10, 2026), as reported by CNN, CBS News and others. <a href="https://www.fns.usda.gov/pd/supplemental-nutrition-assistance-program-snap">USDA SNAP data</a> · <a href="https://www.fns.usda.gov/research/snap/characteristics-fy23">USDA household characteristics</a> · <a href="https://www.cnn.com/2026/11/10/politics/food-stamps-snap-benefits-proposed-rule">CNN on the proposed rule</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>food</category>
+  <category>cost of living</category>
+  <category>government programs</category>
+  <guid>https://sixtyeight95.github.io/posts/2026-11-snap-facts/</guid>
+  <pubDate>Mon, 23 Nov 2026 05:00:00 GMT</pubDate>
+  <media:content url="https://sixtyeight95.github.io/posts/2026-11-snap-facts/infographic.png" medium="image" type="image/png" height="180" width="144"/>
+</item>
 <item>
   <title>Home Prices Are Dipping. Is Now a Good Time to Buy?</title>
   <dc:creator>SixtyEight95 </dc:creator>
