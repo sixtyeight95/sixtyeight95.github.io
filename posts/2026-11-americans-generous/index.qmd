@@ -1,0 +1,102 @@
+---
+title: "Americans Are More Generous Than You Think"
+subtitle: "A record $617 billion given to charity, 75 million volunteers, and more than half of us helping a neighbor. A little Thanksgiving good news."
+author: "SixtyEight95"
+date: "2026-11-24"
+categories: [good news, holidays, giving]
+image: infographic.png
+---
+
+```{r setup}
+source("../../R/fred.R")
+source("../../R/generosity_data.R")
+library(knitr)
+```
+
+We spend a lot of time on this site digging into what life costs. This week, for Thanksgiving, we wanted to look at
+the other side of the ledger: what Americans **give**. The numbers are a nice reminder that, whatever the headlines say,
+an awful lot of people are quietly showing up for each other.
+
+## The short answer
+
+::: {.callout-note appearance="simple"}
+Americans gave a record **$`r giving_total_2025_b` billion** to charity in 2025, about **$`r formatC(giving_per_day_b, format = "f", digits = 1)` billion every day**.
+**`r volunteers_m` million** people volunteered through an organization, giving **`r volunteer_hours_b` billion hours** of their time.
+And **`r neighbors_helped_m` million**, more than half of us, helped a neighbor.
+:::
+
+## We give a lot of money
+
+In 2025, total U.S. charitable giving crossed **$600 billion for the first time**, reaching **$`r giving_total_2025_b` billion**,
+according to *Giving USA 2026*. That was up `r giving_growth_2025`% from the year before.
+
+The biggest share didn't come from foundations or corporations. It came from **regular individuals: about
+$`r giving_individuals_2025_b` billion**, roughly two-thirds of the total. That's checks to churches, donations to food banks,
+gifts to schools and charities, and countless $20 contributions that add up.
+
+## We give a lot of time
+
+Money is only part of it. In the latest national survey by the Census Bureau and AmeriCorps:
+
+```{r time table}
+tribble(
+  ~`What Americans did (Sept 2022 – Sept 2023)`, ~Number,
+  "Formally volunteered through an organization", paste0(volunteers_m, " million people (", volunteer_rate, "% of those 16+)"),
+  "Hours volunteered", paste(volunteer_hours_b, "billion"),
+  "Economic value of that time", paste0("about $", volunteer_value_b, " billion"),
+  "Informally helped a neighbor (errands, house-sitting, lending tools)", paste0(neighbors_helped_m, " million people (", neighbors_rate, "%)")
+) %>% kable(align = "lr", caption = "Source: U.S. Census Bureau and AmeriCorps, Civic Engagement and Volunteering Supplement.")
+```
+
+To put **`r volunteer_hours_b` billion hours** in perspective: that's the same as about **`r formatC(fulltime_jobs_equiv_m, format = "f", digits = 1)` million people** working full time
+for an entire year, for free.
+
+## And volunteering is bouncing back
+
+```{r trend chart}
+#| fig-height: 3.5
+ggplot(volunteer_trend, aes(factor(year), rate)) +
+  geom_col(fill = c("#9AB0C4", "#9AB0C4", "#2A9D8F"), width = 0.6) +
+  geom_text(aes(label = paste0(rate, "%")), vjust = -0.5, size = 5) +
+  scale_y_continuous(limits = c(0, 35), labels = function(x) paste0(x, "%")) +
+  theme_minimal(base_size = 13) + labs(x = NULL, y = "Share who volunteered")
+```
+
+The pandemic knocked volunteering down hard. Between 2021 and 2023, it jumped from **23.2%** to **28.3%**, the biggest
+increase since the government started tracking it in 2002. It's still a little below where it was before COVID, but it's
+heading the right way. Some of the biggest gains came from Millennials and from people with lower incomes.
+
+## The biggest giving day of the year is coming
+
+**Giving Tuesday**, the Tuesday after Thanksgiving, has become a giving holiday of its own. In 2025, about
+**`r giving_tuesday_2025_m` million Americans** gave a total of **$`r giving_tuesday_2025_b` billion in a single day**, a record.
+
+This year it's **`r giving_tuesday_2026`**. If you want to join in, it doesn't have to be money: a few hours at a local food bank,
+shelter, or school counts too. So does checking on a neighbor.
+
+## The fine print
+
+- **Giving totals** are estimates from *Giving USA*, published by the Giving USA Foundation with Indiana University's
+  Lilly Family School of Philanthropy. They include giving by individuals, foundations, bequests, and corporations.
+- **Volunteering figures** are from 2023, the latest national survey; new data is expected in 2026.
+- **The "2019" volunteering rate** is calculated from the Census Bureau's statement that the 2023 rate was 1.7 points below
+  pre-pandemic levels.
+- One honest note: the *number* of people who give to charity has been slipping for several years, even as total dollars
+  rise. More money is coming from fewer, larger donors.
+
+## The bottom line
+
+It's easy to feel like everyone is only looking out for themselves. The data says otherwise: hundreds of billions of
+dollars, billions of hours, and tens of millions of small kindnesses between neighbors, every single year. That seems
+like something worth being thankful for.
+
+Happy Thanksgiving from SixtyEight95.
+
+---
+
+**How we did this.** Giving totals are from *Giving USA 2026: The Annual Report on Philanthropy for the Year 2025*.
+Volunteering and neighbor-helping figures are from the U.S. Census Bureau and AmeriCorps Current Population Survey Civic
+Engagement and Volunteering Supplement (September 2023). Giving Tuesday figures are from the GivingTuesday Data Commons.
+[Giving USA 2026 summary](https://philanthropy.indianapolis.iu.edu/news-events/news/_news/2026/giving-usa-report-2026.html) ·
+[Census Bureau volunteering report](https://www.census.gov/library/stories/2024/11/civic-engagement-and-volunteerism.html) ·
+[GivingTuesday 2025 results](https://www.givingtuesday.org/blog/2025-results/)
