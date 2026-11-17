@@ -17,7 +17,284 @@
 <width>144</width>
 </image>
 <generator>quarto-1.10.18</generator>
-<lastBuildDate>Tue, 24 Nov 2026 05:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sat, 28 Nov 2026 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>What Putting the Holidays on a Credit Card Really Costs</title>
+  <dc:creator>SixtyEight95 </dc:creator>
+  <link>https://sixtyeight95.github.io/posts/2026-11-holiday-credit-card/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>It’s the biggest shopping weekend of the year, and a lot of it goes on plastic. Credit cards are convenient, and if you pay the balance in full you pay no interest at all. But if a holiday balance lingers, today’s interest rates make it expensive. Here’s how expensive.</p>
+<section id="the-short-answer" class="level2">
+<h2 class="anchored" data-anchor-id="the-short-answer">The short answer</h2>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>The average interest rate on credit cards that charge interest is <strong>22.4%</strong>, up from about <strong>17.0%</strong> in 2019. At that rate, <strong>$1,000</strong> of holiday gifts paid off with only the minimum payment costs about <strong>$1,788</strong> in total and takes about <strong>5.9 years</strong>. Paying <strong>$100 a month</strong> instead clears it in a year for about <strong>$117</strong> in interest.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="credit-card-rates-are-near-record-highs" class="level2">
+<h2 class="anchored" data-anchor-id="credit-card-rates-are-near-record-highs">Credit card rates are near record highs</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-06b3ea135edf3059cb7c" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-06b3ea135edf3059cb7c">{"x":{"data":[{"x":[14641,14730,14822,14914,15006,15095,15187,15279,15371,15461,15553,15645,15737,15826,15918,16010,16102,16191,16283,16375,16467,16556,16648,16740,16832,16922,17014,17106,17198,17287,17379,17471,17563,17652,17744,17836,17928,18017,18109,18201,18293,18383,18475,18567,18659,18748,18840,18932,19024,19113,19205,19297,19389,19478,19570,19662,19754,19844,19936,20028,20120,20209,20301,20393,20485,20574,20666],"y":[14.67,14.48,14.220000000000001,13.67,13.44,13.06,13.08,12.779999999999999,13.039999999999999,12.76,13.210000000000001,12.81,13.02,12.76,13.109999999999999,12.890000000000001,13.140000000000001,12.74,13.18,13.68,13.529999999999999,13.49,13.93,13.699999999999999,13.51,13.35,13.76,13.609999999999999,13.859999999999999,14,14.890000000000001,14.99,15.32,15.539999999999999,16.460000000000001,16.859999999999999,16.91,17.140000000000001,16.969999999999999,16.879999999999999,16.609999999999999,15.779999999999999,16.43,16.280000000000001,15.91,16.300000000000001,17.129999999999999,16.440000000000001,16.170000000000002,16.649999999999999,18.43,20.399999999999999,20.920000000000002,22.16,22.77,22.75,22.629999999999999,22.780000000000001,23.370000000000001,22.800000000000001,21.91,22.25,22.829999999999998,22.300000000000001,21.52,22.149999999999999,22.359999999999999],"text":["date: 2010-02-01<br />value: 14.67","date: 2010-05-01<br />value: 14.48","date: 2010-08-01<br />value: 14.22","date: 2010-11-01<br />value: 13.67","date: 2011-02-01<br />value: 13.44","date: 2011-05-01<br />value: 13.06","date: 2011-08-01<br />value: 13.08","date: 2011-11-01<br />value: 12.78","date: 2012-02-01<br />value: 13.04","date: 2012-05-01<br />value: 12.76","date: 2012-08-01<br />value: 13.21","date: 2012-11-01<br />value: 12.81","date: 2013-02-01<br />value: 13.02","date: 2013-05-01<br />value: 12.76","date: 2013-08-01<br />value: 13.11","date: 2013-11-01<br />value: 12.89","date: 2014-02-01<br />value: 13.14","date: 2014-05-01<br />value: 12.74","date: 2014-08-01<br />value: 13.18","date: 2014-11-01<br />value: 13.68","date: 2015-02-01<br />value: 13.53","date: 2015-05-01<br />value: 13.49","date: 2015-08-01<br />value: 13.93","date: 2015-11-01<br />value: 13.70","date: 2016-02-01<br />value: 13.51","date: 2016-05-01<br />value: 13.35","date: 2016-08-01<br />value: 13.76","date: 2016-11-01<br />value: 13.61","date: 2017-02-01<br />value: 13.86","date: 2017-05-01<br />value: 14.00","date: 2017-08-01<br />value: 14.89","date: 2017-11-01<br />value: 14.99","date: 2018-02-01<br />value: 15.32","date: 2018-05-01<br />value: 15.54","date: 2018-08-01<br />value: 16.46","date: 2018-11-01<br />value: 16.86","date: 2019-02-01<br />value: 16.91","date: 2019-05-01<br />value: 17.14","date: 2019-08-01<br />value: 16.97","date: 2019-11-01<br />value: 16.88","date: 2020-02-01<br />value: 16.61","date: 2020-05-01<br />value: 15.78","date: 2020-08-01<br />value: 16.43","date: 2020-11-01<br />value: 16.28","date: 2021-02-01<br />value: 15.91","date: 2021-05-01<br />value: 16.30","date: 2021-08-01<br />value: 17.13","date: 2021-11-01<br />value: 16.44","date: 2022-02-01<br />value: 16.17","date: 2022-05-01<br />value: 16.65","date: 2022-08-01<br />value: 18.43","date: 2022-11-01<br />value: 20.40","date: 2023-02-01<br />value: 20.92","date: 2023-05-01<br />value: 22.16","date: 2023-08-01<br />value: 22.77","date: 2023-11-01<br />value: 22.75","date: 2024-02-01<br />value: 22.63","date: 2024-05-01<br />value: 22.78","date: 2024-08-01<br />value: 23.37","date: 2024-11-01<br />value: 22.80","date: 2025-02-01<br />value: 21.91","date: 2025-05-01<br />value: 22.25","date: 2025-08-01<br />value: 22.83","date: 2025-11-01<br />value: 22.30","date: 2026-02-01<br />value: 21.52","date: 2026-05-01<br />value: 22.15","date: 2026-08-01<br />value: 22.36"],"type":"scatter","mode":"lines","line":{"width":4.1574803149606305,"color":"rgba(240,106,106,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":28.088003320880031,"r":8.6342880863428828,"b":30.220008302200085,"l":50.942299709423011},"font":{"color":"rgba(0,0,0,1)","family":"","size":17.268576172685762},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[14339.75,20967.25],"tickmode":"array","ticktext":["2010","2015","2020","2025"],"tickvals":[14610,16436,18262,20089],"categoryorder":"array","categoryarray":["2010","2015","2020","2025"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":4.3171440431714405,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":13.814860938148611},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.78493528057662576,"zeroline":false,"anchor":"y","title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":17.268576172685762}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-1.1685000000000001,24.538500000000003],"tickmode":"array","ticktext":["0%","5%","10%","15%","20%"],"tickvals":[0,5,10,15.000000000000002,20],"categoryorder":"array","categoryarray":["0%","5%","10%","15%","20%"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":4.3171440431714414,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":13.814860938148611},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.78493528057662576,"zeroline":false,"anchor":"x","title":{"text":"Average card rate (accounts charged interest)","font":{"color":"rgba(0,0,0,1)","family":"","size":17.268576172685762}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":13.814860938148611}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"28b059de3a06":{"x":{},"y":{},"type":"scatter"}},"cur_data":"28b059de3a06","visdat":{"28b059de3a06":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p>Credit card rates jumped when the Federal Reserve raised interest rates in 2022 and 2023, and they’ve stayed above 20% since. Now the Fed is raising rates again: its benchmark rate went from <strong>3.6%</strong> earlier this year to <strong>3.9%</strong> in October, with inflation still running high. Card rates usually follow the Fed up.</p>
+<p>Americans are carrying about <strong>$1.4 trillion</strong> in revolving credit, which is mostly credit card debt.</p>
+</section>
+<section id="what-1000-of-gifts-really-costs" class="level2">
+<h2 class="anchored" data-anchor-id="what-1000-of-gifts-really-costs">What $1,000 of gifts really costs</h2>
+<p>We took a <strong>$1,000</strong> holiday balance at today’s average rate of <strong>22.4%</strong> and asked: how long does it take to pay off, and how much interest do you pay?</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Assumes no new charges. Minimum payment = interest + 1% of the balance, or $25, whichever is larger.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">How you pay it off</th>
+<th style="text-align: right;">Time to pay off</th>
+<th style="text-align: right;">Interest paid</th>
+<th style="text-align: right;">Total paid</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Minimum payment only</td>
+<td style="text-align: right;">5.9 years</td>
+<td style="text-align: right;">$788</td>
+<td style="text-align: right;">$1,788</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">$50 a month</td>
+<td style="text-align: right;">2.2 years</td>
+<td style="text-align: right;">$263</td>
+<td style="text-align: right;">$1,263</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">$100 a month</td>
+<td style="text-align: right;">12 months</td>
+<td style="text-align: right;">$117</td>
+<td style="text-align: right;">$1,117</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">$200 a month</td>
+<td style="text-align: right;">6 months</td>
+<td style="text-align: right;">$60</td>
+<td style="text-align: right;">$1,060</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>The minimum payment starts at about <strong>$29</strong> a month. It feels manageable, but most of it goes to interest at first, and the payment shrinks as the balance does. That’s why it takes about <strong>5.9 years</strong>.</p>
+<p>Bumping the payment to $100 a month cuts the interest by about <strong>$671</strong>.</p>
+</section>
+<section id="how-to-keep-the-holidays-from-following-you-into-2027" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-keep-the-holidays-from-following-you-into-2027">How to keep the holidays from following you into 2027</h2>
+<ul>
+<li><strong>Pay the full balance if you can.</strong> Most cards charge no interest at all on purchases you pay off by the due date.</li>
+<li><strong>If you can’t, pick a monthly number and stick to it.</strong> Even $50 a month instead of the minimum saves hundreds.</li>
+<li><strong>Check your card’s actual rate</strong> on your statement. Yours may be higher or lower than the average.</li>
+<li><strong>Be careful with “buy now, pay later.”</strong> It can be interest-free, but late fees and stacking several plans add up.</li>
+</ul>
+</section>
+<section id="the-fine-print" class="level2">
+<h2 class="anchored" data-anchor-id="the-fine-print">The fine print</h2>
+<ul>
+<li><strong>The card rate</strong> is the Federal Reserve’s average for credit card accounts that were charged interest. The average across all accounts, including people who pay in full, is a bit lower.</li>
+<li><strong>Minimum payment formulas vary by card.</strong> We used interest plus 1% of the balance with a $25 floor, a common approach. Check your statement for yours.</li>
+<li><strong>Our examples</strong> assume no new charges and no late fees.</li>
+<li><strong>Revolving credit</strong> includes credit cards and some other revolving lines.</li>
+</ul>
+<hr>
+<p><strong>How we did this.</strong> Credit card rates are from the Federal Reserve’s G.19 consumer credit release (FRED series TERMCBCCINTNS). Revolving credit is FRED series REVOLSL. The federal funds rate is FEDFUNDS. Payoff math is our own calculation, month by month. <a href="https://fred.stlouisfed.org/series/TERMCBCCINTNS">Card rates on FRED</a> · <a href="https://fred.stlouisfed.org/series/REVOLSL">Revolving credit on FRED</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>holidays</category>
+  <category>money</category>
+  <category>debt</category>
+  <guid>https://sixtyeight95.github.io/posts/2026-11-holiday-credit-card/</guid>
+  <pubDate>Sat, 28 Nov 2026 05:00:00 GMT</pubDate>
+  <media:content url="https://sixtyeight95.github.io/posts/2026-11-holiday-credit-card/infographic.png" medium="image" type="image/png" height="180" width="144"/>
+</item>
+<item>
+  <title>Are Black Friday Deals Real?</title>
+  <dc:creator>SixtyEight95 </dc:creator>
+  <link>https://sixtyeight95.github.io/posts/2026-11-black-friday-deals/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Every year the signs say “50% OFF” and “LOWEST PRICE EVER.” So we checked whether prices actually go down around Black Friday. To do that, we used the government’s own price tracker, the Consumer Price Index, which records what people <strong>really pay</strong> across thousands of stores.</p>
+<section id="the-short-answer" class="level2">
+<h2 class="anchored" data-anchor-id="the-short-answer">The short answer</h2>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Yes, the deals are real, but small.</strong> On average, what people pay for <strong>clothing</strong> drops about <strong>2.1%</strong> from October to November, <strong>toys</strong> about <strong>1.2%</strong>, and <strong>computers</strong> about <strong>0.8%</strong>. That’s nothing like 50% off. And prices for those same things are <strong>up 3.4% to 9.7%</strong> from a year ago, so a Black Friday dip doesn’t undo this year’s price increases.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="prices-really-do-dip-in-november" class="level2">
+<h2 class="anchored" data-anchor-id="prices-really-do-dip-in-november">Prices really do dip in November</h2>
+<p>We looked at how prices changed from October to November and to December in every year from 2010 to 2024.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Source: BLS Consumer Price Index, not seasonally adjusted, 2010-2024.</caption>
+<colgroup>
+<col style="width: 16%">
+<col style="width: 23%">
+<col style="width: 23%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Item</th>
+<th style="text-align: right;">Oct → Nov (avg)</th>
+<th style="text-align: right;">Oct → Dec (avg)</th>
+<th style="text-align: right;">Years prices fell in Nov</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Clothing</td>
+<td style="text-align: right;">-2.1%</td>
+<td style="text-align: right;">-4.7%</td>
+<td style="text-align: right;">15 of 15</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Toys</td>
+<td style="text-align: right;">-1.2%</td>
+<td style="text-align: right;">-1.8%</td>
+<td style="text-align: right;">14 of 15</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Computers</td>
+<td style="text-align: right;">-0.8%</td>
+<td style="text-align: right;">-2.0%</td>
+<td style="text-align: right;">13 of 15</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">All goods</td>
+<td style="text-align: right;">-0.9%</td>
+<td style="text-align: right;">-1.9%</td>
+<td style="text-align: right;">13 of 15</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Everything</td>
+<td style="text-align: right;">-0.1%</td>
+<td style="text-align: right;">-0.2%</td>
+<td style="text-align: right;">12 of 15</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>The dip is consistent. Clothing prices fell from October to November in <strong>every one of those 15 years</strong>. Toys and computers fell in almost every year. Clothing keeps getting cheaper into December: by then it’s about <strong>4.7% below October</strong>.</p>
+</section>
+<section id="so-why-isnt-it-50-off" class="level2">
+<h2 class="anchored" data-anchor-id="so-why-isnt-it-50-off">So why isn’t it 50% off?</h2>
+<p>A few reasons the signs and the data don’t match:</p>
+<ul>
+<li><strong>Not everything is on sale.</strong> The 50%-off doorbusters are a handful of items. The CPI tracks everything people buy.</li>
+<li><strong>“Original price” isn’t always the usual price.</strong> A discount off a list price that few people ever paid looks bigger than it really is.</li>
+<li><strong>Some categories get cheaper all year.</strong> Toys and computers drift down over time as products improve, so part of their November drop would have happened anyway.</li>
+</ul>
+<p>The takeaway: real deals exist, but the average shopper saves a few percent, not half.</p>
+</section>
+<section id="the-catch-gifts-cost-more-this-year" class="level2">
+<h2 class="anchored" data-anchor-id="the-catch-gifts-cost-more-this-year">The catch: gifts cost more this year</h2>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Source: BLS Consumer Price Index.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Item</th>
+<th style="text-align: right;">Price change, Sept 2025 → Sept 2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Clothing</td>
+<td style="text-align: right;">+3.4%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Toys</td>
+<td style="text-align: right;">+6.6%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Computers</td>
+<td style="text-align: right;">+9.7%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">All goods</td>
+<td style="text-align: right;">+5.9%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Everything</td>
+<td style="text-align: right;">+3.7%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Toys are up <strong>6.6%</strong> and computers <strong>9.7%</strong> from a year ago. A 1-2% November dip doesn’t come close to cancelling that out.</p>
+</section>
+<section id="were-spending-more-but-not-buying-more" class="level2">
+<h2 class="anchored" data-anchor-id="were-spending-more-but-not-buying-more">We’re spending more, but not buying more</h2>
+<p>The National Retail Federation expects holiday sales in November and December to reach <strong>$1.013 trillion</strong>, up <strong>4.2%</strong> from last year. But overall prices are up <strong>3.7%</strong>. After inflation, that’s growth of only about <strong>0.5%</strong>. In other words, we’re paying more for roughly the same amount of stuff.</p>
+<p>NRF’s own survey found that <strong>56%</strong> of shoppers say the economy will affect their holiday spending.</p>
+</section>
+<section id="how-to-actually-get-a-deal" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-actually-get-a-deal">How to actually get a deal</h2>
+<ul>
+<li><strong>Use a price tracker</strong> (many browsers and sites have one) to see an item’s real price history before you buy.</li>
+<li><strong>Clothing can wait.</strong> The data says it gets cheaper into December.</li>
+<li><strong>Make a list and a budget.</strong> The best deal is not buying something you didn’t plan to.</li>
+</ul>
+</section>
+<section id="the-fine-print" class="level2">
+<h2 class="anchored" data-anchor-id="the-fine-print">The fine print</h2>
+<ul>
+<li><strong>CPI figures</strong> are national averages of prices people actually paid, including sale prices. They are not seasonally adjusted, so they show the real November dip.</li>
+<li><strong>2025 is left out</strong> of the October-to-November averages because the October 2025 CPI was never published, due to the government shutdown.</li>
+<li><strong>Year-over-year changes</strong> compare September 2025 to September 2026, the latest month with data for both years.</li>
+<li><strong>The NRF forecast</strong> excludes car dealers, gas stations, and restaurants.</li>
+</ul>
+<hr>
+<p><strong>How we did this.</strong> Prices are from the Bureau of Labor Statistics Consumer Price Index via FRED: apparel (CPIAPPNS), toys (CUUR0000SERE01), computers (CUUR0000SEEE01), commodities less food (CUUR0000SACL1), and all items (CPIAUCNS). The holiday forecast is from the National Retail Federation’s October 15, 2026 release. <a href="https://nrf.com/media-center/press-releases/nrf-forecasts-2026-holiday-sales-growth-as-consumers-remain-resilient">NRF holiday forecast</a> · <a href="https://fred.stlouisfed.org/series/CUUR0000SERE01">Toy prices on FRED</a> · <a href="https://fred.stlouisfed.org/series/CPIAPPNS">Clothing prices on FRED</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>holidays</category>
+  <category>shopping</category>
+  <category>cost of living</category>
+  <guid>https://sixtyeight95.github.io/posts/2026-11-black-friday-deals/</guid>
+  <pubDate>Fri, 27 Nov 2026 05:00:00 GMT</pubDate>
+  <media:content url="https://sixtyeight95.github.io/posts/2026-11-black-friday-deals/infographic.png" medium="image" type="image/png" height="180" width="144"/>
+</item>
 <item>
   <title>Americans Are More Generous Than You Think</title>
   <dc:creator>SixtyEight95 </dc:creator>
@@ -130,6 +407,332 @@
   <guid>https://sixtyeight95.github.io/posts/2026-11-americans-generous/</guid>
   <pubDate>Tue, 24 Nov 2026 05:00:00 GMT</pubDate>
   <media:content url="https://sixtyeight95.github.io/posts/2026-11-americans-generous/infographic.png" medium="image" type="image/png" height="180" width="144"/>
+</item>
+<item>
+  <title>What It Costs to Get Home for Thanksgiving</title>
+  <dc:creator>SixtyEight95 </dc:creator>
+  <link>https://sixtyeight95.github.io/posts/2026-11-thanksgiving-travel/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>AAA expects <strong>81.5 million Americans</strong> to travel at least 50 miles for Thanksgiving this year, between Tuesday, Nov 24 to Monday, Nov 30. That’s about the same as last year’s record (81.6 million). Getting there costs more than it did last year, though, whether you drive or fly.</p>
+<section id="the-short-answer" class="level2">
+<h2 class="anchored" data-anchor-id="the-short-answer">The short answer</h2>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>For a family of four going 500 miles each way, the round trip is about <strong>$152 in gas</strong> in a car that gets 25 mpg, up from about <strong>$122</strong> last Thanksgiving. Flying the same family costs about <strong>$3,200</strong>, with holiday roundtrip tickets averaging <strong>$800</strong>, up <strong>17%</strong>. If you’re driving, leave in the <strong>morning</strong>. On Thanksgiving Day itself, the roads are nearly empty.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="how-people-are-getting-there" class="level2">
+<h2 class="anchored" data-anchor-id="how-people-are-getting-there">How people are getting there</h2>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Source: AAA Thanksgiving Holiday Travel Forecast, Nov 16, 2026.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">How they’re traveling</th>
+<th style="text-align: right;">2026 travelers</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Car</td>
+<td style="text-align: right;">72.9 million</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Plane (domestic)</td>
+<td style="text-align: right;">5.96 million</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Bus, train, or cruise</td>
+<td style="text-align: right;">2.6 million</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Total</td>
+<td style="text-align: right;">81.5 million</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Nearly <strong>9 in 10</strong> holiday travelers drive. AAA expects about 200,000 fewer people on the road than last year, partly because of high gas prices. Travel by bus, train, and cruise is up about 4%.</p>
+</section>
+<section id="driving-gas-is-high-but-falling" class="level2">
+<h2 class="anchored" data-anchor-id="driving-gas-is-high-but-falling">Driving: gas is high, but falling</h2>
+<p>The national average for regular gas was <strong>$3.81 a gallon</strong> the week of November 16, according to the Energy Information Administration. That’s down from over $4 a few weeks ago, but still <strong>$0.74 more</strong> than Thanksgiving week last year ($3.06).</p>
+<p>AAA notes that the average price on Thanksgiving Day has <strong>never been above $4</strong> and that the record is <strong>$3.58</strong>, set in 2022. With prices where they are, this year could set a new one.</p>
+<p><strong>What a trip costs in gas</strong> (round trip, 25 mpg car):</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Round trip</th>
+<th style="text-align: right;">Gallons</th>
+<th style="text-align: right;">Cost this year</th>
+<th style="text-align: right;">Cost last Thanksgiving</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">200 miles</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">$30</td>
+<td style="text-align: right;">$24</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">500 miles</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">$76</td>
+<td style="text-align: right;">$61</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">1000 miles</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">$152</td>
+<td style="text-align: right;">$122</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="flying-up-17" class="level2">
+<h2 class="anchored" data-anchor-id="flying-up-17">Flying: up 17%</h2>
+<p>AAA says domestic roundtrip flights booked for the holiday average <strong>$800 per ticket</strong>, <strong>17% more</strong> than last year. Government price data tells a similar story: airline fares in the Consumer Price Index were up <strong>22%</strong> in September compared with a year earlier.</p>
+<p>For a family of four, that’s about <strong>$3,200</strong> in tickets alone, before bags and the drive to the airport.</p>
+</section>
+<section id="when-to-leave" class="level2">
+<h2 class="anchored" data-anchor-id="when-to-leave">When to leave</h2>
+<p>INRIX, which tracks traffic, says the worst times to drive are <strong>afternoons and early evenings</strong>, and the best are <strong>mornings</strong>. Big metros like New York, Washington, Los Angeles, and Boston could see more than double their normal congestion.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Source: INRIX, via AAA. Times are local.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Day</th>
+<th style="text-align: left;">Worst time to drive</th>
+<th style="text-align: left;">Best time to drive</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Tue, Nov 24</td>
+<td style="text-align: left;">2–8 PM</td>
+<td style="text-align: left;">Before 1 PM</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Wed, Nov 25</td>
+<td style="text-align: left;">Noon–7 PM</td>
+<td style="text-align: left;">Before noon</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Thu, Nov 26</td>
+<td style="text-align: left;">Minimal traffic</td>
+<td style="text-align: left;">Anytime</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Fri, Nov 27</td>
+<td style="text-align: left;">1–7 PM</td>
+<td style="text-align: left;">Before noon</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sat, Nov 28</td>
+<td style="text-align: left;">Noon–9 PM</td>
+<td style="text-align: left;">Before 11 AM</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sun, Nov 29</td>
+<td style="text-align: left;">Noon–8 PM</td>
+<td style="text-align: left;">Before 11 AM</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Mon, Nov 30</td>
+<td style="text-align: left;">2–7 PM</td>
+<td style="text-align: left;">Before 1 PM</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="the-fine-print" class="level2">
+<h2 class="anchored" data-anchor-id="the-fine-print">The fine print</h2>
+<ul>
+<li><strong>AAA’s traveler numbers</strong> are forecasts of people traveling 50+ miles from home between Nov 24 and Nov 30.</li>
+<li><strong>The $800 airfare</strong> is AAA’s average for domestic roundtrip tickets booked for the holiday. Your fare will depend on route and timing.</li>
+<li><strong>Gas prices</strong> are EIA weekly national averages. AAA’s own daily average runs slightly differently, so its Thanksgiving record is AAA’s number.</li>
+<li><strong>Our trip example</strong> counts gas only, not tolls, wear and tear, or parking.</li>
+</ul>
+<p>Safe travels, and happy Thanksgiving.</p>
+<hr>
+<p><strong>How we did this.</strong> Traveler forecasts, airfares, and best and worst travel times are from AAA’s Thanksgiving forecast (with INRIX), released November 16, 2026. Gas prices are EIA weekly retail prices via FRED (series GASREGW). Airfare price changes are from the BLS Consumer Price Index for airline fares via FRED (CUUR0000SETG01). <a href="https://newsroom.aaa.com/2026/11/aaa-thanksgiving-holiday-travel-forecast/">AAA forecast</a> · <a href="https://fred.stlouisfed.org/series/GASREGW">Gas prices on FRED</a> · <a href="https://fred.stlouisfed.org/series/CUUR0000SETG01">Airline fares on FRED</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>holidays</category>
+  <category>travel</category>
+  <category>cost of living</category>
+  <guid>https://sixtyeight95.github.io/posts/2026-11-thanksgiving-travel/</guid>
+  <pubDate>Tue, 24 Nov 2026 05:00:00 GMT</pubDate>
+  <media:content url="https://sixtyeight95.github.io/posts/2026-11-thanksgiving-travel/infographic.png" medium="image" type="image/png" height="180" width="144"/>
+</item>
+<item>
+  <title>Measles Is Back. Here’s What the Data Shows.</title>
+  <dc:creator>SixtyEight95 </dc:creator>
+  <link>https://sixtyeight95.github.io/posts/2026-11-measles-back/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>On November 17, the Pan American Health Organization (PAHO) announced that the United States has <strong>lost its measles elimination status</strong>, a designation it had held since <strong>2000</strong>. Here’s what that means, how we got here, and what the numbers say.</p>
+<section id="the-short-answer" class="level2">
+<h2 class="anchored" data-anchor-id="the-short-answer">The short answer</h2>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>The U.S. has recorded <strong>5,412 measles cases</strong> so far in 2026, the most in more than 30 years and more than double last year’s total. <strong>96%</strong> of this year’s cases were in people who were unvaccinated or didn’t know their status. Meanwhile, the share of kindergartners with both measles shots has fallen from <strong>95.2%</strong> to <strong>92.4%</strong> since 2019-20, below the roughly <strong>95%</strong> that experts say is needed to stop outbreaks.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="what-losing-elimination-status-means" class="level2">
+<h2 class="anchored" data-anchor-id="what-losing-elimination-status-means">What “losing elimination status” means</h2>
+<p>“Eliminated” never meant zero cases. It meant measles wasn’t <strong>spreading continuously</strong> inside the country. Cases came in from travelers, caused small outbreaks, and then died out.</p>
+<p>Losing the status means a single chain of measles spread here <strong>nonstop for more than 12 months</strong>. PAHO’s commission found that had happened in the U.S., as well as in Mexico and Bolivia. Canada lost its status in 2025.</p>
+<p>To get it back, the U.S. has to go <strong>12 straight months</strong> without that kind of continuous spread.</p>
+</section>
+<section id="the-cases" class="level2">
+<h2 class="anchored" data-anchor-id="the-cases">The cases</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://sixtyeight95.github.io/posts/2026-11-measles-back/index_files/figure-html/cases chart-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>From 2000 to 2018, the U.S. averaged about <strong>141 measles cases a year</strong>. Then came 2019 (1,274 cases), 2025 (2,242), and now 2026, at <strong>5,412</strong> and counting.</p>
+<p>This year so far, according to the CDC:</p>
+<ul>
+<li><strong>590+ people</strong> have been hospitalized.</li>
+<li>At least <strong>6 people</strong> have died, and some states have reported additional deaths.</li>
+<li>Cases have been confirmed in <strong>45 states plus Washington, D.C.</strong></li>
+<li>The largest outbreak is in <strong>Pennsylvania</strong>, with more than 1,500 cases.</li>
+</ul>
+</section>
+<section id="why-its-happening-fewer-kids-are-vaccinated" class="level2">
+<h2 class="anchored" data-anchor-id="why-its-happening-fewer-kids-are-vaccinated">Why it’s happening: fewer kids are vaccinated</h2>
+<p>Measles is one of the most contagious diseases there is. To keep it from spreading, experts say about <strong>95%</strong> of people need to be immune. Kindergarten vaccination rates have been below that line for six straight years.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Source: CDC SchoolVaxView.</caption>
+<colgroup>
+<col style="width: 15%">
+<col style="width: 45%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">School year</th>
+<th style="text-align: right;">Kindergartners with both MMR doses</th>
+<th style="text-align: right;">Kids with a vaccine exemption</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">2019-20</td>
+<td style="text-align: right;">95.2%</td>
+<td style="text-align: right;">2.5%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2020-21</td>
+<td style="text-align: right;">93.9%</td>
+<td style="text-align: right;">2.2%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2021-22</td>
+<td style="text-align: right;">93%</td>
+<td style="text-align: right;">2.6%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2022-23</td>
+<td style="text-align: right;">93.1%</td>
+<td style="text-align: right;">3%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2023-24</td>
+<td style="text-align: right;">92.7%</td>
+<td style="text-align: right;">3.3%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2024-25</td>
+<td style="text-align: right;">92.5%</td>
+<td style="text-align: right;">3.6%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2025-26</td>
+<td style="text-align: right;">92.4%</td>
+<td style="text-align: right;">4.2%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>In the 2025-26 school year:</p>
+<ul>
+<li>Only <strong>10 states</strong> reached the 95% mark. Coverage ranged from <strong>West Virginia (98.9%)</strong> to <strong>Idaho (75.2%)</strong>.</li>
+<li>About <strong>280,000 kindergartners</strong> started school without records showing both MMR doses.</li>
+<li>Exemptions hit a <strong>record 4.2%</strong>. Almost all of them were non-medical.</li>
+</ul>
+<p>National averages also hide local pockets. A state at 93% can have schools and communities far below that, and that’s where outbreaks take off.</p>
+</section>
+<section id="what-it-means-for-you" class="level2">
+<h2 class="anchored" data-anchor-id="what-it-means-for-you">What it means for you</h2>
+<ul>
+<li><strong>The vaccine works.</strong> Two doses of MMR are about <strong>97% effective</strong>. Only 2% of this year’s cases were in fully vaccinated people.</li>
+<li><strong>Not sure if you’re covered?</strong> Ask your doctor. A blood test can check, or you can simply get another dose; there’s no harm in an extra one.</li>
+<li><strong>Some people can’t be vaccinated</strong>, including babies under 12 months, some people with weakened immune systems, and pregnant women. They depend on everyone around them being immune.</li>
+</ul>
+</section>
+<section id="the-fine-print" class="level2">
+<h2 class="anchored" data-anchor-id="the-fine-print">The fine print</h2>
+<ul>
+<li><strong>Case counts</strong> are confirmed cases reported to the CDC. The 2026 figure is as reported on November 17 and will rise. The true number of infections is likely higher.</li>
+<li><strong>Death counts</strong> differ between the CDC and some states while reports are confirmed.</li>
+<li><strong>Kindergarten figures</strong> are national estimates from state school-entry reports.</li>
+</ul>
+<hr>
+<p><strong>How we did this.</strong> Yearly case counts are from the CDC’s Measles Cases and Outbreaks page. 2026 figures are CDC numbers as reported on November 17, 2026. Vaccination rates and exemptions are from CDC SchoolVaxView. <a href="https://www.paho.org/en/news/17-11-2026-paho-urges-countries-step-efforts-stop-measles-outbreaks-and-move-towards">PAHO announcement</a> · <a href="https://www.cdc.gov/measles/data-research/index.html">CDC measles cases</a> · <a href="https://www.cdc.gov/schoolvaxview/">CDC SchoolVaxView</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>health</category>
+  <category>kids</category>
+  <category>vaccines</category>
+  <guid>https://sixtyeight95.github.io/posts/2026-11-measles-back/</guid>
+  <pubDate>Mon, 23 Nov 2026 05:00:00 GMT</pubDate>
+  <media:content url="https://sixtyeight95.github.io/posts/2026-11-measles-back/infographic.png" medium="image" type="image/png" height="180" width="144"/>
 </item>
 <item>
   <title>What SNAP Food Aid Really Is</title>

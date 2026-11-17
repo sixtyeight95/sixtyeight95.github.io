@@ -1,0 +1,105 @@
+---
+title: "Measles Is Back. Here's What the Data Shows."
+subtitle: "The U.S. just lost its 'measles-free' status after 26 years. Cases are the highest in more than three decades, and kindergarten vaccination rates keep slipping."
+author: "SixtyEight95"
+date: "2026-11-23"
+categories: [health, kids, vaccines]
+image: infographic.png
+---
+
+```{r setup}
+source("../../R/fred.R")
+source("../../R/measles_data.R")
+library(knitr)
+comma <- function(x) format(x, big.mark = ",")
+```
+
+On November 17, the Pan American Health Organization (PAHO) announced that the United States has **lost its measles
+elimination status**, a designation it had held since **`r elimination_since`**. Here's what that means, how we got here,
+and what the numbers say.
+
+## The short answer
+
+::: {.callout-note appearance="simple"}
+The U.S. has recorded **`r comma(cases_2026)` measles cases** so far in 2026, the most in more than 30 years and more than double
+last year's total. **`r unvax_share_2026`%** of this year's cases were in people who were unvaccinated or didn't know their status.
+Meanwhile, the share of kindergartners with both measles shots has fallen from **95.2%** to **92.4%** since 2019-20, below the
+roughly **`r herd_target`%** that experts say is needed to stop outbreaks.
+:::
+
+## What "losing elimination status" means
+
+"Eliminated" never meant zero cases. It meant measles wasn't **spreading continuously** inside the country. Cases
+came in from travelers, caused small outbreaks, and then died out.
+
+Losing the status means a single chain of measles spread here **nonstop for more than 12 months**. PAHO's
+commission found that had happened in the U.S., as well as in Mexico and Bolivia. Canada lost its status in 2025.
+
+To get it back, the U.S. has to go **12 straight months** without that kind of continuous spread.
+
+## The cases
+
+```{r cases chart}
+#| fig-height: 4
+ggplot(measles_cases, aes(year, cases, fill = case_when(year == 2026 ~ "2026", year == 2025 ~ "2025", TRUE ~ "other"))) +
+  geom_col(width = 0.75) +
+  scale_fill_manual(values = c("2026" = "#F06A6A", "2025" = "#F4B942", "other" = "#9AB0C4"), guide = "none") +
+  scale_y_continuous(labels = scales::comma) +
+  theme_minimal(base_size = 13) +
+  labs(x = NULL, y = "Confirmed measles cases", caption = "Source: CDC. 2026 is through mid-November.")
+```
+
+From 2000 to 2018, the U.S. averaged about **`r round(avg_2000_2018)` measles cases a year**. Then came 2019 (1,274 cases),
+2025 (2,242), and now 2026, at **`r comma(cases_2026)`** and counting.
+
+This year so far, according to the CDC:
+
+- **`r hosp_2026`+ people** have been hospitalized.
+- At least **`r deaths_2026` people** have died, and some states have reported additional deaths.
+- Cases have been confirmed in **`r states_2026` states plus Washington, D.C.**
+- The largest outbreak is in **Pennsylvania**, with more than 1,500 cases.
+
+## Why it's happening: fewer kids are vaccinated
+
+Measles is one of the most contagious diseases there is. To keep it from spreading, experts say about **`r herd_target`%** of
+people need to be immune. Kindergarten vaccination rates have been below that line for six straight years.
+
+```{r kinder table}
+kinder %>%
+  transmute(`School year` = school_year, `Kindergartners with both MMR doses` = paste0(mmr, "%"),
+            `Kids with a vaccine exemption` = paste0(exempt, "%")) %>%
+  kable(align = "lrr", caption = "Source: CDC SchoolVaxView.")
+```
+
+In the 2025-26 school year:
+
+- Only **`r states_at_target` states** reached the `r herd_target`% mark. Coverage ranged from **`r mmr_high_state`** to **`r mmr_low_state`**.
+- About **`r comma(kids_no_mmr_docs)` kindergartners** started school without records showing both MMR doses.
+- Exemptions hit a **record `r kinder$exempt[nrow(kinder)]`%**. Almost all of them were non-medical.
+
+National averages also hide local pockets. A state at 93% can have schools and communities far below that, and that's
+where outbreaks take off.
+
+## What it means for you
+
+- **The vaccine works.** Two doses of MMR are about **`r mmr_effective`% effective**. Only `r fully_vax_share`% of this year's cases were in fully
+  vaccinated people.
+- **Not sure if you're covered?** Ask your doctor. A blood test can check, or you can simply get another dose; there's no
+  harm in an extra one.
+- **Some people can't be vaccinated**, including babies under 12 months, some people with weakened immune systems, and
+  pregnant women. They depend on everyone around them being immune.
+
+## The fine print
+
+- **Case counts** are confirmed cases reported to the CDC. The 2026 figure is as reported on November 17 and will rise.
+  The true number of infections is likely higher.
+- **Death counts** differ between the CDC and some states while reports are confirmed.
+- **Kindergarten figures** are national estimates from state school-entry reports.
+
+---
+
+**How we did this.** Yearly case counts are from the CDC's Measles Cases and Outbreaks page. 2026 figures are CDC
+numbers as reported on November 17, 2026. Vaccination rates and exemptions are from CDC SchoolVaxView.
+[PAHO announcement](https://www.paho.org/en/news/17-11-2026-paho-urges-countries-step-efforts-stop-measles-outbreaks-and-move-towards) ·
+[CDC measles cases](https://www.cdc.gov/measles/data-research/index.html) ·
+[CDC SchoolVaxView](https://www.cdc.gov/schoolvaxview/)

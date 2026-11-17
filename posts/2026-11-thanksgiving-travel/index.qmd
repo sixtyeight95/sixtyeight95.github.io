@@ -1,0 +1,102 @@
+---
+title: "What It Costs to Get Home for Thanksgiving"
+subtitle: "81.5 million Americans are traveling. Flights are up 17%, gas is up 74 cents from last year, and driving still wins by a mile."
+author: "SixtyEight95"
+date: "2026-11-24"
+categories: [holidays, travel, cost of living]
+image: infographic.png
+---
+
+```{r setup}
+source("../../R/fred.R")
+source("../../R/travel_data.R")
+library(knitr)
+usd  <- function(x) paste0("$", formatC(round(x), format = "d", big.mark = ","))
+usd2 <- function(x) paste0("$", formatC(x, format = "f", digits = 2))
+```
+
+AAA expects **`r travelers_2026_m` million Americans** to travel at least 50 miles for Thanksgiving this year, between
+`r holiday_period`. That's about the same as last year's record (`r travelers_2025_m` million). Getting there costs more than
+it did last year, though, whether you drive or fly.
+
+## The short answer
+
+::: {.callout-note appearance="simple"}
+For a family of four going 500 miles each way, the round trip is about **`r usd(drive_cost_now)` in gas** in a car that gets
+25 mpg, up from about **`r usd(drive_cost_2025)`** last Thanksgiving. Flying the same family costs about **`r usd(fly_cost_family)`**, with
+holiday roundtrip tickets averaging **`r usd(airfare_avg_rt)`**, up **`r airfare_change`%**. If you're driving, leave in the **morning**.
+On Thanksgiving Day itself, the roads are nearly empty.
+:::
+
+## How people are getting there
+
+```{r modes table}
+tribble(
+  ~`How they're traveling`, ~`2026 travelers`,
+  "Car", paste(car_2026_m, "million"),
+  "Plane (domestic)", paste(air_2026_m, "million"),
+  "Bus, train, or cruise", paste(other_2026_m, "million"),
+  "Total", paste(travelers_2026_m, "million")
+) %>% kable(align = "lr", caption = "Source: AAA Thanksgiving Holiday Travel Forecast, Nov 16, 2026.")
+```
+
+Nearly **9 in 10** holiday travelers drive. AAA expects about 200,000 fewer people on the road than last year, partly because
+of high gas prices. Travel by bus, train, and cruise is up about 4%.
+
+## Driving: gas is high, but falling
+
+The national average for regular gas was **`r usd2(gas_now$value)` a gallon** the week of November 16, according to the Energy
+Information Administration. That's down from over $4 a few weeks ago, but still **`r usd2(gas_now$value - gas_tg_2025$value)` more** than
+Thanksgiving week last year (`r usd2(gas_tg_2025$value)`).
+
+AAA notes that the average price on Thanksgiving Day has **never been above $4** and that the record is **`r usd2(gas_tg_record)`**,
+set in 2022. With prices where they are, this year could set a new one.
+
+**What a trip costs in gas** (round trip, 25 mpg car):
+
+```{r gas table}
+tibble(`Round trip` = c(200, 500, 1000)) %>%
+  mutate(`Gallons` = `Round trip` / mpg,
+         `Cost this year` = usd(`Gallons` * gas_now$value),
+         `Cost last Thanksgiving` = usd(`Gallons` * gas_tg_2025$value),
+         `Round trip` = paste(`Round trip`, "miles")) %>%
+  kable(align = "lrrr")
+```
+
+## Flying: up 17%
+
+AAA says domestic roundtrip flights booked for the holiday average **`r usd(airfare_avg_rt)` per ticket**, **`r airfare_change`% more** than
+last year. Government price data tells a similar story: airline fares in the Consumer Price Index were up
+**`r round(airfare_yoy)`%** in September compared with a year earlier.
+
+For a family of four, that's about **`r usd(fly_cost_family)`** in tickets alone, before bags and the drive to the airport.
+
+## When to leave
+
+INRIX, which tracks traffic, says the worst times to drive are **afternoons and early evenings**, and the best are
+**mornings**. Big metros like New York, Washington, Los Angeles, and Boston could see more than double their normal congestion.
+
+```{r inrix table}
+inrix %>% rename(Day = day, `Worst time to drive` = worst, `Best time to drive` = best) %>%
+  kable(align = "lll", caption = "Source: INRIX, via AAA. Times are local.")
+```
+
+## The fine print
+
+- **AAA's traveler numbers** are forecasts of people traveling 50+ miles from home between Nov 24 and Nov 30.
+- **The $800 airfare** is AAA's average for domestic roundtrip tickets booked for the holiday. Your fare will depend on route
+  and timing.
+- **Gas prices** are EIA weekly national averages. AAA's own daily average runs slightly differently, so its Thanksgiving
+  record is AAA's number.
+- **Our trip example** counts gas only, not tolls, wear and tear, or parking.
+
+Safe travels, and happy Thanksgiving.
+
+---
+
+**How we did this.** Traveler forecasts, airfares, and best and worst travel times are from AAA's Thanksgiving forecast
+(with INRIX), released November 16, 2026. Gas prices are EIA weekly retail prices via FRED (series GASREGW). Airfare price
+changes are from the BLS Consumer Price Index for airline fares via FRED (CUUR0000SETG01).
+[AAA forecast](https://newsroom.aaa.com/2026/11/aaa-thanksgiving-holiday-travel-forecast/) ·
+[Gas prices on FRED](https://fred.stlouisfed.org/series/GASREGW) ·
+[Airline fares on FRED](https://fred.stlouisfed.org/series/CUUR0000SETG01)

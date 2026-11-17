@@ -1,0 +1,101 @@
+---
+title: "Are Black Friday Deals Real?"
+subtitle: "Government price data says yes, prices really do dip in November. But the drop is small, and it doesn't come close to undoing this year's price increases."
+author: "SixtyEight95"
+date: "2026-11-27"
+categories: [holidays, shopping, cost of living]
+image: infographic.png
+---
+
+```{r setup}
+source("../../R/fred.R")
+source("../../R/black_friday_data.R")
+library(knitr)
+pct <- function(x, d = 1) paste0(ifelse(x > 0, "+", ""), formatC(x, format = "f", digits = d), "%")
+f1 <- function(x) formatC(x, format = "f", digits = 1)
+items <- bf_prices %>% filter(item %in% c("Clothing", "Toys", "Computers"))
+```
+
+Every year the signs say "50% OFF" and "LOWEST PRICE EVER." So we checked whether prices actually go down around Black
+Friday. To do that, we used the government's own price tracker, the Consumer Price Index, which records what people
+**really pay** across thousands of stores.
+
+## The short answer
+
+::: {.callout-note appearance="simple"}
+**Yes, the deals are real, but small.** On average, what people pay for **clothing** drops about
+**`r f1(abs(items$nov_change[1]))`%** from October to November, **toys** about **`r f1(abs(items$nov_change[2]))`%**, and **computers** about
+**`r f1(abs(items$nov_change[3]))`%**. That's nothing like 50% off. And prices for those same things are **up `r f1(items$yoy[1])`% to `r f1(items$yoy[3])`%**
+from a year ago, so a Black Friday dip doesn't undo this year's price increases.
+:::
+
+## Prices really do dip in November
+
+We looked at how prices changed from October to November and to December in every year from 2010 to 2024.
+
+```{r drop table}
+bf_prices %>%
+  transmute(Item = item,
+            `Oct → Nov (avg)` = pct(nov_change),
+            `Oct → Dec (avg)` = pct(dec_change),
+            `Years prices fell in Nov` = paste(years_fell, "of", years)) %>%
+  kable(align = "lrrr", caption = "Source: BLS Consumer Price Index, not seasonally adjusted, 2010-2024.")
+```
+
+The dip is consistent. Clothing prices fell from October to November in **every one of those 15 years**. Toys and computers
+fell in almost every year. Clothing keeps getting cheaper into December: by then it's about **`r f1(abs(items$dec_change[1]))`% below October**.
+
+## So why isn't it 50% off?
+
+A few reasons the signs and the data don't match:
+
+- **Not everything is on sale.** The 50%-off doorbusters are a handful of items. The CPI tracks everything people buy.
+- **"Original price" isn't always the usual price.** A discount off a list price that few people ever paid looks bigger
+  than it really is.
+- **Some categories get cheaper all year.** Toys and computers drift down over time as products improve, so part of
+  their November drop would have happened anyway.
+
+The takeaway: real deals exist, but the average shopper saves a few percent, not half.
+
+## The catch: gifts cost more this year
+
+```{r yoy table}
+bf_prices %>%
+  transmute(Item = item, `Price change, Sept 2025 → Sept 2026` = pct(yoy)) %>%
+  kable(align = "lr", caption = "Source: BLS Consumer Price Index.")
+```
+
+Toys are up **`r f1(items$yoy[2])`%** and computers **`r f1(items$yoy[3])`%** from a year ago. A 1-2% November dip doesn't come close to
+cancelling that out.
+
+## We're spending more, but not buying more
+
+The National Retail Federation expects holiday sales in November and December to reach **$`r nrf_2026_t` trillion**,
+up **`r nrf_growth_2026`%** from last year. But overall prices are up **`r f1(cpi_yoy)`%**. After inflation, that's growth of only about
+**`r f1(real_growth)`%**. In other words, we're paying more for roughly the same amount of stuff.
+
+NRF's own survey found that **`r nrf_economy_share`%** of shoppers say the economy will affect their holiday spending.
+
+## How to actually get a deal
+
+- **Use a price tracker** (many browsers and sites have one) to see an item's real price history before you buy.
+- **Clothing can wait.** The data says it gets cheaper into December.
+- **Make a list and a budget.** The best deal is not buying something you didn't plan to.
+
+## The fine print
+
+- **CPI figures** are national averages of prices people actually paid, including sale prices. They are not seasonally
+  adjusted, so they show the real November dip.
+- **2025 is left out** of the October-to-November averages because the October 2025 CPI was never published, due to the
+  government shutdown.
+- **Year-over-year changes** compare September 2025 to September 2026, the latest month with data for both years.
+- **The NRF forecast** excludes car dealers, gas stations, and restaurants.
+
+---
+
+**How we did this.** Prices are from the Bureau of Labor Statistics Consumer Price Index via FRED: apparel (CPIAPPNS), toys
+(CUUR0000SERE01), computers (CUUR0000SEEE01), commodities less food (CUUR0000SACL1), and all items (CPIAUCNS). The holiday
+forecast is from the National Retail Federation's October 15, 2026 release.
+[NRF holiday forecast](https://nrf.com/media-center/press-releases/nrf-forecasts-2026-holiday-sales-growth-as-consumers-remain-resilient) ·
+[Toy prices on FRED](https://fred.stlouisfed.org/series/CUUR0000SERE01) ·
+[Clothing prices on FRED](https://fred.stlouisfed.org/series/CPIAPPNS)

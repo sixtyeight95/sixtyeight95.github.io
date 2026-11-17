@@ -1,0 +1,92 @@
+---
+title: "What Putting the Holidays on a Credit Card Really Costs"
+subtitle: "At today's 22% card rates, $1,000 of gifts paid off at the minimum costs nearly $1,800 and takes about six years. Paying a little more changes everything."
+author: "SixtyEight95"
+date: "2026-11-28"
+categories: [holidays, money, debt]
+image: infographic.png
+---
+
+```{r setup}
+source("../../R/fred.R")
+source("../../R/credit_card_data.R")
+library(plotly)
+library(knitr)
+usd <- function(x) paste0("$", formatC(round(x), format = "d", big.mark = ","))
+f1  <- function(x) formatC(x, format = "f", digits = 1)
+yrs <- function(m) if (m >= 24) paste0(f1(m / 12), " years") else paste(m, "months")
+```
+
+It's the biggest shopping weekend of the year, and a lot of it goes on plastic. Credit cards are convenient, and if you
+pay the balance in full you pay no interest at all. But if a holiday balance lingers, today's interest rates make it
+expensive. Here's how expensive.
+
+## The short answer
+
+::: {.callout-note appearance="simple"}
+The average interest rate on credit cards that charge interest is **`r f1(cc_now$value)`%**, up from about **`r f1(cc_2019)`%** in 2019.
+At that rate, **`r usd(holiday_bill)`** of holiday gifts paid off with only the minimum payment costs about **`r usd(min_case$total)`**
+in total and takes about **`r yrs(min_case$months)`**. Paying **$100 a month** instead clears it in a year for about
+**`r usd(scenarios$interest[scenarios$plan == "$100 a month"])`** in interest.
+:::
+
+## Credit card rates are near record highs
+
+```{r rate chart}
+p <- cc_rate %>% filter(date >= as.Date("2010-01-01")) %>%
+  ggplot(aes(date, value)) +
+  geom_line(color = "#F06A6A", linewidth = 1.1) +
+  scale_y_continuous(labels = function(x) paste0(x, "%"), limits = c(0, NA)) +
+  theme_minimal(base_size = 13) +
+  labs(x = NULL, y = "Average card rate (accounts charged interest)")
+ggplotly(p, tooltip = c("x", "y"))
+```
+
+Credit card rates jumped when the Federal Reserve raised interest rates in 2022 and 2023, and they've stayed above 20% since.
+Now the Fed is raising rates again: its benchmark rate went from **`r f1(ff_low$value)`%** earlier this year to **`r f1(ff_now$value)`%** in
+`r format(ff_now$date, "%B")`, with inflation still running high. Card rates usually follow the Fed up.
+
+Americans are carrying about **$`r f1(revolving_now$value / 1e6)` trillion** in revolving credit, which is mostly credit card debt.
+
+## What $1,000 of gifts really costs
+
+We took a **`r usd(holiday_bill)`** holiday balance at today's average rate of **`r f1(cc_now$value)`%** and asked: how long does it take to pay
+off, and how much interest do you pay?
+
+```{r payoff table}
+scenarios %>%
+  transmute(`How you pay it off` = plan,
+            `Time to pay off` = map_chr(months, yrs),
+            `Interest paid` = usd(interest),
+            `Total paid` = usd(total)) %>%
+  kable(align = "lrrr", caption = "Assumes no new charges. Minimum payment = interest + 1% of the balance, or $25, whichever is larger.")
+```
+
+The minimum payment starts at about **`r usd(first_min_payment)`** a month. It feels manageable, but most of it goes to interest
+at first, and the payment shrinks as the balance does. That's why it takes about **`r yrs(min_case$months)`**.
+
+Bumping the payment to $100 a month cuts the interest by about **`r usd(min_case$interest - scenarios$interest[scenarios$plan == "$100 a month"])`**.
+
+## How to keep the holidays from following you into 2027
+
+- **Pay the full balance if you can.** Most cards charge no interest at all on purchases you pay off by the due date.
+- **If you can't, pick a monthly number and stick to it.** Even $50 a month instead of the minimum saves hundreds.
+- **Check your card's actual rate** on your statement. Yours may be higher or lower than the average.
+- **Be careful with "buy now, pay later."** It can be interest-free, but late fees and stacking several plans add up.
+
+## The fine print
+
+- **The card rate** is the Federal Reserve's average for credit card accounts that were charged interest. The average
+  across all accounts, including people who pay in full, is a bit lower.
+- **Minimum payment formulas vary by card.** We used interest plus 1% of the balance with a $25 floor, a common
+  approach. Check your statement for yours.
+- **Our examples** assume no new charges and no late fees.
+- **Revolving credit** includes credit cards and some other revolving lines.
+
+---
+
+**How we did this.** Credit card rates are from the Federal Reserve's G.19 consumer credit release (FRED series
+TERMCBCCINTNS). Revolving credit is FRED series REVOLSL. The federal funds rate is FEDFUNDS. Payoff math is our own
+calculation, month by month.
+[Card rates on FRED](https://fred.stlouisfed.org/series/TERMCBCCINTNS) ·
+[Revolving credit on FRED](https://fred.stlouisfed.org/series/REVOLSL)
