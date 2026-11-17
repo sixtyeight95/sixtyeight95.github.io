@@ -726,17 +726,91 @@
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>In 2025, the classic dinner for 10 cost <strong>$55.18</strong>. At the average worker’s pay, that’s <strong>1.7 hours of work</strong>, or about <strong>10 minutes per guest.</strong> That’s the least work it has taken in the survey’s history. In 1986, it took 3.2 hours.</p>
+<p>In 2025, the Farm Bureau’s <strong>basic</strong> dinner for 10 cost <strong>$55.18</strong> on average nationally (about <strong>$83–85</strong> in the Northeast and West). That’s a bare-bones menu, not a typical family’s grocery bill: no ham, no mashed potatoes, no drinks.</p>
+<p>But because it’s the <strong>same menu every year</strong>, it’s a fair way to track the trend. At the average worker’s pay, it took <strong>1.7 hours of work</strong> in 2025, the least in the survey’s 40-year history. In 1986, it took 3.2 hours.</p>
 </div>
 </div>
 </div>
+</section>
+<section id="wait-55-for-10-people" class="level2">
+<h2 class="anchored" data-anchor-id="wait-55-for-10-people">Wait, $55 for 10 people?</h2>
+<p>That was our reaction too. Here’s exactly what the Farm Bureau’s shopping list includes, and what it leaves out:</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 65%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Included in the $55</th>
+<th style="text-align: left;">Not included</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">16-lb turkey</td>
+<td style="text-align: left;">ham</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">14-oz box of stuffing</td>
+<td style="text-align: left;">mashed potatoes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">3 lbs sweet potatoes</td>
+<td style="text-align: left;">mac and cheese</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">12 rolls</td>
+<td style="text-align: left;">green bean casserole</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">1 lb frozen peas</td>
+<td style="text-align: left;">gravy beyond the basics</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">12 oz cranberries</td>
+<td style="text-align: left;">appetizers</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">small veggie tray</td>
+<td style="text-align: left;">drinks and alcohol</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2 pumpkin pies (canned filling, store crusts)</td>
+<td style="text-align: left;">extra desserts</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">whipped cream</td>
+<td style="text-align: left;">leftovers</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1 gallon of milk</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">coffee and baking basics</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>A few more reasons the number looks low:</p>
+<ul>
+<li><strong>It’s a national average.</strong> The same dinner cost about <strong>$83</strong> in the Northeast and <strong>$85</strong> in the West. Prices in the South and Midwest pull the average down.</li>
+<li><strong>Turkey is often a loss leader.</strong> Stores frequently discount turkeys before Thanksgiving to get shoppers in the door, and the survey catches some of those deals.</li>
+<li><strong>Portions are modest.</strong> One box of stuffing and a pound of peas for 10 people is not most families’ idea of a feast.</li>
+</ul>
+<p>So think of the $55 as a <strong>price index</strong>, not a budget. Your real dinner probably costs more, maybe much more. What the survey is good for is comparing <strong>the same basket</strong> across years.</p>
 </section>
 <section id="years-of-thanksgiving-dinner" class="level2">
 <h2 class="anchored" data-anchor-id="years-of-thanksgiving-dinner">40 years of Thanksgiving dinner</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-510e4ed65aad588f53b9" style="width:100%;height:417px;"></div>
-<script type="application/json" data-for="htmlwidget-510e4ed65aad588f53b9">{"x":{"data":[{"x":[1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025],"y":[3.1897891231964484,2.6440129449838192,2.7776617954070981,2.487411883182276,2.7955426356589146,2.4458058435438268,2.4300184162062619,2.4654708520179369,2.4803493449781659,2.5161290322580645,2.5950819672131149,2.4980330448465775,2.5125284738041005,2.4765739385065886,2.2747716092761769,2.3804347826086953,2.2811881188118814,2.3467011642949545,2.2525252525252526,2.2564417177914109,2.2438162544169611,2.3970504821327285,2.4363735663571822,2.2824468085106382,2.2628839146277979,2.5153374233128836,2.4939516129032255,2.4145741014278683,2.3789118921521424,2.3625648279113625,2.2970981114693689,2.2106210621062106,2.1260869565217391,2.0524548887956358,1.8805132317562148,2.0071536144578315,2.2785485592315902,2.0827374872318694,1.9005235602094241,1.7357659641396666],"text":["1986: $28.74 for 10<br>3.2 hours of work (19 min per guest)","1987: $24.51 for 10<br>2.6 hours of work (16 min per guest)","1988: $26.61 for 10<br>2.8 hours of work (17 min per guest)","1989: $24.70 for 10<br>2.5 hours of work (15 min per guest)","1990: $28.85 for 10<br>2.8 hours of work (17 min per guest)","1991: $25.95 for 10<br>2.4 hours of work (15 min per guest)","1992: $26.39 for 10<br>2.4 hours of work (15 min per guest)","1993: $27.49 for 10<br>2.5 hours of work (15 min per guest)","1994: $28.40 for 10<br>2.5 hours of work (15 min per guest)","1995: $29.64 for 10<br>2.5 hours of work (15 min per guest)","1996: $31.66 for 10<br>2.6 hours of work (16 min per guest)","1997: $31.75 for 10<br>2.5 hours of work (15 min per guest)","1998: $33.09 for 10<br>2.5 hours of work (15 min per guest)","1999: $33.83 for 10<br>2.5 hours of work (15 min per guest)","2000: $32.37 for 10<br>2.3 hours of work (14 min per guest)","2001: $35.04 for 10<br>2.4 hours of work (14 min per guest)","2002: $34.56 for 10<br>2.3 hours of work (14 min per guest)","2003: $36.28 for 10<br>2.3 hours of work (14 min per guest)","2004: $35.68 for 10<br>2.3 hours of work (14 min per guest)","2005: $36.78 for 10<br>2.3 hours of work (14 min per guest)","2006: $38.10 for 10<br>2.2 hours of work (13 min per guest)","2007: $42.26 for 10<br>2.4 hours of work (14 min per guest)","2008: $44.61 for 10<br>2.4 hours of work (15 min per guest)","2009: $42.91 for 10<br>2.3 hours of work (14 min per guest)","2010: $43.47 for 10<br>2.3 hours of work (14 min per guest)","2011: $49.20 for 10<br>2.5 hours of work (15 min per guest)","2012: $49.48 for 10<br>2.5 hours of work (15 min per guest)","2013: $49.04 for 10<br>2.4 hours of work (14 min per guest)","2014: $49.41 for 10<br>2.4 hours of work (14 min per guest)","2015: $50.11 for 10<br>2.4 hours of work (14 min per guest)","2016: $49.87 for 10<br>2.3 hours of work (14 min per guest)","2017: $49.12 for 10<br>2.2 hours of work (13 min per guest)","2018: $48.90 for 10<br>2.1 hours of work (13 min per guest)","2019: $48.91 for 10<br>2.1 hours of work (12 min per guest)","2020: $46.90 for 10<br>1.9 hours of work (11 min per guest)","2021: $53.31 for 10<br>2.0 hours of work (12 min per guest)","2022: $64.05 for 10<br>2.3 hours of work (14 min per guest)","2023: $61.17 for 10<br>2.1 hours of work (12 min per guest)","2024: $58.08 for 10<br>1.9 hours of work (11 min per guest)","2025: $55.18 for 10<br>1.7 hours of work (10 min per guest)"],"type":"scatter","mode":"lines","line":{"width":3.4015748031496069,"color":"rgba(192,86,33,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"visible":false,"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":27.364789446981227,"r":7.3059360730593621,"b":26.707255200405889,"l":31.415525114155255},"font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[1984.05,2026.95],"tickmode":"array","ticktext":["1990","2000","2010","2020"],"tickvals":[1990,2000,2010,2020],"categoryorder":"array","categoryarray":["1990","2000","2010","2020"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.15948945615982243,3.3492785793562709],"tickmode":"array","ticktext":["0","1","2","3"],"tickvals":[0,0.99999999999999989,2,3],"categoryorder":"array","categoryarray":["0","1","2","3"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Hours of work for dinner for 10","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"source":"A","attrs":{"4a70714b5f29":{"x":{},"y":{},"text":{},"type":"scatter"},"4a70d7e30a8":{"y":{}}},"cur_data":"4a70714b5f29","visdat":{"4a70714b5f29":["function (y) ","x"],"4a70d7e30a8":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item" id="htmlwidget-d0c3d51ecae2b38fc384" style="width:100%;height:417px;"></div>
+<script type="application/json" data-for="htmlwidget-d0c3d51ecae2b38fc384">{"x":{"data":[{"x":[1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025],"y":[3.1897891231964484,2.6440129449838192,2.7776617954070981,2.487411883182276,2.7955426356589146,2.4458058435438268,2.4300184162062619,2.4654708520179369,2.4803493449781659,2.5161290322580645,2.5950819672131149,2.4980330448465775,2.5125284738041005,2.4765739385065886,2.2747716092761769,2.3804347826086953,2.2811881188118814,2.3467011642949545,2.2525252525252526,2.2564417177914109,2.2438162544169611,2.3970504821327285,2.4363735663571822,2.2824468085106382,2.2628839146277979,2.5153374233128836,2.4939516129032255,2.4145741014278683,2.3789118921521424,2.3625648279113625,2.2970981114693689,2.2106210621062106,2.1260869565217391,2.0524548887956358,1.8805132317562148,2.0071536144578315,2.2785485592315902,2.0827374872318694,1.9005235602094241,1.7357659641396666],"text":["1986: $28.74 for 10<br>3.2 hours of work (19 min per guest)","1987: $24.51 for 10<br>2.6 hours of work (16 min per guest)","1988: $26.61 for 10<br>2.8 hours of work (17 min per guest)","1989: $24.70 for 10<br>2.5 hours of work (15 min per guest)","1990: $28.85 for 10<br>2.8 hours of work (17 min per guest)","1991: $25.95 for 10<br>2.4 hours of work (15 min per guest)","1992: $26.39 for 10<br>2.4 hours of work (15 min per guest)","1993: $27.49 for 10<br>2.5 hours of work (15 min per guest)","1994: $28.40 for 10<br>2.5 hours of work (15 min per guest)","1995: $29.64 for 10<br>2.5 hours of work (15 min per guest)","1996: $31.66 for 10<br>2.6 hours of work (16 min per guest)","1997: $31.75 for 10<br>2.5 hours of work (15 min per guest)","1998: $33.09 for 10<br>2.5 hours of work (15 min per guest)","1999: $33.83 for 10<br>2.5 hours of work (15 min per guest)","2000: $32.37 for 10<br>2.3 hours of work (14 min per guest)","2001: $35.04 for 10<br>2.4 hours of work (14 min per guest)","2002: $34.56 for 10<br>2.3 hours of work (14 min per guest)","2003: $36.28 for 10<br>2.3 hours of work (14 min per guest)","2004: $35.68 for 10<br>2.3 hours of work (14 min per guest)","2005: $36.78 for 10<br>2.3 hours of work (14 min per guest)","2006: $38.10 for 10<br>2.2 hours of work (13 min per guest)","2007: $42.26 for 10<br>2.4 hours of work (14 min per guest)","2008: $44.61 for 10<br>2.4 hours of work (15 min per guest)","2009: $42.91 for 10<br>2.3 hours of work (14 min per guest)","2010: $43.47 for 10<br>2.3 hours of work (14 min per guest)","2011: $49.20 for 10<br>2.5 hours of work (15 min per guest)","2012: $49.48 for 10<br>2.5 hours of work (15 min per guest)","2013: $49.04 for 10<br>2.4 hours of work (14 min per guest)","2014: $49.41 for 10<br>2.4 hours of work (14 min per guest)","2015: $50.11 for 10<br>2.4 hours of work (14 min per guest)","2016: $49.87 for 10<br>2.3 hours of work (14 min per guest)","2017: $49.12 for 10<br>2.2 hours of work (13 min per guest)","2018: $48.90 for 10<br>2.1 hours of work (13 min per guest)","2019: $48.91 for 10<br>2.1 hours of work (12 min per guest)","2020: $46.90 for 10<br>1.9 hours of work (11 min per guest)","2021: $53.31 for 10<br>2.0 hours of work (12 min per guest)","2022: $64.05 for 10<br>2.3 hours of work (14 min per guest)","2023: $61.17 for 10<br>2.1 hours of work (12 min per guest)","2024: $58.08 for 10<br>1.9 hours of work (11 min per guest)","2025: $55.18 for 10<br>1.7 hours of work (10 min per guest)"],"type":"scatter","mode":"lines","line":{"width":3.4015748031496069,"color":"rgba(192,86,33,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"visible":false,"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":27.364789446981227,"r":7.3059360730593621,"b":26.707255200405889,"l":31.415525114155255},"font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[1984.05,2026.95],"tickmode":"array","ticktext":["1990","2000","2010","2020"],"tickvals":[1990,2000,2010,2020],"categoryorder":"array","categoryarray":["1990","2000","2010","2020"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.15948945615982243,3.3492785793562709],"tickmode":"array","ticktext":["0","1","2","3"],"tickvals":[0,0.99999999999999989,2,3],"categoryorder":"array","categoryarray":["0","1","2","3"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Hours of work for dinner for 10","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"source":"A","attrs":{"3aa4429f10c6":{"x":{},"y":{},"text":{},"type":"scatter"},"3aa440ad5491":{"y":{}}},"cur_data":"3aa4429f10c6","visdat":{"3aa4429f10c6":["function (y) ","x"],"3aa440ad5491":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p>Hover to see the price each year. The dollar cost peaked at <strong>$64.05</strong> in 2022, when inflation and bird flu sent turkey prices soaring. That year dinner took 2.3 hours of work, a visible bump. Since then, the price has fallen three years in a row while pay kept rising, so dinner got easier to afford on both counts.</p>
@@ -832,7 +906,7 @@
 </section>
 <section id="the-bottom-line" class="level2">
 <h2 class="anchored" data-anchor-id="the-bottom-line">The bottom line</h2>
-<p>Thanksgiving dinner feels more expensive because the receipt is bigger. But measured in the time it takes to earn it, last year’s feast was the most affordable in four decades: about <strong>10 minutes of work per guest.</strong></p>
+<p>The Farm Bureau’s $55 dinner is a bare-bones basket, and your real Thanksgiving almost certainly costs more. But tracking that same basket for 40 years shows something real: measured in the time it takes to earn it, the basic Thanksgiving dinner was more affordable last year than at any point since the survey began, about <strong>10 minutes of work per guest.</strong></p>
 <hr>
 <p><strong>How we did this.</strong> Dinner costs are the American Farm Bureau Federation’s annual Thanksgiving Dinner Cost Survey (classic menu for 10). Years 1987–2022 come from a compilation by 24/7 Wall St.; 1986 and 2023–2025 are from AFBF. Pay is average hourly earnings of production and nonsupervisory employees for November of each year, via <a href="https://fred.stlouisfed.org/series/AHETPI">FRED</a>. <a href="https://www.fb.org/market-intel/thanksgiving-dinner-cost-analysis-moderate-decline">AFBF survey</a></p>
 

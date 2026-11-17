@@ -34,27 +34,31 @@ agg_png("thanksgiving-infographic.png", width = 1080, height = 1350, res = 144)
 grid.newpage(); grid.rect(gp = gpar(fill = brand$navy, col = NA))
 txt("THANKSGIVING DINNER,\nIN HOURS OF WORK", 0.5, 0.915, 25, face = "bold")
 grid.lines(x = c(0.4, 0.6), y = c(0.855, 0.855), gp = gpar(col = brand$amber, lwd = 4))
-txt("How long the average worker has to work to buy the classic dinner for 10.", 0.5, 0.825, 10.5, brand$mint)
+txt(paste0("The American Farm Bureau prices the same BASIC dinner for 10 every year.\n",
+           "How long does the average worker have to work to buy it?"), 0.5, 0.818, 10.5, brand$mint)
 
-print(chart, vp = viewport(x = 0.5, y = 0.6, width = 0.92, height = 0.38))
+print(chart, vp = viewport(x = 0.5, y = 0.625, width = 0.92, height = 0.32))
 
 tiles <- tribble(~x, ~value, ~label,
-  0.2, paste0("$", formatC(tg_latest$cost_for_10, format = "f", digits = 2)), paste0("dinner for 10\n(", tg_latest$year, ")"),
+  0.2, paste0("$", formatC(tg_latest$cost_for_10, format = "f", digits = 2)), paste0("basic menu for 10\n(national avg, ", tg_latest$year, ")"),
   0.5, paste0(round(tg_latest$minutes_per_guest), " min"), "of work\nper guest",
-  0.8, paste0("$", formatC(tg_turkey_2025, format = "f", digits = 2)), "for a 16-lb\nturkey")
+  0.8, paste0("$", round(min(tg_region_2025)), "–", round(max(tg_region_2025))), "same menu in the\nNortheast & West")
 for (i in 1:3) {
-  txt(tiles$value[i], tiles$x[i], 0.355, 22, brand$amber, "bold")
-  txt(tiles$label[i], tiles$x[i], 0.305, 10, brand$muted)
+  txt(tiles$value[i], tiles$x[i], 0.42, 21, brand$amber, "bold")
+  txt(tiles$label[i], tiles$x[i], 0.372, 9.5, brand$muted)
 }
 
-grid.rect(x = 0.5, y = 0.205, width = 0.88, height = 0.1, gp = gpar(fill = brand$band, col = NA))
-txt("THE TAKEAWAY", 0.5, 0.235, 11, brand$amber, "bold")
-txt(paste0("Dinner prices jumped in 2022, but paychecks caught up. In ", tg_latest$year, ", the classic\n",
-           "dinner took the fewest hours of work in the survey's 40-year history."), 0.5, 0.195, 9.6, brand$white)
+# what's in it / what's not
+grid.rect(x = 0.275, y = 0.235, width = 0.43, height = 0.17, gp = gpar(fill = brand$band, col = NA))
+grid.rect(x = 0.725, y = 0.235, width = 0.43, height = 0.17, gp = gpar(fill = "#3A2530", col = NA))
+txt("WHAT THE $55 BUYS", 0.275, 0.3, 10.5, brand$mint, "bold")
+txt("16-lb turkey, 1 box of stuffing,\n3 lbs sweet potatoes, 12 rolls,\n1 lb peas, cranberries, veggie tray,\n2 pumpkin pies, whipped cream,\nmilk, coffee", 0.275, 0.228, 8.6, brand$white)
+txt("NOT INCLUDED", 0.725, 0.3, 10.5, brand$red, "bold")
+txt("ham, mashed potatoes,\nmac & cheese, green bean casserole,\nappetizers, drinks, alcohol,\nextra desserts, leftovers", 0.725, 0.232, 8.6, brand$white)
 
-txt(paste0("Classic dinner for 10: turkey, stuffing, sweet potatoes, rolls, peas, cranberries, veggie tray, pumpkin pie,\n",
-           "whipped cream, milk, coffee. Pay = average hourly earnings in November, before taxes. ",
-           tg_latest$year + 1, " survey due this week."), 0.5, 0.12, 7, brand$muted)
+txt(paste0("Many real dinners cost a lot more. But because it's the SAME basic menu every year, it shows the trend:\n",
+           "in ", tg_latest$year, ", it took the fewest hours of work in the survey's 40 years. ",
+           "Pay = average hourly earnings in November, before taxes."), 0.5, 0.115, 7.3, brand$muted)
 
 grid.rect(x = 0.5, y = 0.04, width = 1, height = 0.08, gp = gpar(fill = brand$band, col = NA))
 txt("SixtyEight95", 0.05, 0.048, 15, brand$white, "bold", just = "left")

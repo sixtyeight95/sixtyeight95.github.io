@@ -1,34 +1,30 @@
 POST CAPTION
 ------------
-Thanksgiving dinner for 10 costs twice what it did in 1986. So why is it actually EASIER to afford? 🦃
+"Thanksgiving dinner for 10 costs $55." Wait, what? 🦃
 
-The Farm Bureau has priced the same classic dinner every year since 1986:
-📅 1986: $28.74 = 3.2 hours of work
-📈 2022: $64.05 = 2.3 hours (the inflation spike)
-🦃 2025: $55.18 = 1.7 hours
+That's the American Farm Bureau's famous yearly survey, and it's a BARE-BONES menu: a 16-lb turkey, one box of stuffing, sweet potatoes, rolls, peas, cranberries, a veggie tray, two pumpkin pies, milk and coffee. No ham, no mashed potatoes, no drinks. And it's a national average; the same dinner was about $83 to $85 in the Northeast and West.
 
-Last year's dinner took about 10 minutes of work per guest, the least in the survey's 40-year history.
+So it's not your real grocery bill. But because they price the SAME menu every year since 1986, it shows a real trend:
+📅 1986: 3.2 hours of work to buy it
+📈 2022: 2.3 hours (the inflation spike)
+🦃 2025: 1.7 hours, the least ever
 
-Bigger receipt, smaller share of your paycheck.
-
-What's the one dish that HAS to be on your table? 👇
+What does YOUR Thanksgiving actually cost to host? 👇
 
 
 FIRST COMMENT
 -------------
-Every year since 1986, plus how we did the math: https://sixtyeight95.github.io/posts/2026-11-thanksgiving-dinner/
+What's in (and not in) the $55 dinner, plus every year since 1986: https://sixtyeight95.github.io/posts/2026-11-thanksgiving-dinner/
 
 
 GROUP VERSION (no link, sounds like a person)
 -------------
-Fun Thanksgiving stat: I compared the Farm Bureau's classic dinner-for-10 prices since 1986 with average hourly pay. The dollar price doubled, but in hours of work it went from about 3.2 hours in 1986 to 1.7 hours last year, the cheapest ever in work time. That's about 10 minutes of work per guest. Chart attached. Is anyone else hosting a crowd this year?
+You might see the "Thanksgiving dinner for 10 costs $55" headline this week. That's the Farm Bureau's bare-bones menu (turkey, stuffing, sweet potatoes, rolls, peas, cranberries, pie), no ham, drinks or extra sides, and a national average. Real dinners cost more. But since it's the same menu every year, it's a good way to track the trend: in hours of work, that basic dinner took 3.2 hours in 1986 and 1.7 hours last year. Chart attached. What's your hosting budget this year?
 
 
 REEL CAPTION
 ------------
-Thanksgiving dinner costs twice what it did in 1986. But it takes HALF the work. 🦃
-
-10 minutes of work per guest. The data inside.
+"$55 for Thanksgiving dinner for 10"? Here's what that number really means. 🦃
 
 Full breakdown at sixtyeight95.github.io
 

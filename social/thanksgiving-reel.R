@@ -11,13 +11,15 @@ box <- list(x = 0.55, y = 0.5, w = 0.78, h = 0.36)
 draw_frame <- function(t) {
   background()
   a <- fade(t, 0, 3.5)
-  txt("Thanksgiving dinner\nfor 10 people:", 0.5, 0.6, 44, brand$white, "bold", a)
+  txt("The Farm Bureau's BASIC\nThanksgiving dinner for 10:", 0.5, 0.6, 40, brand$white, "bold", a)
   txt(paste0(usd(tg_first$cost_for_10), " in ", tg_first$year, "\n", usd(tg_latest$cost_for_10), " in ", tg_latest$year),
       0.5, 0.44, 44, brand$amber, "bold", a * appear(t, 1.5))
 
   a <- fade(t, 3.5, 7)
-  txt("Twice the price.\nBut is it harder\nto afford?", 0.5, 0.58, 44, brand$white, "bold", a)
-  txt("Let's count hours of work.", 0.5, 0.4, 32, brand$mint, "bold", a * appear(t, 4.8))
+  txt("$55?! It's bare-bones:", 0.5, 0.68, 36, brand$white, "bold", a)
+  txt("turkey, stuffing, sweet potatoes,\nrolls, peas, cranberries, pie", 0.5, 0.6, 26, brand$mint, "plain", a)
+  txt("No ham. No mashed potatoes.\nNo drinks.", 0.5, 0.5, 30, brand$red, "bold", a * appear(t, 4.4))
+  txt("But it's the SAME menu every year.\nSo: is it harder to afford?", 0.5, 0.37, 28, brand$amber, "bold", a * appear(t, 5.3))
 
   a <- fade(t, 7, 16.5)
   if (a > 0) {
@@ -36,7 +38,7 @@ draw_frame <- function(t) {
   }
 
   a <- fade(t, 16.5, 22)
-  txt("Last year's dinner took", 0.5, 0.66, 34, brand$white, "bold", a)
+  txt("Last year, the basic dinner took", 0.5, 0.66, 32, brand$white, "bold", a)
   txt(paste0(round(tg_latest$minutes_per_guest), " minutes"), 0.5, 0.56, 80, brand$amber, "bold", a * appear(t, 17.2))
   txt("of work per guest.\nThe least in 40 years.", 0.5, 0.44, 34, brand$white, "bold", a * appear(t, 18))
 
